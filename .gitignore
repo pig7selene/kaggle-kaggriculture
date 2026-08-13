@@ -1,0 +1,35 @@
+# macOS and Python-generated files
+.DS_Store
+**/.DS_Store
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+kaggle.json
+access_token
+*.pem
+*.key
+
+# Large downloaded/generated replay corpora
+experiments/*_replays/
+experiments/*_corpus/
+experiments/kaggle_episodes/
+experiments/super_replay_unseen/
+experiments/leaderboard_replays/
+experiments/top_player_replays/
+
+# Generated analysis caches and large route artifacts
+experiments/*cache*
+experiments/*.partial
+experiments/*route_bank.json
+experiments/*route_executor.json
+
+# Generated experiment JSON can be reproduced by the checked-in scripts.
+# Keep lightweight manifests that describe the source datasets.
+experiments/*.json
+!experiments/*manifest*.json

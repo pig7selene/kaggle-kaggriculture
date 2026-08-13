@@ -1,0 +1,7 @@
+"""Public mixed opening with daily feed control."""
+
+from runpy import run_path
+
+
+common = run_path("agents/opening_compound_common.py")
+agent = common["make_opening_agent"](feed_mode="daily")

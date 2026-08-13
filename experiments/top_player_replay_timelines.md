@@ -1,0 +1,1322 @@
+# Top-player replay timelines
+
+This is the analyzer-generated factual companion to the curated meta review.
+Sale revenue is reconstructed unit-by-unit with the environment's price function
+and validated against every observed bank transition.
+
+## THUNDER THUNDER — rating 3216.7
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91843967 | Dmitry Larko | loss | 84603 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91853249 | Ueddy | win | 81668 | [6, 10] | {'COW': 10, 'SHEEP': 7} | 14 | 75 |
+| 91861609 | Erfan Eshratifar | win | 74581 | [6, 10] | {'COW': 8, 'SHEEP': 9} | 14 | 75 |
+| 91870919 | Victor @ Tufa Labs | win | 113353 | [6, 10] | {'COW': 8, 'SHEEP': 9} | 14 | 75 |
+
+### Daily timelines
+
+#### Episode 91843967 vs Dmitry Larko
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 24 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2976 |
+| 1 | 23 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 255 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 3} | - | - | FERTILIZER 5/$496, WHEAT 3/$93 | 388 |
+| 3 | 2 | 1 | 2 | {'MELON': 5, 'STRAWBERRY': 1, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 1, 'WHEAT': 1} | - | FERTILIZER 4/$390, WHEAT 1/$31 | 643 |
+| 4 | 31 | 1 | 4 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 5} | {'WHEAT': 17} | FERTILIZER 4/$382 | 353 |
+| 5 | 1 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$468, WHEAT 10/$316 | 814 |
+| 6 | 670 | 2 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | - | {'WOOL': 15} | FERTILIZER 8/$727, WHEAT 6/$202, WOOL 15/$2977 | 3136 |
+| 7 | 7 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 15, 'WHEAT': 9} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 8, 'WHEAT': 3} | {'WHEAT': 4} | FERTILIZER 3/$267 | 1031 |
+| 8 | 16 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 15, 'WHEAT': 13} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 9} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 6/$522 | 513 |
+| 9 | 549 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 5} | {'WOOL': 8} | FERTILIZER 10/$836, MILK 6/$1204, WHEAT 9/$310 | 1817 |
+| 10 | 6 | 3 | 11 | {'MELON': 10, 'STRAWBERRY': 24, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 10, 'STRAWBERRY': 6, 'WHEAT': 1} | {'MELON': 30} | MELON 12/$3092, WOOL 8/$1116 | 4751 |
+| 11 | 2989 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 4, 'STRAWBERRY': 12, 'WHEAT': 3} | {'WHEAT': 12} | MELON 18/$4215 | 1232 |
+| 12 | 5083 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 9} | {'MILK': 5, 'WHEAT': 36, 'WOOL': 16} | FERTILIZER 15/$1159, MILK 5/$1064, WHEAT 6/$222, WOOL 16/$288 | 403 |
+| 13 | 6335 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 6, 'STRAWBERRY': 2} | FERTILIZER 6/$442, WHEAT 30/$1100 | 526 |
+| 14 | 8287 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 3, 'STRAWBERRY': 4, 'WHEAT': 4} | FERTILIZER 10/$697, MILK 6/$1263, STRAWBERRY 2/$434 | 442 |
+| 15 | 13741 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 21, 'STRAWBERRY': 10, 'WHEAT': 12, 'WOOL': 16} | FERTILIZER 10/$661, MILK 21/$4155, STRAWBERRY 4/$891, WHEAT 2/$76 | 329 |
+| 16 | 16704 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'STRAWBERRY': 4, 'WHEAT': 36} | FERTILIZER 10/$621, MILK 3/$411, STRAWBERRY 10/$2288, WHEAT 5/$195, WOOL 16/$16 | 568 |
+| 17 | 20061 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 24, 'STRAWBERRY': 26} | FERTILIZER 3/$183, MILK 15/$1576, STRAWBERRY 4/$920, WHEAT 32/$1257 | 579 |
+| 18 | 26240 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 4, 'WHEAT': 4, 'WOOL': 16} | FERTILIZER 9/$520, MILK 12/$976, STRAWBERRY 26/$5808 | 1125 |
+| 19 | 27596 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 14} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 15, 'STRAWBERRY': 26, 'WHEAT': 8} | FERTILIZER 3/$165, MILK 15/$618, STRAWBERRY 4/$891, WHEAT 4/$164, WOOL 16/$16 | 498 |
+| 20 | 39689 | 3 | 14 | {'MELON': 4, 'STRAWBERRY': 35, 'WHEAT': 23} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 13} | {'MELON': 60, 'MILK': 6, 'STRAWBERRY': 16, 'WHEAT': 16} | FERTILIZER 7/$378, MELON 48/$7730, MILK 6/$85, STRAWBERRY 26/$5766, WHEAT 2/$84 | 1950 |
+| 21 | 46769 | 3 | 12 | {'MELON': 1, 'STRAWBERRY': 30, 'WHEAT': 26} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 18, 'MILK': 17, 'STRAWBERRY': 30, 'WHEAT': 3, 'WOOL': 16} | MELON 24/$132, MILK 6/$30, STRAWBERRY 34/$7278, WHEAT 18/$764, WOOL 8/$39 | 1163 |
+| 22 | 48784 | 3 | 13 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 8} | {'MELON': 6, 'MILK': 6, 'STRAWBERRY': 22, 'WHEAT': 3} | FERTILIZER 10/$513, MELON 6/$6, MILK 17/$37, STRAWBERRY 12/$2471, WHEAT 3/$129, WOOL 8/$8 | 1149 |
+| 23 | 55355 | 3 | 13 | {'STRAWBERRY': 20, 'WHEAT': 41} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MILK': 20, 'STRAWBERRY': 49, 'WHEAT': 8} | FERTILIZER 3/$142, MELON 6/$9, MILK 6/$104, STRAWBERRY 37/$7079, WHEAT 4/$182 | 945 |
+| 24 | 60523 | 3 | 14 | {'STRAWBERRY': 20, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 6, 'STRAWBERRY': 11, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$585, MILK 20/$26, STRAWBERRY 33/$5515, WOOL 12/$276 | 1244 |
+| 25 | 66614 | 3 | 13 | {'STRAWBERRY': 16, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 18, 'STRAWBERRY': 28, 'WHEAT': 31} | FERTILIZER 10/$401, MILK 6/$26, STRAWBERRY 28/$4619, WHEAT 42/$1893, WOOL 4/$4 | 842 |
+| 26 | 68608 | 3 | 12 | {'STRAWBERRY': 11, 'WHEAT': 49} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 6, 'STRAWBERRY': 14, 'WHEAT': 30} | FERTILIZER 14/$494, MILK 18/$18, STRAWBERRY 8/$1242, WHEAT 23/$1014 | 774 |
+| 27 | 75433 | 3 | 10 | {'STRAWBERRY': 11, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'STRAWBERRY': 20, 'WHEAT': 36, 'WOOL': 16} | FERTILIZER 17/$444, MILK 6/$104, STRAWBERRY 22/$3538, WHEAT 22/$986, WOOL 16/$2121 | 368 |
+| 28 | 78868 | 3 | 10 | {'WHEAT': 28} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 6, 'WHEAT': 39} | FERTILIZER 26/$495, MILK 24/$72, STRAWBERRY 12/$1860, WHEAT 28/$1248 | 187 |
+| 29 | 84603 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 94} | FERTILIZER 17/$168, MILK 24/$30, WHEAT 141/$5627 | 143 |
+
+#### Episode 91853249 vs Ueddy
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 4 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2996 |
+| 1 | 3 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 169 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 183 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 540 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 515 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 10 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 711 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 36 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$72 | 1352 |
+| 9 | 2132 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1204, WHEAT 13/$468 | 406 |
+| 10 | 4476 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 6} | {'MELON': 10, 'STRAWBERRY': 9, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7404, WHEAT 2/$74, WOOL 16/$2111 | 7245 |
+| 11 | 4535 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 7} | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 4} | {'WHEAT': 16} | MILK 3/$615 | 556 |
+| 12 | 6579 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 12} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 7} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 14/$1079, WHEAT 10/$393, WOOL 12/$2153 | 1581 |
+| 13 | 8717 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 2} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$873, MILK 3/$643, WHEAT 22/$850, WOOL 4/$590 | 818 |
+| 14 | 11581 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 7} | - | {'MILK': 9} | FERTILIZER 17/$1146, MILK 6/$1296, STRAWBERRY 6/$1181, WHEAT 4/$160 | 919 |
+| 15 | 20062 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 18/$1115, MILK 24/$5095, WOOL 16/$2979 | 708 |
+| 16 | 25319 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 7} | {'MILK': 18, 'STRAWBERRY': 2, 'WHEAT': 28, 'WOOL': 11} | FERTILIZER 11/$634, MILK 6/$1152, STRAWBERRY 14/$2852, WHEAT 9/$379, WOOL 11/$1620 | 1380 |
+| 17 | 30381 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 2} | {'MILK': 6, 'STRAWBERRY': 28, 'WHEAT': 8, 'WOOL': 5} | FERTILIZER 4/$224, MILK 24/$3370, STRAWBERRY 8/$1610, WHEAT 17/$717 | 859 |
+| 18 | 37159 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 7} | - | {'MILK': 9, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 15/$786, STRAWBERRY 22/$4212, WHEAT 6/$261, WOOL 17/$2999 | 1480 |
+| 19 | 44357 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 16} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 7} | {'MILK': 16, 'STRAWBERRY': 34, 'WHEAT': 16, 'WOOL': 8} | FERTILIZER 13/$624, MILK 20/$2319, STRAWBERRY 24/$4315, WOOL 12/$1326 | 1386 |
+| 20 | 54662 | 3 | 14 | {'MELON': 4, 'STRAWBERRY': 28, 'WHEAT': 25} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 12} | {'MELON': 60, 'MILK': 24, 'STRAWBERRY': 10, 'WHEAT': 12, 'WOOL': 4} | FERTILIZER 7/$322, MELON 42/$6421, MILK 17/$1201, STRAWBERRY 22/$3488, WHEAT 8/$360, WOOL 4/$524 | 2021 |
+| 21 | 59535 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 26, 'WHEAT': 29} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 6, 'STRAWBERRY': 44, 'WHEAT': 7, 'WOOL': 16} | FERTILIZER 7/$309, MELON 18/$475, MILK 18/$608, STRAWBERRY 26/$2400, WHEAT 10/$460, WOOL 16/$2374 | 1574 |
+| 22 | 61181 | 3 | 12 | {'STRAWBERRY': 23, 'WHEAT': 34} | {'COW': 10, 'SHEEP': 7} | {'WHEAT': 6} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 22, 'WOOL': 4} | FERTILIZER 16/$647, MELON 12/$12, MILK 12/$433, STRAWBERRY 28/$915, WHEAT 3/$141, WOOL 4/$381 | 1100 |
+| 23 | 61518 | 3 | 14 | {'STRAWBERRY': 14, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 7} | {'WHEAT': 16} | {'MILK': 14, 'STRAWBERRY': 27, 'WHEAT': 24, 'WOOL': 4} | FERTILIZER 14/$492, MELON 12/$15, MILK 9/$313, STRAWBERRY 22/$346, WHEAT 1/$48, WOOL 4/$570 | 1399 |
+| 24 | 63913 | 3 | 14 | {'STRAWBERRY': 11, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 7} | {'WHEAT': 13} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 42, 'WOOL': 16} | FERTILIZER 21/$628, MILK 13/$383, STRAWBERRY 27/$134, WHEAT 19/$933, WOOL 12/$1903 | 1586 |
+| 25 | 66487 | 3 | 13 | {'STRAWBERRY': 11, 'WHEAT': 47} | {'COW': 9, 'SHEEP': 7} | {'WHEAT': 12} | {'MILK': 11, 'STRAWBERRY': 6, 'WHEAT': 44, 'WOOL': 10} | FERTILIZER 13/$310, MILK 12/$108, STRAWBERRY 20/$461, WHEAT 34/$1654, WOOL 14/$1100 | 1059 |
+| 26 | 67812 | 3 | 13 | {'STRAWBERRY': 3, 'WHEAT': 55} | {'COW': 9, 'SHEEP': 7} | {'WHEAT': 14} | {'MILK': 17, 'STRAWBERRY': 16, 'WHEAT': 19, 'WOOL': 4} | FERTILIZER 17/$321, MILK 5/$5, STRAWBERRY 6/$305, WHEAT 35/$1701 | 1007 |
+| 27 | 71134 | 3 | 13 | {'STRAWBERRY': 3, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 7} | - | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 63, 'WOOL': 16} | FERTILIZER 21/$244, MILK 20/$261, STRAWBERRY 16/$784, WHEAT 13/$640, WOOL 20/$2443 | 1050 |
+| 28 | 74323 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 7} | - | {'MILK': 15, 'WHEAT': 51, 'WOOL': 8} | FERTILIZER 27/$106, MILK 26/$172, STRAWBERRY 6/$312, WHEAT 55/$2712, WOOL 8/$318 | 431 |
+| 29 | 81668 | 3 | 10 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 7} | - | {'MILK': 12, 'WHEAT': 84, 'WOOL': 4} | FERTILIZER 19/$19, MILK 12/$216, WHEAT 150/$6892, WOOL 4/$361 | 143 |
+
+#### Episode 91861609 vs Erfan Eshratifar
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 24 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2976 |
+| 1 | 23 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 252 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 3} | - | - | FERTILIZER 5/$493, WHEAT 3/$93 | 388 |
+| 3 | 27 | 1 | 2 | {'MELON': 5, 'STRAWBERRY': 1, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 1, 'WHEAT': 1} | - | FERTILIZER 4/$387, WHEAT 1/$31 | 612 |
+| 4 | 23 | 1 | 4 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 5} | {'WHEAT': 17} | FERTILIZER 4/$381 | 385 |
+| 5 | 29 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 6, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 10/$316 | 776 |
+| 6 | 876 | 2 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 1} | {'WOOL': 15} | FERTILIZER 8/$724, WHEAT 6/$202, WOOL 15/$3194 | 3172 |
+| 7 | 13 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 17, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$267 | 1231 |
+| 8 | 17 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 17, 'WHEAT': 10} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 5} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 6/$517 | 513 |
+| 9 | 715 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 4} | {'WHEAT': 4, 'WOOL': 8} | FERTILIZER 10/$827, MILK 6/$1050, WHEAT 9/$310 | 1489 |
+| 10 | 22 | 3 | 12 | {'MELON': 6, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 6} | {'MELON': 6} | {'MELON': 30} | MELON 6/$1594, WHEAT 4/$140, WOOL 8/$1831 | 4258 |
+| 11 | 2798 | 3 | 10 | {'MELON': 10, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 7} | {'MELON': 4, 'STRAWBERRY': 11, 'WHEAT': 4} | {'WHEAT': 16} | MELON 24/$5670 | 2894 |
+| 12 | 2251 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 12} | {'COW': 8, 'SHEEP': 9} | {'MELON': 4, 'WHEAT': 4} | {'MILK': 5, 'WHEAT': 20, 'WOOL': 16} | FERTILIZER 10/$781, WHEAT 7/$259 | 1587 |
+| 13 | 7658 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 5} | {'MILK': 6, 'STRAWBERRY': 2, 'WHEAT': 16} | FERTILIZER 14/$1035, MILK 5/$739, WHEAT 13/$477, WOOL 16/$3793 | 637 |
+| 14 | 9218 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | - | {'MILK': 3, 'STRAWBERRY': 4} | FERTILIZER 15/$1029, MILK 6/$746, STRAWBERRY 2/$384, WHEAT 5/$185 | 784 |
+| 15 | 15433 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 8, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 19/$1202, MILK 21/$1225, STRAWBERRY 4/$776, WOOL 16/$3895 | 883 |
+| 16 | 20001 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 4} | {'MILK': 9, 'STRAWBERRY': 6, 'WHEAT': 16, 'WOOL': 12} | FERTILIZER 10/$587, MILK 3/$33, STRAWBERRY 8/$1556, WHEAT 5/$195, WOOL 12/$2928 | 731 |
+| 17 | 21981 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 4} | {'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 16, 'WOOL': 5} | FERTILIZER 6/$343, MILK 9/$9, STRAWBERRY 22/$4079, WHEAT 10/$385, WOOL 5/$1225 | 1113 |
+| 18 | 32240 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 1} | {'MILK': 18, 'STRAWBERRY': 16, 'WOOL': 28} | FERTILIZER 17/$900, MILK 15/$17, STRAWBERRY 8/$1306, WHEAT 11/$429, WOOL 24/$5908 | 1249 |
+| 19 | 38309 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 30, 'WHEAT': 14} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 5} | {'MILK': 12, 'STRAWBERRY': 28, 'WHEAT': 16, 'WOOL': 8} | FERTILIZER 11/$535, MILK 15/$15, STRAWBERRY 24/$3626, WOOL 12/$2949 | 1056 |
+| 20 | 43008 | 3 | 14 | {'MELON': 8, 'STRAWBERRY': 28, 'WHEAT': 22} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 12} | {'MELON': 36, 'MILK': 12, 'STRAWBERRY': 12, 'WHEAT': 13, 'WOOL': 4} | FERTILIZER 13/$600, MELON 24/$4161, MILK 12/$12, STRAWBERRY 14/$1455, WHEAT 11/$450 | 1979 |
+| 21 | 49973 | 3 | 14 | {'MELON': 5, 'STRAWBERRY': 25, 'WHEAT': 27} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 9} | {'MELON': 18, 'MILK': 12, 'STRAWBERRY': 34, 'WHEAT': 10, 'WOOL': 20} | FERTILIZER 8/$353, MELON 24/$1263, MILK 12/$12, STRAWBERRY 26/$442, WHEAT 7/$287, WOOL 24/$5952 | 1344 |
+| 22 | 50894 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 24, 'WHEAT': 32} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 7} | {'MELON': 18, 'MILK': 12, 'STRAWBERRY': 6, 'WHEAT': 3, 'WOOL': 8} | FERTILIZER 9/$373, MELON 6/$6, MILK 12/$12, STRAWBERRY 20/$20, WHEAT 3/$126, WOOL 8/$1989 | 1605 |
+| 23 | 51688 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 39} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 20, 'WOOL': 4} | FERTILIZER 18/$649, MELON 18/$21, MILK 12/$12, STRAWBERRY 10/$98, WHEAT 10/$430, WOOL 4/$996 | 1294 |
+| 24 | 55072 | 3 | 14 | {'STRAWBERRY': 14, 'WHEAT': 38} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 12} | {'MILK': 12, 'STRAWBERRY': 12, 'WHEAT': 44, 'WOOL': 16} | FERTILIZER 16/$503, MELON 10/$13, MILK 9/$9, STRAWBERRY 34/$72, WHEAT 1/$43, WOOL 16/$4000 | 1374 |
+| 25 | 57982 | 3 | 13 | {'STRAWBERRY': 11, 'WHEAT': 47} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 17} | {'MILK': 14, 'STRAWBERRY': 26, 'WHEAT': 29, 'WOOL': 8} | FERTILIZER 15/$393, MILK 12/$12, STRAWBERRY 12/$12, WHEAT 34/$1428, WOOL 8/$2000 | 935 |
+| 26 | 58658 | 3 | 12 | {'STRAWBERRY': 11, 'WHEAT': 47} | {'COW': 8, 'SHEEP': 8} | {'WHEAT': 9} | {'MILK': 9, 'STRAWBERRY': 2, 'WHEAT': 25, 'WOOL': 4} | FERTILIZER 13/$273, MILK 14/$14, STRAWBERRY 24/$239, WHEAT 24/$985 | 835 |
+| 27 | 64593 | 3 | 11 | {'STRAWBERRY': 11, 'WHEAT': 36} | {'COW': 8, 'SHEEP': 8} | - | {'MILK': 12, 'STRAWBERRY': 20, 'WHEAT': 44, 'WOOL': 18} | FERTILIZER 14/$201, MILK 9/$65, STRAWBERRY 2/$2, WHEAT 15/$615, WOOL 22/$5530 | 478 |
+| 28 | 68118 | 3 | 10 | {'WHEAT': 24} | {'COW': 8, 'SHEEP': 8} | - | {'MILK': 14, 'WHEAT': 44, 'WOOL': 8} | FERTILIZER 37/$192, MILK 26/$44, STRAWBERRY 18/$381, WHEAT 30/$1193, WOOL 8/$2016 | 301 |
+| 29 | 74581 | 3 | 10 | - | {'COW': 8, 'SHEEP': 8} | - | {'MILK': 12, 'WHEAT': 86, 'WOOL': 7} | FERTILIZER 18/$18, MILK 12/$36, WHEAT 146/$4788, WOOL 7/$1764 | 143 |
+
+#### Episode 91870919 vs Victor @ Tufa Labs
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 0 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 3000 |
+| 1 | 0 | 1 | 0 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 0 |
+| 2 | 166 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 180 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 537 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 512 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 7 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 708 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 33 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$72 | 1352 |
+| 9 | 2285 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1357, WHEAT 13/$471 | 406 |
+| 10 | 4627 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 6} | {'MELON': 11, 'STRAWBERRY': 9, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7404, WHEAT 2/$74, WOOL 16/$2111 | 7247 |
+| 11 | 4696 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 7} | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 4} | {'WHEAT': 16} | MILK 3/$705 | 636 |
+| 12 | 6603 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 12} | {'COW': 8, 'SHEEP': 9} | {'MELON': 1, 'WHEAT': 7} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 14/$1035, WHEAT 9/$353, WOOL 12/$2341 | 1822 |
+| 13 | 8928 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 2} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$837, MILK 3/$731, WHEAT 22/$846, WOOL 4/$723 | 812 |
+| 14 | 11584 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | - | {'MILK': 9} | FERTILIZER 17/$1105, MILK 6/$1470, STRAWBERRY 6/$838, WHEAT 6/$238 | 995 |
+| 15 | 22959 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 19/$1134, MILK 30/$7264, WOOL 16/$3680 | 703 |
+| 16 | 26584 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 7} | {'MILK': 18, 'STRAWBERRY': 2, 'WHEAT': 28, 'WOOL': 11} | FERTILIZER 10/$551, STRAWBERRY 14/$1642, WHEAT 7/$288, WOOL 11/$2517 | 1373 |
+| 17 | 35258 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 2} | {'MILK': 12, 'STRAWBERRY': 30, 'WHEAT': 8, 'WOOL': 5} | FERTILIZER 12/$635, MILK 30/$6796, STRAWBERRY 2/$188, WHEAT 17/$701, WOOL 5/$1160 | 806 |
+| 18 | 41605 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 9} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WOOL': 28} | FERTILIZER 8/$393, STRAWBERRY 30/$1481, WHEAT 3/$125, WOOL 24/$5630 | 1325 |
+| 19 | 48356 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 7} | {'MILK': 9, 'STRAWBERRY': 34, 'WHEAT': 16, 'WOOL': 8} | FERTILIZER 12/$546, MILK 21/$4777, STRAWBERRY 10/$104, WHEAT 3/$131, WOOL 12/$2778 | 1542 |
+| 20 | 54419 | 3 | 14 | {'MELON': 4, 'STRAWBERRY': 28, 'WHEAT': 25} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 12} | {'MELON': 60, 'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 12, 'WOOL': 4} | FERTILIZER 7/$305, MELON 48/$6745, STRAWBERRY 34/$34, WHEAT 9/$393, WOOL 4/$939 | 2039 |
+| 21 | 63014 | 3 | 14 | {'MELON': 3, 'STRAWBERRY': 24, 'WHEAT': 29} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 12} | {'MELON': 6, 'MILK': 11, 'STRAWBERRY': 46, 'WHEAT': 7, 'WOOL': 20} | FERTILIZER 9/$378, MELON 12/$120, MILK 18/$4128, STRAWBERRY 18/$96, WHEAT 9/$396, WOOL 20/$4713 | 1550 |
+| 22 | 67500 | 3 | 12 | {'STRAWBERRY': 23, 'WHEAT': 34} | {'COW': 8, 'SHEEP': 9} | {'WHEAT': 5} | {'MELON': 18, 'MILK': 6, 'STRAWBERRY': 22, 'WOOL': 8} | FERTILIZER 18/$675, MELON 6/$6, MILK 11/$2524, STRAWBERRY 39/$230, WHEAT 6/$271, WOOL 8/$1890 | 1156 |
+| 23 | 68996 | 3 | 14 | {'STRAWBERRY': 14, 'WHEAT': 43} | {'COW': 7, 'SHEEP': 9} | {'WHEAT': 16} | {'MILK': 6, 'STRAWBERRY': 27, 'WHEAT': 28, 'WOOL': 4} | FERTILIZER 13/$417, MELON 18/$21, MILK 6/$1416, STRAWBERRY 16/$110, WHEAT 1/$46, WOOL 4/$956 | 1424 |
+| 24 | 77605 | 3 | 13 | {'STRAWBERRY': 11, 'WHEAT': 47} | {'COW': 7, 'SHEEP': 9} | {'WHEAT': 15} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 44, 'WOOL': 26} | FERTILIZER 20/$537, MILK 14/$3319, STRAWBERRY 27/$27, WHEAT 24/$1123, WOOL 20/$4782 | 1179 |
+| 25 | 81977 | 3 | 13 | {'STRAWBERRY': 11, 'WHEAT': 46} | {'COW': 7, 'SHEEP': 9} | {'WHEAT': 11} | {'MILK': 8, 'STRAWBERRY': 6, 'WHEAT': 41, 'WOOL': 8} | FERTILIZER 8/$167, STRAWBERRY 20/$176, WHEAT 37/$1719, WOOL 14/$3337 | 1037 |
+| 26 | 84488 | 3 | 14 | {'STRAWBERRY': 3, 'WHEAT': 55} | {'COW': 7, 'SHEEP': 9} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 16, 'WHEAT': 20, 'WOOL': 4} | FERTILIZER 19/$307, MILK 8/$1882, STRAWBERRY 6/$236, WHEAT 35/$1592 | 1496 |
+| 27 | 95104 | 3 | 12 | {'STRAWBERRY': 3, 'WHEAT': 39} | {'COW': 7, 'SHEEP': 9} | - | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 64, 'WOOL': 20} | FERTILIZER 29/$271, MILK 18/$4340, STRAWBERRY 16/$365, WHEAT 11/$506, WOOL 24/$5786 | 652 |
+| 28 | 102816 | 3 | 10 | {'WHEAT': 24} | {'COW': 7, 'SHEEP': 9} | - | {'MILK': 9, 'WHEAT': 60, 'WOOL': 8} | FERTILIZER 18/$28, MILK 14/$3344, STRAWBERRY 6/$174, WHEAT 55/$2519, WOOL 8/$1922 | 275 |
+| 29 | 113353 | 3 | 10 | {'WHEAT': 1} | {'COW': 7, 'SHEEP': 9} | - | {'MILK': 11, 'WHEAT': 79, 'WOOL': 7} | FERTILIZER 19/$19, MILK 11/$2643, WHEAT 154/$6324, WOOL 7/$1694 | 143 |
+
+## Dmitry Larko — rating 3151.6
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91843967 | THUNDER THUNDER | win | 91941 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 74 |
+| 91843968 | Ueddy | loss | 83976 | [6, 10] | {'COW': 10, 'SHEEP': 6} | 14 | 73 |
+| 91853248 | TIM | win | 80318 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 75 |
+| 91860677 | Victor @ Tufa Labs | loss | 98767 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91869967 | Valmorlee | win | 72844 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 74 |
+
+### Daily timelines
+
+#### Episode 91843967 vs THUNDER THUNDER
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 184 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 331 |
+| 3 | 200 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 470 |
+| 4 | 656 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$477, WHEAT 3/$97 | 118 |
+| 5 | 532 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$468, WHEAT 14/$440 | 1032 |
+| 6 | 89 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$728, WHEAT 1/$33, WOOL 5/$1076 | 2280 |
+| 7 | 789 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WHEAT 2/$70, WOOL 15/$2636 | 2271 |
+| 8 | 262 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$608, WHEAT 6/$210 | 1345 |
+| 9 | 2225 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$836, MILK 6/$1204, WHEAT 10/$349 | 426 |
+| 10 | 5851 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 12} | {'MELON': 30, 'MILK': 3} | MELON 30/$7504, WOOL 16/$1794 | 5672 |
+| 11 | 7301 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$963, MILK 3/$618, WHEAT 7/$264 | 395 |
+| 12 | 7599 | 3 | 11 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$682, WHEAT 10/$377, WOOL 12/$276 | 1037 |
+| 13 | 9449 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$863, MILK 3/$632, WHEAT 23/$852, WOOL 4/$4 | 501 |
+| 14 | 11969 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$543, MILK 6/$1263, STRAWBERRY 6/$1311, WHEAT 2/$76 | 673 |
+| 15 | 16501 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$641, MILK 21/$3980, WHEAT 6/$234 | 323 |
+| 16 | 19701 | 3 | 14 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 4, 'WHEAT': 32} | MILK 9/$1346, STRAWBERRY 12/$2702, WHEAT 10/$396, WOOL 16/$47 | 1291 |
+| 17 | 23844 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$536, MILK 18/$2332, STRAWBERRY 4/$920, WHEAT 23/$883 | 528 |
+| 18 | 30069 | 3 | 12 | {'MELON': 13, 'STRAWBERRY': 32, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$449, MILK 18/$1142, STRAWBERRY 28/$6501, WHEAT 12/$487 | 1745 |
+| 19 | 33606 | 3 | 13 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 14/$733, STRAWBERRY 12/$2706, WHEAT 9/$378, WOOL 16/$47 | 936 |
+| 20 | 48891 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 29, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 20} | MELON 60/$9063, MILK 12/$271, STRAWBERRY 34/$7451, WHEAT 17/$728 | 1983 |
+| 21 | 52140 | 3 | 12 | {'STRAWBERRY': 27, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 6, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$264, MELON 18/$126, MILK 12/$164, STRAWBERRY 18/$3852, WHEAT 8/$340, WOOL 8/$8 | 904 |
+| 22 | 60503 | 3 | 11 | {'STRAWBERRY': 24, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 35} | FERTILIZER 13/$637, STRAWBERRY 38/$7633, WHEAT 2/$90, WOOL 8/$8 | 896 |
+| 23 | 65088 | 3 | 14 | {'STRAWBERRY': 16, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$187, MILK 20/$300, STRAWBERRY 27/$5148, WHEAT 6/$276 | 1281 |
+| 24 | 72917 | 3 | 11 | {'STRAWBERRY': 12, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$551, MILK 9/$123, STRAWBERRY 32/$5537, WHEAT 40/$1834, WOOL 4/$231 | 408 |
+| 25 | 75768 | 3 | 12 | {'STRAWBERRY': 12, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$455, MILK 9/$175, STRAWBERRY 12/$1879, WHEAT 22/$975, WOOL 12/$26 | 698 |
+| 26 | 77471 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 24, 'WHEAT': 8} | FERTILIZER 24/$756, MILK 5/$25, STRAWBERRY 6/$883, WHEAT 23/$1033 | 994 |
+| 27 | 82807 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 17/$431, MILK 18/$275, STRAWBERRY 24/$3650, WHEAT 6/$270, WOOL 8/$1078 | 368 |
+| 28 | 85881 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 14/$237, MILK 8/$86, WHEAT 54/$2388, WOOL 8/$550 | 187 |
+| 29 | 91941 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 21/$231, MILK 27/$161, WHEAT 143/$5811 | 143 |
+
+#### Episode 91843968 vs Ueddy
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 86 | 1 | 4 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 4, 'WHEAT': 5} | - | WHEAT 14/$410 | 3324 |
+| 1 | 86 | 1 | 0 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 0 |
+| 2 | 252 | 1 | 2 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 266 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 722 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476, WHEAT 3/$99 | 119 |
+| 5 | 600 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 14/$445 | 1033 |
+| 6 | 28 | 2 | 4 | {'MELON': 4, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WHEAT 1/$33, WOOL 5/$1051 | 2381 |
+| 7 | 869 | 2 | 7 | {'MELON': 4, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WHEAT 2/$72, WOOL 15/$2682 | 2178 |
+| 8 | 341 | 2 | 6 | {'MELON': 4, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 6/$219 | 1352 |
+| 9 | 2141 | 2 | 7 | {'MELON': 4, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 9/$326 | 406 |
+| 10 | 3993 | 3 | 14 | {'MELON': 7, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 6} | {'MELON': 7, 'STRAWBERRY': 8, 'WHEAT': 1} | {'MELON': 24, 'MILK': 3} | MELON 24/$5985, WOOL 16/$2111 | 6244 |
+| 11 | 5189 | 3 | 10 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 6} | {'STRAWBERRY': 3, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 15/$1155, MILK 3/$462, WHEAT 7/$273 | 694 |
+| 12 | 7108 | 3 | 11 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 12} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 7} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 12/$870, WHEAT 9/$360, WOOL 12/$2153 | 1464 |
+| 13 | 9199 | 3 | 9 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 2} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 17/$1143, MILK 3/$462, WHEAT 17/$659, WOOL 4/$590 | 763 |
+| 14 | 11303 | 3 | 11 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 6} | - | {'MILK': 9} | FERTILIZER 13/$814, MILK 6/$930, STRAWBERRY 6/$1279 | 919 |
+| 15 | 17853 | 3 | 12 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 16/$935, MILK 27/$3061, WHEAT 6/$252, WOOL 16/$3010 | 708 |
+| 16 | 22167 | 3 | 14 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 12} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 7} | {'MILK': 18, 'STRAWBERRY': 2, 'WHEAT': 28, 'WOOL': 11} | FERTILIZER 4/$224, MILK 3/$177, STRAWBERRY 14/$3078, WHEAT 13/$553, WOOL 11/$1620 | 1338 |
+| 17 | 25168 | 3 | 12 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 3} | {'MILK': 12, 'STRAWBERRY': 28, 'WHEAT': 8} | FERTILIZER 15/$783, MILK 24/$170, STRAWBERRY 12/$2665, WHEAT 6/$254 | 871 |
+| 18 | 30807 | 3 | 12 | {'MELON': 7, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 10, 'SHEEP': 6} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 13/$622, MILK 6/$8, STRAWBERRY 18/$3863, WOOL 12/$2264 | 1118 |
+| 19 | 37156 | 3 | 14 | {'MELON': 7, 'STRAWBERRY': 28, 'WHEAT': 16} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 7} | {'MILK': 12, 'STRAWBERRY': 34, 'WHEAT': 16, 'WOOL': 8} | FERTILIZER 5/$230, MILK 21/$77, STRAWBERRY 26/$5486, WHEAT 8/$360, WOOL 12/$1582 | 1386 |
+| 20 | 44768 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 28, 'WHEAT': 28} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 13} | {'MELON': 36, 'MILK': 15, 'STRAWBERRY': 6, 'WHEAT': 8} | FERTILIZER 5/$225, MELON 30/$5248, MILK 15/$53, STRAWBERRY 20/$3868, WHEAT 6/$276 | 2058 |
+| 21 | 50571 | 3 | 14 | {'STRAWBERRY': 24, 'WHEAT': 33} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 13} | {'MELON': 6, 'MILK': 15, 'STRAWBERRY': 43, 'WHEAT': 10, 'WOOL': 16} | FERTILIZER 14/$593, MELON 6/$517, MILK 15/$35, STRAWBERRY 16/$3081, WHEAT 6/$282, WOOL 16/$2966 | 1671 |
+| 22 | 56412 | 3 | 12 | {'STRAWBERRY': 22, 'WHEAT': 34} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 1} | {'MILK': 15, 'STRAWBERRY': 24, 'WOOL': 8} | FERTILIZER 15/$549, MELON 6/$238, MILK 15/$59, STRAWBERRY 33/$5355, WOOL 4/$778 | 1138 |
+| 23 | 59988 | 3 | 14 | {'STRAWBERRY': 15, 'WHEAT': 41} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 14} | {'MILK': 12, 'STRAWBERRY': 24, 'WHEAT': 28} | FERTILIZER 14/$449, MILK 15/$17, STRAWBERRY 24/$2799, WHEAT 19/$931, WOOL 4/$778 | 1398 |
+| 24 | 63917 | 3 | 14 | {'STRAWBERRY': 10, 'WHEAT': 45} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 17} | {'MILK': 19, 'STRAWBERRY': 16, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 14/$401, MILK 15/$47, STRAWBERRY 26/$1119, WHEAT 21/$1029, WOOL 12/$2743 | 1410 |
+| 25 | 67802 | 3 | 14 | {'STRAWBERRY': 10, 'WHEAT': 46} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 8, 'WHEAT': 47, 'WOOL': 8} | FERTILIZER 12/$285, MILK 10/$52, STRAWBERRY 14/$206, WHEAT 44/$2134, WOOL 12/$2698 | 1490 |
+| 26 | 67842 | 3 | 13 | {'STRAWBERRY': 2, 'WHEAT': 55} | {'COW': 10, 'SHEEP': 6} | {'WHEAT': 11} | {'MILK': 18, 'STRAWBERRY': 16, 'WHEAT': 4} | FERTILIZER 11/$216, MILK 3/$5, STRAWBERRY 8/$362, WHEAT 19/$900 | 1443 |
+| 27 | 71223 | 3 | 12 | {'STRAWBERRY': 2, 'WHEAT': 41} | {'COW': 10, 'SHEEP': 6} | - | {'MILK': 11, 'STRAWBERRY': 3, 'WHEAT': 54, 'WOOL': 16} | FERTILIZER 20/$251, MILK 29/$95, STRAWBERRY 16/$690, WHEAT 29/$1421, WOOL 8/$1888 | 964 |
+| 28 | 77553 | 3 | 10 | {'WHEAT': 25} | {'COW': 10, 'SHEEP': 6} | - | {'MILK': 18, 'WHEAT': 68, 'WOOL': 8} | FERTILIZER 26/$122, MILK 18/$36, STRAWBERRY 3/$147, WHEAT 55/$2630, WOOL 16/$3730 | 335 |
+| 29 | 83976 | 3 | 10 | {'WHEAT': 2} | {'COW': 10, 'SHEEP': 6} | - | {'MILK': 14, 'WHEAT': 78} | FERTILIZER 18/$18, MILK 14/$64, WHEAT 146/$6484 | 143 |
+
+#### Episode 91853248 vs TIM
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 90 | 1 | 4 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 4, 'WHEAT': 5} | - | WHEAT 14/$421 | 3331 |
+| 1 | 89 | 1 | 1 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 255 | 1 | 2 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 269 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 725 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476, WHEAT 3/$99 | 119 |
+| 5 | 601 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 14/$443 | 1033 |
+| 6 | 186 | 2 | 4 | {'MELON': 4, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WHEAT 1/$33, WOOL 5/$1106 | 2279 |
+| 7 | 1239 | 2 | 7 | {'MELON': 4, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WHEAT 2/$70, WOOL 15/$2993 | 2275 |
+| 8 | 712 | 2 | 6 | {'MELON': 4, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 6/$215 | 1347 |
+| 9 | 2512 | 2 | 7 | {'MELON': 4, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 10/$353 | 433 |
+| 10 | 5725 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 16} | {'MELON': 24, 'MILK': 3} | MELON 24/$6018, WOOL 16/$3353 | 6158 |
+| 11 | 7077 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$927, MILK 3/$558, WHEAT 7/$268 | 401 |
+| 12 | 9750 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$661, WHEAT 10/$387, WOOL 12/$2666 | 1041 |
+| 13 | 12324 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$827, MILK 3/$588, WHEAT 23/$872, WOOL 4/$804 | 517 |
+| 14 | 14593 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$530, MILK 6/$1161, STRAWBERRY 6/$1191, WHEAT 2/$80 | 693 |
+| 15 | 18487 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$617, MILK 21/$3359, WHEAT 6/$246 | 328 |
+| 16 | 24585 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 4, 'WHEAT': 32} | MILK 9/$911, STRAWBERRY 12/$2422, WHEAT 10/$406, WOOL 16/$3658 | 1299 |
+| 17 | 27357 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$520, MILK 18/$1068, STRAWBERRY 4/$803, WHEAT 23/$928 | 547 |
+| 18 | 32070 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$443, MILK 18/$198, STRAWBERRY 28/$5384, WHEAT 12/$501 | 1772 |
+| 19 | 37571 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 14/$38, STRAWBERRY 12/$2194, WHEAT 9/$387, WOOL 16/$3787 | 946 |
+| 20 | 51373 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 20} | MELON 60/$9848, MILK 12/$44, STRAWBERRY 34/$5469, WHEAT 17/$739 | 1994 |
+| 21 | 55911 | 3 | 12 | {'STRAWBERRY': 31, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 40, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$261, MELON 18/$126, MILK 12/$30, STRAWBERRY 26/$3050, WHEAT 8/$345, WOOL 8/$1929 | 914 |
+| 22 | 59433 | 3 | 11 | {'STRAWBERRY': 28, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 43} | FERTILIZER 13/$622, MELON 6/$6, STRAWBERRY 40/$1149, WHEAT 2/$91, WOOL 8/$1922 | 907 |
+| 23 | 58678 | 3 | 14 | {'STRAWBERRY': 20, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$183, MILK 20/$76, STRAWBERRY 33/$41, WHEAT 6/$277 | 1286 |
+| 24 | 62189 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 30, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$546, MILK 9/$29, STRAWBERRY 36/$533, WHEAT 40/$1840, WOOL 4/$976 | 408 |
+| 25 | 65896 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$438, MILK 9/$33, STRAWBERRY 16/$16, WHEAT 22/$996, WOOL 12/$2920 | 701 |
+| 26 | 66668 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 8} | FERTILIZER 16/$509, MILK 5/$5, STRAWBERRY 6/$225, WHEAT 23/$1032 | 999 |
+| 27 | 69761 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 17/$428, MILK 18/$68, STRAWBERRY 32/$724, WHEAT 6/$282, WOOL 8/$1964 | 373 |
+| 28 | 74287 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 15/$288, MILK 8/$24, WHEAT 54/$2441, WOOL 8/$1960 | 187 |
+| 29 | 80318 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 20/$239, MILK 27/$51, WHEAT 143/$5884 | 143 |
+
+#### Episode 91860677 vs Victor @ Tufa Labs
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 75 | 1 | 4 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 4, 'WHEAT': 5} | - | WHEAT 14/$412 | 3337 |
+| 1 | 74 | 1 | 1 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 240 | 1 | 2 | {'MELON': 4, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 254 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 710 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476, WHEAT 3/$99 | 119 |
+| 5 | 588 | 1 | 3 | {'MELON': 4, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 14/$445 | 1033 |
+| 6 | 84 | 2 | 4 | {'MELON': 4, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2280 |
+| 7 | 860 | 2 | 7 | {'MELON': 4, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WHEAT 2/$70, WOOL 15/$2682 | 2241 |
+| 8 | 334 | 2 | 6 | {'MELON': 4, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 6/$216 | 1347 |
+| 9 | 2371 | 2 | 7 | {'MELON': 4, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$839, MILK 6/$1275, WHEAT 9/$319 | 396 |
+| 10 | 3459 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 24, 'MILK': 3} | MELON 24/$5993, WOOL 16/$1252 | 6157 |
+| 11 | 4899 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$906, MILK 3/$677, WHEAT 9/$342 | 485 |
+| 12 | 5475 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$646, MILK 3/$717, WHEAT 9/$342, WOOL 4/$14 | 412 |
+| 13 | 7384 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$810, WHEAT 22/$824, WOOL 12/$12 | 468 |
+| 14 | 9897 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$516, MILK 6/$1462, STRAWBERRY 6/$1080 | 545 |
+| 15 | 16184 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$550, MILK 24/$5843, WHEAT 6/$234, WOOL 8/$383 | 723 |
+| 16 | 23168 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4934, STRAWBERRY 14/$2565, WHEAT 10/$391, WOOL 8/$8 | 914 |
+| 17 | 25047 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$518, MILK 3/$666, STRAWBERRY 2/$363, WHEAT 22/$852 | 520 |
+| 18 | 31560 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$433, MILK 18/$4105, STRAWBERRY 28/$4752, WHEAT 2/$80 | 787 |
+| 19 | 37457 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$669, STRAWBERRY 26/$3849, WHEAT 8/$328, WOOL 16/$1918 | 935 |
+| 20 | 53959 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$9218, MILK 23/$5270, STRAWBERRY 20/$1516, WHEAT 15/$627 | 1930 |
+| 21 | 59161 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$356, MELON 12/$39, MILK 15/$3384, STRAWBERRY 28/$756, WHEAT 7/$291, WOOL 16/$1664 | 819 |
+| 22 | 59709 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 30} | FERTILIZER 11/$521, MELON 12/$12, STRAWBERRY 34/$46 | 701 |
+| 23 | 62832 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 28, 'WHEAT': 28} | FERTILIZER 8/$345, MILK 15/$3468, STRAWBERRY 36/$410, WHEAT 9/$396 | 1364 |
+| 24 | 67209 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$425, MILK 11/$2560, STRAWBERRY 32/$194, WHEAT 32/$1408 | 342 |
+| 25 | 73515 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 14, 'WHEAT': 39} | FERTILIZER 13/$442, MILK 14/$3224, STRAWBERRY 10/$12, WHEAT 22/$951, WOOL 16/$2343 | 666 |
+| 26 | 75871 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 16/$453, MILK 5/$1134, STRAWBERRY 14/$187, WHEAT 27/$1156 | 574 |
+| 27 | 81286 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$348, MILK 18/$4246, STRAWBERRY 26/$322, WHEAT 23/$989 | 490 |
+| 28 | 90125 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 21/$337, MILK 17/$3969, STRAWBERRY 6/$47, WHEAT 51/$2132, WOOL 16/$2577 | 223 |
+| 29 | 98767 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 8/$81, MILK 18/$4115, WHEAT 131/$4589 | 143 |
+
+#### Episode 91869967 vs Valmorlee
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 187 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 328 |
+| 3 | 203 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 470 |
+| 4 | 658 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$477, WHEAT 3/$96 | 118 |
+| 5 | 536 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 6, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$468, WHEAT 14/$432 | 1022 |
+| 6 | 80 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$730, WHEAT 1/$32, WOOL 5/$1051 | 2269 |
+| 7 | 871 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 17, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$268, WHEAT 2/$68, WOOL 15/$2715 | 2260 |
+| 8 | 349 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$612, WHEAT 6/$204 | 1338 |
+| 9 | 2167 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$843, MILK 6/$1050, WHEAT 10/$341 | 416 |
+| 10 | 5791 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 10} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WOOL 16/$1673 | 5461 |
+| 11 | 7093 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$975, MILK 3/$462, WHEAT 7/$259 | 394 |
+| 12 | 7402 | 3 | 11 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$691, WHEAT 10/$376, WOOL 12/$276 | 1034 |
+| 13 | 9074 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$875, MILK 3/$462, WHEAT 23/$832, WOOL 4/$4 | 501 |
+| 14 | 11175 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$548, MILK 6/$930, STRAWBERRY 6/$1221, WHEAT 2/$78 | 676 |
+| 15 | 14237 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$646, MILK 21/$2499, WHEAT 6/$240 | 323 |
+| 16 | 16443 | 3 | 14 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 9/$590, STRAWBERRY 12/$2498, WHEAT 10/$398, WOOL 16/$16 | 1296 |
+| 17 | 18380 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 26, 'WHEAT': 4} | FERTILIZER 9/$553, MILK 18/$595, STRAWBERRY 2/$426, WHEAT 23/$901 | 538 |
+| 18 | 23085 | 3 | 12 | {'MELON': 13, 'STRAWBERRY': 29, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$463, MILK 18/$179, STRAWBERRY 26/$5441, WHEAT 12/$499 | 1768 |
+| 19 | 25311 | 3 | 13 | {'MELON': 13, 'STRAWBERRY': 26, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 32, 'WHEAT': 16} | MILK 14/$194, STRAWBERRY 12/$2444, WHEAT 9/$387, WOOL 16/$37 | 945 |
+| 20 | 39240 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 26, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 6, 'WHEAT': 20} | MELON 60/$9061, MILK 12/$182, STRAWBERRY 32/$6137, WHEAT 17/$745 | 1995 |
+| 21 | 41229 | 3 | 12 | {'STRAWBERRY': 24, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 6, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$272, MELON 18/$45, MILK 12/$140, STRAWBERRY 14/$2639, WHEAT 8/$350, WOOL 8/$8 | 916 |
+| 22 | 47867 | 3 | 11 | {'STRAWBERRY': 22, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 31} | FERTILIZER 13/$668, STRAWBERRY 36/$5987, WHEAT 2/$92, WOOL 8/$8 | 913 |
+| 23 | 50719 | 3 | 14 | {'STRAWBERRY': 14, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$189, MILK 20/$304, STRAWBERRY 25/$3411, WHEAT 6/$282 | 1288 |
+| 24 | 55667 | 3 | 11 | {'STRAWBERRY': 10, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 18, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$555, MILK 9/$138, STRAWBERRY 28/$2769, WHEAT 40/$1880, WOOL 4/$35 | 408 |
+| 25 | 57755 | 3 | 12 | {'STRAWBERRY': 10, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$463, MILK 9/$194, STRAWBERRY 12/$1089, WHEAT 22/$1015, WOOL 12/$12 | 706 |
+| 26 | 59601 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 20, 'WHEAT': 8} | FERTILIZER 29/$951, MILK 5/$35, STRAWBERRY 6/$807, WHEAT 23/$1058 | 1005 |
+| 27 | 63355 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 13/$337, MILK 18/$530, STRAWBERRY 20/$2975, WHEAT 6/$282, WOOL 8/$8 | 378 |
+| 28 | 66120 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 13/$280, MILK 8/$147, WHEAT 54/$2518, WOOL 8/$8 | 188 |
+| 29 | 72844 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 27/$419, MILK 27/$371, WHEAT 143/$6077 | 143 |
+
+## Abracadabra — rating 3148.0
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91856955 | Hak | win | 52866 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91866168 | Erfan Eshratifar | loss | 83503 | [6, 10] | {'COW': 7, 'SHEEP': 4} | 14 | 71 |
+| 91866192 | Jince | win | 72289 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91870920 | Ueddy | win | 65914 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+
+### Daily timelines
+
+#### Episode 91856955 vs Hak
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 7 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2993 |
+| 1 | 6 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 172 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 186 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 518 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 14 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2280 |
+| 7 | 720 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2241 |
+| 8 | 48 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$70 | 1347 |
+| 9 | 1989 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 13/$457 | 396 |
+| 10 | 4725 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$72, WOOL 16/$1252 | 6000 |
+| 11 | 4876 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$927, MILK 3/$558 | 407 |
+| 12 | 5369 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$661, MILK 3/$582, WHEAT 10/$374, WOOL 4/$14 | 808 |
+| 13 | 7055 | 3 | 8 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$827, WHEAT 25/$916, WOOL 12/$12 | 499 |
+| 14 | 9652 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$523, MILK 6/$1161, STRAWBERRY 6/$1034, WHEAT 9/$338 | 725 |
+| 15 | 14168 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$558, MILK 24/$3701, WHEAT 3/$114, WOOL 8/$383 | 432 |
+| 16 | 18008 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$1642, STRAWBERRY 14/$2350, WHEAT 13/$494, WOOL 8/$8 | 1023 |
+| 17 | 18844 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$524, MILK 3/$90, STRAWBERRY 2/$319, WHEAT 25/$931 | 504 |
+| 18 | 21858 | 3 | 11 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$439, MILK 18/$198, STRAWBERRY 28/$3446, WHEAT 8/$307 | 1420 |
+| 19 | 24746 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 26/$1015, WHEAT 1/$39, WOOL 16/$2586 | 922 |
+| 20 | 31764 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 54/$8410, MILK 14/$38, STRAWBERRY 24/$66, WHEAT 11/$429 | 1934 |
+| 21 | 35699 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$470, MELON 6/$114, MILK 21/$23, STRAWBERRY 20/$58, WHEAT 20/$778, WOOL 16/$3604 | 1105 |
+| 22 | 35324 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 12/$570, MELON 12/$12, MILK 3/$3, STRAWBERRY 36/$38 | 739 |
+| 23 | 34755 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 11/$480, MILK 12/$12, STRAWBERRY 44/$116 | 1218 |
+| 24 | 38787 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 11/$434, MILK 21/$59, STRAWBERRY 22/$54, WHEAT 18/$720, WOOL 12/$2832 | 442 |
+| 25 | 40782 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 13} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 14/$479, MILK 11/$53, STRAWBERRY 8/$8, WHEAT 37/$1448, WOOL 4/$933 | 683 |
+| 26 | 41969 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 8/$244, MILK 3/$3, STRAWBERRY 18/$59, WHEAT 31/$1113 | 629 |
+| 27 | 46700 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$475, MILK 12/$36, STRAWBERRY 20/$74, WHEAT 3/$108, WOOL 18/$4325 | 287 |
+| 28 | 49403 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 18/$335, MILK 15/$31, STRAWBERRY 8/$20, WHEAT 48/$1636, WOOL 4/$952 | 271 |
+| 29 | 52866 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 22/$234, MILK 26/$54, WHEAT 143/$3263 | 88 |
+
+#### Episode 91866168 vs Erfan Eshratifar
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 24 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2976 |
+| 1 | 23 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 188 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 3} | - | - | FERTILIZER 5/$493 | 328 |
+| 3 | 103 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 3} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$387 | 472 |
+| 4 | 365 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 3} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 4/$381 | 119 |
+| 5 | 241 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 3} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 4/$373, WHEAT 17/$536 | 1033 |
+| 6 | 47 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 3} | {'STRAWBERRY': 2} | {'WOOL': 15} | FERTILIZER 7/$636, WOOL 5/$1051 | 1881 |
+| 7 | 17 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 17, 'WHEAT': 10} | {'COW': 5, 'SHEEP': 3} | {'STRAWBERRY': 9, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 2/$179, WOOL 10/$1896 | 2105 |
+| 8 | 8 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 6/$521, WHEAT 2/$70 | 600 |
+| 9 | 1787 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 12} | FERTILIZER 8/$668, MILK 6/$1050, WHEAT 13/$460 | 399 |
+| 10 | 4723 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$74, WOOL 12/$1465 | 6015 |
+| 11 | 4759 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$947, MILK 3/$451 | 415 |
+| 12 | 5278 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 12} | FERTILIZER 9/$675, MILK 3/$442, WHEAT 10/$390, WOOL 4/$4 | 818 |
+| 13 | 6857 | 3 | 8 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$846, WHEAT 25/$980, WOOL 8/$8 | 530 |
+| 14 | 9345 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | - | {'MILK': 9} | FERTILIZER 5/$336, MILK 6/$733, STRAWBERRY 6/$1362, WHEAT 9/$365 | 777 |
+| 15 | 11229 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 12} | FERTILIZER 9/$579, MILK 24/$1610, WHEAT 3/$126, WOOL 4/$35 | 462 |
+| 16 | 14504 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 8} | {'MILK': 12, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 9/$21, STRAWBERRY 14/$3374, WHEAT 13/$549, WOOL 8/$8 | 1058 |
+| 17 | 15483 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 4} | FERTILIZER 8/$483, MILK 3/$3, STRAWBERRY 2/$486, WHEAT 25/$1052 | 562 |
+| 18 | 20202 | 3 | 11 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | - | {'MILK': 9, 'STRAWBERRY': 10, 'WOOL': 12} | FERTILIZER 7/$401, MILK 15/$17, STRAWBERRY 22/$5398, WHEAT 8/$350 | 1521 |
+| 19 | 22159 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 32, 'WHEAT': 16} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 7} | {'MILK': 9, 'STRAWBERRY': 26, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 18/$4458, WHEAT 1/$45, WOOL 12/$12 | 964 |
+| 20 | 35272 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 32, 'WHEAT': 26} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 9, 'STRAWBERRY': 12, 'WHEAT': 20} | MELON 54/$7921, MILK 9/$9, STRAWBERRY 20/$4897, WHEAT 11/$497 | 2016 |
+| 21 | 40128 | 3 | 13 | {'STRAWBERRY': 28, 'WHEAT': 32} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 3, 'WOOL': 12} | FERTILIZER 9/$494, MELON 6/$33, MILK 15/$17, STRAWBERRY 19/$4664, WHEAT 20/$920, WOOL 12/$43 | 1190 |
+| 22 | 46271 | 3 | 10 | {'STRAWBERRY': 26, 'WHEAT': 33} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 21} | FERTILIZER 5/$253, MELON 12/$12, MILK 3/$3, STRAWBERRY 28/$6665 | 863 |
+| 23 | 50110 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 28} | FERTILIZER 1/$49, MILK 9/$65, STRAWBERRY 36/$8272 | 1252 |
+| 24 | 59033 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 12} | FERTILIZER 11/$511, MILK 18/$30, STRAWBERRY 20/$4574, WHEAT 18/$887, WOOL 12/$12 | 460 |
+| 25 | 62227 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 10/$413, MILK 6/$48, STRAWBERRY 8/$1793, WHEAT 37/$1817 | 741 |
+| 26 | 67010 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 7/$259, MILK 3/$3, STRAWBERRY 15/$3491, WHEAT 31/$1519 | 804 |
+| 27 | 72039 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 7, 'SHEEP': 4} | - | {'MILK': 9, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 18} | FERTILIZER 13/$424, MILK 12/$68, STRAWBERRY 20/$4681, WHEAT 3/$150, WOOL 18/$49 | 343 |
+| 28 | 76398 | 3 | 10 | {'WHEAT': 23} | {'COW': 7, 'SHEEP': 4} | - | {'MILK': 9, 'WHEAT': 60} | FERTILIZER 13/$335, MILK 12/$22, STRAWBERRY 8/$1942, WHEAT 48/$2400 | 340 |
+| 29 | 83503 | 3 | 9 | {'WHEAT': 2} | {'COW': 7, 'SHEEP': 4} | - | {'MILK': 15, 'WHEAT': 74} | FERTILIZER 17/$341, MILK 18/$22, WHEAT 144/$6830 | 88 |
+
+#### Episode 91866192 vs Jince
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 4 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2996 |
+| 1 | 3 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 169 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 184 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 471 |
+| 4 | 542 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 118 |
+| 5 | 509 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$525 | 1024 |
+| 6 | 11 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2274 |
+| 7 | 732 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2226 |
+| 8 | 64 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$68 | 1341 |
+| 9 | 2004 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 13/$448 | 388 |
+| 10 | 4741 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 16/$1252 | 5997 |
+| 11 | 4798 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$957, MILK 3/$462 | 405 |
+| 12 | 5322 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$677, MILK 3/$436, WHEAT 10/$376, WOOL 4/$14 | 809 |
+| 13 | 6883 | 3 | 8 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$855, WHEAT 25/$928, WOOL 12/$12 | 506 |
+| 14 | 9302 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$535, MILK 6/$771, STRAWBERRY 6/$1228, WHEAT 9/$347 | 743 |
+| 15 | 11427 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$568, MILK 24/$1656, WHEAT 3/$120, WOOL 8/$29 | 446 |
+| 16 | 14347 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$71, STRAWBERRY 14/$2984, WHEAT 13/$523, WOOL 8/$8 | 1042 |
+| 17 | 15248 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$540, MILK 3/$3, STRAWBERRY 2/$433, WHEAT 25/$1000 | 535 |
+| 18 | 20655 | 3 | 11 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$452, MILK 18/$50, STRAWBERRY 28/$6005, WHEAT 8/$333 | 1480 |
+| 19 | 22806 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 26/$5518, WHEAT 1/$42, WOOL 16/$26 | 947 |
+| 20 | 37209 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 54/$8410, MILK 14/$38, STRAWBERRY 24/$4790, WHEAT 11/$473 | 1988 |
+| 21 | 41564 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$476, MELON 6/$114, MILK 21/$77, STRAWBERRY 20/$3949, WHEAT 20/$876, WOOL 16/$37 | 1164 |
+| 22 | 47399 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 12/$591, MELON 12/$12, MILK 3/$3, STRAWBERRY 36/$6333 | 827 |
+| 23 | 50625 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 11/$491, MILK 12/$44, STRAWBERRY 44/$6156 | 1244 |
+| 24 | 55826 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 11/$433, MILK 21/$119, STRAWBERRY 22/$1577, WHEAT 18/$846, WOOL 12/$22 | 456 |
+| 25 | 57643 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 13} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 14/$493, MILK 11/$72, STRAWBERRY 8/$499, WHEAT 37/$1734, WOOL 4/$4 | 728 |
+| 26 | 60492 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 8/$239, MILK 3/$9, STRAWBERRY 18/$1503, WHEAT 31/$1457 | 768 |
+| 27 | 62597 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$465, MILK 12/$161, STRAWBERRY 20/$1632, WHEAT 3/$141, WOOL 18/$39 | 333 |
+| 28 | 65738 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 18/$306, MILK 15/$99, STRAWBERRY 8/$790, WHEAT 48/$2273, WOOL 4/$4 | 331 |
+| 29 | 72289 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 22/$198, MILK 26/$93, WHEAT 143/$6348 | 88 |
+
+#### Episode 91870920 vs Ueddy
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 4 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2996 |
+| 1 | 3 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 169 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 184 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 471 |
+| 4 | 542 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 118 |
+| 5 | 509 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$525 | 1024 |
+| 6 | 11 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2274 |
+| 7 | 732 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2226 |
+| 8 | 64 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$68 | 1341 |
+| 9 | 2002 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 13/$445 | 387 |
+| 10 | 5452 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 16/$2111 | 6143 |
+| 11 | 5510 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$899, MILK 3/$462 | 404 |
+| 12 | 5971 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$639, MILK 3/$436, WHEAT 10/$368, WOOL 4/$804 | 806 |
+| 13 | 10399 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$798, WHEAT 25/$898, WOOL 12/$2140 | 489 |
+| 14 | 12650 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$503, MILK 6/$771, STRAWBERRY 6/$1101, WHEAT 9/$329 | 711 |
+| 15 | 16723 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$536, MILK 24/$1820, WHEAT 3/$114, WOOL 8/$1848 | 430 |
+| 16 | 21193 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$270, STRAWBERRY 14/$2565, WHEAT 13/$489, WOOL 8/$1810 | 1019 |
+| 17 | 21976 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$502, MILK 3/$3, STRAWBERRY 2/$363, WHEAT 25/$914 | 497 |
+| 18 | 26157 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$420, MILK 18/$142, STRAWBERRY 28/$4752, WHEAT 8/$301 | 1407 |
+| 19 | 31447 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 26/$3898, WHEAT 1/$38, WOOL 16/$3787 | 915 |
+| 20 | 42463 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$8566, MILK 14/$100, STRAWBERRY 24/$1903, WHEAT 11/$418 | 1927 |
+| 21 | 47248 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$449, MELON 12/$12, MILK 21/$53, STRAWBERRY 20/$949, WHEAT 20/$761, WOOL 16/$3861 | 1097 |
+| 22 | 46902 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 12/$541, MELON 12/$12, MILK 3/$3, STRAWBERRY 36/$74 | 732 |
+| 23 | 46557 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 11/$462, MILK 12/$112, STRAWBERRY 44/$409 | 1216 |
+| 24 | 51105 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 11/$417, MILK 21/$220, STRAWBERRY 22/$188, WHEAT 18/$706, WOOL 12/$2952 | 440 |
+| 25 | 53191 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 13} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 14/$455, MILK 11/$145, STRAWBERRY 8/$10, WHEAT 37/$1402, WOOL 4/$984 | 681 |
+| 26 | 54491 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 8/$230, MILK 3/$7, STRAWBERRY 18/$191, WHEAT 31/$1113 | 618 |
+| 27 | 59650 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$466, MILK 12/$161, STRAWBERRY 20/$212, WHEAT 3/$106, WOOL 18/$4500 | 286 |
+| 28 | 62485 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 18/$324, MILK 15/$87, STRAWBERRY 8/$168, WHEAT 48/$1525, WOOL 4/$996 | 265 |
+| 29 | 65914 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 22/$221, MILK 26/$107, WHEAT 144/$3189 | 88 |
+
+## Ueddy — rating 3144.7
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91843968 | Dmitry Larko | win | 90218 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91853247 | Freddy | win | 73105 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91853249 | THUNDER THUNDER | loss | 81208 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91861610 | Feng Jiahui | win | 107260 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91870920 | Abracadabra | loss | 65325 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+
+### Daily timelines
+
+#### Episode 91843968 vs Dmitry Larko
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 5 | 1 | 5 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2995 |
+| 1 | 4 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 170 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 184 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 541 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 511 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$537 | 1033 |
+| 6 | 6 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 707 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 251 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$291 | 1352 |
+| 9 | 1977 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 7/$252 | 406 |
+| 10 | 5444 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7453, WHEAT 2/$74, WOOL 16/$2111 | 6171 |
+| 11 | 6447 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$957, MILK 3/$462, WHEAT 2/$78 | 494 |
+| 12 | 7129 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$671, MILK 3/$487, WHEAT 11/$430, WOOL 4/$661 | 419 |
+| 13 | 11063 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$841, WHEAT 24/$937, WOOL 12/$1500 | 492 |
+| 14 | 13336 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$517, MILK 6/$930, STRAWBERRY 6/$1279, WHEAT 3/$120 | 573 |
+| 15 | 17008 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$535, MILK 24/$2531, WOOL 8/$1342 | 736 |
+| 16 | 21926 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$1024, STRAWBERRY 14/$3008, WHEAT 16/$678, WOOL 8/$1137 | 929 |
+| 17 | 23153 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$491, MILK 3/$65, STRAWBERRY 2/$436, WHEAT 19/$798 | 563 |
+| 18 | 28810 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$399, MILK 18/$62, STRAWBERRY 28/$5917, WHEAT 5/$217 | 843 |
+| 19 | 33262 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 26/$5350, WHEAT 8/$365, WOOL 16/$2479 | 964 |
+| 20 | 49386 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$11273, MILK 23/$23, STRAWBERRY 20/$3868, WHEAT 15/$687 | 1980 |
+| 21 | 58563 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$297, MELON 12/$883, MILK 15/$33, STRAWBERRY 28/$5275, WHEAT 7/$322, WOOL 16/$2692 | 864 |
+| 22 | 64089 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$431, MELON 12/$307, STRAWBERRY 34/$5467 | 763 |
+| 23 | 66221 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 8/$275, MILK 15/$57, STRAWBERRY 38/$4031, WHEAT 3/$147 | 1398 |
+| 24 | 69862 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$304, MILK 11/$13, STRAWBERRY 32/$1515, WHEAT 24/$1171 | 342 |
+| 25 | 74777 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$295, MILK 14/$14, STRAWBERRY 10/$202, WHEAT 31/$1488, WOOL 16/$3604 | 688 |
+| 26 | 76396 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 14/$239, MILK 5/$7, STRAWBERRY 16/$530, WHEAT 30/$1440 | 597 |
+| 27 | 77583 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$177, MILK 18/$42, STRAWBERRY 26/$957, WHEAT 11/$537 | 526 |
+| 28 | 83732 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$70, MILK 17/$27, STRAWBERRY 6/$264, WHEAT 47/$2267, WOOL 16/$3759 | 238 |
+| 29 | 90218 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$11, MILK 18/$30, WHEAT 149/$6588 | 143 |
+
+#### Episode 91853247 vs Freddy
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 5 | 1 | 5 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2995 |
+| 1 | 4 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 170 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 185 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 471 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 118 |
+| 5 | 510 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$525 | 1024 |
+| 6 | 12 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2274 |
+| 7 | 733 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2226 |
+| 8 | 275 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$278 | 1341 |
+| 9 | 2006 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 7/$238 | 387 |
+| 10 | 4836 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 16/$1252 | 5904 |
+| 11 | 6846 | 3 | 10 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 24/$1856, MILK 3/$558, WHEAT 2/$74 | 478 |
+| 12 | 7499 | 3 | 10 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$655, MILK 3/$588, WHEAT 11/$405, WOOL 4/$14 | 407 |
+| 13 | 9350 | 3 | 8 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$827, WHEAT 24/$869, WOOL 12/$12 | 459 |
+| 14 | 11823 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$516, MILK 6/$1161, STRAWBERRY 6/$1221, WHEAT 3/$110 | 535 |
+| 15 | 15562 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$548, MILK 24/$3881, WOOL 8/$29 | 719 |
+| 16 | 20433 | 3 | 13 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$2171, STRAWBERRY 14/$2984, WHEAT 16/$621, WOOL 8/$8 | 913 |
+| 17 | 21753 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$518, MILK 3/$159, STRAWBERRY 2/$433, WHEAT 19/$728 | 518 |
+| 18 | 27853 | 3 | 11 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$433, MILK 18/$1010, STRAWBERRY 27/$5801, WHEAT 5/$199 | 787 |
+| 19 | 30458 | 3 | 13 | {'MELON': 11, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | MILK 3/$102, STRAWBERRY 25/$5256, WHEAT 8/$331, WOOL 16/$16 | 937 |
+| 20 | 44619 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 54/$8410, MILK 23/$756, STRAWBERRY 20/$3887, WHEAT 15/$627 | 1934 |
+| 21 | 50142 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 6, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$354, MELON 6/$114, MILK 15/$121, STRAWBERRY 28/$5232, WHEAT 7/$291, WOOL 16/$37 | 824 |
+| 22 | 55125 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$526, MELON 6/$6, STRAWBERRY 34/$5051 | 706 |
+| 23 | 56780 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 2/$88, MILK 15/$366, STRAWBERRY 38/$3038, WHEAT 3/$135 | 1367 |
+| 24 | 59644 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$451, MILK 11/$537, STRAWBERRY 32/$549, WHEAT 24/$1064 | 342 |
+| 25 | 61310 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$474, MILK 14/$440, STRAWBERRY 10/$40, WHEAT 31/$1364, WOOL 16/$16 | 668 |
+| 26 | 62695 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 9/$288, MILK 5/$45, STRAWBERRY 16/$340, WHEAT 30/$1288 | 576 |
+| 27 | 64271 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$387, MILK 18/$708, STRAWBERRY 26/$493, WHEAT 11/$482 | 494 |
+| 28 | 67145 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$343, MILK 17/$537, STRAWBERRY 6/$174, WHEAT 47/$2029, WOOL 16/$16 | 225 |
+| 29 | 73105 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$144, MILK 18/$394, WHEAT 149/$5565 | 143 |
+
+#### Episode 91853249 vs THUNDER THUNDER
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 5 | 1 | 5 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2995 |
+| 1 | 4 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 170 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 184 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 541 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 516 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 11 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 712 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 258 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$293 | 1352 |
+| 9 | 2138 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1204, WHEAT 7/$252 | 406 |
+| 10 | 5572 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7417, WHEAT 2/$74, WOOL 16/$2111 | 6168 |
+| 11 | 6727 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$957, MILK 3/$615, WHEAT 2/$78 | 495 |
+| 12 | 7411 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$673, MILK 3/$649, WHEAT 11/$430, WOOL 4/$661 | 419 |
+| 13 | 11518 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$843, WHEAT 24/$946, WOOL 12/$1500 | 492 |
+| 14 | 14100 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$519, MILK 6/$1319, STRAWBERRY 6/$1197, WHEAT 3/$120 | 573 |
+| 15 | 20330 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$543, MILK 24/$4999, WOOL 8/$1424 | 736 |
+| 16 | 27982 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$3998, STRAWBERRY 14/$2768, WHEAT 16/$678, WOOL 8/$1137 | 929 |
+| 17 | 29601 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$493, MILK 3/$488, STRAWBERRY 2/$400, WHEAT 19/$801 | 563 |
+| 18 | 35749 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$401, MILK 18/$2352, STRAWBERRY 28/$5279, WHEAT 5/$217 | 843 |
+| 19 | 41081 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$309, STRAWBERRY 26/$4583, WHEAT 8/$362, WOOL 16/$2201 | 964 |
+| 20 | 56197 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$10064, MILK 23/$1769, STRAWBERRY 20/$2503, WHEAT 15/$687 | 1978 |
+| 21 | 61381 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$306, MELON 12/$12, MILK 15/$447, STRAWBERRY 28/$3418, WHEAT 7/$322, WOOL 16/$1348 | 864 |
+| 22 | 62132 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$427, MELON 12/$15, STRAWBERRY 34/$921 | 763 |
+| 23 | 61900 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 8/$276, MILK 15/$392, STRAWBERRY 38/$736, WHEAT 3/$147 | 1399 |
+| 24 | 64346 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$316, MILK 11/$260, STRAWBERRY 32/$648, WHEAT 24/$1180 | 342 |
+| 25 | 67567 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$307, MILK 14/$263, STRAWBERRY 10/$12, WHEAT 31/$1524, WOOL 16/$1805 | 690 |
+| 26 | 69272 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 14/$237, MILK 5/$11, STRAWBERRY 16/$594, WHEAT 30/$1461 | 598 |
+| 27 | 70999 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$163, MILK 18/$444, STRAWBERRY 26/$1098, WHEAT 11/$548 | 526 |
+| 28 | 74300 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$51, MILK 17/$74, STRAWBERRY 6/$241, WHEAT 47/$2269, WOOL 16/$905 | 239 |
+| 29 | 81208 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$11, MILK 18/$204, WHEAT 149/$6836 | 143 |
+
+#### Episode 91861610 vs Feng Jiahui
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 5 | 1 | 5 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2995 |
+| 1 | 4 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 170 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 184 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 541 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 516 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 11 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 712 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 258 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$293 | 1352 |
+| 9 | 2218 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$839, MILK 6/$1275, WHEAT 7/$252 | 406 |
+| 10 | 4862 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$74, WOOL 16/$1252 | 6094 |
+| 11 | 6984 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 24/$1884, MILK 3/$655, WHEAT 2/$80 | 497 |
+| 12 | 7657 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$655, MILK 3/$669, WHEAT 11/$440, WOOL 4/$14 | 422 |
+| 13 | 9641 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$827, WHEAT 24/$960, WOOL 12/$12 | 498 |
+| 14 | 12399 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$516, MILK 6/$1332, STRAWBERRY 6/$1368, WHEAT 3/$120 | 578 |
+| 15 | 17306 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$550, MILK 24/$5066, WOOL 8/$29 | 738 |
+| 16 | 24175 | 3 | 13 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$3762, STRAWBERRY 14/$3347, WHEAT 16/$682, WOOL 8/$8 | 930 |
+| 17 | 25814 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$518, MILK 3/$386, STRAWBERRY 2/$486, WHEAT 19/$811 | 562 |
+| 18 | 33339 | 3 | 11 | {'MELON': 13, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$433, MILK 18/$2257, STRAWBERRY 27/$6586, WHEAT 5/$217 | 842 |
+| 19 | 37087 | 3 | 13 | {'MELON': 13, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | MILK 3/$291, STRAWBERRY 25/$6077, WHEAT 8/$360, WOOL 16/$16 | 961 |
+| 20 | 53869 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$8465, MILK 23/$1877, STRAWBERRY 20/$4660, WHEAT 15/$685 | 1972 |
+| 21 | 60769 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 6, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$356, MELON 12/$12, MILK 15/$681, STRAWBERRY 28/$6477, WHEAT 7/$315, WOOL 16/$16 | 855 |
+| 22 | 68157 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$521, MELON 6/$6, STRAWBERRY 34/$7415 | 750 |
+| 23 | 73429 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 2/$88, MILK 15/$525, STRAWBERRY 38/$7942, WHEAT 3/$144 | 1392 |
+| 24 | 83185 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$441, MILK 11/$423, STRAWBERRY 32/$6047, WHEAT 24/$1152 | 342 |
+| 25 | 86436 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$462, MILK 14/$167, STRAWBERRY 10/$1808, WHEAT 31/$1482, WOOL 16/$16 | 684 |
+| 26 | 90448 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 9/$275, MILK 5/$5, STRAWBERRY 16/$2912, WHEAT 30/$1410 | 590 |
+| 27 | 95903 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$369, MILK 18/$463, STRAWBERRY 26/$4611, WHEAT 11/$526 | 514 |
+| 28 | 100662 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$312, MILK 17/$141, STRAWBERRY 6/$1065, WHEAT 47/$2218, WOOL 16/$1258 | 235 |
+| 29 | 107260 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$125, MILK 18/$174, WHEAT 149/$6442 | 143 |
+
+#### Episode 91870920 vs Abracadabra
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 5 | 1 | 5 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2995 |
+| 1 | 4 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 170 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 185 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 471 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 118 |
+| 5 | 510 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$525 | 1024 |
+| 6 | 12 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2274 |
+| 7 | 733 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 17, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 9, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2226 |
+| 8 | 275 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$278 | 1341 |
+| 9 | 2009 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 7/$241 | 387 |
+| 10 | 5456 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 16/$2111 | 6146 |
+| 11 | 7398 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 24/$1884, MILK 3/$462, WHEAT 2/$74 | 478 |
+| 12 | 8051 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$655, MILK 3/$436, WHEAT 11/$405, WOOL 4/$804 | 407 |
+| 13 | 12667 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$827, WHEAT 24/$863, WOOL 12/$2140 | 454 |
+| 14 | 14636 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$516, MILK 6/$771, STRAWBERRY 6/$1101, WHEAT 3/$108 | 527 |
+| 15 | 18138 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$550, MILK 24/$1820, WOOL 8/$1848 | 716 |
+| 16 | 22481 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$270, STRAWBERRY 14/$2565, WHEAT 16/$603, WOOL 8/$1810 | 905 |
+| 17 | 23566 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$518, MILK 3/$3, STRAWBERRY 2/$363, WHEAT 19/$698 | 497 |
+| 18 | 28030 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WOOL': 16} | FERTILIZER 8/$433, MILK 18/$142, STRAWBERRY 27/$4605, WHEAT 5/$187 | 756 |
+| 19 | 32923 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 32, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 31, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 23/$3494, WHEAT 8/$310, WOOL 16/$3787 | 916 |
+| 20 | 43687 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 32, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$8465, MILK 23/$275, STRAWBERRY 18/$1503, WHEAT 15/$582 | 1899 |
+| 21 | 48468 | 3 | 12 | {'STRAWBERRY': 28, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 42, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$353, MELON 12/$12, MILK 15/$129, STRAWBERRY 28/$972, WHEAT 7/$267, WOOL 16/$3844 | 789 |
+| 22 | 48519 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$521, MELON 12/$12, STRAWBERRY 32/$70 | 653 |
+| 23 | 47903 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 30, 'WHEAT': 28} | FERTILIZER 4/$174, MILK 15/$206, STRAWBERRY 38/$403, WHEAT 3/$120 | 1336 |
+| 24 | 49340 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$435, MILK 11/$13, STRAWBERRY 30/$192, WHEAT 24/$956 | 342 |
+| 25 | 54295 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$457, MILK 14/$14, STRAWBERRY 10/$12, WHEAT 31/$1180, WOOL 16/$3936 | 644 |
+| 26 | 55296 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 9/$270, MILK 5/$9, STRAWBERRY 16/$189, WHEAT 30/$1079 | 546 |
+| 27 | 56138 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$362, MILK 18/$187, STRAWBERRY 26/$346, WHEAT 11/$395 | 448 |
+| 28 | 61961 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$300, MILK 17/$65, STRAWBERRY 6/$47, WHEAT 47/$1619, WOOL 16/$3995 | 203 |
+| 29 | 65325 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$122, MILK 18/$91, WHEAT 149/$3294 | 143 |
+
+## Victor @ Tufa Labs — rating 3140.8
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91860677 | Dmitry Larko | win | 102839 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91869963 | Ezzzzzekki | win | 106890 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91870919 | THUNDER THUNDER | loss | 106793 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91876492 | Jince | win | 94884 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+
+### Daily timelines
+
+#### Episode 91860677 vs Dmitry Larko
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 24 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 6/$181 | 3157 |
+| 1 | 23 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 189 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 203 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 560 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 530 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$537 | 1033 |
+| 6 | 26 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 1} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2280 |
+| 7 | 732 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2241 |
+| 8 | 60 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$70 | 1347 |
+| 9 | 2240 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$819, MILK 6/$1300, WHEAT 13/$457 | 396 |
+| 10 | 5506 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11} | {'MELON': 30, 'MILK': 3} | FERTILIZER 9/$720, MELON 30/$7448, WOOL 16/$1252 | 6154 |
+| 11 | 6709 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 15/$1157, MILK 3/$677 | 409 |
+| 12 | 6859 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 12/$858, MILK 3/$717, WHEAT 10/$373, WOOL 4/$14 | 811 |
+| 13 | 8780 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 9/$605, WHEAT 25/$914, WOOL 12/$12 | 504 |
+| 14 | 11219 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$503, MILK 6/$1462, STRAWBERRY 6/$1080, WHEAT 9/$343 | 736 |
+| 15 | 17845 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$536, MILK 24/$5843, WHEAT 3/$117, WOOL 8/$383 | 440 |
+| 16 | 25183 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4934, STRAWBERRY 14/$2565, WHEAT 13/$507, WOOL 8/$8 | 1031 |
+| 17 | 26655 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$502, MILK 3/$666, STRAWBERRY 2/$363, WHEAT 25/$963 | 520 |
+| 18 | 32668 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$420, MILK 18/$4105, STRAWBERRY 27/$4605, WHEAT 8/$317 | 1446 |
+| 19 | 38696 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | MILK 3/$669, STRAWBERRY 25/$3735, WHEAT 1/$40, WOOL 16/$1918 | 936 |
+| 20 | 53045 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 13} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$9191, MILK 14/$3189, STRAWBERRY 24/$1792, WHEAT 11/$451 | 1961 |
+| 21 | 61238 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$446, MELON 12/$39, MILK 21/$4743, STRAWBERRY 20/$797, WHEAT 20/$820, WOOL 16/$2577 | 1135 |
+| 22 | 61470 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 11/$497, MELON 12/$12, MILK 3/$664, STRAWBERRY 36/$48 | 787 |
+| 23 | 63738 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 4/$170, MILK 12/$2741, STRAWBERRY 44/$382 | 1232 |
+| 24 | 72388 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 19/$736, MILK 21/$4931, STRAWBERRY 22/$188, WHEAT 18/$792, WOOL 12/$2235 | 450 |
+| 25 | 76781 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 6/$201, MILK 11/$2599, STRAWBERRY 8/$10, WHEAT 37/$1587, WOOL 4/$686 | 708 |
+| 26 | 78613 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 10/$309, MILK 3/$687, STRAWBERRY 18/$191, WHEAT 31/$1300 | 709 |
+| 27 | 85350 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$445, MILK 12/$2810, STRAWBERRY 20/$212, WHEAT 3/$129, WOOL 18/$3456 | 315 |
+| 28 | 91936 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 13/$224, MILK 15/$3525, STRAWBERRY 8/$168, WHEAT 60/$2467, WOOL 4/$508 | 306 |
+| 29 | 102839 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 19/$200, MILK 26/$5997, WHEAT 134/$4794 | 88 |
+
+#### Episode 91869963 vs Ezzzzzekki
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 15 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 6/$172 | 3157 |
+| 1 | 14 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 182 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 328 |
+| 3 | 198 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 470 |
+| 4 | 557 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$477 | 118 |
+| 5 | 525 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$468, WHEAT 17/$522 | 1022 |
+| 6 | 89 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 1} | {'WOOL': 20} | FERTILIZER 8/$730, WOOL 5/$1106 | 2272 |
+| 7 | 1151 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$268, WOOL 15/$3012 | 2218 |
+| 8 | 494 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$612, WHEAT 2/$66 | 1335 |
+| 9 | 2678 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$833, MILK 6/$1300, WHEAT 13/$423 | 372 |
+| 10 | 8136 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11} | {'MELON': 30, 'MILK': 3} | FERTILIZER 9/$733, MELON 30/$7412, WOOL 16/$3442 | 6129 |
+| 11 | 9344 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 15/$1185, MILK 3/$655 | 398 |
+| 12 | 9518 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 12/$897, MILK 3/$681, WHEAT 10/$358, WOOL 4/$918 | 801 |
+| 13 | 14996 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 9/$636, WHEAT 25/$872, WOOL 12/$2681 | 476 |
+| 14 | 17514 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$527, MILK 6/$1383, STRAWBERRY 6/$1197, WHEAT 9/$320 | 694 |
+| 15 | 25160 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$559, MILK 24/$5353, WHEAT 3/$111, WOOL 8/$1852 | 422 |
+| 16 | 33972 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4301, STRAWBERRY 14/$2849, WHEAT 13/$481, WOOL 8/$1826 | 1015 |
+| 17 | 35345 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$531, MILK 3/$562, STRAWBERRY 2/$410, WHEAT 25/$892 | 491 |
+| 18 | 41877 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$444, MILK 18/$3267, STRAWBERRY 27/$5429, WHEAT 8/$301 | 1406 |
+| 19 | 49522 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | MILK 3/$462, STRAWBERRY 25/$4825, WHEAT 1/$38, WOOL 16/$3710 | 917 |
+| 20 | 65212 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 13} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$8566, MILK 14/$2030, STRAWBERRY 24/$4188, WHEAT 11/$424 | 1931 |
+| 21 | 74508 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$469, MELON 12/$12, MILK 21/$2346, STRAWBERRY 20/$3267, WHEAT 20/$768, WOOL 16/$3754 | 1104 |
+| 22 | 77818 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 11/$526, MELON 12/$12, MILK 3/$267, STRAWBERRY 36/$3463 | 742 |
+| 23 | 79390 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 4/$180, MILK 12/$1221, STRAWBERRY 44/$1364 | 1220 |
+| 24 | 86359 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 19/$781, MILK 21/$2259, STRAWBERRY 22/$386, WHEAT 18/$725, WOOL 12/$2839 | 442 |
+| 25 | 89578 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 6/$222, MILK 11/$1183, STRAWBERRY 8/$102, WHEAT 37/$1442, WOOL 4/$943 | 689 |
+| 26 | 91206 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 10/$336, MILK 3/$222, STRAWBERRY 18/$479, WHEAT 31/$1182 | 653 |
+| 27 | 97384 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$536, MILK 12/$1039, STRAWBERRY 20/$511, WHEAT 3/$114, WOOL 18/$4275 | 297 |
+| 28 | 101885 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 13/$286, MILK 15/$1072, STRAWBERRY 8/$292, WHEAT 60/$2194, WOOL 4/$940 | 283 |
+| 29 | 106890 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 19/$310, MILK 26/$1405, WHEAT 134/$3378 | 88 |
+
+#### Episode 91870919 vs THUNDER THUNDER
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 15 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 6/$172 | 3157 |
+| 1 | 14 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 180 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 194 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 551 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 526 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 21 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 1} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 722 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 47 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$72 | 1352 |
+| 9 | 2299 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1357, WHEAT 13/$471 | 406 |
+| 10 | 6379 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11} | {'MELON': 30, 'MILK': 3} | FERTILIZER 9/$720, MELON 30/$7417, WOOL 16/$2111 | 6168 |
+| 11 | 7602 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 15/$1164, MILK 3/$705 | 417 |
+| 12 | 7779 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 12/$877, MILK 3/$736, WHEAT 10/$390, WOOL 4/$764 | 818 |
+| 13 | 12501 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 9/$608, WHEAT 25/$982, WOOL 12/$1995 | 528 |
+| 14 | 14763 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$500, MILK 6/$1485, STRAWBERRY 6/$890, WHEAT 9/$363 | 771 |
+| 15 | 22787 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$515, MILK 24/$5809, WHEAT 3/$123, WOOL 8/$1832 | 456 |
+| 16 | 31033 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4982, STRAWBERRY 14/$1642, WHEAT 13/$536, WOOL 8/$1796 | 1050 |
+| 17 | 32368 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$457, MILK 3/$662, STRAWBERRY 2/$196, WHEAT 25/$1026 | 549 |
+| 18 | 35142 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$380, MILK 18/$4069, STRAWBERRY 27/$1478, WHEAT 8/$338 | 1492 |
+| 19 | 41164 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | MILK 3/$661, STRAWBERRY 25/$268, WHEAT 1/$43, WOOL 16/$3706 | 950 |
+| 20 | 52785 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 13} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$10022, MILK 14/$3145, STRAWBERRY 24/$112, WHEAT 11/$473 | 1989 |
+| 21 | 61894 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$362, MELON 12/$120, MILK 21/$4805, STRAWBERRY 20/$268, WHEAT 20/$880, WOOL 16/$3774 | 1165 |
+| 22 | 62046 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 11/$381, MELON 12/$12, MILK 3/$677, STRAWBERRY 36/$48 | 824 |
+| 23 | 64097 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 4/$123, MILK 12/$2758, STRAWBERRY 44/$467 | 1240 |
+| 24 | 73452 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 19/$485, MILK 21/$4921, STRAWBERRY 22/$306, WHEAT 18/$828, WOOL 12/$2876 | 454 |
+| 25 | 78303 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 6/$126, MILK 11/$2632, STRAWBERRY 8/$162, WHEAT 37/$1687, WOOL 4/$952 | 723 |
+| 26 | 80297 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 10/$176, MILK 3/$711, STRAWBERRY 18/$420, WHEAT 31/$1409 | 752 |
+| 27 | 87883 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$156, MILK 12/$2923, STRAWBERRY 20/$369, WHEAT 3/$138, WOOL 18/$4327 | 327 |
+| 28 | 95172 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 13/$27, MILK 15/$3618, STRAWBERRY 8/$337, WHEAT 60/$2668, WOOL 4/$958 | 319 |
+| 29 | 106793 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 19/$19, MILK 26/$6240, WHEAT 134/$5450 | 88 |
+
+#### Episode 91876492 vs Jince
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 16 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 6/$173 | 3157 |
+| 1 | 15 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 181 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 196 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 471 |
+| 4 | 554 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 118 |
+| 5 | 521 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$525 | 1024 |
+| 6 | 23 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 1} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2274 |
+| 7 | 744 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2226 |
+| 8 | 76 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$68 | 1341 |
+| 9 | 2320 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$819, MILK 6/$1365, WHEAT 13/$448 | 388 |
+| 10 | 5590 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11} | {'MELON': 30, 'MILK': 3} | FERTILIZER 9/$720, MELON 30/$7448, WOOL 16/$1252 | 6150 |
+| 11 | 6823 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 15/$1164, MILK 3/$705 | 407 |
+| 12 | 6993 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 12/$880, MILK 3/$735, WHEAT 10/$376, WOOL 4/$14 | 811 |
+| 13 | 8943 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 9/$617, WHEAT 25/$914, WOOL 12/$12 | 505 |
+| 14 | 11623 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$516, MILK 6/$1485, STRAWBERRY 6/$1285, WHEAT 9/$345 | 737 |
+| 15 | 18231 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$547, MILK 24/$5808, WHEAT 3/$117, WOOL 8/$383 | 440 |
+| 16 | 25892 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4800, STRAWBERRY 14/$3015, WHEAT 13/$510, WOOL 8/$8 | 1034 |
+| 17 | 27402 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 27, 'WHEAT': 4} | FERTILIZER 9/$518, MILK 3/$645, STRAWBERRY 2/$429, WHEAT 25/$956 | 520 |
+| 18 | 34338 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$433, MILK 18/$3835, STRAWBERRY 27/$5613, WHEAT 8/$317 | 1446 |
+| 19 | 40663 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | MILK 3/$608, STRAWBERRY 25/$4840, WHEAT 1/$40, WOOL 16/$1918 | 932 |
+| 20 | 57462 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 13} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$9207, MILK 14/$2758, STRAWBERRY 24/$4060, WHEAT 11/$448 | 1956 |
+| 21 | 66603 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$453, MELON 12/$12, MILK 21/$3697, STRAWBERRY 20/$2847, WHEAT 20/$816, WOOL 16/$2542 | 1128 |
+| 22 | 68136 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 11/$517, MELON 12/$12, MILK 3/$399, STRAWBERRY 36/$1594 | 771 |
+| 23 | 69109 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 4/$175, MILK 12/$1518, STRAWBERRY 44/$218 | 1228 |
+| 24 | 75433 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 19/$727, MILK 21/$2215, STRAWBERRY 22/$171, WHEAT 18/$768, WOOL 12/$2733 | 446 |
+| 25 | 78378 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 6/$204, MILK 11/$999, STRAWBERRY 8/$16, WHEAT 37/$1516, WOOL 4/$896 | 701 |
+| 26 | 79695 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 10/$295, MILK 3/$210, STRAWBERRY 18/$191, WHEAT 31/$1244 | 679 |
+| 27 | 85417 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$440, MILK 12/$1015, STRAWBERRY 20/$212, WHEAT 3/$120, WOOL 18/$4240 | 305 |
+| 28 | 89810 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 13/$207, MILK 15/$1071, STRAWBERRY 8/$177, WHEAT 60/$2299, WOOL 4/$933 | 294 |
+| 29 | 94884 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 19/$180, MILK 26/$1173, WHEAT 134/$3809 | 88 |
+
+## Erfan Eshratifar — rating 3103.0
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91861609 | THUNDER THUNDER | loss | 69845 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 75 |
+| 91865234 | boatlee | win | 105323 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 74 |
+| 91866168 | Abracadabra | win | 88465 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 74 |
+| 91867088 | Dmitry Belan | win | 55167 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 74 |
+| 91873681 | Ezzzzzekki | win | 82604 | [6, 10] | {'COW': 10, 'SHEEP': 4} | 14 | 74 |
+
+### Daily timelines
+
+#### Episode 91861609 vs THUNDER THUNDER
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 3/$300 | 1 |
+| 2 | 186 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$492 | 331 |
+| 3 | 205 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$386 | 469 |
+| 4 | 661 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 7/$662, WHEAT 3/$96 | 118 |
+| 5 | 538 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 6/$554, WHEAT 14/$440 | 1033 |
+| 6 | 134 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 3/$270, WHEAT 1/$33, WOOL 5/$1113 | 2280 |
+| 7 | 1125 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 10/$877, WHEAT 2/$69, WOOL 15/$2928 | 2271 |
+| 8 | 602 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$593, WHEAT 6/$210 | 1345 |
+| 9 | 2417 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 3/$251, MILK 6/$1050, WHEAT 10/$347 | 426 |
+| 10 | 7438 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 16} | {'MELON': 30, 'MILK': 3} | MELON 30/$7546, MILK 2/$314, WOOL 16/$3623 | 6148 |
+| 11 | 8736 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$963, MILK 1/$154, WHEAT 7/$262 | 395 |
+| 12 | 11631 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$686, WHEAT 10/$377, WOOL 12/$2867 | 1035 |
+| 13 | 14242 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$855, MILK 7/$1007, STRAWBERRY 4/$778, WHEAT 23/$855, WOOL 4/$952 | 506 |
+| 14 | 16156 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$531, MILK 5/$610, STRAWBERRY 2/$386, WHEAT 2/$76 | 671 |
+| 15 | 18668 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$613, MILK 18/$1640, WHEAT 6/$234 | 323 |
+| 16 | 24145 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 4, 'WHEAT': 32} | MILK 12/$234, STRAWBERRY 12/$2274, WHEAT 18/$702, WOOL 16/$3891 | 1291 |
+| 17 | 25790 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$500, MILK 21/$25, STRAWBERRY 4/$744, WHEAT 15/$579 | 528 |
+| 18 | 29727 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$405, MILK 12/$12, STRAWBERRY 28/$4771, WHEAT 12/$477, WOOL 11/$2706 | 1727 |
+| 19 | 34959 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 14/$16, STRAWBERRY 12/$1835, WHEAT 9/$369, WOOL 5/$1229 | 932 |
+| 20 | 46572 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 20} | MELON 60/$10926, MILK 14/$16, STRAWBERRY 34/$2567, WHEAT 17/$697 | 1968 |
+| 21 | 50266 | 3 | 12 | {'STRAWBERRY': 31, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 40, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$215, MELON 18/$637, MILK 10/$12, STRAWBERRY 26/$786, WHEAT 8/$329, WOOL 13/$3224 | 888 |
+| 22 | 52198 | 3 | 11 | {'STRAWBERRY': 28, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 43} | FERTILIZER 13/$509, MELON 6/$6, STRAWBERRY 40/$164, WHEAT 2/$86, WOOL 3/$744 | 866 |
+| 23 | 51344 | 3 | 14 | {'STRAWBERRY': 20, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$137, MILK 20/$24, STRAWBERRY 33/$41, WHEAT 6/$258 | 1271 |
+| 24 | 54488 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 30, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$384, MILK 9/$45, STRAWBERRY 36/$409, WHEAT 40/$1720, WOOL 4/$1000 | 405 |
+| 25 | 58116 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$282, MILK 12/$68, STRAWBERRY 16/$46, WHEAT 35/$1449, WOOL 12/$3000 | 682 |
+| 26 | 58564 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 8} | FERTILIZER 16/$290, MILK 2/$2, STRAWBERRY 12/$364, WHEAT 10/$412 | 967 |
+| 27 | 61104 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 17/$214, MILK 18/$60, STRAWBERRY 26/$200, WHEAT 6/$252, WOOL 8/$2008 | 348 |
+| 28 | 65277 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 15/$76, MILK 8/$24, WHEAT 54/$2204, WOOL 8/$2008 | 182 |
+| 29 | 69845 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 18/$18, MILK 27/$53, WHEAT 143/$4640 | 143 |
+
+#### Episode 91865234 vs boatlee
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 3/$300 | 1 |
+| 2 | 189 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$492 | 328 |
+| 3 | 205 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$386 | 472 |
+| 4 | 663 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 19} | FERTILIZER 7/$662, WHEAT 3/$99 | 119 |
+| 5 | 545 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 6, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 6/$555, WHEAT 14/$445 | 1033 |
+| 6 | 81 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 3/$271, WHEAT 1/$33, WOOL 5/$1051 | 2280 |
+| 7 | 857 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 17, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 8/$709, WHEAT 2/$70, WOOL 15/$2715 | 2277 |
+| 8 | 303 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 9/$773, WHEAT 5/$180 | 1350 |
+| 9 | 2125 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 3/$253, MILK 6/$1050, WHEAT 10/$359 | 438 |
+| 10 | 5748 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 9} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, MILK 2/$376, WOOL 16/$1673 | 5462 |
+| 11 | 7127 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$947, MILK 1/$186, WHEAT 7/$273 | 403 |
+| 12 | 7424 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$675, WHEAT 10/$390, WOOL 12/$276 | 1044 |
+| 13 | 9237 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$846, MILK 7/$1432, STRAWBERRY 4/$800, WHEAT 23/$886, WOOL 4/$4 | 523 |
+| 14 | 11599 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$540, MILK 5/$1037, STRAWBERRY 2/$397, WHEAT 2/$80 | 697 |
+| 15 | 16386 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$645, MILK 18/$3600, WHEAT 6/$246 | 331 |
+| 16 | 19479 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 12/$2103, STRAWBERRY 12/$2409, WHEAT 18/$743, WOOL 16/$16 | 1301 |
+| 17 | 23656 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 26, 'WHEAT': 4} | FERTILIZER 9/$545, MILK 21/$3333, STRAWBERRY 2/$411, WHEAT 15/$619 | 555 |
+| 18 | 29595 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$461, MILK 12/$2022, STRAWBERRY 26/$5241, WHEAT 12/$511, WOOL 11/$42 | 1795 |
+| 19 | 35549 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 25, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 32, 'WHEAT': 16} | MILK 14/$2544, STRAWBERRY 12/$2366, WHEAT 9/$396, WOOL 5/$5 | 953 |
+| 20 | 51588 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 25, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 4, 'WHEAT': 20} | MELON 60/$9204, MILK 14/$2551, STRAWBERRY 32/$6188, WHEAT 17/$760 | 2008 |
+| 21 | 55454 | 3 | 12 | {'STRAWBERRY': 23, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$277, MELON 18/$126, MILK 10/$1837, STRAWBERRY 12/$2216, WHEAT 8/$353, WOOL 13/$68 | 928 |
+| 22 | 61393 | 3 | 11 | {'STRAWBERRY': 21, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 29} | FERTILIZER 13/$671, MELON 6/$6, STRAWBERRY 34/$5304, WHEAT 2/$94, WOOL 3/$3 | 925 |
+| 23 | 67268 | 3 | 14 | {'STRAWBERRY': 13, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$200, MILK 20/$4053, STRAWBERRY 25/$2673, WHEAT 6/$287 | 1291 |
+| 24 | 72555 | 3 | 11 | {'STRAWBERRY': 9, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 16, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$616, MILK 9/$1925, STRAWBERRY 26/$1266, WHEAT 40/$1880, WOOL 4/$650 | 409 |
+| 25 | 77730 | 3 | 12 | {'STRAWBERRY': 9, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$503, MILK 12/$2675, STRAWBERRY 12/$181, WHEAT 35/$1635, WOOL 12/$1515 | 706 |
+| 26 | 79746 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 18, 'WHEAT': 8} | FERTILIZER 16/$618, MILK 2/$437, STRAWBERRY 8/$348, WHEAT 10/$463 | 1007 |
+| 27 | 86396 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 21/$704, MILK 18/$4158, STRAWBERRY 16/$392, WHEAT 6/$282, WOOL 8/$1500 | 378 |
+| 28 | 92538 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 18/$469, MILK 8/$1898, WHEAT 54/$2521, WOOL 8/$1322 | 188 |
+| 29 | 105323 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 18/$360, MILK 27/$6488, WHEAT 143/$6080 | 143 |
+
+#### Episode 91866168 vs Abracadabra
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 3/$300 | 1 |
+| 2 | 189 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$492 | 328 |
+| 3 | 205 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$386 | 472 |
+| 4 | 663 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 7/$662, WHEAT 3/$99 | 119 |
+| 5 | 545 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 6/$555, WHEAT 14/$445 | 1033 |
+| 6 | 81 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 3/$271, WHEAT 1/$33, WOOL 5/$1051 | 2280 |
+| 7 | 857 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 8/$709, WHEAT 2/$70, WOOL 15/$2715 | 2277 |
+| 8 | 339 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 9/$773, WHEAT 6/$216 | 1350 |
+| 9 | 2165 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 3/$253, MILK 6/$1050, WHEAT 10/$360 | 435 |
+| 10 | 5766 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 10} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, MILK 2/$314, WOOL 16/$1673 | 5484 |
+| 11 | 7077 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$975, MILK 1/$154, WHEAT 7/$273 | 405 |
+| 12 | 7394 | 3 | 11 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$691, WHEAT 10/$396, WOOL 12/$276 | 1046 |
+| 13 | 9056 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$875, MILK 7/$967, STRAWBERRY 4/$917, WHEAT 23/$890, WOOL 4/$4 | 530 |
+| 14 | 11151 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$548, MILK 5/$599, STRAWBERRY 2/$456, WHEAT 2/$82 | 709 |
+| 15 | 13341 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$652, MILK 18/$1280, WHEAT 6/$252 | 336 |
+| 16 | 15459 | 3 | 14 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 4, 'WHEAT': 32} | MILK 12/$140, STRAWBERRY 12/$2845, WHEAT 18/$770, WOOL 16/$16 | 1306 |
+| 17 | 17419 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$558, MILK 21/$23, STRAWBERRY 4/$975, WHEAT 15/$636 | 571 |
+| 18 | 23424 | 3 | 12 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$469, MILK 12/$12, STRAWBERRY 28/$6826, WHEAT 12/$528, WOOL 11/$42 | 1829 |
+| 19 | 25882 | 3 | 13 | {'MELON': 13, 'STRAWBERRY': 27, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 14/$16, STRAWBERRY 12/$2936, WHEAT 9/$414, WOOL 5/$5 | 964 |
+| 20 | 41719 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 27, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 6, 'WHEAT': 20} | MELON 60/$9061, MILK 14/$16, STRAWBERRY 34/$8200, WHEAT 17/$789 | 2026 |
+| 21 | 44178 | 3 | 12 | {'STRAWBERRY': 25, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 6, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$277, MELON 18/$45, MILK 10/$52, STRAWBERRY 14/$3439, WHEAT 8/$369, WOOL 13/$13 | 947 |
+| 22 | 53596 | 3 | 11 | {'STRAWBERRY': 22, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 31} | FERTILIZER 13/$681, STRAWBERRY 36/$8548, WHEAT 2/$98, WOOL 3/$3 | 953 |
+| 23 | 58684 | 3 | 14 | {'STRAWBERRY': 14, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$199, MILK 20/$76, STRAWBERRY 25/$5863, WHEAT 6/$300 | 1301 |
+| 24 | 67263 | 3 | 11 | {'STRAWBERRY': 10, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 18, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$611, MILK 9/$33, STRAWBERRY 28/$6323, WHEAT 40/$1991, WOOL 4/$35 | 411 |
+| 25 | 70894 | 3 | 12 | {'STRAWBERRY': 10, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$513, MILK 12/$14, STRAWBERRY 12/$2730, WHEAT 35/$1724, WOOL 12/$12 | 721 |
+| 26 | 73015 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 20, 'WHEAT': 8} | FERTILIZER 16/$607, MILK 2/$2, STRAWBERRY 10/$2379, WHEAT 10/$493 | 1034 |
+| 27 | 78345 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 21/$663, MILK 18/$60, STRAWBERRY 16/$3832, WHEAT 6/$306, WOOL 8/$8 | 393 |
+| 28 | 81455 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 18/$452, MILK 8/$26, WHEAT 54/$2700, WOOL 8/$8 | 192 |
+| 29 | 88465 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 18/$318, MILK 27/$59, WHEAT 143/$6776 | 143 |
+
+#### Episode 91867088 vs Dmitry Belan
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 3/$300 | 1 |
+| 2 | 189 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$492 | 328 |
+| 3 | 205 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$386 | 472 |
+| 4 | 663 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 7/$662, WHEAT 3/$99 | 119 |
+| 5 | 545 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 6/$555, WHEAT 14/$445 | 1033 |
+| 6 | 81 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 3/$271, WHEAT 1/$33, WOOL 5/$1051 | 2280 |
+| 7 | 857 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 8/$709, WHEAT 2/$70, WOOL 15/$2715 | 2277 |
+| 8 | 339 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 9/$773, WHEAT 6/$216 | 1350 |
+| 9 | 2313 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 3/$249, MILK 6/$1204, WHEAT 10/$362 | 439 |
+| 10 | 5768 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, MILK 2/$413, WOOL 16/$1673 | 5630 |
+| 11 | 7161 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$947, MILK 1/$205, WHEAT 6/$235 | 407 |
+| 12 | 7462 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$675, WHEAT 10/$397, WOOL 12/$276 | 1047 |
+| 13 | 9313 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$846, MILK 7/$1480, STRAWBERRY 4/$742, WHEAT 23/$906, WOOL 4/$4 | 535 |
+| 14 | 11602 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$540, MILK 5/$1047, STRAWBERRY 2/$367, WHEAT 2/$82 | 712 |
+| 15 | 16229 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$645, MILK 18/$3439, WHEAT 6/$254 | 338 |
+| 16 | 18790 | 3 | 14 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 4, 'WHEAT': 32} | MILK 12/$1642, STRAWBERRY 12/$2156, WHEAT 18/$770, WOOL 16/$16 | 1307 |
+| 17 | 22341 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$545, MILK 21/$2052, STRAWBERRY 4/$727, WHEAT 15/$636 | 573 |
+| 18 | 27051 | 3 | 12 | {'MELON': 14, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$461, MILK 12/$717, STRAWBERRY 28/$4759, WHEAT 12/$528, WOOL 11/$42 | 1830 |
+| 19 | 29320 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 28, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 14/$489, STRAWBERRY 12/$1815, WHEAT 9/$405, WOOL 5/$5 | 964 |
+| 20 | 39847 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 28, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 6, 'WHEAT': 20} | MELON 60/$9061, MILK 14/$119, STRAWBERRY 34/$2795, WHEAT 17/$779 | 2024 |
+| 21 | 40262 | 3 | 12 | {'STRAWBERRY': 26, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 40, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$277, MELON 18/$45, MILK 10/$12, STRAWBERRY 16/$594, WHEAT 8/$368, WOOL 13/$13 | 942 |
+| 22 | 40524 | 3 | 11 | {'STRAWBERRY': 23, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 33} | FERTILIZER 13/$671, MELON 6/$6, STRAWBERRY 36/$228, WHEAT 2/$96, WOOL 3/$3 | 945 |
+| 23 | 39841 | 3 | 14 | {'STRAWBERRY': 15, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$200, MILK 20/$62, STRAWBERRY 27/$107, WHEAT 6/$294 | 1298 |
+| 24 | 42335 | 3 | 11 | {'STRAWBERRY': 11, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$616, MILK 9/$39, STRAWBERRY 30/$259, WHEAT 40/$1958, WOOL 4/$35 | 410 |
+| 25 | 43247 | 3 | 12 | {'STRAWBERRY': 11, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$503, MILK 12/$14, STRAWBERRY 12/$35, WHEAT 35/$1691, WOOL 12/$12 | 716 |
+| 26 | 44192 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 22, 'WHEAT': 8} | FERTILIZER 16/$618, MILK 2/$2, STRAWBERRY 10/$452, WHEAT 10/$482 | 1023 |
+| 27 | 45337 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 21/$694, MILK 18/$68, STRAWBERRY 18/$342, WHEAT 6/$294, WOOL 8/$39 | 388 |
+| 28 | 48403 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 18/$469, MILK 8/$26, WHEAT 54/$2634, WOOL 8/$8 | 191 |
+| 29 | 55167 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 18/$360, MILK 27/$71, WHEAT 143/$6476 | 143 |
+
+#### Episode 91873681 vs Ezzzzzekki
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 20 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | WHEAT 14/$408 | 3388 |
+| 1 | 19 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 3/$300 | 1 |
+| 2 | 189 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$492 | 328 |
+| 3 | 205 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$386 | 472 |
+| 4 | 663 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 7/$662, WHEAT 3/$99 | 119 |
+| 5 | 545 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 6/$555, WHEAT 14/$445 | 1033 |
+| 6 | 81 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 3/$271, WHEAT 1/$33, WOOL 5/$1051 | 2280 |
+| 7 | 857 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 8/$709, WHEAT 2/$70, WOOL 15/$2715 | 2277 |
+| 8 | 339 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 9/$773, WHEAT 6/$216 | 1350 |
+| 9 | 2165 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 3/$253, MILK 6/$1050, WHEAT 10/$360 | 435 |
+| 10 | 5766 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 10} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, MILK 2/$376, WOOL 16/$1673 | 5484 |
+| 11 | 7170 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$975, MILK 1/$186, WHEAT 7/$273 | 406 |
+| 12 | 7487 | 3 | 11 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$691, WHEAT 10/$396, WOOL 12/$276 | 1046 |
+| 13 | 9320 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$875, MILK 7/$1372, STRAWBERRY 4/$849, WHEAT 23/$902, WOOL 4/$4 | 530 |
+| 14 | 11689 | 3 | 10 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$548, MILK 5/$966, STRAWBERRY 2/$422, WHEAT 2/$82 | 710 |
+| 15 | 15802 | 3 | 9 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 21, 'STRAWBERRY': 12, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 10/$649, MILK 18/$2970, WHEAT 6/$252 | 336 |
+| 16 | 18565 | 3 | 14 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 18, 'STRAWBERRY': 4, 'WHEAT': 32} | MILK 12/$1380, STRAWBERRY 12/$2583, WHEAT 18/$770, WOOL 16/$16 | 1306 |
+| 17 | 22127 | 3 | 8 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$553, MILK 21/$1944, STRAWBERRY 4/$875, WHEAT 15/$634 | 572 |
+| 18 | 28096 | 3 | 12 | {'MELON': 13, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$463, MILK 12/$830, STRAWBERRY 28/$6013, WHEAT 12/$528, WOOL 11/$661 | 1827 |
+| 19 | 32151 | 3 | 13 | {'MELON': 13, 'STRAWBERRY': 27, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 14/$811, STRAWBERRY 12/$2513, WHEAT 9/$406, WOOL 5/$38 | 964 |
+| 20 | 47173 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 27, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 15} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 6, 'WHEAT': 20} | MELON 60/$9101, MILK 14/$473, STRAWBERRY 34/$6924, WHEAT 17/$779 | 2022 |
+| 21 | 50147 | 3 | 12 | {'STRAWBERRY': 25, 'WHEAT': 30} | {'COW': 10, 'SHEEP': 4} | {'WHEAT': 9} | {'MELON': 6, 'MILK': 9, 'STRAWBERRY': 38, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 5/$274, MELON 18/$45, MILK 10/$78, STRAWBERRY 14/$2691, WHEAT 8/$369, WOOL 13/$1472 | 942 |
+| 22 | 57545 | 3 | 11 | {'STRAWBERRY': 22, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 2} | {'MILK': 9, 'STRAWBERRY': 31} | FERTILIZER 13/$674, STRAWBERRY 36/$6046, WHEAT 2/$96, WOOL 3/$231 | 943 |
+| 23 | 59864 | 3 | 14 | {'STRAWBERRY': 14, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 15} | {'MILK': 11, 'STRAWBERRY': 22, 'WHEAT': 28} | FERTILIZER 4/$192, MILK 20/$191, STRAWBERRY 25/$2987, WHEAT 6/$294 | 1297 |
+| 24 | 64391 | 3 | 11 | {'STRAWBERRY': 10, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 18, 'WHEAT': 52, 'WOOL': 16} | FERTILIZER 13/$580, MILK 9/$89, STRAWBERRY 28/$1566, WHEAT 40/$1956, WOOL 4/$751 | 410 |
+| 25 | 67374 | 3 | 12 | {'STRAWBERRY': 10, 'WHEAT': 43} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 14, 'STRAWBERRY': 6, 'WHEAT': 34} | FERTILIZER 12/$477, MILK 12/$68, STRAWBERRY 12/$346, WHEAT 35/$1685, WOOL 12/$1745 | 716 |
+| 26 | 68310 | 3 | 13 | {'WHEAT': 61} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 20} | {'MILK': 6, 'STRAWBERRY': 20, 'WHEAT': 8} | FERTILIZER 16/$565, MILK 2/$2, STRAWBERRY 10/$542, WHEAT 10/$483 | 1023 |
+| 27 | 71285 | 3 | 10 | {'WHEAT': 47} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'WHEAT': 59, 'WOOL': 16} | FERTILIZER 21/$631, MILK 18/$189, STRAWBERRY 16/$507, WHEAT 6/$294, WOOL 8/$1592 | 388 |
+| 28 | 75815 | 3 | 10 | {'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 11, 'WHEAT': 52} | FERTILIZER 18/$421, MILK 8/$48, WHEAT 54/$2630, WOOL 8/$1512 | 191 |
+| 29 | 82604 | 3 | 10 | {'WHEAT': 7} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 24, 'WHEAT': 91} | FERTILIZER 18/$308, MILK 27/$167, WHEAT 143/$6457 | 143 |
+
+## Valmorlee — rating 3100.9
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91855065 | HealthStone | win | 94321 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91864322 | Haramball forever! | loss | 78862 | [6, 10] | {'COW': 9, 'SHEEP': 5} | 14 | 75 |
+| 91867069 | TIM | loss | 49173 | [6, 10] | {'COW': 7, 'SHEEP': 4} | 14 | 71 |
+| 91869967 | Dmitry Larko | loss | 60899 | [6, 10] | {'COW': 6, 'SHEEP': 4} | 14 | 70 |
+
+### Daily timelines
+
+#### Episode 91855065 vs HealthStone
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 10 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2990 |
+| 1 | 9 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 177 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 328 |
+| 3 | 191 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$487 | 473 |
+| 4 | 548 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$477 | 120 |
+| 5 | 526 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$469, WHEAT 17/$544 | 1035 |
+| 6 | 35 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$735, WOOL 5/$1056 | 2282 |
+| 7 | 986 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$268, WOOL 15/$2928 | 2245 |
+| 8 | 325 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$619, WHEAT 2/$70 | 1350 |
+| 9 | 2491 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$831, MILK 6/$1275, WHEAT 13/$468 | 408 |
+| 10 | 7004 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7345, WHEAT 2/$74, WOOL 16/$3256 | 6162 |
+| 11 | 7246 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$918, MILK 3/$653 | 411 |
+| 12 | 7733 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$648, MILK 3/$673, WHEAT 10/$384, WOOL 4/$904 | 815 |
+| 13 | 12965 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$815, WHEAT 25/$971, WOOL 12/$2564 | 528 |
+| 14 | 15734 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$511, MILK 6/$1323, STRAWBERRY 6/$1077, WHEAT 9/$357 | 763 |
+| 15 | 22812 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$534, MILK 24/$4910, WHEAT 3/$123, WOOL 8/$1767 | 454 |
+| 16 | 30948 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4052, STRAWBERRY 14/$2572, WHEAT 13/$536, WOOL 8/$1673 | 1050 |
+| 17 | 32266 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$473, MILK 3/$456, STRAWBERRY 2/$377, WHEAT 25/$1045 | 560 |
+| 18 | 38173 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$390, MILK 18/$2792, STRAWBERRY 28/$5149, WHEAT 8/$343 | 1504 |
+| 19 | 45119 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$405, STRAWBERRY 26/$4626, WHEAT 1/$43, WOOL 16/$3597 | 954 |
+| 20 | 58299 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$6662, MILK 14/$1773, STRAWBERRY 24/$3893, WHEAT 11/$484 | 2000 |
+| 21 | 66976 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$367, MELON 12/$39, MILK 21/$2139, STRAWBERRY 20/$2961, WHEAT 20/$900, WOOL 16/$3549 | 1174 |
+| 22 | 70357 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 12/$426, MELON 12/$12, MILK 3/$267, STRAWBERRY 36/$3687 | 828 |
+| 23 | 71820 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 11/$348, MILK 12/$837, STRAWBERRY 44/$2237 | 1241 |
+| 24 | 77099 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 11/$293, MILK 21/$561, STRAWBERRY 22/$386, WHEAT 18/$846, WOOL 12/$2609 | 456 |
+| 25 | 79366 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 13} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 14/$308, MILK 11/$145, STRAWBERRY 8/$146, WHEAT 37/$1733, WOOL 4/$808 | 726 |
+| 26 | 80805 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 8/$143, MILK 3/$9, STRAWBERRY 18/$367, WHEAT 31/$1430 | 761 |
+| 27 | 85233 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$271, MILK 12/$159, STRAWBERRY 20/$296, WHEAT 3/$141, WOOL 18/$3888 | 327 |
+| 28 | 88290 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 18/$102, MILK 15/$117, STRAWBERRY 8/$177, WHEAT 48/$2227, WOOL 4/$758 | 324 |
+| 29 | 94321 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 22/$24, MILK 26/$32, WHEAT 144/$6063 | 88 |
+
+#### Episode 91864322 vs Haramball forever!
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 7 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2993 |
+| 1 | 6 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 172 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 186 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 518 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 13 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 714 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 39 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 2/$72 | 1352 |
+| 9 | 2220 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$819, MILK 6/$1300, WHEAT 13/$468 | 406 |
+| 10 | 4786 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$74, WOOL 16/$1252 | 6172 |
+| 11 | 5046 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$927, MILK 3/$677 | 417 |
+| 12 | 5547 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$661, MILK 3/$706, WHEAT 10/$395, WOOL 4/$14 | 821 |
+| 13 | 7390 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$827, WHEAT 25/$987, WOOL 12/$12 | 537 |
+| 14 | 10141 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$523, MILK 6/$1431, STRAWBERRY 6/$951, WHEAT 9/$367 | 783 |
+| 15 | 16218 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$558, MILK 24/$5632, WHEAT 3/$126, WOOL 8/$29 | 464 |
+| 16 | 23026 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$4729, STRAWBERRY 14/$2209, WHEAT 13/$554, WOOL 8/$8 | 1061 |
+| 17 | 24468 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$524, MILK 3/$625, STRAWBERRY 2/$309, WHEAT 25/$1075 | 567 |
+| 18 | 29195 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$439, MILK 18/$3874, STRAWBERRY 28/$3446, WHEAT 8/$354 | 1531 |
+| 19 | 32280 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$620, STRAWBERRY 26/$1933, WHEAT 1/$45, WOOL 16/$26 | 964 |
+| 20 | 43433 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 14, 'WHEAT': 20} | MELON 60/$8524, MILK 14/$2913, STRAWBERRY 24/$370, WHEAT 11/$506 | 2020 |
+| 21 | 48046 | 3 | 13 | {'STRAWBERRY': 29, 'WHEAT': 32} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 46, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 9/$470, MELON 12/$12, MILK 21/$4124, STRAWBERRY 20/$441, WHEAT 20/$930, WOOL 16/$47 | 1194 |
+| 22 | 48102 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 1} | {'MILK': 12, 'STRAWBERRY': 26} | FERTILIZER 12/$570, MELON 12/$12, MILK 3/$554, STRAWBERRY 36/$48 | 869 |
+| 23 | 50071 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 42} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 11/$480, MILK 12/$2302, STRAWBERRY 44/$715 | 1253 |
+| 24 | 56045 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 16} | {'MILK': 12, 'STRAWBERRY': 16, 'WHEAT': 48, 'WOOL': 16} | FERTILIZER 11/$434, MILK 21/$4109, STRAWBERRY 22/$267, WHEAT 18/$892, WOOL 12/$43 | 462 |
+| 25 | 59505 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 13} | {'MILK': 14, 'STRAWBERRY': 18, 'WHEAT': 40} | FERTILIZER 14/$479, MILK 11/$2089, STRAWBERRY 8/$39, WHEAT 37/$1833, WOOL 4/$4 | 741 |
+| 26 | 61633 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 9, 'SHEEP': 5} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 20, 'WHEAT': 4} | FERTILIZER 8/$244, MILK 3/$429, STRAWBERRY 18/$317, WHEAT 31/$1548 | 807 |
+| 27 | 64266 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 54, 'WOOL': 22} | FERTILIZER 19/$473, MILK 12/$1961, STRAWBERRY 20/$344, WHEAT 3/$150, WOOL 18/$49 | 344 |
+| 28 | 69085 | 3 | 10 | {'WHEAT': 23} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 14, 'WHEAT': 60} | FERTILIZER 18/$330, MILK 15/$2238, STRAWBERRY 8/$200, WHEAT 48/$2389, WOOL 4/$4 | 342 |
+| 29 | 78862 | 3 | 9 | {'WHEAT': 2} | {'COW': 9, 'SHEEP': 5} | - | {'MILK': 18, 'WHEAT': 74} | FERTILIZER 22/$231, MILK 26/$2797, WHEAT 144/$6837 | 88 |
+
+#### Episode 91867069 vs TIM
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 24 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2976 |
+| 1 | 23 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 191 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 3} | - | - | FERTILIZER 5/$496 | 328 |
+| 3 | 111 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 3} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$390 | 470 |
+| 4 | 375 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 3} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 4/$382 | 118 |
+| 5 | 247 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 3} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 4/$375, WHEAT 17/$519 | 1022 |
+| 6 | 64 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 3} | {'STRAWBERRY': 2} | {'WOOL': 15} | FERTILIZER 7/$639, WOOL 5/$1051 | 1873 |
+| 7 | 14 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 5, 'SHEEP': 3} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 2/$179, WOOL 10/$1896 | 2125 |
+| 8 | 8 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'STRAWBERRY': 1, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 6/$526, WHEAT 2/$68 | 600 |
+| 9 | 1943 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 12} | FERTILIZER 8/$677, MILK 6/$1204, WHEAT 13/$435 | 381 |
+| 10 | 4745 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 12/$1465 | 6145 |
+| 11 | 4955 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$947, MILK 3/$615 | 405 |
+| 12 | 5464 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 12} | FERTILIZER 9/$675, MILK 3/$636, WHEAT 10/$370, WOOL 4/$4 | 808 |
+| 13 | 7199 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$846, WHEAT 25/$914, WOOL 8/$8 | 502 |
+| 14 | 9904 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | - | {'MILK': 9} | MILK 6/$1260, STRAWBERRY 6/$1034, WHEAT 9/$343 | 739 |
+| 15 | 15053 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 12} | FERTILIZER 11/$732, MILK 24/$4665, WHEAT 3/$120, WOOL 4/$35 | 442 |
+| 16 | 18888 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 8} | {'MILK': 12, 'STRAWBERRY': 2, 'WHEAT': 32} | FERTILIZER 6/$377, MILK 9/$1500, STRAWBERRY 14/$2472, WHEAT 13/$515, WOOL 8/$8 | 1037 |
+| 17 | 20027 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 21, 'WHEAT': 4} | MILK 3/$336, STRAWBERRY 2/$343, WHEAT 25/$989 | 529 |
+| 18 | 23878 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | - | {'MILK': 9, 'STRAWBERRY': 8, 'WOOL': 12} | FERTILIZER 9/$536, MILK 15/$1745, STRAWBERRY 21/$3392, WHEAT 8/$325 | 1464 |
+| 19 | 25459 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 32, 'WHEAT': 16} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 7} | {'MILK': 9, 'STRAWBERRY': 25, 'WHEAT': 16} | FERTILIZER 8/$451, MILK 3/$266, STRAWBERRY 15/$1912, WHEAT 1/$41, WOOL 12/$33 | 942 |
+| 20 | 35386 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 32, 'WHEAT': 26} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 9, 'STRAWBERRY': 11, 'WHEAT': 20} | MELON 60/$8524, MILK 9/$640, STRAWBERRY 20/$1507, WHEAT 11/$462 | 1975 |
+| 21 | 36538 | 3 | 13 | {'STRAWBERRY': 28, 'WHEAT': 32} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 9, 'STRAWBERRY': 36, 'WHEAT': 3, 'WOOL': 12} | FERTILIZER 9/$485, MELON 12/$12, MILK 15/$807, STRAWBERRY 14/$346, WHEAT 20/$849, WOOL 12/$26 | 1147 |
+| 22 | 36202 | 3 | 10 | {'STRAWBERRY': 26, 'WHEAT': 33} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 17} | MELON 12/$12, MILK 3/$108, STRAWBERRY 26/$26 | 802 |
+| 23 | 35983 | 3 | 14 | {'STRAWBERRY': 16, 'WHEAT': 42} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 28} | FERTILIZER 12/$587, MILK 9/$382, STRAWBERRY 32/$212 | 1236 |
+| 24 | 37828 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 16} | {'MILK': 9, 'STRAWBERRY': 11, 'WHEAT': 48, 'WOOL': 12} | FERTILIZER 18/$800, MILK 18/$370, STRAWBERRY 21/$141, WHEAT 18/$810, WOOL 12/$12 | 452 |
+| 25 | 39216 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 44} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 13, 'WHEAT': 40} | FERTILIZER 6/$239, MILK 6/$222, STRAWBERRY 3/$3, WHEAT 37/$1630 | 716 |
+| 26 | 40286 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 54} | {'COW': 7, 'SHEEP': 4} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 15, 'WHEAT': 4} | FERTILIZER 9/$326, MILK 3/$15, STRAWBERRY 11/$105, WHEAT 31/$1364 | 730 |
+| 27 | 40986 | 3 | 10 | {'STRAWBERRY': 5, 'WHEAT': 39} | {'COW': 7, 'SHEEP': 4} | - | {'MILK': 9, 'STRAWBERRY': 4, 'WHEAT': 54, 'WOOL': 18} | FERTILIZER 16/$448, MILK 12/$283, STRAWBERRY 15/$109, WHEAT 3/$132, WOOL 18/$49 | 321 |
+| 28 | 43273 | 3 | 10 | {'WHEAT': 23} | {'COW': 7, 'SHEEP': 4} | - | {'MILK': 9, 'WHEAT': 60} | FERTILIZER 10/$223, MILK 12/$216, STRAWBERRY 4/$84, WHEAT 48/$2079 | 315 |
+| 29 | 49173 | 3 | 9 | {'WHEAT': 2} | {'COW': 7, 'SHEEP': 4} | - | {'MILK': 15, 'WHEAT': 74} | FERTILIZER 17/$271, MILK 18/$60, WHEAT 144/$5657 | 88 |
+
+#### Episode 91869967 vs Dmitry Larko
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 24 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2976 |
+| 1 | 23 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 191 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 3} | - | - | FERTILIZER 5/$496 | 328 |
+| 3 | 111 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 3} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 4/$390 | 470 |
+| 4 | 375 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 3} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 4/$382 | 118 |
+| 5 | 247 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 3} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 4/$375, WHEAT 17/$519 | 1022 |
+| 6 | 64 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 3} | {'STRAWBERRY': 2} | {'WOOL': 15} | FERTILIZER 7/$639, WOOL 5/$1051 | 1873 |
+| 7 | 14 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 5, 'SHEEP': 3} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 2/$179, WOOL 10/$1896 | 2125 |
+| 8 | 8 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'STRAWBERRY': 1, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 6/$526, WHEAT 2/$68 | 600 |
+| 9 | 1789 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 19, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 12} | FERTILIZER 8/$677, MILK 6/$1050, WHEAT 13/$435 | 381 |
+| 10 | 4741 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 30, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 12/$1465 | 5995 |
+| 11 | 4799 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'MELON': 2, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$947, MILK 3/$462 | 404 |
+| 12 | 5308 | 3 | 10 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 12} | FERTILIZER 9/$675, MILK 3/$487, WHEAT 10/$370, WOOL 4/$4 | 808 |
+| 13 | 6905 | 3 | 8 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$846, WHEAT 25/$924, WOOL 8/$8 | 501 |
+| 14 | 9468 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | - | {'MILK': 9} | MILK 6/$930, STRAWBERRY 6/$1221, WHEAT 9/$343 | 738 |
+| 15 | 12685 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 12} | FERTILIZER 11/$732, MILK 24/$2733, WHEAT 3/$120, WOOL 4/$35 | 442 |
+| 16 | 16091 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 8} | {'MILK': 12, 'STRAWBERRY': 2, 'WHEAT': 32} | FERTILIZER 6/$377, MILK 9/$552, STRAWBERRY 14/$2987, WHEAT 13/$521, WOOL 8/$8 | 1039 |
+| 17 | 17015 | 3 | 9 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 21, 'WHEAT': 4} | MILK 3/$33, STRAWBERRY 2/$424, WHEAT 25/$999 | 532 |
+| 18 | 20909 | 3 | 11 | {'MELON': 12, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 6, 'SHEEP': 3} | - | {'MILK': 9, 'STRAWBERRY': 8, 'WOOL': 12} | FERTILIZER 9/$536, MILK 15/$174, STRAWBERRY 21/$4434, WHEAT 8/$330 | 1476 |
+| 19 | 22238 | 3 | 13 | {'MELON': 12, 'STRAWBERRY': 32, 'WHEAT': 16} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 7} | {'MILK': 9, 'STRAWBERRY': 25, 'WHEAT': 16} | FERTILIZER 8/$451, MILK 3/$3, STRAWBERRY 15/$3086, WHEAT 1/$42, WOOL 12/$33 | 945 |
+| 20 | 33835 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 32, 'WHEAT': 26} | {'COW': 6, 'SHEEP': 3} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 9, 'STRAWBERRY': 11, 'WHEAT': 20} | MELON 54/$7921, MILK 9/$13, STRAWBERRY 20/$3931, WHEAT 11/$473 | 1985 |
+| 21 | 37405 | 3 | 13 | {'STRAWBERRY': 28, 'WHEAT': 32} | {'COW': 6, 'SHEEP': 4} | {'WHEAT': 12} | {'MELON': 12, 'MILK': 6, 'STRAWBERRY': 34, 'WHEAT': 3, 'WOOL': 8} | FERTILIZER 9/$485, MELON 6/$33, MILK 15/$55, STRAWBERRY 18/$3389, WHEAT 20/$864, WOOL 8/$22 | 1159 |
+| 22 | 41031 | 3 | 10 | {'STRAWBERRY': 19, 'WHEAT': 33} | {'COW': 6, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 5, 'STRAWBERRY': 10} | MELON 12/$12, STRAWBERRY 24/$4118 | 824 |
+| 23 | 42025 | 3 | 14 | {'STRAWBERRY': 9, 'WHEAT': 42} | {'COW': 6, 'SHEEP': 4} | {'WHEAT': 16} | {'MILK': 11, 'STRAWBERRY': 24, 'WHEAT': 28} | FERTILIZER 12/$587, MILK 5/$97, STRAWBERRY 21/$3190 | 1242 |
+| 24 | 46931 | 3 | 11 | {'STRAWBERRY': 8, 'WHEAT': 44} | {'COW': 6, 'SHEEP': 4} | {'WHEAT': 16} | {'MILK': 7, 'STRAWBERRY': 6, 'WHEAT': 48, 'WOOL': 14} | FERTILIZER 18/$804, MILK 18/$170, STRAWBERRY 17/$1900, WHEAT 18/$837, WOOL 12/$12 | 455 |
+| 25 | 48508 | 3 | 12 | {'STRAWBERRY': 8, 'WHEAT': 44} | {'COW': 6, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 9, 'STRAWBERRY': 6, 'WHEAT': 40} | FERTILIZER 5/$200, MILK 6/$186, STRAWBERRY 2/$206, WHEAT 37/$1699, WOOL 2/$2 | 726 |
+| 26 | 50251 | 3 | 10 | {'STRAWBERRY': 3, 'WHEAT': 54} | {'COW': 6, 'SHEEP': 4} | {'WHEAT': 11} | {'MILK': 9, 'STRAWBERRY': 7, 'WHEAT': 4} | FERTILIZER 8/$292, MILK 3/$3, STRAWBERRY 6/$807, WHEAT 31/$1410 | 759 |
+| 27 | 51927 | 3 | 10 | {'STRAWBERRY': 3, 'WHEAT': 39} | {'COW': 6, 'SHEEP': 4} | - | {'MILK': 9, 'STRAWBERRY': 2, 'WHEAT': 54, 'WOOL': 18} | FERTILIZER 15/$422, MILK 12/$283, STRAWBERRY 7/$1115, WHEAT 3/$138, WOOL 18/$49 | 331 |
+| 28 | 54532 | 3 | 10 | {'WHEAT': 23} | {'COW': 6, 'SHEEP': 4} | - | {'MILK': 9, 'WHEAT': 60} | FERTILIZER 8/$186, MILK 12/$216, STRAWBERRY 2/$335, WHEAT 48/$2194 | 326 |
+| 29 | 60899 | 3 | 9 | {'WHEAT': 2} | {'COW': 6, 'SHEEP': 4} | - | {'MILK': 9, 'WHEAT': 74} | FERTILIZER 16/$262, MILK 12/$54, WHEAT 144/$6139 | 88 |
+
+## Hak — rating 3097.1
+
+| Episode | Opponent | Result | Money | Land days | Peak animals | Max hands | Max productive |
+| ---: | --- | --- | ---: | --- | --- | ---: | ---: |
+| 91853240 | Ezzzzzekki | win | 116585 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 74 |
+| 91856955 | Abracadabra | loss | 52430 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91859757 | Ezzzzzekki | win | 56877 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 75 |
+| 91869019 | boatlee | win | 62627 | [6, 10] | {'COW': 9, 'SHEEP': 4} | 14 | 74 |
+
+### Daily timelines
+
+#### Episode 91853240 vs Ezzzzzekki
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 7 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2993 |
+| 1 | 6 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 172 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 186 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 518 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 13 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 714 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 258 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$291 | 1352 |
+| 9 | 2223 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 12} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$819, MILK 6/$1300, WHEAT 7/$252 | 406 |
+| 10 | 4887 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 12} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$74, WOOL 16/$1252 | 6074 |
+| 11 | 6104 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 12} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 4, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$957, MILK 3/$677, WHEAT 2/$80 | 497 |
+| 12 | 6795 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 28, 'WOOL': 16} | FERTILIZER 9/$677, MILK 3/$717, WHEAT 11/$435, WOOL 4/$14 | 421 |
+| 13 | 8842 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$855, WHEAT 24/$944, WOOL 12/$12 | 495 |
+| 14 | 11607 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$535, MILK 6/$1470, STRAWBERRY 6/$1212, WHEAT 3/$120 | 572 |
+| 15 | 17378 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$569, MILK 24/$5908, WOOL 8/$29 | 735 |
+| 16 | 25095 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$5056, STRAWBERRY 14/$2951, WHEAT 15/$631, WOOL 8/$8 | 929 |
+| 17 | 26983 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$540, MILK 3/$683, STRAWBERRY 2/$424, WHEAT 19/$798 | 557 |
+| 18 | 34702 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$452, MILK 18/$4302, STRAWBERRY 28/$5809, WHEAT 5/$214 | 836 |
+| 19 | 39497 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 32, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$710, STRAWBERRY 26/$5270, WHEAT 8/$360, WOOL 16/$16 | 958 |
+| 20 | 58784 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 32, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$8524, MILK 23/$5619, STRAWBERRY 20/$3705, WHEAT 15/$679 | 1971 |
+| 21 | 66611 | 3 | 12 | {'STRAWBERRY': 28, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$371, MELON 12/$12, MILK 15/$3694, STRAWBERRY 28/$5004, WHEAT 7/$315, WOOL 16/$37 | 855 |
+| 22 | 71837 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$552, MELON 12/$12, STRAWBERRY 34/$4570 | 753 |
+| 23 | 77172 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 29, 'WHEAT': 28} | FERTILIZER 8/$369, MILK 15/$3893, STRAWBERRY 35/$2835, WHEAT 3/$147 | 1392 |
+| 24 | 82777 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$465, MILK 11/$2996, STRAWBERRY 32/$812, WHEAT 24/$1157 | 342 |
+| 25 | 88010 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 14, 'WHEAT': 39} | FERTILIZER 13/$489, MILK 14/$3811, STRAWBERRY 10/$115, WHEAT 31/$1488, WOOL 16/$16 | 686 |
+| 26 | 91177 | 3 | 12 | {'STRAWBERRY': 4, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 15/$479, MILK 5/$1345, STRAWBERRY 14/$497, WHEAT 30/$1440 | 594 |
+| 27 | 97374 | 3 | 11 | {'STRAWBERRY': 4, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$384, MILK 18/$5033, STRAWBERRY 26/$763, WHEAT 11/$537 | 520 |
+| 28 | 104735 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$338, MILK 17/$4811, STRAWBERRY 4/$168, WHEAT 47/$2265, WOOL 16/$16 | 237 |
+| 29 | 116585 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 12/$148, MILK 18/$5187, WHEAT 149/$6658 | 143 |
+
+#### Episode 91856955 vs Abracadabra
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 7 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2993 |
+| 1 | 6 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 172 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 186 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 518 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 14 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2280 |
+| 7 | 720 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2241 |
+| 8 | 264 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$286 | 1347 |
+| 9 | 1995 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 7/$247 | 396 |
+| 10 | 4816 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$72, WOOL 16/$1252 | 5915 |
+| 11 | 5924 | 3 | 10 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$957, MILK 3/$558, WHEAT 2/$76 | 483 |
+| 12 | 6604 | 3 | 10 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$677, MILK 3/$591, WHEAT 11/$412, WOOL 4/$14 | 409 |
+| 13 | 8493 | 3 | 8 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$855, WHEAT 24/$880, WOOL 12/$12 | 463 |
+| 14 | 10798 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$535, MILK 6/$1161, STRAWBERRY 6/$1034, WHEAT 3/$111 | 536 |
+| 15 | 14734 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$570, MILK 24/$3701, WOOL 8/$383 | 718 |
+| 16 | 18433 | 3 | 13 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$1642, STRAWBERRY 14/$2350, WHEAT 16/$608, WOOL 8/$8 | 909 |
+| 17 | 19576 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$540, MILK 3/$72, STRAWBERRY 2/$323, WHEAT 19/$712 | 504 |
+| 18 | 23017 | 3 | 11 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$452, MILK 18/$198, STRAWBERRY 28/$3446, WHEAT 5/$190 | 765 |
+| 19 | 25778 | 3 | 13 | {'MELON': 11, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 26/$1015, WHEAT 8/$312, WOOL 16/$2586 | 922 |
+| 20 | 33002 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 54/$8410, MILK 23/$103, STRAWBERRY 20/$20, WHEAT 15/$587 | 1905 |
+| 21 | 36649 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 6, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$370, MELON 6/$114, MILK 15/$47, STRAWBERRY 28/$36, WHEAT 7/$266, WOOL 16/$3409 | 794 |
+| 22 | 36684 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$548, MELON 6/$6, STRAWBERRY 34/$36 | 660 |
+| 23 | 35971 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 8/$364, MILK 15/$113, STRAWBERRY 38/$69, WHEAT 3/$123 | 1341 |
+| 24 | 37149 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$452, MILK 11/$23, STRAWBERRY 32/$34, WHEAT 24/$970 | 342 |
+| 25 | 41934 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$477, MILK 14/$14, STRAWBERRY 10/$10, WHEAT 31/$1171, WOOL 16/$3759 | 646 |
+| 26 | 42955 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 14/$428, MILK 5/$7, STRAWBERRY 16/$16, WHEAT 30/$1119 | 549 |
+| 27 | 43445 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$372, MILK 18/$98, STRAWBERRY 26/$68, WHEAT 11/$403 | 451 |
+| 28 | 49018 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$312, MILK 17/$31, STRAWBERRY 6/$6, WHEAT 47/$1604, WOOL 16/$3827 | 207 |
+| 29 | 52430 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$131, MILK 18/$42, WHEAT 149/$3382 | 143 |
+
+#### Episode 91859757 vs Ezzzzzekki
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 7 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2993 |
+| 1 | 6 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 172 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 187 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 471 |
+| 4 | 545 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 118 |
+| 5 | 512 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$525 | 1024 |
+| 6 | 14 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2274 |
+| 7 | 735 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2226 |
+| 8 | 277 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$278 | 1341 |
+| 9 | 2007 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$830, MILK 6/$1050, WHEAT 7/$238 | 388 |
+| 10 | 4831 | 3 | 14 | {'MELON': 10, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 10, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$70, WOOL 16/$1252 | 5910 |
+| 11 | 5844 | 3 | 10 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 1, 'STRAWBERRY': 5, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$957, MILK 3/$462, WHEAT 2/$76 | 482 |
+| 12 | 6523 | 3 | 10 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$677, MILK 3/$436, WHEAT 11/$413, WOOL 4/$14 | 411 |
+| 13 | 8263 | 3 | 8 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$855, WHEAT 24/$894, WOOL 12/$12 | 471 |
+| 14 | 10354 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$535, MILK 6/$771, STRAWBERRY 6/$1221, WHEAT 3/$114 | 550 |
+| 15 | 11882 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$569, MILK 24/$1656, WOOL 8/$29 | 726 |
+| 16 | 14634 | 3 | 13 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$71, STRAWBERRY 14/$2951, WHEAT 16/$641, WOOL 8/$8 | 919 |
+| 17 | 15820 | 3 | 9 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$540, MILK 3/$3, STRAWBERRY 2/$424, WHEAT 19/$751 | 532 |
+| 18 | 21448 | 3 | 11 | {'MELON': 11, 'STRAWBERRY': 36, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$452, MILK 18/$20, STRAWBERRY 28/$5809, WHEAT 5/$204 | 804 |
+| 19 | 23312 | 3 | 13 | {'MELON': 11, 'STRAWBERRY': 33, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$3, STRAWBERRY 26/$5122, WHEAT 8/$340, WOOL 16/$26 | 944 |
+| 20 | 36417 | 3 | 14 | {'MELON': 1, 'STRAWBERRY': 33, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 60, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 54/$8410, MILK 23/$25, STRAWBERRY 20/$3542, WHEAT 15/$642 | 1946 |
+| 21 | 41091 | 3 | 12 | {'STRAWBERRY': 29, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 6, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$371, MELON 6/$114, MILK 15/$15, STRAWBERRY 28/$4475, WHEAT 7/$299, WOOL 16/$37 | 834 |
+| 22 | 43518 | 3 | 10 | {'STRAWBERRY': 28, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$552, MELON 6/$6, STRAWBERRY 34/$2483 | 721 |
+| 23 | 42926 | 3 | 14 | {'STRAWBERRY': 18, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 32, 'WHEAT': 28} | FERTILIZER 8/$369, MILK 15/$17, STRAWBERRY 38/$443, WHEAT 3/$138 | 1376 |
+| 24 | 44680 | 3 | 11 | {'STRAWBERRY': 16, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$465, MILK 11/$13, STRAWBERRY 32/$338, WHEAT 24/$1097 | 342 |
+| 25 | 45961 | 3 | 12 | {'STRAWBERRY': 16, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 16, 'WHEAT': 39} | FERTILIZER 13/$489, MILK 14/$14, STRAWBERRY 10/$28, WHEAT 31/$1400, WOOL 16/$26 | 676 |
+| 26 | 47489 | 3 | 12 | {'STRAWBERRY': 5, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 14/$451, MILK 5/$5, STRAWBERRY 16/$315, WHEAT 30/$1339 | 582 |
+| 27 | 48409 | 3 | 11 | {'STRAWBERRY': 5, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 10, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$389, MILK 18/$20, STRAWBERRY 26/$511, WHEAT 11/$504 | 504 |
+| 28 | 50805 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$342, MILK 17/$19, STRAWBERRY 6/$132, WHEAT 47/$2097, WOOL 16/$37 | 231 |
+| 29 | 56877 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 11/$145, MILK 18/$18, WHEAT 149/$6052 | 143 |
+
+#### Episode 91869019 vs boatlee
+
+| Day | Bank | Q | Hands | Crops | Animals | Plants | Harvests | Sales/revenue | Capital spend |
+| ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- | ---: |
+| 0 | 7 | 1 | 4 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | {'MELON': 5, 'WHEAT': 5} | - | - | 2993 |
+| 1 | 6 | 1 | 1 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | - | 1 |
+| 2 | 172 | 1 | 2 | {'MELON': 5, 'WHEAT': 5} | {'COW': 1, 'SHEEP': 4} | - | - | FERTILIZER 5/$496 | 330 |
+| 3 | 186 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'STRAWBERRY': 3, 'WHEAT': 1} | - | FERTILIZER 5/$486 | 472 |
+| 4 | 543 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 3, 'WHEAT': 6} | {'COW': 1, 'SHEEP': 4} | {'WHEAT': 5} | {'WHEAT': 20} | FERTILIZER 5/$476 | 119 |
+| 5 | 518 | 1 | 3 | {'MELON': 5, 'STRAWBERRY': 7, 'WHEAT': 7} | {'COW': 2, 'SHEEP': 4} | {'STRAWBERRY': 4, 'WHEAT': 1} | - | FERTILIZER 5/$466, WHEAT 17/$542 | 1033 |
+| 6 | 13 | 2 | 4 | {'MELON': 5, 'STRAWBERRY': 8, 'WHEAT': 7} | {'COW': 3, 'SHEEP': 4} | {'STRAWBERRY': 2} | {'WOOL': 20} | FERTILIZER 8/$725, WOOL 5/$1051 | 2281 |
+| 7 | 714 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 18, 'WHEAT': 10} | {'COW': 6, 'SHEEP': 4} | {'STRAWBERRY': 10, 'WHEAT': 4} | {'WHEAT': 4} | FERTILIZER 3/$265, WOOL 15/$2682 | 2246 |
+| 8 | 258 | 2 | 6 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'STRAWBERRY': 2, 'WHEAT': 8} | {'MILK': 6, 'WHEAT': 20} | FERTILIZER 7/$605, WHEAT 8/$291 | 1352 |
+| 9 | 2223 | 2 | 7 | {'MELON': 5, 'STRAWBERRY': 20, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'WHEAT': 4, 'WOOL': 16} | FERTILIZER 10/$819, MILK 6/$1300, WHEAT 7/$252 | 406 |
+| 10 | 4887 | 3 | 14 | {'MELON': 12, 'STRAWBERRY': 31, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 12, 'STRAWBERRY': 11, 'WHEAT': 1} | {'MELON': 30, 'MILK': 3} | MELON 30/$7412, WHEAT 2/$74, WOOL 16/$1252 | 6074 |
+| 11 | 6068 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'MELON': 2, 'STRAWBERRY': 4, 'WHEAT': 4} | {'WHEAT': 16} | FERTILIZER 12/$943, MILK 3/$655, WHEAT 2/$80 | 497 |
+| 12 | 6751 | 3 | 10 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 3, 'WHEAT': 32, 'WOOL': 16} | FERTILIZER 9/$670, MILK 3/$669, WHEAT 11/$435, WOOL 4/$14 | 422 |
+| 13 | 8738 | 3 | 8 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 6, 'STRAWBERRY': 6, 'WHEAT': 4} | FERTILIZER 12/$842, WHEAT 24/$948, WOOL 12/$12 | 498 |
+| 14 | 11223 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 9} | FERTILIZER 8/$530, MILK 6/$1332, STRAWBERRY 6/$1080, WHEAT 3/$120 | 577 |
+| 15 | 16145 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 4} | {'MILK': 15, 'STRAWBERRY': 14, 'WHEAT': 16, 'WOOL': 16} | FERTILIZER 9/$565, MILK 24/$5066, WOOL 8/$29 | 738 |
+| 16 | 22231 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 8} | {'MILK': 24, 'STRAWBERRY': 2, 'WHEAT': 32} | MILK 21/$3762, STRAWBERRY 14/$2565, WHEAT 16/$683, WOOL 8/$8 | 932 |
+| 17 | 23754 | 3 | 9 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 1} | {'MILK': 9, 'STRAWBERRY': 28, 'WHEAT': 4} | FERTILIZER 9/$533, MILK 3/$386, STRAWBERRY 2/$363, WHEAT 19/$808 | 567 |
+| 18 | 29451 | 3 | 11 | {'MELON': 14, 'STRAWBERRY': 35, 'WHEAT': 13} | {'COW': 8, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 12, 'WOOL': 16} | FERTILIZER 8/$446, MILK 18/$2257, STRAWBERRY 28/$4752, WHEAT 5/$219 | 850 |
+| 19 | 32123 | 3 | 13 | {'MELON': 14, 'STRAWBERRY': 32, 'WHEAT': 16} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 7} | {'MILK': 14, 'STRAWBERRY': 34, 'WHEAT': 16} | MILK 3/$291, STRAWBERRY 26/$3478, WHEAT 8/$367, WOOL 16/$16 | 965 |
+| 20 | 43683 | 3 | 14 | {'MELON': 2, 'STRAWBERRY': 32, 'WHEAT': 26} | {'COW': 8, 'SHEEP': 4} | {'WHEAT': 14} | {'MELON': 72, 'MILK': 12, 'STRAWBERRY': 18, 'WHEAT': 20} | MELON 60/$8524, MILK 23/$1801, STRAWBERRY 20/$979, WHEAT 15/$689 | 1981 |
+| 21 | 44380 | 3 | 12 | {'STRAWBERRY': 28, 'WHEAT': 30} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 10} | {'MELON': 12, 'MILK': 12, 'STRAWBERRY': 44, 'WHEAT': 3, 'WOOL': 16} | FERTILIZER 7/$370, MELON 12/$12, MILK 15/$611, STRAWBERRY 28/$307, WHEAT 7/$322, WOOL 16/$37 | 862 |
+| 22 | 44405 | 3 | 10 | {'STRAWBERRY': 27, 'WHEAT': 33} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 3} | {'MILK': 9, 'STRAWBERRY': 28} | FERTILIZER 11/$541, MELON 12/$12, STRAWBERRY 34/$38 | 760 |
+| 23 | 44421 | 3 | 14 | {'STRAWBERRY': 17, 'WHEAT': 44} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 18} | {'MILK': 6, 'STRAWBERRY': 29, 'WHEAT': 28} | FERTILIZER 8/$363, MILK 15/$681, STRAWBERRY 35/$388, WHEAT 3/$147 | 1395 |
+| 24 | 46734 | 3 | 11 | {'STRAWBERRY': 15, 'WHEAT': 45} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 12} | {'MILK': 14, 'STRAWBERRY': 20, 'WHEAT': 47, 'WOOL': 16} | FERTILIZER 11/$458, MILK 11/$629, STRAWBERRY 32/$224, WHEAT 24/$1176 | 342 |
+| 25 | 48798 | 3 | 12 | {'STRAWBERRY': 15, 'WHEAT': 46} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 13} | {'MILK': 16, 'STRAWBERRY': 14, 'WHEAT': 39} | FERTILIZER 13/$478, MILK 14/$442, STRAWBERRY 10/$10, WHEAT 31/$1475, WOOL 16/$345 | 686 |
+| 26 | 50311 | 3 | 12 | {'STRAWBERRY': 4, 'WHEAT': 57} | {'COW': 9, 'SHEEP': 4} | {'WHEAT': 14} | {'MILK': 9, 'STRAWBERRY': 22, 'WHEAT': 11} | FERTILIZER 15/$468, MILK 5/$29, STRAWBERRY 14/$187, WHEAT 30/$1423 | 594 |
+| 27 | 51421 | 3 | 11 | {'STRAWBERRY': 4, 'WHEAT': 40} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 12, 'STRAWBERRY': 8, 'WHEAT': 66, 'WOOL': 16} | FERTILIZER 15/$381, MILK 18/$387, STRAWBERRY 26/$334, WHEAT 11/$528 | 520 |
+| 28 | 55926 | 3 | 10 | {'WHEAT': 27} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 14, 'WHEAT': 44} | FERTILIZER 18/$338, MILK 17/$150, STRAWBERRY 4/$57, WHEAT 47/$2210, WOOL 16/$1985 | 235 |
+| 29 | 62627 | 3 | 10 | {'WHEAT': 1} | {'COW': 9, 'SHEEP': 4} | - | {'MILK': 18, 'WHEAT': 91} | FERTILIZER 12/$154, MILK 18/$223, WHEAT 149/$6467 | 143 |
+

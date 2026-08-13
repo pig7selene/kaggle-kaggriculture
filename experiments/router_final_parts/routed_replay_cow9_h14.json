@@ -1,0 +1,4278 @@
+{
+  "schema_version": 1,
+  "experiment": "large_scale_router_fresh_confirmation_part",
+  "seeds": [
+    13100,
+    13101,
+    13102,
+    13103,
+    13104,
+    13105,
+    13106,
+    13107,
+    13108,
+    13109,
+    13110,
+    13111,
+    13112,
+    13113,
+    13114,
+    13115
+  ],
+  "both_seats": true,
+  "opponents": {
+    "current_best": "agents/animal_c8_day12_land_day11.py",
+    "old_router_replay": "agents/replay_meta_full_schedule.py",
+    "mixed_replay_open": "agents/router_meta_mixed_open.py",
+    "early_land_d8": "agents/adversaries/gen_land_d8_labor6.py",
+    "land_labor_d11": "agents/adversaries/gen_land_d11_labor7_sell12.py",
+    "early_cow_d8": "agents/adversaries/gen_cow6_d8.py",
+    "proxy_high_labor": "agents/proxies/high_labor.py",
+    "proxy_livestock_crop": "agents/proxies/livestock_crop.py"
+  },
+  "candidate": {
+    "candidate": "routed_replay_cow9_h14",
+    "path": "agents/router_r3_replay_economy.py",
+    "sha256": "532fd2599a5378e57290b7bc2a34781d4a430c8433c2d7fa893434eb3d0a3d4d",
+    "overall": {
+      "games": 256,
+      "wins": 256,
+      "losses": 0,
+      "ties": 0,
+      "score_rate": 1.0,
+      "average_money": 77138.91015625,
+      "average_advantage": 35799.671875,
+      "p10_seed_advantage": 30458.53125,
+      "average_crop_revenue": 46841.0390625,
+      "average_animal_revenue": 51901.44140625,
+      "average_final_quadrants": 3.0,
+      "average_peak_hands": 14.0,
+      "average_peak_productive_tiles": 68.375,
+      "average_peak_cows": 8.98046875,
+      "average_peak_sheep": 0.0,
+      "max_cow_loss": 0,
+      "max_sheep_loss": 0,
+      "max_stranded_units": 3,
+      "routing": {
+        "by_scale": {
+          "25": {
+            "total_actions": 279728,
+            "productive_actions": 66414,
+            "movement_actions": 146598,
+            "pass_actions": 55216,
+            "logistics_actions": 11500,
+            "invalid_actions": 0,
+            "duplicate_conflicts": 0,
+            "shed_directed_moves": 28789,
+            "shed_entries": 7916,
+            "plant_day_checks": 32276,
+            "missed_watering": 552,
+            "critical_missed_watering": 20,
+            "delayed_crop_harvests": 0,
+            "animal_day_checks": 9728,
+            "animals_unfed": 2284,
+            "animals_uncared": 2304,
+            "animal_product_unharvested": 0,
+            "fertilizer_left": 492,
+            "productive_tiles_sum": 42004,
+            "unlocked_tiles_sum": 70400,
+            "empty_tiles_with_capital": 26011,
+            "daily_checks": 2816,
+            "watering_miss_rate": 0.017102491014995662,
+            "critical_watering_miss_rate": 0.0006196554715578138,
+            "animal_unfed_rate": 0.23478618421052633,
+            "animal_uncared_rate": 0.23684210526315788,
+            "fertilizer_left_rate": 0.05057565789473684,
+            "animal_product_wait_rate": 0.0,
+            "productive_tile_utilization": 0.5966477272727273,
+            "productive_action_ratio": 0.23742349711147973,
+            "movement_action_ratio": 0.5240733855745582,
+            "pass_action_ratio": 0.19739175198764514,
+            "invalid_action_ratio": 0.0,
+            "movement_per_productive_action": 2.2073358026922034,
+            "average_productive_tiles": 14.916193181818182,
+            "average_empty_tiles_with_capital": 9.236860795454545,
+            "average_harvest_to_sale_turns": 28.41392543859649,
+            "median_harvest_to_sale_turns": null
+          },
+          "50": {
+            "total_actions": 1280,
+            "productive_actions": 0,
+            "movement_actions": 483,
+            "pass_actions": 29,
+            "logistics_actions": 768,
+            "invalid_actions": 0,
+            "duplicate_conflicts": 0,
+            "shed_directed_moves": 0,
+            "shed_entries": 0,
+            "plant_day_checks": 0,
+            "missed_watering": 0,
+            "critical_missed_watering": 0,
+            "delayed_crop_harvests": 0,
+            "animal_day_checks": 0,
+            "animals_unfed": 0,
+            "animals_uncared": 0,
+            "animal_product_unharvested": 0,
+            "fertilizer_left": 0,
+            "productive_tiles_sum": 0,
+            "unlocked_tiles_sum": 0,
+            "empty_tiles_with_capital": 0,
+            "daily_checks": 0,
+            "watering_miss_rate": 0.0,
+            "critical_watering_miss_rate": 0.0,
+            "animal_unfed_rate": 0.0,
+            "animal_uncared_rate": 0.0,
+            "fertilizer_left_rate": 0.0,
+            "animal_product_wait_rate": 0.0,
+            "productive_tile_utilization": 0.0,
+            "productive_action_ratio": 0.0,
+            "movement_action_ratio": 0.37734375,
+            "pass_action_ratio": 0.02265625,
+            "invalid_action_ratio": 0.0,
+            "movement_per_productive_action": 0.0,
+            "average_productive_tiles": 0.0,
+            "average_empty_tiles_with_capital": 0.0,
+            "average_harvest_to_sale_turns": null,
+            "median_harvest_to_sale_turns": null
+          },
+          "75": {
+            "total_actions": 1309924,
+            "productive_actions": 426403,
+            "movement_actions": 709840,
+            "pass_actions": 149235,
+            "logistics_actions": 24446,
+            "invalid_actions": 0,
+            "duplicate_conflicts": 0,
+            "shed_directed_moves": 146155,
+            "shed_entries": 12912,
+            "plant_day_checks": 223232,
+            "missed_watering": 13106,
+            "critical_missed_watering": 5008,
+            "delayed_crop_harvests": 41526,
+            "animal_day_checks": 40328,
+            "animals_unfed": 2028,
+            "animals_uncared": 2074,
+            "animal_product_unharvested": 221,
+            "fertilizer_left": 2370,
+            "productive_tiles_sum": 263560,
+            "unlocked_tiles_sum": 345600,
+            "empty_tiles_with_capital": 81828,
+            "daily_checks": 4608,
+            "watering_miss_rate": 0.05871022075688073,
+            "critical_watering_miss_rate": 0.022434059633027522,
+            "animal_unfed_rate": 0.05028764134100377,
+            "animal_uncared_rate": 0.05142828803808768,
+            "fertilizer_left_rate": 0.05876810156714937,
+            "animal_product_wait_rate": 0.005480063479468359,
+            "productive_tile_utilization": 0.7626157407407408,
+            "productive_action_ratio": 0.32551735825895245,
+            "movement_action_ratio": 0.5418940335469844,
+            "pass_action_ratio": 0.11392645680207401,
+            "invalid_action_ratio": 0.0,
+            "movement_per_productive_action": 1.6647162426155537,
+            "average_productive_tiles": 57.19618055555556,
+            "average_empty_tiles_with_capital": 17.7578125,
+            "average_harvest_to_sale_turns": 31.03557755190606,
+            "median_harvest_to_sale_turns": null
+          }
+        },
+        "land_first_use_delay_turns": {
+          "median": 2.0,
+          "range": [
+            1,
+            3
+          ],
+          "observations": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            3,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        "worker_profiles": [
+          {
+            "unit_index": 0,
+            "appearances": 256,
+            "responsibilities": {
+              "animal": 43696,
+              "crop": 6018
+            },
+            "productive_quadrants": {
+              "NW": 49714
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.0,
+            "average_shed_entries_per_day": 1.298046875
+          },
+          {
+            "unit_index": 1,
+            "appearances": 256,
+            "responsibilities": {
+              "animal": 39168,
+              "crop": 16993
+            },
+            "productive_quadrants": {
+              "NW": 56161
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.7666666666666667,
+            "average_shed_entries_per_day": 0.175
+          },
+          {
+            "unit_index": 2,
+            "appearances": 256,
+            "responsibilities": {
+              "animal": 4116,
+              "crop": 53727
+            },
+            "productive_quadrants": {
+              "NW": 11337,
+              "SW": 46506
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.4552801724137931,
+            "average_shed_entries_per_day": 0.45177801724137934
+          },
+          {
+            "unit_index": 3,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 57961
+            },
+            "productive_quadrants": {
+              "NE": 43901,
+              "NW": 14060
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 1.1939174107142856,
+            "average_shed_entries_per_day": 0.24232700892857142
+          },
+          {
+            "unit_index": 4,
+            "appearances": 256,
+            "responsibilities": {
+              "animal": 34807,
+              "crop": 4809
+            },
+            "productive_quadrants": {
+              "NW": 39616
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.47921874999999997,
+            "average_shed_entries_per_day": 0.201875
+          },
+          {
+            "unit_index": 5,
+            "appearances": 256,
+            "responsibilities": {
+              "animal": 36015,
+              "crop": 247
+            },
+            "productive_quadrants": {
+              "NW": 36262
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.9695723684210525,
+            "average_shed_entries_per_day": 0.24835526315789475
+          },
+          {
+            "unit_index": 6,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 39354
+            },
+            "productive_quadrants": {
+              "SW": 39354
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.2337582236842105,
+            "average_shed_entries_per_day": 0.01850328947368421
+          },
+          {
+            "unit_index": 7,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 36965
+            },
+            "productive_quadrants": {
+              "NE": 36965
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 1.1829769736842106,
+            "average_shed_entries_per_day": 0.0014391447368421052
+          },
+          {
+            "unit_index": 8,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 32250
+            },
+            "productive_quadrants": {
+              "NW": 32250
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.8865131578947368,
+            "average_shed_entries_per_day": 0.37150493421052627
+          },
+          {
+            "unit_index": 9,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 31610
+            },
+            "productive_quadrants": {
+              "NE": 31610
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 1.1293147467320261,
+            "average_shed_entries_per_day": 0.00021701388888888888
+          },
+          {
+            "unit_index": 10,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 27273
+            },
+            "productive_quadrants": {
+              "SW": 27273
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.6680245535714285,
+            "average_shed_entries_per_day": 0.0049479166666666664
+          },
+          {
+            "unit_index": 11,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 11532
+            },
+            "productive_quadrants": {
+              "NW": 11532
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 1.1124131944444444,
+            "average_shed_entries_per_day": 0.0
+          },
+          {
+            "unit_index": 12,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 6419
+            },
+            "productive_quadrants": {
+              "NW": 6419
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.8878348214285714,
+            "average_shed_entries_per_day": 0.0
+          },
+          {
+            "unit_index": 13,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 6355
+            },
+            "productive_quadrants": {
+              "NE": 6355
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 1.3994140625,
+            "average_shed_entries_per_day": 0.0
+          },
+          {
+            "unit_index": 14,
+            "appearances": 256,
+            "responsibilities": {
+              "crop": 3502
+            },
+            "productive_quadrants": {
+              "SW": 3502
+            },
+            "median_territory_purity": 1.0,
+            "average_quadrant_transitions_per_day": 0.693359375,
+            "average_shed_entries_per_day": 0.0
+          }
+        ]
+      }
+    },
+    "matchups": {
+      "current_best": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 75531.625,
+        "average_advantage": 22172.15625,
+        "p10_seed_advantage": 14872.25,
+        "average_crop_revenue": 42644.65625,
+        "average_animal_revenue": 54023.84375,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 67.71875,
+        "average_peak_cows": 9.0,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34976,
+              "productive_actions": 8296,
+              "movement_actions": 18328,
+              "pass_actions": 6912,
+              "logistics_actions": 1440,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3584,
+              "shed_entries": 992,
+              "plant_day_checks": 4032,
+              "missed_watering": 64,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 288,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 64,
+              "productive_tiles_sum": 5248,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3210,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.015873015873015872,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.23684210526315788,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.05263157894736842,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5963636363636363,
+              "productive_action_ratio": 0.23719121683440073,
+              "movement_action_ratio": 0.5240164684354987,
+              "pass_action_ratio": 0.19762122598353157,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.2092574734811956,
+              "average_productive_tiles": 14.909090909090908,
+              "average_empty_tiles_with_capital": 9.119318181818182,
+              "average_harvest_to_sale_turns": 27.635964912280702,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 59,
+              "pass_actions": 5,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.36875,
+              "pass_action_ratio": 0.03125,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163744,
+              "productive_actions": 53584,
+              "movement_actions": 88817,
+              "pass_actions": 18328,
+              "logistics_actions": 3015,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 18874,
+              "shed_entries": 1619,
+              "plant_day_checks": 27446,
+              "missed_watering": 1600,
+              "critical_missed_watering": 646,
+              "delayed_crop_harvests": 4736,
+              "animal_day_checks": 5051,
+              "animals_unfed": 225,
+              "animals_uncared": 229,
+              "animal_product_unharvested": 24,
+              "fertilizer_left": 269,
+              "productive_tiles_sum": 32497,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 10698,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.05829629089849158,
+              "critical_watering_miss_rate": 0.023537127450265975,
+              "animal_unfed_rate": 0.04454563452781628,
+              "animal_uncared_rate": 0.045337556919421894,
+              "fertilizer_left_rate": 0.05325678083547812,
+              "animal_product_wait_rate": 0.004751534349633736,
+              "productive_tile_utilization": 0.7522453703703704,
+              "productive_action_ratio": 0.3272425249169435,
+              "movement_action_ratio": 0.5424137678327144,
+              "pass_action_ratio": 0.11193081883916357,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6575283666766198,
+              "average_productive_tiles": 56.41840277777778,
+              "average_empty_tiles_with_capital": 18.572916666666668,
+              "average_harvest_to_sale_turns": 32.824333207259805,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 1.5,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5462,
+                "crop": 748
+              },
+              "productive_quadrants": {
+                "NW": 6210
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.2864583333333333
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2126
+              },
+              "productive_quadrants": {
+                "NW": 7022
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.171875
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 512,
+                "crop": 6673
+              },
+              "productive_quadrants": {
+                "NW": 1410,
+                "SW": 5775
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.4525862068965517,
+              "average_shed_entries_per_day": 0.4665948275862069
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7224
+              },
+              "productive_quadrants": {
+                "NE": 5464,
+                "NW": 1760
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1986607142857142,
+              "average_shed_entries_per_day": 0.28236607142857145
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4352,
+                "crop": 584
+              },
+              "productive_quadrants": {
+                "NW": 4936
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.48,
+              "average_shed_entries_per_day": 0.2
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4623,
+                "crop": 31
+              },
+              "productive_quadrants": {
+                "NW": 4654
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9605263157894737,
+              "average_shed_entries_per_day": 0.2138157894736842
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4884
+              },
+              "productive_quadrants": {
+                "SW": 4884
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.22368421052631576,
+              "average_shed_entries_per_day": 0.014802631578947368
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4692
+              },
+              "productive_quadrants": {
+                "NE": 4692
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.2039473684210527,
+              "average_shed_entries_per_day": 0.001644736842105263
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3998
+              },
+              "productive_quadrants": {
+                "NW": 3998
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9046052631578947,
+              "average_shed_entries_per_day": 0.36184210526315785
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4094
+              },
+              "productive_quadrants": {
+                "NE": 4094
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.121527777777778,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3434
+              },
+              "productive_quadrants": {
+                "SW": 3434
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6770833333333334,
+              "average_shed_entries_per_day": 0.010416666666666666
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1446
+              },
+              "productive_quadrants": {
+                "NW": 1446
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1145833333333333,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 792
+              },
+              "productive_quadrants": {
+                "NW": 792
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9464285714285714,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 864
+              },
+              "productive_quadrants": {
+                "NE": 864
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.3203125,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 445
+              },
+              "productive_quadrants": {
+                "SW": 445
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.671875,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "old_router_replay": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 79032.46875,
+        "average_advantage": 41624.15625,
+        "p10_seed_advantage": 27872.0,
+        "average_crop_revenue": 50333.3125,
+        "average_animal_revenue": 50091.0625,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.34375,
+        "average_peak_cows": 8.96875,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34972,
+              "productive_actions": 8300,
+              "movement_actions": 18325,
+              "pass_actions": 6908,
+              "logistics_actions": 1439,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3590,
+              "shed_entries": 991,
+              "plant_day_checks": 4033,
+              "missed_watering": 66,
+              "critical_missed_watering": 1,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 287,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 63,
+              "productive_tiles_sum": 5249,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3477,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.016364988842053063,
+              "critical_watering_miss_rate": 0.0002479543763947434,
+              "animal_unfed_rate": 0.23601973684210525,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.05180921052631579,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5964772727272727,
+              "productive_action_ratio": 0.23733272332151437,
+              "movement_action_ratio": 0.5239906210682832,
+              "pass_action_ratio": 0.19752945213313508,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.2078313253012047,
+              "average_productive_tiles": 14.911931818181818,
+              "average_empty_tiles_with_capital": 9.877840909090908,
+              "average_harvest_to_sale_turns": 27.464912280701753,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 58,
+              "pass_actions": 6,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.3625,
+              "pass_action_ratio": 0.0375,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163722,
+              "productive_actions": 53016,
+              "movement_actions": 88694,
+              "pass_actions": 18939,
+              "logistics_actions": 3073,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 18045,
+              "shed_entries": 1605,
+              "plant_day_checks": 27600,
+              "missed_watering": 1555,
+              "critical_missed_watering": 663,
+              "delayed_crop_harvests": 4502,
+              "animal_day_checks": 5036,
+              "animals_unfed": 269,
+              "animals_uncared": 275,
+              "animal_product_unharvested": 34,
+              "fertilizer_left": 308,
+              "productive_tiles_sum": 32636,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 10544,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.05634057971014493,
+              "critical_watering_miss_rate": 0.02402173913043478,
+              "animal_unfed_rate": 0.0534154090548054,
+              "animal_uncared_rate": 0.05460683081810961,
+              "fertilizer_left_rate": 0.06115965051628276,
+              "animal_product_wait_rate": 0.006751389992057188,
+              "productive_tile_utilization": 0.755462962962963,
+              "productive_action_ratio": 0.3238172023307802,
+              "movement_action_ratio": 0.5417353807063192,
+              "pass_action_ratio": 0.11567779528713307,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6729666515768824,
+              "average_productive_tiles": 56.65972222222222,
+              "average_empty_tiles_with_capital": 18.305555555555557,
+              "average_harvest_to_sale_turns": 31.42631021446923,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 2.0,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              2
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5461,
+                "crop": 754
+              },
+              "productive_quadrants": {
+                "NW": 6215
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.3135416666666666
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2146
+              },
+              "productive_quadrants": {
+                "NW": 7042
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.17916666666666667
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 513,
+                "crop": 6758
+              },
+              "productive_quadrants": {
+                "NW": 1413,
+                "SW": 5858
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.4525862068965517,
+              "average_shed_entries_per_day": 0.4547413793103448
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7249
+              },
+              "productive_quadrants": {
+                "NE": 5490,
+                "NW": 1759
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1830357142857142,
+              "average_shed_entries_per_day": 0.20982142857142858
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4351,
+                "crop": 583
+              },
+              "productive_quadrants": {
+                "NW": 4934
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.4775,
+              "average_shed_entries_per_day": 0.2025
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4443,
+                "crop": 31
+              },
+              "productive_quadrants": {
+                "NW": 4474
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9605263157894737,
+              "average_shed_entries_per_day": 0.26151315789473684
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4912
+              },
+              "productive_quadrants": {
+                "SW": 4912
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.256578947368421,
+              "average_shed_entries_per_day": 0.01644736842105263
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4481
+              },
+              "productive_quadrants": {
+                "NE": 4481
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.161184210526316,
+              "average_shed_entries_per_day": 0.001644736842105263
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4012
+              },
+              "productive_quadrants": {
+                "NW": 4012
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9473684210526315,
+              "average_shed_entries_per_day": 0.36348684210526316
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3828
+              },
+              "productive_quadrants": {
+                "NE": 3828
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1180555555555556,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3419
+              },
+              "productive_quadrants": {
+                "SW": 3419
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6625,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1449
+              },
+              "productive_quadrants": {
+                "NW": 1449
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1493055555555556,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 796
+              },
+              "productive_quadrants": {
+                "NW": 796
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8883928571428571,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 786
+              },
+              "productive_quadrants": {
+                "NE": 786
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.390625,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 448
+              },
+              "productive_quadrants": {
+                "SW": 448
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.59375,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "mixed_replay_open": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 69965.65625,
+        "average_advantage": 16386.875,
+        "p10_seed_advantage": 9202.25,
+        "average_crop_revenue": 49142.46875,
+        "average_animal_revenue": 42691.90625,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.5,
+        "average_peak_cows": 8.875,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34976,
+              "productive_actions": 8298,
+              "movement_actions": 18326,
+              "pass_actions": 6912,
+              "logistics_actions": 1440,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3584,
+              "shed_entries": 992,
+              "plant_day_checks": 4032,
+              "missed_watering": 64,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 288,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 64,
+              "productive_tiles_sum": 5248,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3249,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.015873015873015872,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.23684210526315788,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.05263157894736842,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5963636363636363,
+              "productive_action_ratio": 0.2372483989021043,
+              "movement_action_ratio": 0.5239592863677951,
+              "pass_action_ratio": 0.19762122598353157,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.208483972041456,
+              "average_productive_tiles": 14.909090909090908,
+              "average_empty_tiles_with_capital": 9.230113636363637,
+              "average_harvest_to_sale_turns": 29.00438596491228,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 59,
+              "pass_actions": 5,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.36875,
+              "pass_action_ratio": 0.03125,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163720,
+              "productive_actions": 52771,
+              "movement_actions": 88375,
+              "pass_actions": 19416,
+              "logistics_actions": 3158,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 18196,
+              "shed_entries": 1672,
+              "plant_day_checks": 27732,
+              "missed_watering": 1636,
+              "critical_missed_watering": 648,
+              "delayed_crop_harvests": 4840,
+              "animal_day_checks": 4993,
+              "animals_unfed": 309,
+              "animals_uncared": 316,
+              "animal_product_unharvested": 49,
+              "fertilizer_left": 344,
+              "productive_tiles_sum": 32725,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 10390,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.05899322082792442,
+              "critical_watering_miss_rate": 0.023366508005192556,
+              "animal_unfed_rate": 0.061886641297816944,
+              "animal_uncared_rate": 0.06328860404566393,
+              "fertilizer_left_rate": 0.06889645503705187,
+              "animal_product_wait_rate": 0.009813739234928901,
+              "productive_tile_utilization": 0.7575231481481481,
+              "productive_action_ratio": 0.32232470070852676,
+              "movement_action_ratio": 0.539793549963352,
+              "pass_action_ratio": 0.11859271927681407,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6746887495025677,
+              "average_productive_tiles": 56.814236111111114,
+              "average_empty_tiles_with_capital": 18.038194444444443,
+              "average_harvest_to_sale_turns": 30.823209079438477,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 1.5,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5458,
+                "crop": 752
+              },
+              "productive_quadrants": {
+                "NW": 6210
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.3458333333333334
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2125
+              },
+              "productive_quadrants": {
+                "NW": 7021
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.171875
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 512,
+                "crop": 6723
+              },
+              "productive_quadrants": {
+                "NW": 1409,
+                "SW": 5826
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.44612068965517243,
+              "average_shed_entries_per_day": 0.44719827586206895
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7229
+              },
+              "productive_quadrants": {
+                "NE": 5469,
+                "NW": 1760
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.200892857142857,
+              "average_shed_entries_per_day": 0.22098214285714285
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4350,
+                "crop": 618
+              },
+              "productive_quadrants": {
+                "NW": 4968
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.47875,
+              "average_shed_entries_per_day": 0.2025
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4183,
+                "crop": 26
+              },
+              "productive_quadrants": {
+                "NW": 4209
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.96875,
+              "average_shed_entries_per_day": 0.3355263157894737
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4897
+              },
+              "productive_quadrants": {
+                "SW": 4897
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.23519736842105263,
+              "average_shed_entries_per_day": 0.01644736842105263
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4498
+              },
+              "productive_quadrants": {
+                "NE": 4498
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.2039473684210527,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4054
+              },
+              "productive_quadrants": {
+                "NW": 4054
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8848684210526315,
+              "average_shed_entries_per_day": 0.3536184210526316
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3906
+              },
+              "productive_quadrants": {
+                "NE": 3906
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1614583333333335,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3380
+              },
+              "productive_quadrants": {
+                "SW": 3380
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6541666666666667,
+              "average_shed_entries_per_day": 0.00625
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1451
+              },
+              "productive_quadrants": {
+                "NW": 1451
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1145833333333333,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 783
+              },
+              "productive_quadrants": {
+                "NW": 783
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8526785714285714,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 797
+              },
+              "productive_quadrants": {
+                "NE": 797
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.4765625,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 431
+              },
+              "productive_quadrants": {
+                "SW": 431
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.71875,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "early_land_d8": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 76994.09375,
+        "average_advantage": 31091.15625,
+        "p10_seed_advantage": 16868.5,
+        "average_crop_revenue": 44004.5,
+        "average_animal_revenue": 54494.03125,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.3125,
+        "average_peak_cows": 9.0,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34952,
+              "productive_actions": 8310,
+              "movement_actions": 18320,
+              "pass_actions": 6888,
+              "logistics_actions": 1434,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3619,
+              "shed_entries": 986,
+              "plant_day_checks": 4038,
+              "missed_watering": 76,
+              "critical_missed_watering": 6,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 282,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 58,
+              "productive_tiles_sum": 5254,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3204,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.018821198613174838,
+              "critical_watering_miss_rate": 0.0014858841010401188,
+              "animal_unfed_rate": 0.23190789473684212,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.047697368421052634,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5970454545454545,
+              "productive_action_ratio": 0.2377546349279011,
+              "movement_action_ratio": 0.5241474021515221,
+              "pass_action_ratio": 0.19707026779583428,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.204572803850782,
+              "average_productive_tiles": 14.926136363636363,
+              "average_empty_tiles_with_capital": 9.102272727272727,
+              "average_harvest_to_sale_turns": 28.412280701754387,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 62,
+              "pass_actions": 2,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.3875,
+              "pass_action_ratio": 0.0125,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163721,
+              "productive_actions": 53277,
+              "movement_actions": 89028,
+              "pass_actions": 18333,
+              "logistics_actions": 3083,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 18521,
+              "shed_entries": 1648,
+              "plant_day_checks": 27911,
+              "missed_watering": 1734,
+              "critical_missed_watering": 651,
+              "delayed_crop_harvests": 5352,
+              "animal_day_checks": 5047,
+              "animals_unfed": 290,
+              "animals_uncared": 298,
+              "animal_product_unharvested": 28,
+              "fertilizer_left": 332,
+              "productive_tiles_sum": 32958,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 10233,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.06212604349539608,
+              "critical_watering_miss_rate": 0.023324137436852854,
+              "animal_unfed_rate": 0.0574598771547454,
+              "animal_uncared_rate": 0.059044977214186646,
+              "fertilizer_left_rate": 0.06578165246681197,
+              "animal_product_wait_rate": 0.005547850208044383,
+              "productive_tile_utilization": 0.7629166666666667,
+              "productive_action_ratio": 0.3254133556477178,
+              "movement_action_ratio": 0.54377874554883,
+              "pass_action_ratio": 0.11197708296431123,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6710400360380653,
+              "average_productive_tiles": 57.21875,
+              "average_empty_tiles_with_capital": 17.765625,
+              "average_harvest_to_sale_turns": 31.69402598991225,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 1.5,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5460,
+                "crop": 754
+              },
+              "productive_quadrants": {
+                "NW": 6214
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.3041666666666667
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2119
+              },
+              "productive_quadrants": {
+                "NW": 7015
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.18333333333333335
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 518,
+                "crop": 6705
+              },
+              "productive_quadrants": {
+                "NW": 1427,
+                "SW": 5796
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.45689655172413796,
+              "average_shed_entries_per_day": 0.4558189655172414
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7150
+              },
+              "productive_quadrants": {
+                "NE": 5396,
+                "NW": 1754
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1875,
+              "average_shed_entries_per_day": 0.2310267857142857
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4349,
+                "crop": 605
+              },
+              "productive_quadrants": {
+                "NW": 4954
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.48,
+              "average_shed_entries_per_day": 0.20375000000000001
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4405,
+                "crop": 35
+              },
+              "productive_quadrants": {
+                "NW": 4440
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9851973684210527,
+              "average_shed_entries_per_day": 0.2779605263157895
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4882
+              },
+              "productive_quadrants": {
+                "SW": 4882
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.2532894736842105,
+              "average_shed_entries_per_day": 0.01644736842105263
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4747
+              },
+              "productive_quadrants": {
+                "NE": 4747
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.199013157894737,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4032
+              },
+              "productive_quadrants": {
+                "NW": 4032
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8848684210526315,
+              "average_shed_entries_per_day": 0.37993421052631576
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4032
+              },
+              "productive_quadrants": {
+                "NE": 4032
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1319444444444444,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3419
+              },
+              "productive_quadrants": {
+                "SW": 3419
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6916666666666667,
+              "average_shed_entries_per_day": 0.00625
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1437
+              },
+              "productive_quadrants": {
+                "NW": 1437
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.09375,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 818
+              },
+              "productive_quadrants": {
+                "NW": 818
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.90625,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 785
+              },
+              "productive_quadrants": {
+                "NE": 785
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.4140625,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 439
+              },
+              "productive_quadrants": {
+                "SW": 439
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.765625,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "land_labor_d11": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 76494.75,
+        "average_advantage": 30405.6875,
+        "p10_seed_advantage": 14871.5,
+        "average_crop_revenue": 45299.1875,
+        "average_animal_revenue": 52823.84375,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.375,
+        "average_peak_cows": 9.0,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34952,
+              "productive_actions": 8310,
+              "movement_actions": 18320,
+              "pass_actions": 6888,
+              "logistics_actions": 1434,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3619,
+              "shed_entries": 986,
+              "plant_day_checks": 4038,
+              "missed_watering": 76,
+              "critical_missed_watering": 6,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 282,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 58,
+              "productive_tiles_sum": 5254,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3204,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.018821198613174838,
+              "critical_watering_miss_rate": 0.0014858841010401188,
+              "animal_unfed_rate": 0.23190789473684212,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.047697368421052634,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5970454545454545,
+              "productive_action_ratio": 0.2377546349279011,
+              "movement_action_ratio": 0.5241474021515221,
+              "pass_action_ratio": 0.19707026779583428,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.204572803850782,
+              "average_productive_tiles": 14.926136363636363,
+              "average_empty_tiles_with_capital": 9.102272727272727,
+              "average_harvest_to_sale_turns": 28.096491228070175,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 63,
+              "pass_actions": 1,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.39375,
+              "pass_action_ratio": 0.00625,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163758,
+              "productive_actions": 53392,
+              "movement_actions": 88711,
+              "pass_actions": 18617,
+              "logistics_actions": 3038,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 18650,
+              "shed_entries": 1649,
+              "plant_day_checks": 27906,
+              "missed_watering": 1690,
+              "critical_missed_watering": 605,
+              "delayed_crop_harvests": 5321,
+              "animal_day_checks": 5050,
+              "animals_unfed": 243,
+              "animals_uncared": 249,
+              "animal_product_unharvested": 23,
+              "fertilizer_left": 287,
+              "productive_tiles_sum": 32956,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 10238,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.060560452949186556,
+              "critical_watering_miss_rate": 0.02167992546405791,
+              "animal_unfed_rate": 0.04811881188118812,
+              "animal_uncared_rate": 0.04930693069306931,
+              "fertilizer_left_rate": 0.056831683168316834,
+              "animal_product_wait_rate": 0.004554455445544554,
+              "productive_tile_utilization": 0.7628703703703704,
+              "productive_action_ratio": 0.32604208649348426,
+              "movement_action_ratio": 0.5417200991707275,
+              "pass_action_ratio": 0.113686048925854,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6615035960443512,
+              "average_productive_tiles": 57.21527777777778,
+              "average_empty_tiles_with_capital": 17.774305555555557,
+              "average_harvest_to_sale_turns": 31.208705000480272,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 1.5,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5466,
+                "crop": 754
+              },
+              "productive_quadrants": {
+                "NW": 6220
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.2802083333333334
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2084
+              },
+              "productive_quadrants": {
+                "NW": 6980
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.17291666666666666
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 518,
+                "crop": 6650
+              },
+              "productive_quadrants": {
+                "NW": 1427,
+                "SW": 5741
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.4655172413793104,
+              "average_shed_entries_per_day": 0.4622844827586207
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7267
+              },
+              "productive_quadrants": {
+                "NE": 5513,
+                "NW": 1754
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1964285714285714,
+              "average_shed_entries_per_day": 0.2935267857142857
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4351,
+                "crop": 634
+              },
+              "productive_quadrants": {
+                "NW": 4985
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.48,
+              "average_shed_entries_per_day": 0.20125
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4562,
+                "crop": 32
+              },
+              "productive_quadrants": {
+                "NW": 4594
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9769736842105263,
+              "average_shed_entries_per_day": 0.2319078947368421
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4889
+              },
+              "productive_quadrants": {
+                "SW": 4889
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.22368421052631576,
+              "average_shed_entries_per_day": 0.03289473684210526
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4738
+              },
+              "productive_quadrants": {
+                "NE": 4738
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1858552631578947,
+              "average_shed_entries_per_day": 0.001644736842105263
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4063
+              },
+              "productive_quadrants": {
+                "NW": 4063
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8651315789473684,
+              "average_shed_entries_per_day": 0.3651315789473684
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3945
+              },
+              "productive_quadrants": {
+                "NE": 3945
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1336805555555556,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3340
+              },
+              "productive_quadrants": {
+                "SW": 3340
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6541666666666667,
+              "average_shed_entries_per_day": 0.00625
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1426
+              },
+              "productive_quadrants": {
+                "NW": 1426
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1493055555555556,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 824
+              },
+              "productive_quadrants": {
+                "NW": 824
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8616071428571428,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 819
+              },
+              "productive_quadrants": {
+                "NE": 819
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.3671875,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 444
+              },
+              "productive_quadrants": {
+                "SW": 444
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.71875,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "early_cow_d8": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 79391.65625,
+        "average_advantage": 37474.65625,
+        "p10_seed_advantage": 23898.0,
+        "average_crop_revenue": 47338.375,
+        "average_animal_revenue": 53758.8125,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.625,
+        "average_peak_cows": 9.0,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34976,
+              "productive_actions": 8296,
+              "movement_actions": 18328,
+              "pass_actions": 6912,
+              "logistics_actions": 1440,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3584,
+              "shed_entries": 992,
+              "plant_day_checks": 4032,
+              "missed_watering": 64,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 288,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 64,
+              "productive_tiles_sum": 5248,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3232,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.015873015873015872,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.23684210526315788,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.05263157894736842,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5963636363636363,
+              "productive_action_ratio": 0.23719121683440073,
+              "movement_action_ratio": 0.5240164684354987,
+              "pass_action_ratio": 0.19762122598353157,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.2092574734811956,
+              "average_productive_tiles": 14.909090909090908,
+              "average_empty_tiles_with_capital": 9.181818181818182,
+              "average_harvest_to_sale_turns": 28.267543859649123,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 60,
+              "pass_actions": 4,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.375,
+              "pass_action_ratio": 0.025,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163765,
+              "productive_actions": 53617,
+              "movement_actions": 88210,
+              "pass_actions": 18950,
+              "logistics_actions": 2988,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 17933,
+              "shed_entries": 1520,
+              "plant_day_checks": 28134,
+              "missed_watering": 1617,
+              "critical_missed_watering": 593,
+              "delayed_crop_harvests": 5229,
+              "animal_day_checks": 5052,
+              "animals_unfed": 184,
+              "animals_uncared": 188,
+              "animal_product_unharvested": 12,
+              "fertilizer_left": 238,
+              "productive_tiles_sum": 33186,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 10010,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.05747494135210066,
+              "critical_watering_miss_rate": 0.02107769958057866,
+              "animal_unfed_rate": 0.03642121931908155,
+              "animal_uncared_rate": 0.03721298495645289,
+              "fertilizer_left_rate": 0.047110055423594616,
+              "animal_product_wait_rate": 0.0023752969121140144,
+              "productive_tile_utilization": 0.7681944444444444,
+              "productive_action_ratio": 0.3274020700393857,
+              "movement_action_ratio": 0.5386376820443929,
+              "pass_action_ratio": 0.11571459102982933,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6451871607885558,
+              "average_productive_tiles": 57.614583333333336,
+              "average_empty_tiles_with_capital": 17.37847222222222,
+              "average_harvest_to_sale_turns": 30.770667286433255,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 2.0,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5464,
+                "crop": 755
+              },
+              "productive_quadrants": {
+                "NW": 6219
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.2739583333333333
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2130
+              },
+              "productive_quadrants": {
+                "NW": 7026
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.16979166666666667
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 512,
+                "crop": 6740
+              },
+              "productive_quadrants": {
+                "NW": 1410,
+                "SW": 5842
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.44396551724137934,
+              "average_shed_entries_per_day": 0.4396551724137931
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7247
+              },
+              "productive_quadrants": {
+                "NE": 5487,
+                "NW": 1760
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1808035714285714,
+              "average_shed_entries_per_day": 0.22544642857142858
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4351,
+                "crop": 596
+              },
+              "productive_quadrants": {
+                "NW": 4947
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.48,
+              "average_shed_entries_per_day": 0.20125
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4743,
+                "crop": 30
+              },
+              "productive_quadrants": {
+                "NW": 4773
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9588815789473684,
+              "average_shed_entries_per_day": 0.18421052631578946
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 5001
+              },
+              "productive_quadrants": {
+                "SW": 5001
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.20559210526315788,
+              "average_shed_entries_per_day": 0.013157894736842105
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4605
+              },
+              "productive_quadrants": {
+                "NE": 4605
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1726973684210527,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4008
+              },
+              "productive_quadrants": {
+                "NW": 4008
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9078947368421053,
+              "average_shed_entries_per_day": 0.38322368421052627
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3983
+              },
+              "productive_quadrants": {
+                "NE": 3983
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1041666666666667,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3436
+              },
+              "productive_quadrants": {
+                "SW": 3436
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.65,
+              "average_shed_entries_per_day": 0.004166666666666667
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1442
+              },
+              "productive_quadrants": {
+                "NW": 1442
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1006944444444444,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 796
+              },
+              "productive_quadrants": {
+                "NW": 796
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8660714285714285,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 759
+              },
+              "productive_quadrants": {
+                "NE": 759
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.3984375,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 419
+              },
+              "productive_quadrants": {
+                "SW": 419
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.703125,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "proxy_high_labor": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 81846.96875,
+        "average_advantage": 62143.53125,
+        "p10_seed_advantage": 34327.75,
+        "average_crop_revenue": 49858.34375,
+        "average_animal_revenue": 54118.84375,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.65625,
+        "average_peak_cows": 9.0,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34960,
+              "productive_actions": 8304,
+              "movement_actions": 18324,
+              "pass_actions": 6896,
+              "logistics_actions": 1436,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3608,
+              "shed_entries": 988,
+              "plant_day_checks": 4036,
+              "missed_watering": 72,
+              "critical_missed_watering": 4,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 284,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 60,
+              "productive_tiles_sum": 5252,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3206,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.017839444995044598,
+              "critical_watering_miss_rate": 0.0009910802775024777,
+              "animal_unfed_rate": 0.23355263157894737,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.049342105263157895,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5968181818181818,
+              "productive_action_ratio": 0.23752860411899313,
+              "movement_action_ratio": 0.5241418764302059,
+              "pass_action_ratio": 0.19725400457665904,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.2066473988439306,
+              "average_productive_tiles": 14.920454545454545,
+              "average_empty_tiles_with_capital": 9.107954545454545,
+              "average_harvest_to_sale_turns": 29.899122807017545,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 59,
+              "pass_actions": 5,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.36875,
+              "pass_action_ratio": 0.03125,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163707,
+              "productive_actions": 53319,
+              "movement_actions": 88578,
+              "pass_actions": 18784,
+              "logistics_actions": 3026,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 18023,
+              "shed_entries": 1611,
+              "plant_day_checks": 28079,
+              "missed_watering": 1531,
+              "critical_missed_watering": 568,
+              "delayed_crop_harvests": 5260,
+              "animal_day_checks": 5052,
+              "animals_unfed": 241,
+              "animals_uncared": 243,
+              "animal_product_unharvested": 33,
+              "fertilizer_left": 279,
+              "productive_tiles_sum": 33131,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 9995,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.05452473378681577,
+              "critical_watering_miss_rate": 0.02022864062110474,
+              "animal_unfed_rate": 0.04770387965162312,
+              "animal_uncared_rate": 0.04809976247030879,
+              "fertilizer_left_rate": 0.05522565320665083,
+              "animal_product_wait_rate": 0.006532066508313539,
+              "productive_tile_utilization": 0.7669212962962964,
+              "productive_action_ratio": 0.3256977404753615,
+              "movement_action_ratio": 0.5410764353387454,
+              "pass_action_ratio": 0.1147415809953148,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6612839700669555,
+              "average_productive_tiles": 57.51909722222222,
+              "average_empty_tiles_with_capital": 17.352430555555557,
+              "average_harvest_to_sale_turns": 28.74481697747573,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 2.0,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              2,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5468,
+                "crop": 753
+              },
+              "productive_quadrants": {
+                "NW": 6221
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.2822916666666666
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2141
+              },
+              "productive_quadrants": {
+                "NW": 7037
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.175
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 516,
+                "crop": 6725
+              },
+              "productive_quadrants": {
+                "NW": 1423,
+                "SW": 5818
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.45689655172413796,
+              "average_shed_entries_per_day": 0.4515086206896552
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7296
+              },
+              "productive_quadrants": {
+                "NE": 5540,
+                "NW": 1756
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.200892857142857,
+              "average_shed_entries_per_day": 0.24665178571428573
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4351,
+                "crop": 599
+              },
+              "productive_quadrants": {
+                "NW": 4950
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.48,
+              "average_shed_entries_per_day": 0.20375000000000001
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4590,
+                "crop": 30
+              },
+              "productive_quadrants": {
+                "NW": 4620
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9572368421052632,
+              "average_shed_entries_per_day": 0.21546052631578946
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4945
+              },
+              "productive_quadrants": {
+                "SW": 4945
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.24342105263157893,
+              "average_shed_entries_per_day": 0.02631578947368421
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4550
+              },
+              "productive_quadrants": {
+                "NE": 4550
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1710526315789473,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4041
+              },
+              "productive_quadrants": {
+                "NW": 4041
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8470394736842105,
+              "average_shed_entries_per_day": 0.4095394736842105
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3861
+              },
+              "productive_quadrants": {
+                "NE": 3861
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1334763071895426,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3410
+              },
+              "productive_quadrants": {
+                "SW": 3410
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6879464285714285,
+              "average_shed_entries_per_day": 0.0020833333333333333
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1432
+              },
+              "productive_quadrants": {
+                "NW": 1432
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.0555555555555556,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 796
+              },
+              "productive_quadrants": {
+                "NW": 796
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9642857142857143,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 786
+              },
+              "productive_quadrants": {
+                "NE": 786
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.3671875,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 437
+              },
+              "productive_quadrants": {
+                "SW": 437
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.734375,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      },
+      "proxy_livestock_crop": {
+        "games": 32,
+        "wins": 32,
+        "losses": 0,
+        "ties": 0,
+        "score_rate": 1.0,
+        "average_money": 77854.0625,
+        "average_advantage": 45099.15625,
+        "p10_seed_advantage": 29882.25,
+        "average_crop_revenue": 46107.46875,
+        "average_animal_revenue": 53209.1875,
+        "average_final_quadrants": 3.0,
+        "average_peak_hands": 14.0,
+        "average_peak_productive_tiles": 68.46875,
+        "average_peak_cows": 9.0,
+        "average_peak_sheep": 0.0,
+        "max_cow_loss": 0,
+        "max_sheep_loss": 0,
+        "max_stranded_units": 3,
+        "routing": {
+          "by_scale": {
+            "25": {
+              "total_actions": 34964,
+              "productive_actions": 8300,
+              "movement_actions": 18327,
+              "pass_actions": 6900,
+              "logistics_actions": 1437,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 3601,
+              "shed_entries": 989,
+              "plant_day_checks": 4035,
+              "missed_watering": 70,
+              "critical_missed_watering": 3,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 1216,
+              "animals_unfed": 285,
+              "animals_uncared": 288,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 61,
+              "productive_tiles_sum": 5251,
+              "unlocked_tiles_sum": 8800,
+              "empty_tiles_with_capital": 3229,
+              "daily_checks": 352,
+              "watering_miss_rate": 0.01734820322180917,
+              "critical_watering_miss_rate": 0.0007434944237918215,
+              "animal_unfed_rate": 0.234375,
+              "animal_uncared_rate": 0.23684210526315788,
+              "fertilizer_left_rate": 0.05016447368421053,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.5967045454545454,
+              "productive_action_ratio": 0.23738702665598901,
+              "movement_action_ratio": 0.5241677153643748,
+              "pass_action_ratio": 0.19734584143690653,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 2.2080722891566267,
+              "average_productive_tiles": 14.917613636363637,
+              "average_empty_tiles_with_capital": 9.173295454545455,
+              "average_harvest_to_sale_turns": 28.530701754385966,
+              "median_harvest_to_sale_turns": null
+            },
+            "50": {
+              "total_actions": 160,
+              "productive_actions": 0,
+              "movement_actions": 63,
+              "pass_actions": 1,
+              "logistics_actions": 96,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 0,
+              "shed_entries": 0,
+              "plant_day_checks": 0,
+              "missed_watering": 0,
+              "critical_missed_watering": 0,
+              "delayed_crop_harvests": 0,
+              "animal_day_checks": 0,
+              "animals_unfed": 0,
+              "animals_uncared": 0,
+              "animal_product_unharvested": 0,
+              "fertilizer_left": 0,
+              "productive_tiles_sum": 0,
+              "unlocked_tiles_sum": 0,
+              "empty_tiles_with_capital": 0,
+              "daily_checks": 0,
+              "watering_miss_rate": 0.0,
+              "critical_watering_miss_rate": 0.0,
+              "animal_unfed_rate": 0.0,
+              "animal_uncared_rate": 0.0,
+              "fertilizer_left_rate": 0.0,
+              "animal_product_wait_rate": 0.0,
+              "productive_tile_utilization": 0.0,
+              "productive_action_ratio": 0.0,
+              "movement_action_ratio": 0.39375,
+              "pass_action_ratio": 0.00625,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 0.0,
+              "average_productive_tiles": 0.0,
+              "average_empty_tiles_with_capital": 0.0,
+              "average_harvest_to_sale_turns": null,
+              "median_harvest_to_sale_turns": null
+            },
+            "75": {
+              "total_actions": 163787,
+              "productive_actions": 53427,
+              "movement_actions": 89427,
+              "pass_actions": 17868,
+              "logistics_actions": 3065,
+              "invalid_actions": 0,
+              "duplicate_conflicts": 0,
+              "shed_directed_moves": 17913,
+              "shed_entries": 1588,
+              "plant_day_checks": 28424,
+              "missed_watering": 1743,
+              "critical_missed_watering": 634,
+              "delayed_crop_harvests": 6286,
+              "animal_day_checks": 5047,
+              "animals_unfed": 267,
+              "animals_uncared": 276,
+              "animal_product_unharvested": 18,
+              "fertilizer_left": 313,
+              "productive_tiles_sum": 33471,
+              "unlocked_tiles_sum": 43200,
+              "empty_tiles_with_capital": 9720,
+              "daily_checks": 576,
+              "watering_miss_rate": 0.06132141851956093,
+              "critical_watering_miss_rate": 0.022305094286518435,
+              "animal_unfed_rate": 0.052902714483851795,
+              "animal_uncared_rate": 0.0546859520507232,
+              "fertilizer_left_rate": 0.06201703982563899,
+              "animal_product_wait_rate": 0.0035664751337428175,
+              "productive_tile_utilization": 0.7747916666666667,
+              "productive_action_ratio": 0.3261980499062807,
+              "movement_action_ratio": 0.5459957139455512,
+              "pass_action_ratio": 0.10909290725149126,
+              "invalid_action_ratio": 0.0,
+              "movement_per_productive_action": 1.6738166095794262,
+              "average_productive_tiles": 58.109375,
+              "average_empty_tiles_with_capital": 16.875,
+              "average_harvest_to_sale_turns": 30.792552659779446,
+              "median_harvest_to_sale_turns": null
+            }
+          },
+          "land_first_use_delay_turns": {
+            "median": 1.5,
+            "range": [
+              1,
+              3
+            ],
+            "observations": [
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              3,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "worker_profiles": [
+            {
+              "unit_index": 0,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 5457,
+                "crop": 748
+              },
+              "productive_quadrants": {
+                "NW": 6205
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.0,
+              "average_shed_entries_per_day": 1.2979166666666666
+            },
+            {
+              "unit_index": 1,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4896,
+                "crop": 2122
+              },
+              "productive_quadrants": {
+                "NW": 7018
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.7666666666666667,
+              "average_shed_entries_per_day": 0.17604166666666665
+            },
+            {
+              "unit_index": 2,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 515,
+                "crop": 6753
+              },
+              "productive_quadrants": {
+                "NW": 1418,
+                "SW": 5850
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.4676724137931035,
+              "average_shed_entries_per_day": 0.4364224137931035
+            },
+            {
+              "unit_index": 3,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 7299
+              },
+              "productive_quadrants": {
+                "NE": 5542,
+                "NW": 1757
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.203125,
+              "average_shed_entries_per_day": 0.22879464285714285
+            },
+            {
+              "unit_index": 4,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4352,
+                "crop": 590
+              },
+              "productive_quadrants": {
+                "NW": 4942
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.4775,
+              "average_shed_entries_per_day": 0.2
+            },
+            {
+              "unit_index": 5,
+              "appearances": 32,
+              "responsibilities": {
+                "animal": 4466,
+                "crop": 32
+              },
+              "productive_quadrants": {
+                "NW": 4498
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.9884868421052632,
+              "average_shed_entries_per_day": 0.26644736842105265
+            },
+            {
+              "unit_index": 6,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4944
+              },
+              "productive_quadrants": {
+                "SW": 4944
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.22861842105263155,
+              "average_shed_entries_per_day": 0.011513157894736841
+            },
+            {
+              "unit_index": 7,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4654
+              },
+              "productive_quadrants": {
+                "NE": 4654
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1661184210526316,
+              "average_shed_entries_per_day": 0.006578947368421052
+            },
+            {
+              "unit_index": 8,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 4042
+              },
+              "productive_quadrants": {
+                "NW": 4042
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.850328947368421,
+              "average_shed_entries_per_day": 0.35526315789473684
+            },
+            {
+              "unit_index": 9,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3961
+              },
+              "productive_quadrants": {
+                "NE": 3961
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1302083333333333,
+              "average_shed_entries_per_day": 0.001736111111111111
+            },
+            {
+              "unit_index": 10,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 3435
+              },
+              "productive_quadrants": {
+                "SW": 3435
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.6666666666666666,
+              "average_shed_entries_per_day": 0.004166666666666667
+            },
+            {
+              "unit_index": 11,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 1449
+              },
+              "productive_quadrants": {
+                "NW": 1449
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.1215277777777777,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 12,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 814
+              },
+              "productive_quadrants": {
+                "NW": 814
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.8169642857142857,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 13,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 759
+              },
+              "productive_quadrants": {
+                "NE": 759
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 1.4609375,
+              "average_shed_entries_per_day": 0.0
+            },
+            {
+              "unit_index": 14,
+              "appearances": 32,
+              "responsibilities": {
+                "crop": 439
+              },
+              "productive_quadrants": {
+                "SW": 439
+              },
+              "median_territory_purity": 1.0,
+              "average_quadrant_transitions_per_day": 0.640625,
+              "average_shed_entries_per_day": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "worst_opponent": "mixed_replay_open"
+  }
+}

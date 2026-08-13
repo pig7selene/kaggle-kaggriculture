@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "rule": "SHA-256 order of episode/player; assigned before candidate evaluation",
+  "development": [
+    {
+      "episode_id": 91866168,
+      "player": 0,
+      "team": "Abracadabra",
+      "path": "experiments/top_player_replays/replays/episode-91866168-replay.json"
+    },
+    {
+      "episode_id": 91860677,
+      "player": 1,
+      "team": "Dmitry Larko",
+      "path": "experiments/top_player_replays/replays/episode-91860677-replay.json"
+    },
+    {
+      "episode_id": 91869019,
+      "player": 1,
+      "team": "Hak",
+      "path": "experiments/top_player_replays/replays/episode-91869019-replay.json"
+    },
+    {
+      "episode_id": 91843967,
+      "player": 0,
+      "team": "Dmitry Larko",
+      "path": "experiments/top_player_replays/replays/episode-91843967-replay.json"
+    },
+    {
+      "episode_id": 91843968,
+      "player": 0,
+      "team": "Ueddy",
+      "path": "experiments/top_player_replays/replays/episode-91843968-replay.json"
+    },
+    {
+      "episode_id": 91866192,
+      "player": 1,
+      "team": "Abracadabra",
+      "path": "experiments/top_player_replays/replays/episode-91866192-replay.json"
+    },
+    {
+      "episode_id": 91864322,
+      "player": 1,
+      "team": "Valmorlee",
+      "path": "experiments/top_player_replays/replays/episode-91864322-replay.json"
+    },
+    {
+      "episode_id": 91853247,
+      "player": 1,
+      "team": "Ueddy",
+      "path": "experiments/top_player_replays/replays/episode-91853247-replay.json"
+    }
+  ],
+  "selection": [
+    {
+      "episode_id": 91870920,
+      "player": 1,
+      "team": "Abracadabra",
+      "path": "experiments/top_player_replays/replays/episode-91870920-replay.json"
+    },
+    {
+      "episode_id": 91873681,
+      "player": 0,
+      "team": "Erfan Eshratifar",
+      "path": "experiments/top_player_replays/replays/episode-91873681-replay.json"
+    },
+    {
+      "episode_id": 91866168,
+      "player": 1,
+      "team": "Erfan Eshratifar",
+      "path": "experiments/top_player_replays/replays/episode-91866168-replay.json"
+    },
+    {
+      "episode_id": 91853240,
+      "player": 1,
+      "team": "Hak",
+      "path": "experiments/top_player_replays/replays/episode-91853240-replay.json"
+    },
+    {
+      "episode_id": 91856955,
+      "player": 1,
+      "team": "Hak",
+      "path": "experiments/top_player_replays/replays/episode-91856955-replay.json"
+    },
+    {
+      "episode_id": 91856955,
+      "player": 0,
+      "team": "Abracadabra",
+      "path": "experiments/top_player_replays/replays/episode-91856955-replay.json"
+    },
+    {
+      "episode_id": 91870919,
+      "player": 1,
+      "team": "Victor @ Tufa Labs",
+      "path": "experiments/top_player_replays/replays/episode-91870919-replay.json"
+    },
+    {
+      "episode_id": 91861609,
+      "player": 0,
+      "team": "THUNDER THUNDER",
+      "path": "experiments/top_player_replays/replays/episode-91861609-replay.json"
+    }
+  ],
+  "final": [
+    {
+      "episode_id": 91869967,
+      "player": 1,
+      "team": "Dmitry Larko",
+      "path": "experiments/top_player_replays/replays/episode-91869967-replay.json"
+    },
+    {
+      "episode_id": 91859757,
+      "player": 0,
+      "team": "Hak",
+      "path": "experiments/top_player_replays/replays/episode-91859757-replay.json"
+    },
+    {
+      "episode_id": 91870919,
+      "player": 0,
+      "team": "THUNDER THUNDER",
+      "path": "experiments/top_player_replays/replays/episode-91870919-replay.json"
+    },
+    {
+      "episode_id": 91853248,
+      "player": 1,
+      "team": "Dmitry Larko",
+      "path": "experiments/top_player_replays/replays/episode-91853248-replay.json"
+    },
+    {
+      "episode_id": 91853249,
+      "player": 0,
+      "team": "Ueddy",
+      "path": "experiments/top_player_replays/replays/episode-91853249-replay.json"
+    },
+    {
+      "episode_id": 91861609,
+      "player": 1,
+      "team": "Erfan Eshratifar",
+      "path": "experiments/top_player_replays/replays/episode-91861609-replay.json"
+    },
+    {
+      "episode_id": 91843968,
+      "player": 1,
+      "team": "Dmitry Larko",
+      "path": "experiments/top_player_replays/replays/episode-91843968-replay.json"
+    },
+    {
+      "episode_id": 91867069,
+      "player": 0,
+      "team": "Valmorlee",
+      "path": "experiments/top_player_replays/replays/episode-91867069-replay.json"
+    }
+  ]
+}
