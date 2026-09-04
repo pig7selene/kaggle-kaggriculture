@@ -79,7 +79,25 @@ def _run(job):
     final = env.steps[-1]
     stranded_value, stranded = _inventory_value(final[seat])
     crops, animals, weeds = _farm_counts(final[seat].observation["farms"][seat])
-    transition = _transition_metrics(env.toJSON(), seat)
+    replay_json = env.toJSON()
+    transition = _transition_metrics(replay_json, seat)
+    previous_owned = Counter()
+    actual_escapes = Counter()
+    for states in replay_json["steps"]:
+        observation = states[seat]["observation"]
+        farm = observation["farms"][seat]
+        owned = Counter()
+        for tile_row in farm["tiles"]:
+            for tile in tile_row:
+                if isinstance(tile, dict) and tile.get("animal"):
+                    owned[tile["animal"]] += 1
+        private = observation["private"]
+        for animal in ("GOOSE", "COW", "SHEEP"):
+            owned[animal] += int(private.get("shed", {}).get(animal, 0))
+            owned[animal] += sum(int(inventory.get(animal, 0)) for inventory in private.get("inventories", []))
+            if owned[animal] < previous_owned[animal]:
+                actual_escapes[animal] += previous_owned[animal] - owned[animal]
+        previous_owned = owned
     bought = Counter(transition["animal_buy_requests"])
     losses = {animal: max(0, bought[animal] - animals[animal]) for animal in ("GOOSE", "COW", "SHEEP")}
     telemetry = deepcopy(candidate.telemetry)
@@ -90,10 +108,12 @@ def _run(job):
         "advantage": float(final[seat].reward) - float(final[1 - seat].reward),
         "calls": calls, "runtime_error": None, "semantic_failures": semantic,
         "stranded_value": stranded_value, "stranded": stranded, "livestock_losses": losses,
+        "actual_livestock_escapes": dict(actual_escapes),
         "final_crops": dict(crops), "final_animals": dict(animals), "final_weeds": weeds,
         "route_matches": telemetry["all_route_matches"], "route_requests": telemetry["all_route_requests"],
         "weed_repairs": telemetry["repairs"]["weed"], "repair_abort": telemetry["repair_abort"],
         "fallback_step": telemetry.get("fallback_step"), "transition": transition,
+        "portfolio_parent": telemetry.get("portfolio_parent"),
     }
 
 
@@ -116,6 +136,7 @@ def _summaries(games):
             "runtime_failures": sum(bool(row.get("runtime_error")) for row in games if row["candidate"] == candidate),
             "semantic_failures": sum(len(row.get("semantic_failures", [])) for row in games if row["candidate"] == candidate),
             "livestock_losses": sum(sum(row["livestock_losses"].values()) for row in rows),
+            "actual_livestock_escapes": sum(sum(row.get("actual_livestock_escapes", {}).values()) for row in rows),
             "meaningful_stranding_games": sum(row["stranded_value"] > 500 for row in rows),
             "fallback_games": sum(row["fallback_step"] is not None for row in rows),
             "weed_repairs": sum(row["weed_repairs"] for row in rows),

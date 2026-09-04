@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "actual_baseline": "agents/super_replay_v2/super_backbone_v2.py",
+  "candidates": [
+    {"name": "dmitry_safe", "path": "agents/top50_distilled/top50_dmitry_safe.py", "architecture": "complete 8-cow/4-sheep Dmitry parent plus bounded deadline safety", "status": "serious_static_parent"},
+    {"name": "hanserong_safe", "path": "agents/top50_distilled/top50_hanserong_safe.py", "architecture": "complete 7-cow/6-sheep Hanserong parent plus bounded deadline safety", "status": "serious_static_parent"},
+    {"name": "redblack_safe", "path": "agents/top50_distilled/top50_redblack_safe.py", "architecture": "complete 9-cow/5-sheep redblack parent plus bounded deadline safety", "status": "serious_static_parent"},
+    {"name": "observable_portfolio", "path": "agents/top50_distilled/top50_observable_portfolio.py", "architecture": "step-1 observable selection among three coherent complete economies; no phase splicing", "status": "locked_finalist"}
+  ],
+  "rejected_architectures": [
+    {"name": "broad_at_risk_feed_guard", "reason": "desynchronized replay routes and caused cascading livestock losses"},
+    {"name": "blind route hybrid", "reason": "parent economies diverge from step 1 and have incompatible livestock/crop state at later phase boundaries"}
+  ]
+}

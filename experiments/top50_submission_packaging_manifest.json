@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "packaging_timestamp": "2026-09-01T00:40:07Z",
+  "research_source_path": "agents/top50_distilled/top50_observable_portfolio.py",
+  "research_source_raw_sha256": "f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233",
+  "research_source_lf_sha256": "f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233",
+  "previous_submission_path": "submission/main.py",
+  "previous_submission_raw_sha256": "a4f753d46a95e8d972098504f4930165e7e66f8ce292092e9ab090e4741310c3",
+  "previous_submission_lf_sha256": "a4f753d46a95e8d972098504f4930165e7e66f8ce292092e9ab090e4741310c3",
+  "selected_research_agent": "top50_observable_portfolio_v1",
+  "parent_strategy_identifiers": {
+    "dmitry": "super_raw_55859516",
+    "hanserong": "super_raw_55886665",
+    "redblack": "super_raw_55890191"
+  },
+  "selector_version": "locked_step1_visible_opponent_money_and_hands_v1",
+  "selector_config": [
+    "money >= 2500 and hands == 0 -> redblack",
+    "money >= 1500 and hands >= 6 -> hanserong",
+    "3 < money <= 10 and hands >= 5 -> hanserong",
+    "otherwise -> dmitry"
+  ],
+  "authorization": "Replace submission/main.py locally for packaging and equivalence validation only; do not submit or upload."
+}

@@ -1116,3 +1116,777 @@ agent. Variance is population money variance.
 - **Selection/final:** no module passed development, so no combinations or protected elite final holdout were opened. Frozen V2 completed 40 fresh fixed/natural games with zero runtime, semantic, livestock, or stranding failures.
 - **New best:** No. V2 remains `agents/super_replay_v2/super_backbone_v2.py` (`c39d82b4f796271603e32ea8cb4b70261fbbe3d4e17940886caf5f5a6bd9adef`).
 - **Next architecture:** if research continues, use an offline learned residual action-value model on validated checkpoints; keep rare overrides and V2 as the base. Do not use policy-from-scratch RL.
+
+## Current Top-50 deep strategy mining and distillation
+
+- **Frozen baseline:** V2 remained unchanged at
+  `c39d82b4f796271603e32ea8cb4b70261fbbe3d4e17940886caf5f5a6bd9adef`;
+  `submission/main.py` remained unchanged at
+  `a4f753d46a95e8d972098504f4930165e7e66f8ce292092e9ab090e4741310c3`.
+- **Corpus:** refreshed the current Top 50 at
+  `2026-08-31T15:16:44.299729+00:00`: 50 teams, 249 valid unique full
+  episodes, 408 selected appearances, 340 exact-action-deduplicated
+  appearances, 210 route implementations, 22 economic implementations, and
+  11 refined economic families. A post-lock holdout added 22 unused episodes,
+  two per family.
+- **Consensus:** all 11 independent families use at least three quadrants,
+  first land by day 7, second land by day 11.5, 12 hands, melon/strawberry
+  waves, and terminal liquidation. Ten use mixed cows and sheep. Top 1-10
+  relies on more livestock diversity, not monotonically more cows.
+- **Raw parents:** exact safety-repaired Dmitry, Hanserong, and redblack
+  complete economies produced serious paired own-money gains of +7,087,
+  +6,321, and +5,259. Broad feeding repair was rejected because it
+  desynchronized the replay routes; only audited deadline repairs survived.
+- **Architecture:** `top50_observable_portfolio_v1` selects one complete,
+  coherent economy at step 1 using only the opponent's currently visible bank
+  and hand count. It never uses seed, replay ID, rank, future state, or result.
+- **Locked final:** 132 games per agent. Candidate 107/25/0, average money
+  95,146, average advantage +17,617, advantage P10 -2,027 and P5 -8,798.
+  V2 was 52/48/32, money 89,167, advantage +9,576, P10 -14,493 and P5
+  -23,795. Paired own-money delta was +5,979 and net-advantage delta +8,040.
+  Direct V2 was 62/2 (natural 32/0). Unseen Top-50 families were 21/23 versus
+  V2's 12/32. Exact safety: zero runtime, semantic, fallback, livestock-escape,
+  or meaningful-stranding failures.
+- **Attribution:** on the focused panel, net advantage improved +7,640, driven
+  mainly by fertilizer/wheat capital cycling and opponent market suppression;
+  this is primarily market/capital value rather than a pure production gain.
+- **Promotion:** yes, as the new local **research best**:
+  `agents/top50_distilled/top50_observable_portfolio.py`, SHA-256
+  `f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`.
+  It is not labeled low-risk final because paired-own P10 remains -8,029.
+- **Report:** `experiments/top50_strategy_mining_report.md` plus the complete
+  required `experiments/top50_*` machine-readable artifact set.
+- **Submission:** unchanged; nothing packaged, uploaded, or submitted.
+
+## Top-50 Observable Portfolio final deployment packaging
+
+- **Locked source:**
+  `agents/top50_distilled/top50_observable_portfolio.py`, raw/LF SHA-256
+  `f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`.
+- **Previous deployment recorded:** V2 `submission/main.py`, raw/LF SHA-256
+  `a4f753d46a95e8d972098504f4930165e7e66f8ce292092e9ab090e4741310c3`.
+- **Standalone package:** `submission/main.py`, raw/LF SHA-256
+  `789bb9bbd5122eb4891983e776a13777328e3e87736cbbc0b4bc86d13fc33f9b`,
+  272,360 bytes. It embeds all three exact routes, the proven Stage-3 worker
+  executor, exact livestock safety wrappers, and the locked step-1 selector.
+- **Dependencies:** standard library plus the installed Kaggriculture runtime;
+  no project-local import, runtime file read, network access, or local path.
+  A clean directory containing only `main.py` completed all 720 steps.
+- **Integrity:** three 719-step parent route/action and expected-state payloads
+  matched exactly. Selector agreement was 110/110 states. Same-module
+  sequential seat-0/seat-1 reset matched fresh imports exactly.
+- **Equivalence:** 16/16 full games passed across eight fresh seeds, both seats,
+  and V2, K3, Nazmus, rank-1 adaptive, ResearchStudio adaptive, V1, portfolio
+  mirror, and a Top-50 family-03 medoid. All 11,504/11,504 requested actions,
+  final money, advantage, land, hands, animals, inventory, and terminal state
+  were identical.
+- **Safety:** zero runtime failures, semantic failures, actual livestock
+  escapes, meaningful terminal stranding, or unexpected fallback.
+- **Runtime:** 0.818 ms mean call, 1.415 ms P95; package import median 26.233 ms.
+- **V2 sanity:** 8/0/0, average money 112,003, average advantage +9,356.
+- **Status:** ready for manual Kaggle upload. No submission, upload, remote
+  modification, or Git push was performed.
+
+## 2026-09-01 — Current Top-3 forensic research
+
+- Baseline: `agents/top50_distilled/top50_observable_portfolio.py` (`f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`); Super Replay V2 retained as control.
+- Live snapshot: tetsuya / Crop Dusta / OceanMix at 2026-09-01T07:39:57.571562+00:00; 30 exact-current-version appearances each.
+- Finding: all three stabilize the opening then branch materially; a public medoid is not the hidden adaptive policy.
+- Raw league: Rank1 medoid led the broad initial panel but split 4–4 with CurrentBest, showed tail risk, and lost livestock.
+- Microtuning: exact Rank3 branch swap, exact K3 branch swap, and combination all failed development (paired mean deltas −19,609 / −14,180 / −33,789; all had escapes).
+- Decision: no validation consumption, no finalist, no promotion. CurrentBest remains unchanged. `submission/main.py` untouched at `789bb9bbd5122eb4891983e776a13777328e3e87736cbbc0b4bc86d13fc33f9b`. Nothing submitted.
+- Report: `experiments/top3_forensic_research_report.md`.
+
+## 2026-09-01 — Top-3 adaptive policy distillation
+
+- Frozen baseline remained `agents/top50_distilled/top50_observable_portfolio.py` (`f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`).
+- Refreshed version-pure corpus: 219 usable teacher appearances—86 tetsuya, 66 Crop Dusta, 67 OceanMix—covering 215 unique valid public replay files.
+- Built an event-driven seven-phase ontology, eight major strategic-decision targets, complete-episode/action-hash grouped splits, 24/48/72/120-turn deployable history features, and a passing leakage audit.
+- Best untouched-holdout reconstruction: phase macro-F1 0.973, major-decision macro-F1 0.839, transition recall 1.000, mean transition timing error 4.1 steps. Current-state-only was 0.865/0.735 and turn-only 0.488/0.614, confirming material history value.
+- Limits: Crop Dusta decision F1 0.742; crop-family F1 0.687; strict market-mode F1 0.555; cohort scale within two plants only 37.0%. Only 63.5% of frozen-CurrentBest diagnostic states passed OOD + confidence guards.
+- Executor audit: CurrentBest is a step-1 selector over complete replay backbones. Land, livestock, crop-cohort and terminal targets require a new target-driven low-level executor; fixed route switching remains forbidden. Counterfactuals, oracle, fitted-Q and gameplay hybrids were explicitly not run rather than measuring incoherent route breakage.
+- Promotion: no. CurrentBest remains the research best. `submission/main.py` remained at `789bb9bbd5122eb4891983e776a13777328e3e87736cbbc0b4bc86d13fc33f9b`; nothing packaged, uploaded or submitted.
+- Report: `experiments/top3_adaptive_distillation_report.md`.
+
+## Autonomous strategic breakthrough research
+
+- **Hypothesis:** a state-driven goal executor could safely convert the
+  Top-3/Top-50 strategic signal into adaptive control after the opening.
+- **Result:** `goal_executor_v1` failed the diagnostic screen (20/8/0,
+  average advantage -8,298, P10 -132,772) and lost animals in 28/28 games.
+  The safety-gated control fell back to the frozen route around livestock and
+  was behaviorally identical to the baseline.  The failure is executor
+  integrity, not evidence that history has no predictive value.
+- **Second hypothesis:** complete economically distinct route families would
+  add robust value without incompatible route splicing.  The raw
+  `top50_raw_55899537` route won both independent 16-seed paired panels (64/0/0
+  total, approximately +1,976 mean advantage; positive P5/P10) and the
+  64-game held-out control league (64/0/0, +48,942 mean advantage, P10 +1,873).
+  All successful raw-route panels had zero runtime errors and zero observed
+  animal losses.
+- **Economic attribution:** on four additional matched seeds, final money was
+  +2,072.5, driven by strawberry (+900), fertilizer (+657), wheat (+266), wool
+  (+156), and milk (+30) revenue, with feed/product spend -114 and seed spend
+  +50.  This is primarily market/capital cycling with a small throughput gain.
+- **Decision:** promote `agents/autonomous_next/top50_raw_55899537.py` as the
+  cautious local research best (SHA-256
+  `5d66e9283e4e500a4113a6d167abb04e0a088c2ad8799c1750da4b7a2172d069`).  The
+  gain is below the preferred +3k own-money target and paired lower-tail risk
+  remains, so do not package or submit automatically.
+- **Artifacts:** `experiments/autonomous_breakthrough_research.md`,
+  `autonomous_breakthrough_diagnostics.json`, `autonomous_route_validation.json`,
+  `autonomous_raw_route_h2h.json`, `autonomous_raw_h2h_economics.json`, and
+  `autonomous_route_economics.json`, plus the four candidate/validation
+  scripts listed in the report.
+
+## 2026-09-01 — Final independent validation of `top50_raw_55899537`
+
+- **Locked inputs:** Candidate SHA-256
+  `5d66e9283e4e500a4113a6d167abb04e0a088c2ad8799c1750da4b7a2172d069` and
+  frozen baseline SHA-256
+  `f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233` both
+  matched `experiments/raw55899537_finalist_lock.json`.
+- **Validation:** 400 paired conditions / 800 full 720-step games, 136 fresh
+  disjoint seeds, both seats, direct CurrentBest, Top-3, historical strong,
+  natural-RNG, and four predeclared stress regimes. Runtime and semantic
+  failures were zero; candidate escapes were zero; route realization was
+  99.9955%; mean terminal stranded value was 45.645 coins.
+- **Result:** Candidate H2H was 346/54/0 and mean advantage delta was +700.5,
+  but paired own-money delta was only +182.2 (bootstrap 95% CI -1,612.4 to
+  +1,996.9). The Top-3 frontier regressed by -12,267.8 advantage coins; the
+  tetsuya matchup regressed by -28,602.9 and had the worst tails.
+- **Decision:** **DO NOT PROMOTE.** `experiments/current_best.json` was
+  restored to `agents/top50_distilled/top50_observable_portfolio.py`. The
+  challenger remains preserved as a rejected research finalist; no source
+  strategy or `submission/main.py` was changed and nothing was submitted.
+- **Reports:** `experiments/raw55899537_worst_case_analysis.md` and
+  `experiments/raw55899537_final_validation_report.md`, alongside the complete
+  locked JSON artifact set.
+
+## 2026-09-01 — Autonomous next-step complete-route family falsification
+
+- **HYPOTHESIS:** a coherent complete route family omitted from the observable
+  Top-50 portfolio could provide a materially stronger own economy without
+  unsafe continuation switching.
+- **CHEAP TEST:** 112 paired full games on seeds 50600--50601, both seats,
+  against CurrentBest and the three Top-3 frontier representatives.  Family-01
+  was independently confirmed on 128 paired games on disjoint seeds
+  50700--50707.
+- **RESULT:** the cheap family-01 signal (+2,531 own money) did not transfer:
+  deep own-money delta **-10,692**, advantage delta **-14,642**, own P10
+  **-30,438**, with 44/20/0 direct H2H and zero livestock losses.  Other
+  medoids were immediately negative (family-02 -14,441; family-03 -11,585;
+  family-04 -2,554; family-05 -13,330 own-money on the cheap panel).  The raw
+  55899537 route was also negative on this screen (-1,611 own money).
+- **ECONOMIC INTERPRETATION:** route realization was 99.967% in the deep
+  family-01 test, so the loss is not primarily an executor bug.  Complete-route
+  family selection does not currently reveal robust own-economy headroom and
+  appears sensitive to frontier market regimes.
+- **DECISION:** no promotion and no changes to CurrentBest or
+  `submission/main.py`.  The next experiment is a narrow market-only residual
+  that keeps every production, animal, land, labor, and movement commitment
+  fixed while testing only already-scheduled SELL ordering.  This is the
+  cheapest safe test of remaining market-sequencing headroom.
+- **ARTIFACTS:** `experiments/autonomous_next_route_screen_report.md`,
+  `autonomous_next_route_screen.json`, and
+  `autonomous_next_route_deep_screen.json`.
+
+## 2026-09-01 — Autonomous next-step market residual and checkpoint audit
+
+- **HYPOTHESIS:** after complete-route family selection failed, the frozen
+  route might still contain safe own-economy headroom in market sequencing.
+  A market-only residual should improve sales while preserving all production
+  and service commitments.
+- **CHEAP TEST:** 192 full games on fresh deterministic seeds 50800--50807,
+  both seats, paired against CurrentBest, tetsuya, Crop Dusta, and OceanMix.
+  `market_residual_reorder_v1` permuted only multiple SELL orders already in
+  the same turn.  `market_residual_horizon_v1` additionally used the existing
+  bounded public-hazard future SELL-slot assignment and restored displaced
+  batches at their original slots.
+- **RESULT:** reorder-only made **zero changes** and was action-for-action
+  identical to CurrentBest (64/64 paired conditions, delta 0).  The horizon
+  residual made 611 bounded assignments but reduced own money by **954.3** on
+  64 paired conditions (median -176, P10 -2,225, P5 -8,671, 65.6% negative),
+  with advantage delta -819.9.  A fixed-seed bootstrap 95% CI for its own
+  delta was **[-1,629, -367]**.  Its own-money deltas were -3,575.6 vs Crop
+  Dusta, -749.3 vs OceanMix, -45.9 vs CurrentBest, and +553.4 vs tetsuya.
+  Runtime and semantic failures were zero in all 192 games and optimizer
+  errors were zero.
+- **CHECKPOINT AUDIT:** pairwise strict compatibility of complete route-bank
+  expected states falls from 67.6% at step 24 to 22.1% at step 48, 5.9% at
+  step 168, 1.6% at step 240, and below 1% by steps 360--600.  Matching land
+  or geometry alone is therefore not a safe continuation criterion; crop
+  cohorts, inventories, seeds, worker state, and animal commitments alias.
+- **DECISION:** no candidate is promoted.  Market ordering has no measurable
+  headroom in the existing route (the route is already locally ordered), and
+  future slot assignment is negative under frontier interaction.  The static
+  checkpoint audit makes a full delayed route selector low-value until a
+  target-driven executor can own all coupled state.  CurrentBest and
+  `submission/main.py` remain untouched; no Kaggle submission occurred.
+- **ARTIFACTS:** `run_autonomous_market_residual.py`,
+  `agents/autonomous_next/market_residual_reorder_v1.py`,
+  `agents/autonomous_next/market_residual_horizon_v1.py`,
+  `experiments/autonomous_market_residual.json`, and
+  `audit_autonomous_checkpoint_compatibility.py` with
+  `experiments/autonomous_checkpoint_compatibility.json`.
+
+## 2026-09-01 — High-own-money raw Top-50 route probe
+
+- **HYPOTHESIS:** the highest-own-money mined replay (`super_raw_55884271`,
+  Borrun, source replay money 144,328) may contain a stronger complete
+  economic package than the current portfolio, even though its family medoid
+  was not robust.
+- **CHEAP TEST:** 128 full games on fresh seeds 50900--50907, both seats,
+  paired against CurrentBest, tetsuya, Crop Dusta, and OceanMix.  The route was
+  executed whole through the existing Stage-3 safety executor; no actions were
+  spliced.
+- **RESULT:** raw_55884271 was safe (0 runtime failures, 0 semantic failures,
+  0 livestock losses, 100% route realization) but lost **6,649.3 own-money
+  coins** paired with CurrentBest (64 conditions; median -6,082, P10 -35,217,
+  P5 -43,317, 71.9% negative).  Own-money deltas by opponent were +5,205.6
+  vs tetsuya, -25,770.1 vs Crop Dusta, -10,510.6 vs OceanMix, and +4,478.1
+  vs CurrentBest.  Mean advantage delta was -4,381.5.
+- **DECISION:** reject the route despite its exceptional source replay money.
+  Its value is trajectory/regime-specific and does not transfer to the
+  frontier.  This reinforces that public final money is not causal evidence
+  for a reusable complete route.
+- **ARTIFACTS:** `agents/autonomous_next/top50_raw_55884271.py`,
+  `experiments/autonomous_raw_55884271_probe.json`.
+
+## 2026-09-01 — Checkpoint-resumable commitment executor safety stage
+
+- **HYPOTHESIS:** a narrow state-based executor can take over a real
+  CurrentBest checkpoint, preserve visible crop/livestock commitments, and
+  finish without the animal-loss cascade seen in `goal_executor_v1`.
+- **IMPLEMENTATION:** `agents/checkpoint_executor/commitment_executor_v1.py`
+  reconstructs live objects, hires only workload-required hands, distributes
+  observed wheat, protects FEED/WATER deadlines, uses fertilizer as a low-cash
+  recovery asset, and enters a reserve-aware terminal liquidation mode.  It
+  does not create optional land/animal/crop commitments.
+- **RESUME TEST:** 32 conditions (seeds 51000/51001, both seats, checkpoints
+  24/72/120/168/240/360/480/600).  Runtime failures **0**, semantic failures
+  **0**, animal-loss games **0**, terminal-stranding games **0**.  Mean own
+  money was 20,556 versus 53,267 for the original continuation (mean gap
+  -32,710), showing safe but conservative continuation.
+- **PERTURBATION TEST:** 24 fresh valid action-level perturbations on seed
+  52002 (both seats, checkpoints 24/72/120).  Runtime/semantic failures,
+  animal losses, and terminal stranding were all **0**.  22/24 rows applied a
+  matching perturbation; two omitted-buy rows correctly remained unchanged
+  because no such baseline order existed.
+- **COMMITMENT AUDIT:** 12 conditions on seed 53000.  Runtime/semantic
+  failures **0**, animal commitment-loss conditions **0**, crop
+  commitment-loss conditions **0**, maximum consecutive-unfed **1**,
+  consecutive-unwatered **1**, terminal-stranding conditions **0**.
+- **INTERPRETATION:** the original failure was execution integrity: feed
+  logistics, capital recovery, and worker workload—not action schema.  The
+  revised controller is safety-capable, but it intentionally stops optional
+  production and therefore trails CurrentBest materially.  This is a safety
+  harness, not a promoted strategy.
+- **DECISION:** Resume, Perturbation, and Commitment gates pass.  Top-player
+  interventions and oracle/headroom are **NOT RUN** because the executor does
+  not yet own new crop/land/livestock commitments; running them would conflate
+  recovery with strategy improvement.  CurrentBest and `submission/main.py`
+  remain unchanged; no Kaggle submission occurred.
+- **ARTIFACTS:** `experiments/checkpoint_executor_design.md`,
+  `experiments/checkpoint_executor_resume_results.json`,
+  `experiments/checkpoint_executor_perturbation_results.json`,
+  `experiments/checkpoint_executor_commitment_audit.json`,
+  `experiments/checkpoint_executor_safety.json`,
+  `experiments/checkpoint_executor_recovery_analysis.json`,
+  `experiments/checkpoint_executor_report.md`,
+  `run_checkpoint_executor_perturbation.py`, and
+  `audit_checkpoint_executor_commitments.py`.
+
+## 2026-09-01 — Optional crop-lifecycle capability falsification
+
+- **HYPOTHESIS:** the passive continuation gap is dominated by missing crop
+  production, so the smallest useful state-based commitment is one complete
+  wheat lifecycle (seed → plant → service → harvest → drop/sell) layered on
+  top of the proven safety executor.
+- **IMPLEMENTATION:** `agents/checkpoint_executor/crop_lifecycle_v1.py`
+  admits at most one observed empty tile, keeps all existing commitments
+  authoritative, and overrides only an idle (`PASS`) unit.  It buys no land,
+  animals, fertilizer, or other crops.  `run_checkpoint_executor_lifecycle.py`
+  performs paired checkpoint takeovers without editing simulator state.
+- **CHEAP SCREEN:** 16 conditions on seeds 55000/55001, checkpoints 24/72/120/168,
+  both seats, versus the passive executor control.  Runtime failures **0**,
+  semantic failures **0**, animal losses **0**, terminal stranding **0**.
+  Four admissions all acquired a seed, planted, and harvested (100% lifecycle
+  realization).  Mean own-money delta was **−274.1** (median 0, P10 −2,758.5),
+  so the capability was safe but not economically useful.
+- **SAFETY RETEST:** 16 valid perturbation/commitment conditions on fresh seed
+  55002, checkpoints 24/72, both seats.  Runtime/semantic failures,
+  pre-existing crop losses, animal losses, and terminal stranding were all
+  **0**; max consecutive unfed/unwatered was **1**.
+- **INTERPRETATION:** one wheat tile has too little gross value to offset
+  persistent-worker movement and occasional interference with high-value
+  livestock/crop service.  The first capability is therefore falsified as a
+  recovery step, despite perfect safety.
+- **DECISION:** no promotion and no changes to the frozen best or
+  `submission/main.py`.  The next bottleneck is a compact multi-tile or
+  premium lifecycle with explicit worker/capital reservation; Top-player
+  interventions remain deferred.  No Kaggle submission occurred.
+- **ARTIFACTS:** `experiments/checkpoint_executor_lifecycle_report.md`,
+  `experiments/checkpoint_executor_lifecycle_screen.json`,
+  `experiments/checkpoint_executor_lifecycle_safety.json`,
+  `run_checkpoint_executor_lifecycle.py`,
+  `run_checkpoint_executor_lifecycle_safety.py`.
+
+## 2026-09-01 — Premium lifecycle probe and executor bottleneck confirmation
+
+- **HYPOTHESIS:** a single premium MELON lifecycle may recover enough gross
+  value to justify further continuation-executor work after the one-WHEAT
+  lifecycle failed.
+- **IMPLEMENTATION:** `agents/checkpoint_executor/premium_lifecycle_v1.py`
+  adds one price- and capital-gated MELON commitment on top of the unchanged
+  safety executor.  It selects a nearby empty tile and overrides only one
+  persistent idle worker; all existing feed/water/harvest/drop/liquidation
+  commitments remain delegated.
+- **CHEAP SCREEN:** 16 paired conditions on fresh seeds 55003/55004,
+  checkpoints 24/72/120/168, both seats, with the passive executor as control.
+  Runtime/semantic failures **0**, animal losses **0**, and terminal inventory
+  stranding **0**.  Admissions/seeds acquired were 8/8, but plantings/harvests
+  were 8/4 (50% realization).  Mean candidate own money was 16,655.8 versus
+  17,172.5 control (delta **−516.8**; median −40; P10 −1,987), and mean
+  advantage delta was −935.6.
+- **SAFETY RETEST:** 16 valid perturbation conditions on fresh seed 55005,
+  checkpoints 24/72, both seats.  Runtime/semantic failures, animal losses,
+  pre-existing crop losses, and terminal inventory stranding were all **0**;
+  max consecutive unfed/unwatered was **1**.  Checkpoint-72 rows confirmed
+  an economically incomplete melon lifecycle rather than a crash.
+- **INTERPRETATION:** one premium crop has higher gross value than wheat but
+  still cannot reliably repay its ten-day maturity, market-glut exposure, and
+  worker-route interference.  Isolated lifecycle patches are not enough to
+  recover the measured crop-revenue gap.
+- **DECISION:** no promotion and no changes to the frozen best or
+  `submission/main.py`.  The highest-value remaining direction is a coupled
+  compact-cohort executor with explicit capital/worker/terminal reservation;
+  do not add isolated crop actions or route splices.  No Kaggle submission
+  occurred.
+
+- **ARTIFACTS:** `experiments/autonomous_next_open_decision.md`,
+  `experiments/autonomous_next_open_report.md`,
+  `experiments/checkpoint_executor_premium_screen.json`,
+  `experiments/checkpoint_executor_premium_safety.json`,
+  `run_checkpoint_executor_lifecycle.py`, and
+  `run_checkpoint_executor_lifecycle_safety.py`.
+
+## 2026-09-01 — Autonomous compact-cohort headroom falsification
+
+- **EVIDENCE REVIEW:** Complete-route families and market residuals had no
+  durable own-money headroom (market oracle under 100 coins).  The safe
+  checkpoint executor's remaining gap was dominated by omitted crop/animal
+  production.  One wheat and one melon commitments were already safe but
+  economically negative.
+- **DECISION RECORD:** `experiments/autonomous_stage_decision.md` selected the
+  cheapest meaningful falsifier: a capital-gated, co-located four-melon cohort
+  with explicit worker slack, while preserving the frozen executor as the
+  control and forbidding land/animal/route changes.
+- **IMPLEMENTATION:**
+  `agents/checkpoint_executor/compact_melon_cohort_v1.py` borrowed one PASS
+  unit; v2 allowed up to three PASS units in parallel; v3 added one explicitly
+  requested extra hand.  All candidates preserved the base executor's
+  feed/water/harvest/drop/liquidation authority and emitted the documented
+  action schema.
+- **RESULTS:** v1 (16 paired conditions, seeds 56000–56001, checkpoints
+  24/72/120/168) averaged **−464.4** own coins with 75% per-admission harvest
+  realization.  v2 averaged **+44.7** on its 16-condition development panel
+  (bootstrap 95% CI **[−244.4, +461.8]**) but harvested only 50% of target
+  tiles.  On eight fresh held-out checkpoint-24 conditions (seeds
+  56030–56033, both seats), v2 averaged **−2,319.5** (median −2,297,
+  P10 −5,785, bootstrap CI **[−4,180.8, −379.3]**; 75% negative).
+  v3's extra hand averaged **−548.6** (CI **[−1,359.0, −4.2]**) with 37.5%
+  per-admission harvest realization.
+- **SAFETY:** Across all candidate/control rows there were zero runtime
+  failures and zero semantic failures.  Held-out v2 had zero candidate animal
+  losses and zero terminal-stranding conditions.  No frontier panel was opened:
+  the cheap signal was below the +1,000-coin gate and fresh confirmation was
+  negative.
+- **ECONOMIC INTERPRETATION:** Parallel ownership reduced contention but did
+  not make a complete cohort executable; most admissions harvested only one or
+  two of four melons.  The extra worker added cost without improving
+  realization.  The theoretical 5,680-coin gross ceiling therefore was not
+  reachable under the partial-ownership interface.  This rejects isolated
+  cohort expansion as the next architecture, not melon economics in a fully
+  coherent route.
+- **DECISION:** No candidate promoted.  Frozen CurrentBest
+  (`agents/top50_distilled/top50_observable_portfolio.py`) and
+  `submission/main.py` remained unchanged; no Kaggle submission occurred.
+  Complete report: `experiments/autonomous_next_stage_report.md`; machine
+  readable screens: `experiments/autonomous_compact_cohort*_*.json`.
+
+## 2026-09-01 — Open autonomous research stage closure
+
+- **Frozen state:** CurrentBest remained
+  `agents/top50_distilled/top50_observable_portfolio.py` (SHA-256
+  `f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`).
+  The existing `submission/main.py` remained byte-identical at SHA-256
+  `789bb9bbd5122eb4891983e776a13777328e3e87736cbbc0b4bc86d13fc33f9b`.
+  No Kaggle upload or submission API was called.
+- **Question:** determine whether the remaining value was in route diversity,
+  executor realization, Top-3 imitation, SELL sequencing, or a new adaptive
+  economic program.  The stage reviewed the README/AGENTS instructions, all
+  accumulated reports and logs, the Top-3/Top-50 corpora, V2/V3/V4 lineages,
+  and checkpoint-executor artifacts.  No separate V5/V6/V7/V8 artifacts were
+  present.
+- **Route oracle:** 23 complete routes on seeds 56300–56301, both seats (92
+  games).  Hindsight best improved own money by +18,906.5, but the winning
+  route changed by seed.  Fresh whole-route validation on seeds 56310–56313
+  reversed the three selected routes to -10,939, -4,008, and -4,279 own
+  coins (P10 -44,933, -35,334, -35,939 respectively), despite ~100% route
+  realization and zero safety failures.
+- **Top-3 transfer:** 24 fresh games (56400–56403, both seats) gave tetsuya
+  0/8, Crop Dusta 2/6, and OceanMix 0/8 versus CurrentBest, with mean
+  advantages -22,384, -28,592, and -5,313.  Replay history remains predictive
+  (phase F1 0.973; decision F1 0.839) but no causal delegation was enabled.
+- **Market residual:** 192 full games on seeds 50800–50807.  Same-turn SELL
+  reordering changed zero actions and zero money.  A bounded future-slot
+  residual made 611 assignments but lost 954 own coins (bootstrap CI
+  [-1,629, -367]).
+- **Lifecycle executor:** compact melon cohorts were safe but realized only
+  37.5–50% of target harvests; held-out v2 was -2,320 own coins (P10 -5,785).
+  The broad goal executor remained unsafe (28/28 animal-loss games, P10
+  -132,772); the commitment executor preserved observed commitments with zero
+  safety failures but omitted profitable production.
+- **Decision:** H1 static route transfer, H3 direct Top-3 package transfer,
+  H4 SELL sequencing, broad planner takeover, and isolated lifecycle patches
+  were rejected.  H2 executor realization and H6 lifecycle ownership remain
+  real mechanisms; H5 regime-conditioned complete economic-program control is
+  the highest-value surviving direction.  Primitive RL, fitted-Q, and
+  self-play are not justified before a coherent high-level oracle exists.
+- **Promotion:** none.  CurrentBest remains the retained research best; all
+  candidates failed robust own-money/tail or realization gates.
+- **Report:** `experiments/autonomous_open_stage_report.md` contains the
+  hypotheses, diagnostics, attribution, tails, candidate table, and the
+  requested 34-point final answer.  Existing route/cohort/residual JSON
+  artifacts remain unchanged.
+
+## 2026-09-02 — Economic-program executor safety repair and counterfactual
+
+- **CANDIDATE:** `agents/economic_program/economic_program_executor_v1.py`
+  (research-only; frozen CurrentBest and `submission/main.py` unchanged).
+- **DIAGNOSIS:** At checkpoint day-rollovers, wheat carriers could choose
+  `PICKUP_WHEAT` over an executable overdue `FEED`, causing a sheep escape at
+  step 600 despite available feed.  A local feed-carrier priority fixed the
+  failure.  A separate late-checkpoint crop weed was reproduced with the
+  base executor and is an inherited dense-state boundary, not a candidate
+  regression.
+- **VALIDATION:** 16 fresh takeover conditions (seeds 57210–57213,
+  checkpoints 72/120, both seats) had 0 runtime failures, 0 semantic
+  failures, 0 animal losses, 0 pre-existing crop losses, and 0 terminal
+  stranding.  Eight checkpoint-72 cohorts completed 32/32 plantings and
+  harvests (100% realization among admissions), averaging +13,895 own coins
+  versus the passive commitment executor.
+- **COUNTERFACTUAL:** Against uninterrupted CurrentBest on the same seeds,
+  the takeover averaged **−58,226.6** own coins (checkpoint 72: −51,784.5;
+  checkpoint 120: −64,668.8; P10 −66,058.5).  The safe cohort capability is
+  therefore not competitive and was not promoted.
+- **DECISION:** Keep CurrentBest and `submission/main.py` frozen.  A coherent
+  state owner that preserves the full crop/livestock economy is required
+  before further isolated lifecycle expansion.  No Kaggle submission.
+- **ARTIFACTS:** `agents/economic_program/economic_program_executor_v1.py`,
+  `run_economic_program_executor.py`,
+  `run_economic_program_counterfactual.py`,
+  `experiments/economic_program_executor_report.md`, and the corresponding
+  probe/screen/counterfactual JSON files.
+
+## 2026-09-02 — CurrentBest-preserving overlay falsification
+
+- **HYPOTHESIS:** A bounded melon cohort may have positive value if it uses
+  only PASS units and unused market slots while CurrentBest continues its
+  complete route.
+- **IMPLEMENTATION:** `agents/economic_program/currentbest_overlay_v1.py`
+  exposes `make_agent(base_agent)`; `run_currentbest_overlay.py` binds it to
+  the same opener instance, preserving route state across the checkpoint.
+- **RESULT:** 16 conditions (seeds 57210–57213, checkpoints 72/120, both
+  seats) had 0 runtime failures and 0 semantic failures.  The overlay's mean
+  own-money delta versus uninterrupted CurrentBest was **−430.25** (median
+  −434, P10 −441).  It admitted 16 cohorts but realized only 25% of target
+  tiles on average, because CurrentBest left too little executable slack.
+- **DECISION:** Reject isolated PASS-only cohort overlays; they are much safer
+  than full takeover but still economically negative.  A useful next
+  architecture must own a coherent territory/labor budget together with the
+  existing crop and livestock commitments.  No promotion, submission change,
+  or Kaggle upload.
+- **ARTIFACTS:** `agents/economic_program/currentbest_overlay_v1.py`,
+  `run_currentbest_overlay.py`,
+  `experiments/currentbest_overlay_counterfactual.json`, and the expanded
+  executor report.
+
+## 2026-09-02 — Territory lifecycle scheduler ablation (S0–S3)
+
+- **FROZEN CONTROL:** `agents/top50_distilled/top50_observable_portfolio.py`.
+  `submission/main.py` and all existing strategy files were preserved.
+- **ROUTING EVIDENCE:** the completed public replay audit measured 0.94, 0.95,
+  and 1.15 movement/productive actions at 25/50/75 unlocked-tile scale,
+  respectively.  The 75-tile population had 100% territory purity, so the
+  experiment tested whether local lifecycle ownership—not static remapping—was
+  the missing mechanism.
+- **CANDIDATES:** S0 exact control; S1 persistent territories; S2 S1 plus
+  one-refresh watering deadline rescue; S3 S2 plus same-worker harvest→replant
+  chaining and cohort priority.  Market/economic orders, opening, animals,
+  land, feed, and terminal logic were inherited unchanged.
+- **SAFETY SCREEN:** four recorded real-loss opponents, both seats (32 games)
+  completed with zero runtime, semantic, and livestock failures.  S0/S1/S2/S3
+  all went 8/0/0; S1 was action-equivalent in outcome, while S2/S3 changed
+  only a small set of near-deadline movements.
+- **HELD-OUT HARD PANEL:** fresh seeds 981100–981103, both seats, six strong
+  local route families plus the recorded cases (224 games per full panel).
+  S0: **48/0/8**, +18,936 average advantage, P10 0, 352.0 harvests; S1 was
+  identical.  S2/S3: **48/8/0**, +18,862 average advantage, P10 −38.5,
+  351.4 harvests, and no crop-revenue gain.  All variants had zero runtime,
+  semantic, and livestock failures.
+- **DIAGNOSTICS:** S2/S3 issued 272 urgent overrides but slightly increased
+  watering misses and lost eight ties against `top50_redblack`; S3 realized
+  zero actual chain plantings.  The route's hidden animal/crop commitments
+  leave no reliable slack for a scheduler-only overlay.
+- **DECISION:** no promotion.  S0/CurrentBest remains strongest and safest;
+  S1 is retained only as a no-op control, and S2/S3 are rejected.  The next
+  useful direction is a coherent state owner for a bounded crop cohort with
+  explicit worker, capital, feed, and terminal reservations—not another
+  movement patch.  Full report: `experiments/territory_lifecycle_report.md`;
+  machine-readable results: `experiments/territory_lifecycle_heldout.json`.
+
+## 2026-09-02 — Prefix-compatible adaptive route probe
+
+- **CANDIDATE:** `agents/autonomous_next/prefix_adaptive_portfolio_v1.py`,
+  SHA-256 `e26eb35c2857f3045c5fa42301511c50570bf14d05dfca72cc3183183d0aea9f`.
+  CurrentBest remained
+  `agents/top50_distilled/top50_observable_portfolio.py` (SHA-256
+  `f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`).
+- **DESIGN:** preserve the observable step-1 anchor and allow one switch at
+  turn 72 only among complete routes whose actions are exactly identical
+  through turn 71.  Rank compatible continuations using current prices,
+  market inventory, and visible opponent product pressure.  No strategy,
+  source agent, or `submission/main.py` was modified.
+- **BENCHMARK:** 64 complete 720-turn games on deterministic seeds 61000 and
+  61001, both seats, against CurrentBest, tetsuya, Crop Dusta, OceanMix,
+  livestock/crop, land-expander, high-labor, and phased-rotation.  Runtime and
+  benchmark call-count failures were zero.
+- **RESULT:** CurrentBest 26/2/4, average money 122,953.1, average advantage
+  +73,991.4, P10 0.0.  The candidate 26/6/0, average money 126,360.1,
+  average advantage +73,481.1, P10 -4,917.4, P5 -7,605.8, worst -10,391.
+  Own-money mean was +3,406.9 versus CurrentBest, but the relative advantage
+  and lower tail regressed.
+- **DIAGNOSTIC:** the selector switched in all four CurrentBest matchups and
+  all four OceanMix matchups, and never switched against the other six
+  opponents.  The paired mean advantage delta was -7,859 versus CurrentBest
+  and -4,792 versus OceanMix.  This shows that exact-prefix compatibility
+  prevents desynchronization but does not make a partial SELL/market score
+  economically reliable under shared-market interaction.
+- **DECISION:** **reject; do not promote.**  Keep the candidate as a negative
+  probe.  The next useful architecture is a checkpoint-resume/state-owner
+  proof that explicitly carries crop cohorts, livestock, workers, capital,
+  inventory, and terminal commitments.  Do not tune the selector or launch a
+  broad sweep until that ownership is demonstrated.  Full decision record:
+  `experiments/prefix_adaptive_decision.md`; machine-readable results:
+  `experiments/prefix_adaptive_dev.json`.
+
+## 2026-09-02 — Coherent checkpoint owner and replacement-capacity proof
+
+- **GOAL:** test a minimal state-owner architecture for the day 10–20 crop
+  throughput gap without changing the opening, livestock, land, market, or
+  endgame logic.  The candidate could admit at most two MELON replacements on
+  recently vacated tiles.
+- **CANDIDATES:** `agents/autonomous_next/coherent_state_owner_v1.py` was the
+  initial full-owner attempt.  It was retained as a diagnostic after exposing
+  shadow-state contamination and optional-task watering interference.
+  `agents/autonomous_next/coherent_state_owner_v2.py` is the strict repair:
+  separate shadow/live executors, cold-start base commitments, seed-slot
+  reservation, two recent vacancies, two free PASS units, and overrides only
+  for PASS units.  Existing base actions are never reordered or discarded.
+- **SCREEN:** 16 paired 720-turn conditions on seeds 57300–57301, checkpoints
+  240/264/288/312, both seats.  Control was the passive commitment executor
+  from the same checkpoint.  v2 had zero runtime failures, zero semantic
+  failures, zero animal losses, zero incremental crop losses, and zero
+  terminal stranding.  Mean/median/P10/P5 own-money and advantage deltas were
+  all **0.0**; the strict gate admitted 0 programs, planted 0 replacements,
+  and harvested 0 replacements.
+- **EQUIVALENCE:** two full action-level comparisons (seed 57300 seat 0 at
+  checkpoint 264: 455 actions; seed 57301 seat 1 at checkpoint 288: 431
+  actions) had 0 mismatches, 0 semantic failures, and identical final money
+  (16,794 and 6,611 respectively).  Both episodes completed all 720 steps.
+- **CAUSAL FINDING:** after mandatory watering, harvest, feed, care,
+  fertilizer, inventory, and terminal work are reserved, CurrentBest exposes
+  no reliable two-unit PASS capacity at these checkpoints.  Borrowed-cohort
+  overlays therefore cannot raise crop throughput safely; a complete route
+  owner must reserve the worker/crop budget before day 10.
+- **DECISION:** no promotion and no held-out expansion.  Keep CurrentBest and
+  `submission/main.py` frozen.  The coherent-owner proof is safe but
+  economically neutral; do not tune its zero-admission thresholds or launch a
+  broad sweep.  Full report: `experiments/coherent_state_owner_report.md`;
+  final machine-readable result: `experiments/coherent_state_owner_screen_v9.json`.
+
+## 2026-09-02 — End-to-end pre-opening reservation owner
+
+- **GOAL:** test whether declaring worker/crop capacity before day 10 can
+  realize a controlled lifecycle that a checkpoint overlay could not safely
+  borrow. The frozen CurrentBest remained
+  `agents/top50_distilled/top50_observable_portfolio.py`; `submission/main.py`
+  was unchanged.
+- **CONTROL OWNER:** `agents/autonomous_next/end_to_end_owner_v1.py` records a
+  day-0 farmer/WHEAT reservation and complete per-unit commitment ledger while
+  returning the frozen action unchanged. Four full 720-turn comparisons
+  (seeds 57400–57401, both seats) covered all 719 actions with **0 mismatches**,
+  identical final money, and 0 schema failures.
+- **CANDIDATE:** `agents/autonomous_next/end_to_end_owner_crop_v1.py` consumes
+  one reserved farmer slot after step 240 for a single capital-gated WHEAT
+  cycle. It changes no land, animal, fertilizer, or unrelated economic policy
+  and admits only when the base route leaves a real PASS lane.
+- **SCREEN:** development seeds 57400–57403, both seats (8 paired games):
+  8/8 admissions, plantings, harvests, and sell requests; 0 runtime/schema
+  failures; 0 animal losses; mean own-money delta **+25.75**, median +24.5,
+  P10 +23.0. Held-out seeds 57500–57501 (4 games) retained full realization
+  and mean delta **+29.5** (median/P10 +29.5/+29.0).
+- **HARD PANEL:** seeds 57510–57511, both seats, six opponents (24 games):
+  mean own-money delta +2.67, median 0, P10 −2.0, mean advantage delta +4.58;
+  0 runtime/schema/animal-loss failures. Per-opponent deltas were 0 vs
+  tetsuya/Crop Dusta, +20 vs OceanMix, −2.5 vs livestock/crop, −1 vs
+  land-expander, and −0.5 vs high-labor. Terminal inventory value matched
+  control on every condition (12 coins inherited from the route).
+- **DECISION:** **do not promote**. Pre-opening ownership is safe and turns
+  a zero-admission overlay into a fully realized one-tile cycle, but the value
+  is only 25–30 coins and not a breakthrough. The unresolved gap is a larger
+  coherent pre-day-10 cohort with reserved capital, tiles, watering lanes,
+  harvest timing, and market exposure. Full report:
+  `experiments/end_to_end_owner_report.md`; machine-readable screens:
+  `experiments/end_to_end_owner_screen_v1.json`,
+  `experiments/end_to_end_owner_heldout.json`, and
+  `experiments/end_to_end_owner_league.json`.
+
+## 2026-09-02 — End-to-end two-tile cohort owner screen
+
+- **GOAL:** test whether reserving two worker slots and two WHEAT tiles from
+  turn 0 could safely add a second pre-opening lifecycle without changing the
+  frozen replay portfolio's economic decisions.
+- **CANDIDATE:** `agents/autonomous_next/end_to_end_owner_cohort_v1.py`;
+  it admitted only on inherited `PASS` lanes between steps 240–360, protected
+  its targets, and sold any realized cohort output.  Land, animals, fertilizer,
+  hiring, and the inherited market policy were unchanged.
+- **SCREEN:** seeds 57600–57603, both seats, 8 complete paired 720-step games.
+  Runtime failures **0**, schema failures **0**, animal-loss conditions **0**.
+  Admissions **8**, but actual candidate plant actions **0**; the owner only
+  observed two inherited harvests per condition and issued bounded sell
+  requests.
+- **RESULT:** mean own-money delta **−1,442.5**, median **−456.5**, P10
+  **−4,552.0**, mean advantage delta **−1,768.5**.  Candidate money was lower
+  on every tested seed.  Terminal inventory value was 11 coins for the
+  candidate versus 12 for control, so no additional stranded cohort value was
+  introduced.
+- **DECISION:** **reject; do not promote or run a larger confirmation.**  The
+  route exposes no reliable free worker lane for this overlay, so no new crop
+  cycle was realized.  A future improvement would need a complete pre-opening
+  owner of capital, tiles, worker lanes, lifecycle timing, shed capacity, and
+  sale exposure; keep CurrentBest and `submission/main.py` unchanged.  Full
+  report: `experiments/end_to_end_owner_cohort_report.md`; machine-readable
+  result: `experiments/end_to_end_owner_cohort_screen.json`.
+
+## 2026-09-02 — Pre-opening future-quadrant wheat owner probe
+
+- **GOAL:** test a genuinely pre-reserved cohort by declaring two future NE
+  tiles and a tail worker lane at step 0, then funding and executing two WHEAT
+  lifecycles after first-land unlock.
+- **CANDIDATE:** `agents/autonomous_next/preopening_owner_wheat_v1.py` layered
+  the frozen observable portfolio and changed no source route or submission.
+  It bought two seeds when capital/market slots allowed, protected the
+  reserved tiles, and handled watering, harvest, and sales with the reserved
+  lane.
+- **SCREEN:** seeds 57700–57703, both seats (8 complete 720-step games).
+  Runtime/schema failures **0**, animal-loss conditions **0**.  Admissions
+  8/8, plantings 16, watering actions 32, harvest actions 16 (32 units).
+- **RESULT:** mean own-money delta **+6,581.75**, median +4,495.5, P10
+  **−2,619.0**, but mean advantage delta **−4,211.25**.  On every seed the
+  opponent's money increased more than the candidate's (opponent deltas
+  +2,235 to +24,582), so the candidate became less competitive despite
+  positive own-money deltas on three seeds.  Terminal inventory value was 16
+  versus 12 for control, leaving four additional coins of unsold value.
+- **DECISION:** **reject; no held-out confirmation or promotion.**  The
+  lifecycle can be realized, but replacing the route's tail worker changes
+  shared-market/worker state and transfers more value to the opponent while
+  failing to reserve terminal sale capacity.  A meaningful successor must own
+  the entire opening route and reserve crop, worker, shed, and market capacity
+  together.  Full report: `experiments/preopening_owner_wheat_report.md`;
+  machine-readable result: `experiments/preopening_owner_wheat_screen.json`.
+
+## 2026-09-02 — Pre-opening owner capacity audit
+
+- **SCOPE:** offline inspection of all 23 routes in
+  `experiments/top50_route_bank.json` for steps 0–263.  No simulator games,
+  strategy changes, or submission changes were made.
+- **MEASURED:** first-land timing, daily maximum hand counts, market-order
+  headroom for an additional seed-plus-hire pair, hire headroom, and turns
+  containing a PASS unit.  All 23 routes unlock first land around step 150
+  (the few medoids with earlier/later milestones remain route-specific), and
+  every route has some market headroom, but none guarantees a free slot on
+  every daily reinvestment turn.  Daily maximum hands are already 3–7 by day
+  2, 6–8 by day 6, and 11–12 by day 10.
+- **INTERPRETATION:** the NW quadrant is full by day 2, so any additional
+  pre-opening crop must reserve a future-quadrant tile.  A second worker also
+  needs a recurring daily market slot; when the route emits ten orders, an
+  overlay must displace a purchase or hire.  PASS lanes are intermittent and
+  are not proof of spare capacity because crop/animal deadlines can claim
+  them later.
+- **DECISION:** use this audit to constrain, not broaden, the next design.  A
+  viable cohort requires a complete route owner that reserves future land,
+  worker capacity, seed capital, watering/harvest lanes, and terminal sale
+  slots together.  Do not continue adding tail-worker overlays to the frozen
+  portfolio.  Full audit: `experiments/preopening_owner_capacity_audit.md`;
+  machine-readable data: `experiments/preopening_owner_capacity_audit.json`.
+
+## 2026-09-02 — Additional-worker melon owner probe
+
+- **GOAL:** test whether a genuinely additional worker lane (rather than
+  borrowing an inherited tail hand) can add one reserved NE MELON lifecycle to
+  the frozen observable portfolio.
+- **CANDIDATE:** `agents/autonomous_next/extra_hand_melon_owner_v1.py`; it
+  reserved one future tile, admitted after first-land unlock, hired one hand
+  when a market slot and cash buffer were available, and attempted the full
+  plant → water → harvest → shed → sell lifecycle. The baseline route,
+  `agents/top50_distilled/top50_observable_portfolio.py`, and
+  `submission/main.py` were not modified.
+- **SCREEN:** seeds 57800–57803, both seats (8 complete 720-step games).
+  Runtime/schema failures **0**, animal-loss conditions **0**. Admissions 8,
+  extra-hand confirmations 192 (24 per game), plantings 8, but watering 0,
+  harvests 0, and sell requests 0.
+- **RESULT:** mean own-money delta **−3,005.75**, median **−3,117.5**, P10
+  **−4,138**, and mean advantage delta **−6,957.5**. Candidate money was
+  lower on every seed; terminal inventory value remained 12 coins.
+- **DECISION:** **reject; no held-out confirmation or promotion.** The
+  inherited deadline guard blocked the overlay after planting, so the extra
+  hand incurred recurring hire costs without realizing a crop cycle. This is
+  a scheduling/ownership failure, not a crop-economics result. A successor
+  must reserve the complete recurring lane and sale capacity together. Full
+  report: `experiments/extra_hand_melon_owner_report.md`; machine-readable
+  screen: `experiments/extra_hand_melon_owner_screen.json`.
+
+## 2026-09-02 — Top-10 public strategy research and adjustment
+
+- **EVIDENCE:** reused the complete downloaded V3 Top-10 corpus (10 selected
+  submission versions, 126 valid unique replays, 82 deduplicated development
+  appearances, 3 structural families, zero financial-reconstruction
+  mismatches). The new synthesis is generated by `analyze_top10_meta.py` and
+  saved as `experiments/top10_meta_summary.json` and
+  `experiments/top10_meta_summary.md`.
+- **CONSENSUS:** all ten routes use a three-quadrant melon/strawberry economy,
+  first land at steps 144–160, second land at 217–264, mixed cows and sheep,
+  high labor, and final liquidation. Ranks 1 and 2 are genuinely adaptive;
+  ranks 3–10 largely form a stable 160/240 JALKARNA-like family. This confirms
+  the capital skeleton but does not justify a universal earlier-land, cow, or
+  labor change.
+- **ADJUSTMENT:** the raw JALKARNA parent was rejected after a direct
+  low-bank/four-hand diagnostic showed repeated livestock losses. A safer probe
+  `agents/autonomous_next/top10_lowbank_hanserong_v1.py` routed that signature
+  to the proven Hanserong parent at step 1, leaving all other states on the
+  frozen selector.
+- **SCREEN:** seeds 57900–57901, both seats, fixed and natural shops, all ten
+  Top-10 route opponents plus seven hard local opponents (272 complete games).
+  Runtime/schema failures were 0. CurrentBest was 130/6/0 with 112,963 mean
+  money and +42,681 mean advantage. The adjustment was 102/34/0 with 114,176
+  mean money and +39,538 mean advantage; paired own-money delta +1,212.5 but
+  paired advantage delta −3,143.1, P10 −5,567, and 64 livestock losses.
+- **DECISION:** **reject; do not promote.** The higher own bank is a
+  shared-market artifact and comes with a weaker competitive tail and unsafe
+  animal realization. Keep `agents/top50_distilled/top50_observable_portfolio.py`
+  and `submission/main.py` unchanged. Full report:
+  `experiments/top10_strategy_research.md`; machine-readable screen:
+  `experiments/top10_lowbank_hanserong_screen.json`.
