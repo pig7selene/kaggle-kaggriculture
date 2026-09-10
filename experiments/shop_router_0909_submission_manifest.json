@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "packaged_at": "2026-09-09T21:17:24+08:00",
+  "status": "VERIFIED_LOCAL_ARTIFACT_READY_FOR_MANUAL_UPLOAD",
+  "research_source": {
+    "path": "agents/shop_router_0909_hardened/main.py",
+    "sha256_before": "da5c6df2c71128ce1372a5adaf6d4859f5758e7854b399d6ff634fbca666d8a2",
+    "sha256_after": "da5c6df2c71128ce1372a5adaf6d4859f5758e7854b399d6ff634fbca666d8a2",
+    "unchanged": true
+  },
+  "previous_submission_main_sha256": "789bb9bbd5122eb4891983e776a13777328e3e87736cbbc0b4bc86d13fc33f9b",
+  "submission": {
+    "main_path": "submission/main.py",
+    "main_sha256": "4a188ceaedaa5e37c2216c803517314a2cb2fd780a5bb65956ca016cf278c803",
+    "archive_path": "submission/shop_router_0909_hardened.tar.gz",
+    "archive_sha256": "26e7d39eb1df83af7c595167298ad8f3d61afce76e216cd1e25d6416bb791046",
+    "manual_upload_artifact": "submission/shop_router_0909_hardened.tar.gz"
+  },
+  "assets": {
+    "actions_sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "notice_sha256": "51ef4107c99caae6b11f199a5d79015ada7fd9e1eb51201aa72bb3e4d5aea17c",
+    "asset_manifest": "experiments/shop_router_0909_submission_asset_manifest.json"
+  },
+  "plan10_patch_verification": {
+    "plan": 10,
+    "step": 360,
+    "action": ["PICKUP", "WHEAT", 4],
+    "historical_failure_games": 2,
+    "target_sheep_fed_at_observation_370": true,
+    "livestock_escape_events": 0
+  },
+  "equivalence": {
+    "plans_tested": 13,
+    "paired_games": 42,
+    "identical_observation_action_calls": 30198,
+    "plan_selection_mismatches": 0,
+    "action_mismatches": 0,
+    "observation_mismatches": 0,
+    "final_state_mismatches": 0,
+    "final_money_mismatches": 0,
+    "runtime_exceptions": 0,
+    "agent_exceptions": 0,
+    "import_test_passed": true,
+    "clean_working_directory_import_passed": true,
+    "clean_working_directory_full_game_passed": true,
+    "multi_game_reset_games": 4,
+    "multi_game_reset_passed": true,
+    "both_seats_passed": true,
+    "route_results": "experiments/shop_router_0909_submission_route_equivalence.json",
+    "full_results": "experiments/shop_router_0909_submission_equivalence.json"
+  },
+  "smoke": {
+    "games": 32,
+    "wins": 32,
+    "losses": 0,
+    "ties": 0,
+    "mean_own_money": 84124.5,
+    "mean_advantage": 25332.75,
+    "worst_advantage": 3893.0,
+    "runtime_exceptions": 0,
+    "agent_exceptions": 0,
+    "livestock_escape_events": 0,
+    "results": "experiments/shop_router_0909_submission_smoke.json"
+  },
+  "kaggle_submission_performed": false
+}

@@ -1,0 +1,354 @@
+{
+  "pairs": [
+    {
+      "advantage_delta": -542.0,
+      "left": "v3",
+      "left_advantage": 11608.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 48454.0,
+      "left_route": 0,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": -4511.0,
+      "own_money_delta": -5053.0,
+      "right": "v3_no_guard",
+      "right_advantage": 12150.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 53507.0,
+      "right_route": 0,
+      "seat": 0,
+      "seed": 884000
+    },
+    {
+      "advantage_delta": -636.0,
+      "left": "v3",
+      "left_advantage": 11608.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 48454.0,
+      "left_route": 0,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": -4073.0,
+      "own_money_delta": -4709.0,
+      "right": "v3_no_guard",
+      "right_advantage": 12244.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 53163.0,
+      "right_route": 0,
+      "seat": 1,
+      "seed": 884000
+    },
+    {
+      "advantage_delta": 2635.0,
+      "left": "v3",
+      "left_advantage": 7789.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 31687.0,
+      "left_route": 0,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": 938.0,
+      "own_money_delta": 3573.0,
+      "right": "v3_no_guard",
+      "right_advantage": 5154.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 28114.0,
+      "right_route": 0,
+      "seat": 0,
+      "seed": 884001
+    },
+    {
+      "advantage_delta": 2308.0,
+      "left": "v3",
+      "left_advantage": 8434.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 32219.0,
+      "left_route": 0,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": 1143.0,
+      "own_money_delta": 3451.0,
+      "right": "v3_no_guard",
+      "right_advantage": 6126.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 28768.0,
+      "right_route": 0,
+      "seat": 1,
+      "seed": 884001
+    },
+    {
+      "advantage_delta": 1128.0,
+      "left": "v3",
+      "left_advantage": 9558.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 37777.0,
+      "left_route": 1,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": -2697.0,
+      "own_money_delta": -1569.0,
+      "right": "v3_no_guard",
+      "right_advantage": 8430.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 39346.0,
+      "right_route": 1,
+      "seat": 0,
+      "seed": 884002
+    },
+    {
+      "advantage_delta": 1128.0,
+      "left": "v3",
+      "left_advantage": 9558.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 37777.0,
+      "left_route": 1,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": -2697.0,
+      "own_money_delta": -1569.0,
+      "right": "v3_no_guard",
+      "right_advantage": 8430.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 39346.0,
+      "right_route": 1,
+      "seat": 1,
+      "seed": 884002
+    },
+    {
+      "advantage_delta": -1063.0,
+      "left": "v3",
+      "left_advantage": 8510.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 42034.0,
+      "left_route": 1,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": 7193.0,
+      "own_money_delta": 6130.0,
+      "right": "v3_no_guard",
+      "right_advantage": 9573.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 35904.0,
+      "right_route": 1,
+      "seat": 0,
+      "seed": 884003
+    },
+    {
+      "advantage_delta": -1063.0,
+      "left": "v3",
+      "left_advantage": 8510.0,
+      "left_escapes": 0,
+      "left_guard_events": 1,
+      "left_money": 42034.0,
+      "left_route": 1,
+      "opening_hash_equal": false,
+      "opponent": "current_best",
+      "opponent_money_delta": 7193.0,
+      "own_money_delta": 6130.0,
+      "right": "v3_no_guard",
+      "right_advantage": 9573.0,
+      "right_escapes": 0,
+      "right_guard_events": 0,
+      "right_money": 35904.0,
+      "right_route": 1,
+      "seat": 1,
+      "seed": 884003
+    }
+  ],
+  "summary": {
+    "by_opponent": {
+      "current_best": {
+        "advantage_delta": {
+          "bootstrap_95": {
+            "high": 1464.625,
+            "low": -458.0,
+            "mean": 486.875,
+            "resamples": 10000
+          },
+          "mean": 486.875,
+          "median": 293.0,
+          "negative_rate": 0.5,
+          "p10": -1063.0,
+          "sign_test": {
+            "n_nonzero": 8,
+            "negative": 4,
+            "positive": 4,
+            "two_sided_p": 1.0
+          },
+          "worst": -1063.0
+        },
+        "games": 8,
+        "left_escapes": 0,
+        "opening_hash_all_equal": false,
+        "own_money_delta": {
+          "bootstrap_95": {
+            "high": 3785.75,
+            "low": -2219.625,
+            "mean": 798.0,
+            "resamples": 10000
+          },
+          "mean": 798.0,
+          "median": 941.0,
+          "negative_rate": 0.5,
+          "p10": -4812.2,
+          "sign_test": {
+            "n_nonzero": 8,
+            "negative": 4,
+            "positive": 4,
+            "two_sided_p": 1.0
+          },
+          "worst": -5053.0
+        },
+        "right_escapes": 0
+      }
+    },
+    "by_seat": {
+      "0": {
+        "advantage_delta": {
+          "bootstrap_95": {
+            "high": 1881.5,
+            "low": -802.5,
+            "mean": 539.5,
+            "resamples": 10000
+          },
+          "mean": 539.5,
+          "median": 293.0,
+          "negative_rate": 0.5,
+          "p10": -906.6999999999999,
+          "sign_test": {
+            "n_nonzero": 4,
+            "negative": 2,
+            "positive": 2,
+            "two_sided_p": 1.0
+          },
+          "worst": -1063.0
+        },
+        "games": 4,
+        "left_escapes": 0,
+        "opening_hash_all_equal": false,
+        "own_money_delta": {
+          "bootstrap_95": {
+            "high": 4851.5,
+            "low": -3311.0,
+            "mean": 770.25,
+            "resamples": 10000
+          },
+          "mean": 770.25,
+          "median": 1002.0,
+          "negative_rate": 0.5,
+          "p10": -4007.8,
+          "sign_test": {
+            "n_nonzero": 4,
+            "negative": 2,
+            "positive": 2,
+            "two_sided_p": 1.0
+          },
+          "worst": -5053.0
+        },
+        "right_escapes": 0
+      },
+      "1": {
+        "advantage_delta": {
+          "bootstrap_95": {
+            "high": 1718.0,
+            "low": -849.5,
+            "mean": 434.25,
+            "resamples": 10000
+          },
+          "mean": 434.25,
+          "median": 246.0,
+          "negative_rate": 0.5,
+          "p10": -934.9,
+          "sign_test": {
+            "n_nonzero": 4,
+            "negative": 2,
+            "positive": 2,
+            "two_sided_p": 1.0
+          },
+          "worst": -1063.0
+        },
+        "games": 4,
+        "left_escapes": 0,
+        "opening_hash_all_equal": false,
+        "own_money_delta": {
+          "bootstrap_95": {
+            "high": 4790.5,
+            "low": -3139.0,
+            "mean": 825.75,
+            "resamples": 10000
+          },
+          "mean": 825.75,
+          "median": 941.0,
+          "negative_rate": 0.5,
+          "p10": -3767.0,
+          "sign_test": {
+            "n_nonzero": 4,
+            "negative": 2,
+            "positive": 2,
+            "two_sided_p": 1.0
+          },
+          "worst": -4709.0
+        },
+        "right_escapes": 0
+      }
+    },
+    "overall": {
+      "advantage_delta": {
+        "bootstrap_95": {
+          "high": 1464.625,
+          "low": -458.0,
+          "mean": 486.875,
+          "resamples": 10000
+        },
+        "mean": 486.875,
+        "median": 293.0,
+        "negative_rate": 0.5,
+        "p10": -1063.0,
+        "sign_test": {
+          "n_nonzero": 8,
+          "negative": 4,
+          "positive": 4,
+          "two_sided_p": 1.0
+        },
+        "worst": -1063.0
+      },
+      "games": 8,
+      "left_escapes": 0,
+      "opening_hash_all_equal": false,
+      "own_money_delta": {
+        "bootstrap_95": {
+          "high": 3785.75,
+          "low": -2219.625,
+          "mean": 798.0,
+          "resamples": 10000
+        },
+        "mean": 798.0,
+        "median": 941.0,
+        "negative_rate": 0.5,
+        "p10": -4812.2,
+        "sign_test": {
+          "n_nonzero": 8,
+          "negative": 4,
+          "positive": 4,
+          "two_sided_p": 1.0
+        },
+        "worst": -5053.0
+      },
+      "right_escapes": 0
+    }
+  }
+}

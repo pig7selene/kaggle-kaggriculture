@@ -1,0 +1,41 @@
+{
+  "development": {
+    "natural_seeds": [
+      2609100,
+      2609101,
+      2609102,
+      2609103,
+      2609104
+    ],
+    "opponents": [
+      "farming_v3_current",
+      "shape_shop_current",
+      "market_smart_terminal",
+      "most_powerfull_terminal"
+    ]
+  },
+  "historical_controls": {
+    "opponents": [
+      "current_best",
+      "v2"
+    ],
+    "seeds": [
+      2609100,
+      2609101
+    ]
+  },
+  "schema_version": 1,
+  "unseen_next_stage": {
+    "opponents": [
+      "structured_v2",
+      "adaptive_v2"
+    ],
+    "reserved_seeds": [
+      2609200,
+      2609201,
+      2609202,
+      2609203
+    ]
+  },
+  "warning": "do not tune and validate on the development panel as if it were unseen"
+}

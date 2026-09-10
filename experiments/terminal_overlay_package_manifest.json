@@ -1,0 +1,34 @@
+{
+  "archive_members": [
+    "main.py",
+    "policy.py",
+    "router_parent.py",
+    "terminal_planner.py",
+    "unit_model.py",
+    "settings.json",
+    "actions.json",
+    "LICENSE.txt",
+    "NOTICE.md"
+  ],
+  "archive_path": "submission/shop_router_0909_terminal.tar.gz",
+  "archive_sha256": "cc458128e8e51b5bc1047d7b391ecad358020aa4511a8b45e6b9f26360ada1a0",
+  "bundle_sha256": "16f111f8a345da71ae56069bf170ce5c670847993f4ef05054ed1f6eb000bec3",
+  "entrypoint_sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+  "files": {
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.md": "bb747844ce70eac263a0989b4355b6399d675202b5aa7fa94be408ffdeb149d3",
+    "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+    "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+    "policy.py": "404da11becd74f31a1590a844b4594f4b53a54bebc10b9489e7f0cc7e8448fdb",
+    "router_parent.py": "2cc89eb67fbda2bd9a30716a488c8c2e829c79ac71ff0c03260ff025f18237c8",
+    "settings.json": "101ed5544fe70368cd7779baa20583c53e28cf5ac9a06fe2487ba721d9b87dfd",
+    "terminal_planner.py": "2f9dd18ab9a8a243bca5978d04131f4f3618cb0db3171f29254d9cf2201829c7",
+    "unit_model.py": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383"
+  },
+  "kaggle_submission_performed": false,
+  "policy_sha256": "404da11becd74f31a1590a844b4594f4b53a54bebc10b9489e7f0cc7e8448fdb",
+  "schema_version": 1,
+  "selected_path": "agents/shop_router_0909_terminal/main.py",
+  "source_candidate": "agents/shop_router_0909_terminal_d_market_smart_2pass/main.py",
+  "terminal_planner_sha256": "2f9dd18ab9a8a243bca5978d04131f4f3618cb0db3171f29254d9cf2201829c7"
+}

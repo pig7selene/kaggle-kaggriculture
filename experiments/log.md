@@ -1890,3 +1890,304 @@ agent. Variance is population money variance.
   and `submission/main.py` unchanged. Full report:
   `experiments/top10_strategy_research.md`; machine-readable screen:
   `experiments/top10_lowbank_hanserong_screen.json`.
+
+## 2026-09-09 — Farming Score V3: Replay Revised forensic study
+
+- **SOURCE:** acquired the current public Kaggle notebook read-only and
+  reconstructed its standalone agent exactly at
+  `agents/public_farming_v3/main.py`. Source SHA-256
+  `d36ae976ad4a6316e6c1a27a5d04e9cc8e30300f21bdd31e749127c67a9311c4`
+  matches the notebook's embedded assertion. Kaggle metadata identifies
+  current version 4, last run 2026-09-05T14:29:18Z. Historical version source
+  was unavailable through public/version-addressed endpoints (403/404), so no
+  V1→V4 code changes or exact score history were fabricated.
+- **ARCHITECTURE:** bounded adaptive replay: two 719-turn tapes, one observable
+  router at turn 360, exactly 72 differing turns (360–431), and a 72-turn
+  boundary affordability guard. Both routes request land at 150/265, peak at
+  12 hands, and run a wheat/strawberry/melon plus nine-cow/nine-sheep economy.
+- **RAW LEAGUE:** 112 games / 56 paired conditions against CurrentBest, V2,
+  tetsuya, crop_dusta, K3, and nazmus, both seats. Exact V3 versus CurrentBest
+  won 16/16 direct games and improved direct advantage +7,053.6 (95% bootstrap
+  +3,999.1 to +10,124.2). Across all opponents it improved advantage +5,341.4
+  (CI +1,230.1 to +9,438.4), but paired own money was only +368.5 (CI −5,550.9
+  to +6,525.4), negative in 51.8% of conditions with a −41,977 worst tail.
+- **CAUSAL TEST:** forced route 1 versus route 0 used identical action openings
+  through turn 359 in all 32 pairs. Route 1 gained +926.9 own coins/game, was
+  positive 32/32, and had bootstrap CI +755.2 to +1,109.5. Representative
+  accounting attributes the gain to +528.5 net revenue and +568 lower spend,
+  chiefly fewer fertilizer purchases and hires. The published thresholds chose
+  route 1 only 12/56 times; this panel supports route 1, not the threshold's
+  necessity.
+- **GUARD:** zero effects in normal-cash published-V3 appearances. With $2,000
+  starting cash it fired 8/8 times, selling four wheat at turn 72; mean paired
+  own effect +798, but the eight-game CI crossed zero.
+- **CANDIDATE:** built one faithful mechanism isolate,
+  `agents/farming_v3_distilled/v1_force_route1.py` (SHA-256
+  `af30bf93ed8903fb9a88a2f9fcf57b29d5a11e1ed39e3ea716aa2410bacca1a6`).
+  It improved broad paired own money to +839.7 but retained a 51.8% negative
+  rate, −41,977 worst tail, and mean crop_dusta regressions of −18,644 own /
+  −22,692 advantage.
+- **DECISION:** **reject promotion; keep CurrentBest.** No finalist was locked,
+  no independent final-validation budget was spent, `experiments/current_best.json`
+  and `submission/main.py` were unchanged, and no Kaggle upload/submission was
+  performed. Main report: `experiments/farming_v3_deep_dive_report.md`; source,
+  branch, league, counterfactual, economics, candidate, and selection artifacts
+  use the `experiments/farming_v3_*` prefix.
+
+## 2026-09-09 — V3 specialist regime oracle and observable-gating study
+
+- **FROZEN POLICIES:** CurrentBest
+  `agents/top50_distilled/top50_observable_portfolio.py` at SHA-256
+  `f9ca672848ccffdfe56888d99bcdf5a9d7644062b9eec0cf0cdea13574931233`;
+  exact V3 `agents/public_farming_v3/main.py` at
+  `d36ae976ad4a6316e6c1a27a5d04e9cc8e30300f21bdd31e749127c67a9311c4`;
+  Route1 `agents/farming_v3_distilled/v1_force_route1.py` at
+  `af30bf93ed8903fb9a88a2f9fcf57b29d5a11e1ed39e3ea716aa2410bacca1a6`.
+- **FRESH ORACLE:** 80 conditions / 240 games: ten locally runnable opponent
+  economies, four new natural-RNG seeds each, both seats, and all three frozen
+  policies on every condition. Mean own-money oracle **+9,778.6** (95%
+  bootstrap +7,151.1 to +12,602.8); mean advantage oracle **+7,997.0** (CI
+  +5,910.0 to +10,277.9). Oracle P10/P5 are zero by construction because
+  CurrentBest is always available.
+- **WINNERS:** conservative exclusive tie-breaking assigns own optimum to
+  CurrentBest 36/80 (45.0%), V3 23/80 (28.75%), and Route1 21/80 (26.25%).
+  Tie-aware Route1 is optimal in 35/80. V3 gains +14,200.7 when optimal but
+  loses −16,994.0 on average when CurrentBest is better (P10 −35,056, worst
+  −39,047). Route1 gains +19,261.5 when optimal but wrong-selection loss
+  averages −16,734.0 (P10 −34,638, worst −39,047).
+- **MARGINAL POLICY VALUE:** CurrentBest+Route1 already provides a +9,727.3
+  own-money oracle. Adding published V3 increases the full oracle by only
+  +51.4 per condition across nine positive cases. Route1 therefore contains
+  nearly all useful specialist headroom; this is effectively a two-policy
+  compatibility/gating problem.
+- **COMPATIBILITY:** CurrentBest and the specialists differ on turn 0:
+  CurrentBest has no market order while V3/Route1 buy 13 wheat. Their exact
+  common action prefix is therefore zero. At step 24, layout/workforce match
+  80/80 and inventory 72/80, but cash matches 0/80; by step 48 crop geometry
+  differs 80/80. V3 and Route1 themselves remain exactly compatible through
+  turn 359 and first diverge at turn 360.
+- **PREDICTABILITY:** every condition has the same permitted step-0 economic
+  observation. At the near-compatible step 24, the best four-fold cross-seed
+  exact-signature value rule gains only +1,754.8, captures 17.9% of the oracle,
+  activates 23/80, is positive on 56.5% of activations, makes ten false
+  activations, and has a −36,682 worst loss. Structured one-checkpoint history
+  does not improve the result.
+- **REGIME FINDING:** CurrentBest, Nazmus, and oceanmix are exactly identical in
+  observable step-24 opponent state, yet Route1 mean deltas are +1,631.6,
+  −7,232.5, and −4,742.0 respectively. The evidence rejects a deployable early
+  “CurrentBest-like economy” rule: later trajectory/market randomness, not an
+  early visible family label, determines much of the specialist value.
+- **FRESH H2H:** exact V3 versus CurrentBest is 6/8 wins, +1,140.6 own and
+  +4,023.8 advantage on average—positive, but materially weaker than the prior
+  16/16 discovery panel.
+- **STOP / DECISION:** the compatibility/predictability stop condition fired.
+  No tree/ensemble, switcher, or new gated candidate was built; no blind splice
+  was attempted. Keep CurrentBest. Runtime failures, semantic failures, and
+  livestock escapes were all zero across 240 games. `submission/main.py` and
+  `experiments/current_best.json` were unchanged; no package, upload, or Kaggle
+  submission was made. Main report: `experiments/v3_regime_gating_report.md`;
+  all required artifacts use the `experiments/v3_regime_*` prefix.
+
+## 2026-09-09 — Farming Score V5: Timing Optimized forensic study
+
+- **SOURCE / RECONSTRUCTION:** acquired Arlene (`lynnsakurai`) notebook
+  `farming-score-v5-timing-optimized` read-only. The newest accessible source
+  is public version 2, run 346466052 (2026-09-01T09:07:21.673Z). Its embedded
+  archive SHA-256 is
+  `35143710b4b493e2e94a68efa21aa03fc3833318fef52645b8e58d5ffeb4bf9e`;
+  all 17 members were verified and preserved at
+  `agents/public_farming_v5/`. The reconstructed `main.py` SHA is
+  `e8498c67914ecc607ae69fde25a728361eb5acea94c00ecc85deffbdafe50413`.
+  Public version 1 was also preserved for the exact natural ablation.
+- **LINEAGE CORRECTION:** the prompt's assumed V3→V5 natural revision does not
+  exist in the retrieved code. V5 is a different Kenjo/Niklita-derived
+  guarded-replay lineage. V3 and V5 diverge at step 0 in every matched game;
+  therefore their full-policy comparison is structural and not a timing
+  ablation. The genuine public natural revision is V5 v1→v2.
+- **TIMING MECHANISM:** v1 already delays an immature non-Yarn livestock signal
+  from the `cow88` bundle to the `cow150` second-shop information window. V2
+  changes only `e773a_demand_aligned_pasture_network.py`: it reuses the
+  `cow150` animal direction at `cow169` and `cow176`, subject to a maximum of
+  three COW→SHEEP substitutions. It does not move land, hires, purchase turns,
+  quantities, crops, sells, or terminal liquidation.
+- **EXACT ABLATION:** 48 same-seed/opponent/seat V5-v2 versus V5-v1 pairs were
+  action-identical through all 719 decisions. Own-money, opponent-money,
+  advantage, and tail deltas were exactly zero. A synthetic observable-state
+  test proves the commitment can alter an assignment, but no tested natural
+  condition produced an economically active divergence.
+- **RAW LEAGUE:** 192 games: CurrentBest, V3, V5 v1, and V5 v2 across 48 paired
+  conditions, six opponents, four fresh seeds each, both seats. V5 versus
+  CurrentBest averaged **+1,136.0 own** (95% bootstrap −4,963.6 to +7,350.2),
+  median −592, but **−3,494.3 advantage** (CI −8,793.4 to +1,119.6). Direct
+  H2H was 4/4. V5 versus V3 averaged +3,918.1 own but −7,586.2 advantage;
+  direct H2H was 0/8. Crop Dusta was not repaired: +14,184 own versus
+  CurrentBest but −13,561 advantage and 2/6 H2H.
+- **SAFETY:** runtime/schema failures were zero, but V5 lost livestock in
+  40/48 games, always at step 215 on pasture `[5,3]`. At step 210 the actor
+  requests FEED without carried wheat, so the action silently fails. This is
+  an exact-delivery/resource executor failure, not an economic timing gain.
+- **DECISION:** **scientific stop; no candidate, transplant, finalist, or
+  promotion.** The sole exact v2 revision was worth zero, while full V5 had
+  uncertain mean gain, worse competitive advantage, severe paired tails, and
+  critical safety failures. CurrentBest and `submission/main.py` remain
+  unchanged; no package, upload, submission, or Kaggle write API was used.
+  Main report: `experiments/farming_v5_deep_dive_report.md`; all required
+  machine-readable artifacts use the `experiments/farming_v5_*` prefix.
+
+## 2026-09-09 — Recent-72h public meta scan and Shop Router 0909 reproduction
+
+- **RECENT SCAN:** timestamp 2026-09-09T15:22:42+08:00; cutoff
+  2026-09-06T15:22:42+08:00. Reviewed approximately 180 Kaggriculture Code
+  entries across nine pages: 42 were NEW_72H notebooks, 27 were classified
+  agent/strategy-like, 13 exposed a live listing score, and ten scored at least
+  2000. No credible complete NEW_72H agent with a verifiable 2900+ score/source
+  pair was found. Full ledger: `experiments/recent_public_strategy_scan.json`.
+- **SELECTED TARGET:** Yusuke Hayashi (`yhay81`), `Shop Router 0909`, created
+  2026-09-09T04:04:10.700144Z. The live listing showed 2847.4; exact public v1
+  submission 56113158 binds score 2839.5 to source run 348430185. The old
+  Public State Router anchor was not selected because 0909 was newer and
+  higher-scoring.
+- **EXACT REPRODUCTION:** Apache-2.0 public outputs were preserved at
+  `agents/shop_router_0909/`. Public/local `main.py` SHA-256 is
+  `d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b`;
+  public/local `actions.json` SHA-256 is
+  `17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef`.
+  V1, v2, and v3 decode to the same inference code and action payload; v3 only
+  repackages the data. No strategy code was changed.
+- **CONTROLLER:** 13 complete 719-turn tapes; plan 0 until step 144; one-time
+  ordered first-two-shop lookup with 15 Yarn-related pairs and plan-0 fallback;
+  unconditional plan-2 tail from step 648; weed DIG queue repair, one-turn sale
+  advancement, and step-718 liquidation. Runtime uses only own/public legal
+  observations. Exact upstream lineage for every static tape is not enumerated
+  in the notebook and remains a provenance caveat.
+- **VALIDATION:** 276 games total. In the 192-game three-policy league, exact
+  0909 went 64/0/0 across eight opponents, fixed/natural shops, two seeds, and
+  both seats; mean own money 94,175.1, mean advantage +22,801.6, P10 advantage
+  +8,902, worst +1,889. Direct H2H was 16/16 versus CurrentBest at +8,053 mean
+  advantage and 16/16 versus V2 at +19,711.2. Four sequential same-module games
+  all reset and completed correctly.
+- **SAFETY:** zero runtime failures and zero agent exceptions. The untouched
+  public output generated 5,805 strict-lint warnings across its 148 evaluated
+  games (empty market placeholders, zero sales after advancement, and hand
+  counts around hires), all silently handled by the engine. Plan 10 reproduced
+  one sheep escape at step 383 in one H2H condition in both seats. No strategic
+  hardening was mixed into the exact reproduction.
+- **DECISION:** exact Shop Router 0909 is the strongest local candidate in this
+  stage, so the override's +3k stop-search rule fired and no weaker recent agent
+  was benchmarked next. It was not promoted: CurrentBest/deployment were frozen,
+  and lint/plan-10 feed hardening needs a separately named independent panel.
+  `experiments/current_best.json` and `submission/main.py` retained their frozen
+  hashes. No archive, upload, Kaggle submission, or write API was used. Main
+  report: `experiments/shop_router_0909_reproduction_report.md`.
+
+## 2026-09-09 — Shop Router 0909 Plan-10 safety hardening and promotion
+
+- **ROOT CAUSE:** in Plan 10 (`YARN_STORE` → `PET_CAFE`), the step-332 sale of
+  nine wheat leaves 16 wheat for 17 animals at day-14 opening. The final feeder
+  receives only one of two requested units on days 14 and 15, spends it on the
+  sheep at `[6,4]`, and reaches `[7,4]` empty. Its feeds at steps 345 and 369
+  silently fail; the second unfed refresh after step 383 removes the sheep,
+  first observable at step 384. Movement and hand availability were on time.
+- **MINIMAL PATCH:** four one-action candidates all passed the two-seat failure
+  gate. Fix D was locked: only under Plan 10, change the farmer's step-360
+  `PICKUP WHEAT 5` to `PICKUP WHEAT 4`. This releases an otherwise unused unit
+  to the final feeder, makes step-369 feed succeed, inserts no action, and
+  shifts no tape index. Locked source SHA-256:
+  `da5c6df2c71128ce1372a5adaf6d4859f5758e7854b399d6ff634fbca666d8a2`.
+- **TARGETED SAFETY:** the selected patch completed 120 Plan-10-focused matrix
+  games (100 actually routed Plan 10 plus 20 natural negative controls) with
+  zero escapes. In 40 fresh actual-Plan-10 Exact controls, Exact escaped in 16
+  games; Hardened escaped in zero and gained +1,033.6 own money and +1,217.9
+  advantage on average. Off-route, 64/64 paired league conditions were exactly
+  equal.
+- **POST-LOCK VALIDATION:** 376 total study games, including 184 locked-candidate
+  games. The fresh broad league was 64/0/0 at 90,679.0 mean own money and
+  +28,189.7 mean advantage. Direct H2H was 24/0/0 versus frozen CurrentBest at
+  +13,046.2 and 24/0/0 versus V2 at +25,047.2. No runtime exception, agent
+  exception, actual livestock escape, or new warning class occurred.
+- **EXPECTED VALUE:** with `P(plan10)=1/64`, the observed conditional escape
+  rate is 16/40. The estimated original-defect loss is 15.41 own-money coins
+  per random game (14.92 after removing the non-escape patch baseline), while
+  the practical paired hardening gain is +16.15 own money and +19.03 advantage.
+- **DECISION:** **promoted research best** to
+  `agents/shop_router_0909_hardened/main.py`. The exact Apache-2.0 public parent,
+  its action payload, frozen former CurrentBest source, and `submission/main.py`
+  remain byte-identical. Attribution/license notices are preserved. No package,
+  upload, or Kaggle submission occurred. Main report:
+  `experiments/shop_router_0909_hardening_report.md`.
+
+## 2026-09-09 — Shop Router 0909 Hardened final packaging
+
+- **CONTRACT:** Kaggriculture requires a root `main.py` exposing `agent`; a
+  multi-file `tar.gz` is explicitly supported. Packaging therefore preserved
+  the 5.1 MB `actions.json` as a separate byte-identical asset instead of
+  transforming the 13 action tapes.
+- **PACKAGE:** `submission/main.py` integrates the Exact public controller with
+  only the locked Plan-10 step-360 pickup 5→4 wrapper. The archive contains
+  root-level `main.py`, `actions.json`, `LICENSE.txt`, and `NOTICE.md` with no
+  extraneous member. Main SHA-256 is
+  `4a188ceaedaa5e37c2216c803517314a2cb2fd780a5bb65956ca016cf278c803`;
+  archive SHA-256 is
+  `26e7d39eb1df83af7c595167298ad8f3d61afce76e216cd1e25d6416bb791046`.
+- **EQUIVALENCE:** all 13 plans, both seats, fixed and natural shops, and four
+  opponents were covered by 42 paired games / 30,198 identical-observation
+  calls. Plan mismatches, action mismatches, final-state mismatches, and
+  final-money mismatches were all zero. Plan 10 retained `PICKUP WHEAT 4`, the
+  target sheep was fed at observation 370, and historical-condition escapes
+  were 0/2.
+- **PORTABILITY/RESET:** repository import, clean-directory archive import,
+  complete extracted-package execution, and four sequential games without
+  module reload all passed. Runtime and agent exceptions were zero.
+- **SMOKE:** 32 fresh games against CurrentBest, V2, K3, and Crop Dusta ended
+  32/0/0 with 84,124.5 mean own money, +25,332.8 mean advantage, +3,893 worst
+  advantage, and zero livestock escapes.
+- **IMMUTABILITY/DECISION:** frozen ResearchBest remained at SHA-256
+  `da5c6df2c71128ce1372a5adaf6d4859f5758e7854b399d6ff634fbca666d8a2`.
+  The verified artifact is ready for manual upload. No Kaggle API, upload, or
+  submission action occurred. Report:
+  `experiments/shop_router_0909_submission_report.md`.
+
+## 2026-09-10 — Frozen Shop Router post-submission frontier/oracle diagnostic
+
+- **FRESH FRONTIER:** the scan at 2026-09-10T01:26:00+08:00 found three
+  serious primary-window releases. All retain Shop0909's 13-plan midseason
+  router and add guarded physical closeout work over steps 712–718. The newest
+  complete source is flexonafft's `Most Powerfull Route` at source run
+  348544166. All three are score-unbound; title claims were rejected and no
+  verified recent 2850+, 2900+, or 3000+ source/version pair was found.
+- **PANELS:** 256 route-frequency games completed (exact 64 ordered shop pairs
+  in both seats plus 64 independent natural shop realizations in both seats).
+  The matched hindsight panel ran 15 representative shop regimes × three
+  opponents × both seats × all 13 continuations = 1,170 games. Runtime errors
+  and agent exceptions were zero. Known public-tape strict-checker diagnostics
+  were observed but not changed.
+- **FREQUENCY / PORTFOLIO:** Plan 0 activates on exactly 49/64 ordered pairs
+  (76.56%) and 79.69% of the natural sample. Plan 2 is never selected initially;
+  it is the common step-648 terminal takeover. Plan 3 has the highest balanced
+  mean own money (111,744.5), Plan 7 the highest mean advantage (30,544.2),
+  Plan 12 the weakest mean advantage and most forced-regime escapes, and Plan 9
+  the weakest P10/worst own-money tail.
+- **ORACLE:** Frozen routing is hindsight-best in 26.7% of matched conditions,
+  but median regret is only 457. Mean own-money regret/headroom is +1,441.4,
+  mean advantage headroom +896.6, P90/P95 regret +4,928/+7,172, and max +8,746.
+  Optimal shop-pair-only constants explain 90.9% of the conditioning gain; the
+  current mapping captures 70.6%. Additional within-pair context headroom is
+  only +447.8 and step-144 public-state correlations are weak/unproven.
+- **WHERE TO LOOK NEXT:** Pizza→Yarn Plan 7 is dominated by Plan 12 in all six
+  matched contexts (+7,186.7 mean own); Smoothie→Yarn Plan 8 is dominated by
+  Plan 1 (+2,463.2); Yarn→Bakery Plan 9 is dominated by Plan 7 (+2,399.7).
+  The remaining limitation is a modest, concentrated router-map bottleneck,
+  not a missing globally stronger parent. Plan 7/8 are nearly redundant (96.8%
+  action similarity, 1.000 outcome correlation), and blended clustering finds
+  only four effective groups, including a nine-plan sheep-led family.
+- **TIMING / DECISION:** an unrestricted 13-way choice cannot move past step
+  144 because some continuations diverge immediately. Staged pairwise decisions
+  remain structurally possible: Plan 0/2 stays compatible to step 313 and
+  several sheep-route pairs to step 216. No selector or rule was trained.
+- **DECISION / IMMUTABILITY:** **wait for the real leaderboard result.** The
+  average oracle is above +1k but below +3k, public-state predictability is not
+  established, and no score-bound stronger public release exists. FrozenBest,
+  packaged `submission/main.py`, the submitted archive, and
+  `experiments/current_best.json` remained unchanged. No action tape, warning,
+  router, upload, or submission was performed. Main report:
+  `experiments/shop_router_0909_post_submit_diagnostic_report.md`.

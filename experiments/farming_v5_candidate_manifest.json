@@ -1,0 +1,7 @@
+{
+  "agents_modified": [],
+  "candidates_built": [],
+  "reason": "Scientific stop rule: no isolated V5 mechanism achieved a repeatable approximately +1k signal; raw V5 was statistically uncertain, tail-unsafe, and had livestock escapes in 40/48 games.",
+  "status": "NOT RUN",
+  "submission_modified": false
+}

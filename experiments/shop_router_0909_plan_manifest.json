@@ -1,0 +1,3088 @@
+{
+  "interpretation_warning": "Counts are planned tape primitives in the effective policy window, not guaranteed executed purchases; invalid orders are silent no-ops and weed repair may shift worker actions.",
+  "plan_count": 13,
+  "plans": [
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 8,
+        "GOOSE": 3,
+        "SHEEP": 6
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150,
+          169,
+          176
+        ],
+        "GOOSE": [
+          241,
+          265
+        ],
+        "SHEEP": [
+          1,
+          196,
+          217,
+          226
+        ]
+      },
+      "cow_count_planned": 8,
+      "economic_identity": "cow-led livestock; wheat-led crop tape; 2 land buys; peak 11 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 0, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.765625,
+        "natural_empirical": 0.796875
+      },
+      "goose_count_planned": 3,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 10,
+          "12": 9,
+          "13": 9,
+          "14": 9,
+          "15": 10,
+          "16": 11,
+          "17": 11,
+          "18": 11,
+          "19": 10,
+          "2": 4,
+          "20": 11,
+          "21": 11,
+          "22": 10,
+          "23": 10,
+          "24": 10,
+          "25": 10,
+          "26": 10,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 7,
+          "8": 8,
+          "9": 8
+        },
+        "peak_hires_in_day": 11,
+        "total_hire_orders": 260
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 65,
+        "BUY_SEED": 189,
+        "HIRE": 260,
+        "SELL": 396
+      },
+      "plan_id": 0,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        260,
+        11,
+        8,
+        6,
+        3,
+        163,
+        31,
+        0,
+        33,
+        12,
+        63,
+        23,
+        6,
+        51,
+        13,
+        25,
+        65,
+        42
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 23,
+        "EGG": 25,
+        "FERTILIZER": 108,
+        "MELON": 13,
+        "MILK": 65,
+        "STRAWBERRY": 51,
+        "TOMATO": 6,
+        "WHEAT": 63,
+        "WOOL": 42
+      },
+      "sheep_count_planned": 6,
+      "shop_regime_trigger": "all 49 unlisted ordered pairs",
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 10
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 1, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.03125
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 49,
+        "BUY_SEED": 189,
+        "HIRE": 276,
+        "SELL": 448
+      },
+      "plan_id": 1,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        10,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        77
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 105,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 77
+      },
+      "sheep_count_planned": 10,
+      "shop_regime_trigger": [
+        [
+          "YARN_STORE",
+          "FARMERS_MARKET"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 8,
+        "GOOSE": 3,
+        "SHEEP": 6
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150,
+          169,
+          176
+        ],
+        "GOOSE": [
+          241,
+          265
+        ],
+        "SHEEP": [
+          1,
+          196,
+          217,
+          226
+        ]
+      },
+      "cow_count_planned": 8,
+      "economic_identity": "cow-led livestock; wheat-led crop tape; 2 land buys; peak 11 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 2, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.0,
+        "natural_empirical": 0.0
+      },
+      "goose_count_planned": 3,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 10,
+          "12": 9,
+          "13": 9,
+          "14": 9,
+          "15": 10,
+          "16": 11,
+          "17": 11,
+          "18": 11,
+          "19": 10,
+          "2": 4,
+          "20": 11,
+          "21": 11,
+          "22": 10,
+          "23": 10,
+          "24": 10,
+          "25": 10,
+          "26": 10,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 7,
+          "8": 8,
+          "9": 8
+        },
+        "peak_hires_in_day": 11,
+        "total_hire_orders": 260
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 65,
+        "BUY_SEED": 189,
+        "HIRE": 260,
+        "SELL": 349
+      },
+      "plan_id": 2,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        260,
+        11,
+        8,
+        6,
+        3,
+        163,
+        31,
+        0,
+        33,
+        12,
+        62,
+        23,
+        6,
+        42,
+        13,
+        24,
+        52,
+        37
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 23,
+        "EGG": 24,
+        "FERTILIZER": 90,
+        "MELON": 13,
+        "MILK": 52,
+        "STRAWBERRY": 42,
+        "TOMATO": 6,
+        "WHEAT": 62,
+        "WOOL": 37
+      },
+      "sheep_count_planned": 6,
+      "shop_regime_trigger": [],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          226,
+          241,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 3, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.015625
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 59,
+        "BUY_SEED": 189,
+        "HIRE": 276,
+        "SELL": 451
+      },
+      "plan_id": 3,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        11,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        68,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        76
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 108,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 68,
+        "WOOL": 76
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "BAKERY",
+          "YARN_STORE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 10
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 4, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.0
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 56,
+        "BUY_SEED": 189,
+        "HIRE": 276,
+        "SELL": 448
+      },
+      "plan_id": 4,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        10,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        78
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 104,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 78
+      },
+      "sheep_count_planned": 10,
+      "shop_regime_trigger": [
+        [
+          "BRUNCH_SPOT",
+          "YARN_STORE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 10
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 5, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.03125,
+        "natural_empirical": 0.0
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 50,
+        "BUY_SEED": 189,
+        "HIRE": 276,
+        "SELL": 470
+      },
+      "plan_id": 5,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        10,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        61,
+        14,
+        24,
+        85,
+        83
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 105,
+        "MELON": 14,
+        "MILK": 85,
+        "STRAWBERRY": 61,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 83
+      },
+      "sheep_count_planned": 10,
+      "shop_regime_trigger": [
+        [
+          "FARMERS_MARKET",
+          "YARN_STORE"
+        ],
+        [
+          "PET_CAFE",
+          "YARN_STORE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          226,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 6, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.03125,
+        "natural_empirical": 0.046875
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 13,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 56,
+        "BUY_SEED": 189,
+        "HIRE": 276,
+        "SELL": 449
+      },
+      "plan_id": 6,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        11,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        77
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 106,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 77
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "ICE_CREAM_SHOP",
+          "YARN_STORE"
+        ],
+        [
+          "YARN_STORE",
+          "PIZZA_SHOP"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          226,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 7, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.0
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 8
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 275
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 13,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 56,
+        "BUY_SEED": 189,
+        "HIRE": 275,
+        "SELL": 451
+      },
+      "plan_id": 7,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        275,
+        12,
+        6,
+        11,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        77
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 108,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 77
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "PIZZA_SHOP",
+          "YARN_STORE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          196,
+          217,
+          226,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 8, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.0
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 8
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 275
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 13,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 55,
+        "BUY_SEED": 189,
+        "HIRE": 275,
+        "SELL": 449
+      },
+      "plan_id": 8,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        275,
+        12,
+        6,
+        11,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        78
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 105,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 78
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "SMOOTHIE_SHOP",
+          "YARN_STORE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          173,
+          178
+        ],
+        "SHEEP": [
+          1,
+          150,
+          196,
+          216,
+          250,
+          251,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 9, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.046875,
+        "natural_empirical": 0.046875
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 8,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 7
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "WHEAT": 13
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 12
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 41,
+        "BUY_SEED": 187,
+        "HIRE": 276,
+        "SELL": 299
+      },
+      "plan_id": 9,
+      "plant_action_counts": {
+        "CARROT": 28,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 165
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        11,
+        0,
+        165,
+        28,
+        0,
+        33,
+        12,
+        54,
+        23,
+        6,
+        33,
+        14,
+        13,
+        43,
+        44
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 28,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 165
+      },
+      "sell_order_counts": {
+        "CARROT": 23,
+        "EGG": 13,
+        "FERTILIZER": 69,
+        "MELON": 14,
+        "MILK": 43,
+        "STRAWBERRY": 33,
+        "TOMATO": 6,
+        "WHEAT": 54,
+        "WOOL": 44
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "YARN_STORE",
+          "BAKERY"
+        ],
+        [
+          "YARN_STORE",
+          "BRUNCH_SPOT"
+        ],
+        [
+          "YARN_STORE",
+          "ICE_CREAM_SHOP"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          195,
+          217,
+          241,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 10, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.046875
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 10,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 277
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 11,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 59,
+        "BUY_SEED": 179,
+        "HIRE": 277,
+        "SELL": 455
+      },
+      "plan_id": 10,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        277,
+        12,
+        6,
+        11,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        71,
+        24,
+        7,
+        52,
+        15,
+        24,
+        78,
+        77
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 34,
+        "WHEAT": 161
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 107,
+        "MELON": 15,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 71,
+        "WOOL": 77
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "YARN_STORE",
+          "PET_CAFE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 6,
+        "SHEEP": 11
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88,
+          150
+        ],
+        "SHEEP": [
+          1,
+          169,
+          176,
+          195,
+          217,
+          226,
+          251,
+          252,
+          264
+        ]
+      },
+      "cow_count_planned": 6,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 11, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.0
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 12,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 7,
+          "7": 8,
+          "8": 9,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 276
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 8
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "CARROT": 4,
+          "WHEAT": 9
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 11,
+          "WHEAT": 1
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 13,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 56,
+        "BUY_SEED": 187,
+        "HIRE": 276,
+        "SELL": 451
+      },
+      "plan_id": 11,
+      "plant_action_counts": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 163
+      },
+      "profile_vector": [
+        2,
+        276,
+        12,
+        6,
+        11,
+        0,
+        163,
+        31,
+        0,
+        33,
+        12,
+        67,
+        24,
+        7,
+        52,
+        14,
+        24,
+        78,
+        76
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 31,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 167
+      },
+      "sell_order_counts": {
+        "CARROT": 24,
+        "EGG": 24,
+        "FERTILIZER": 109,
+        "MELON": 14,
+        "MILK": 78,
+        "STRAWBERRY": 52,
+        "TOMATO": 7,
+        "WHEAT": 67,
+        "WOOL": 76
+      },
+      "sheep_count_planned": 11,
+      "shop_regime_trigger": [
+        [
+          "YARN_STORE",
+          "SMOOTHIE_SHOP"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    },
+    {
+      "activation_logic": "At step 144, exact first-two-shop ordered-pair lookup; fallback to plan 0. At step 648, all routes switch to plan 2.",
+      "animal_buy_quantities": {
+        "COW": 4,
+        "SHEEP": 14
+      },
+      "animal_buy_steps": {
+        "COW": [
+          1,
+          65,
+          88
+        ],
+        "SHEEP": [
+          1,
+          150,
+          169,
+          176,
+          195,
+          195,
+          217,
+          241,
+          265
+        ]
+      },
+      "cow_count_planned": 4,
+      "economic_identity": "sheep-led livestock; wheat-led crop tape; 2 land buys; peak 12 daily hires",
+      "effective_policy_window": {
+        "common_prefix": "plan 0, steps 0-143",
+        "common_terminal": "plan 2, steps 648-718 with dynamic liquidation at 718",
+        "plan_continuation": "plan 12, steps 144-647"
+      },
+      "frequency": {
+        "fixed_exact": 0.015625,
+        "natural_empirical": 0.015625
+      },
+      "goose_count_planned": 0,
+      "hands": {
+        "hires_by_day": {
+          "0": 5,
+          "1": 3,
+          "10": 11,
+          "11": 11,
+          "12": 9,
+          "13": 10,
+          "14": 10,
+          "15": 11,
+          "16": 11,
+          "17": 11,
+          "18": 12,
+          "19": 11,
+          "2": 4,
+          "20": 12,
+          "21": 11,
+          "22": 11,
+          "23": 11,
+          "24": 11,
+          "25": 11,
+          "26": 11,
+          "27": 10,
+          "28": 11,
+          "29": 11,
+          "3": 5,
+          "4": 4,
+          "5": 4,
+          "6": 8,
+          "7": 8,
+          "8": 10,
+          "9": 9
+        },
+        "peak_hires_in_day": 12,
+        "total_hire_orders": 277
+      },
+      "land": {
+        "buy_count": 2,
+        "days": [
+          6,
+          11
+        ],
+        "steps": [
+          150,
+          265
+        ]
+      },
+      "major_crop_waves": {
+        "0": {
+          "MELON": 12,
+          "WHEAT": 7
+        },
+        "10": {
+          "WHEAT": 7
+        },
+        "11": {
+          "STRAWBERRY": 13,
+          "WHEAT": 11
+        },
+        "12": {
+          "WHEAT": 8
+        },
+        "13": {
+          "WHEAT": 6
+        },
+        "14": {
+          "WHEAT": 7
+        },
+        "15": {
+          "WHEAT": 8
+        },
+        "16": {
+          "WHEAT": 7
+        },
+        "17": {
+          "WHEAT": 7
+        },
+        "18": {
+          "WHEAT": 7
+        },
+        "19": {
+          "WHEAT": 6
+        },
+        "2": {
+          "WHEAT": 3
+        },
+        "20": {
+          "WHEAT": 6
+        },
+        "21": {
+          "WHEAT": 11
+        },
+        "22": {
+          "WHEAT": 8
+        },
+        "23": {
+          "WHEAT": 14
+        },
+        "24": {
+          "WHEAT": 13
+        },
+        "25": {
+          "CARROT": 14
+        },
+        "26": {
+          "CARROT": 12
+        },
+        "27": {
+          "CARROT": 2,
+          "WHEAT": 8
+        },
+        "3": {
+          "WHEAT": 4
+        },
+        "4": {
+          "WHEAT": 3
+        },
+        "5": {
+          "STRAWBERRY": 4
+        },
+        "6": {
+          "STRAWBERRY": 8,
+          "WHEAT": 5
+        },
+        "7": {
+          "STRAWBERRY": 4,
+          "WHEAT": 4
+        },
+        "8": {
+          "STRAWBERRY": 4,
+          "WHEAT": 1
+        },
+        "9": {
+          "WHEAT": 4
+        }
+      },
+      "market_order_counts": {
+        "BUY_ANIMAL": 12,
+        "BUY_LAND": 2,
+        "BUY_PRODUCT": 56,
+        "BUY_SEED": 76,
+        "HIRE": 277,
+        "SELL": 397
+      },
+      "plan_id": 12,
+      "plant_action_counts": {
+        "CARROT": 28,
+        "MELON": 12,
+        "STRAWBERRY": 33,
+        "WHEAT": 165
+      },
+      "profile_vector": [
+        2,
+        277,
+        12,
+        4,
+        14,
+        0,
+        165,
+        28,
+        0,
+        33,
+        12,
+        73,
+        23,
+        6,
+        37,
+        14,
+        13,
+        53,
+        67
+      ],
+      "seed_buy_quantities": {
+        "CARROT": 24,
+        "MELON": 13,
+        "STRAWBERRY": 44,
+        "WHEAT": 169
+      },
+      "sell_order_counts": {
+        "CARROT": 23,
+        "EGG": 13,
+        "FERTILIZER": 111,
+        "MELON": 14,
+        "MILK": 53,
+        "STRAWBERRY": 37,
+        "TOMATO": 6,
+        "WHEAT": 73,
+        "WOOL": 67
+      },
+      "sheep_count_planned": 14,
+      "shop_regime_trigger": [
+        [
+          "YARN_STORE",
+          "YARN_STORE"
+        ]
+      ],
+      "terminal_strategy": "At step 648 every route switches to plan 2; step 718 dynamically drops reachable inventory and sells projected shed stock by value."
+    }
+  ],
+  "route_commit_step": 144,
+  "schema": "shop-router-0909-plan-manifest-v1",
+  "universal_terminal_switch_step": 648
+}

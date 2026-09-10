@@ -1,0 +1,19 @@
+{
+  "behavioral_equivalence_check": {
+    "candidate_action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "evaluated_wrapper_action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "final_money_both": 72034,
+    "opponent": "current_best",
+    "pass": true,
+    "seat": 0,
+    "seed": 885000
+  },
+  "candidate_id": "farming_v3_distilled_v1_force_route1",
+  "deployment_impact": "None",
+  "only_intended_change": "_select_route always returns 1",
+  "parent_sha256": "d36ae976ad4a6316e6c1a27a5d04e9cc8e30300f21bdd31e749127c67a9311c4",
+  "parent_source": "agents/public_farming_v3/main.py",
+  "path": "agents/farming_v3_distilled/v1_force_route1.py",
+  "sha256": "af30bf93ed8903fb9a88a2f9fcf57b29d5a11e1ed39e3ea716aa2410bacca1a6",
+  "status": "EVALUATED, NOT SELECTED"
+}

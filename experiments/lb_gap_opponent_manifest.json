@@ -1,0 +1,102 @@
+{
+  "development_panel": [
+    {
+      "family": "two-route replay",
+      "id": "farming_v3_current",
+      "source": {
+        "member_sha256": {
+          "main.py": "d36ae976ad4a6316e6c1a27a5d04e9cc8e30300f21bdd31e749127c67a9311c4"
+        },
+        "notebook": "/private/tmp/lb_gap_farming_v3/farming-score-v3-replay-revised.ipynb",
+        "notebook_sha256": "00b8c8297a0d384a79981e85f91e82d9008a10f44413a88517bb5aca06d8dc1f"
+      }
+    },
+    {
+      "family": "replay route market-aware",
+      "id": "shape_shop_current",
+      "source": {
+        "member_sha256": {
+          "main.py": "2b97e2c653018ac4aeffb8463ec91c8f26b097b4cef81289acc25ccdbc68f916"
+        },
+        "notebook": "/private/tmp/lb_gap_shape_shop/shape-the-shop-work-the-pasture-kaggriculture.ipynb",
+        "notebook_sha256": "a6027339030e6204e512ccf7cc3641cb158531d8924717d089638c276b94744f"
+      }
+    },
+    {
+      "family": "Shop0909-derived market/terminal r31",
+      "id": "market_smart_terminal",
+      "source": {
+        "archive_sha256": "facc686281b806928b09e8a7c840e75442626d9d766cb0baaa240a478ae014f3",
+        "member_sha256": {
+          "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+          "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "policy.py": "f0dbb1d343d3ea21f4e0f2b88d51a99bc5afe112754ab21dc07f30d4cb03bc82",
+          "router_parent.py": "2f9a9ae199b01f31383e3375b4184359f7d9396f1791d23f6f761717878f77c2",
+          "settings.json": "f84c3a0c4d50c744e1e4b8269b731380a614cf7f471fd0777323f541775ec0f8",
+          "terminal_planner.py": "e2a101aeca2511aec66ef3848c7250e413770f6ff11cf3b289871190d8cab271",
+          "unit_model.py": "e14d92178795876b2bc8e8f07dca7ae2599863b0c86c526fcae8864562bf7383"
+        },
+        "notebook": "/private/tmp/kag_frontier_U1u2mf/market_smart/market-smart-farming-kaggriculture.ipynb",
+        "notebook_sha256": "b4c7d0d311cad413d82d37b8047aa6af07eec279a13160f1b4efaf37438550cf"
+      }
+    },
+    {
+      "family": "Shop0909-derived terminal e182",
+      "id": "most_powerfull_terminal",
+      "source": {
+        "member_sha256": {
+          "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "NOTICE.txt": "6435ca240eea352abffd2cbf19b446b311e372f552a07865cab1b8bb547b1230",
+          "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+          "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "policy.py": "e239501d1224ba3d198aef11bc6b1b40637fbac335db7ca07205175d992f9b12",
+          "router_parent.py": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+          "settings.json": "e2756d366c88e627da6711f20ae708613d6a7cf5805410c6af4326dfc7a7417e",
+          "terminal_planner.py": "a9d7a6d29e1fb313852dc0121d43f16544771ed12775afaf3a0480e9ab713dce",
+          "unit_model.py": "c03e8c5cd10466c229ee0a44dece9a3943c10bff135d96a7822ffe75d6922724"
+        },
+        "notebook": "/private/tmp/kag_frontier_U1u2mf/most_powerfull/kaggriculture-most-powerfull-route.ipynb",
+        "notebook_sha256": "b2365f6dae777ce567ce0e60f04ae0840ef7a609ee43f77017ec8649e722e402"
+      }
+    }
+  ],
+  "environment": {
+    "isolated_path": "/private/tmp/lb_gap_env1327",
+    "primary_version": "kaggle-environments==1.32.7",
+    "wheel_sha256": "2a1bb862ad2d6463080f80f6a766f46d94b53fd57168cfeddb9857fc3dbc4c8f"
+  },
+  "held_out_next_stage": [
+    {
+      "id": "structured_v2",
+      "reason": "preserved unseen",
+      "source": {
+        "member_sha256": {
+          "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+          "main.py": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281"
+        },
+        "notebook": "/private/tmp/kag_frontier_U1u2mf/structured_v2/kaggriculture-structured-economic-policy-v2.ipynb",
+        "notebook_sha256": "04e762cdb04f35bb100d165d6bddf18a68a979f645b63b2ed51f2138e7b6a6e8"
+      }
+    },
+    {
+      "id": "adaptive_v2",
+      "reason": "preserved unseen; ELF x86-64 agent.so cannot execute on Darwin arm64",
+      "source": {
+        "archive_sha256": "b650a31d091323f2510aede0265937d3193a82a99109eadc8ab39c6e85db278d",
+        "member_sha256": {
+          "agent.so": "d3b4e19dfd20f1d9b229d1d15cab9ee20068d100fb99fcf4c44051d59fb174ea",
+          "main.py": "23b0d0c93bcf3dfecaabfecd950ec4ab3b4c46000c0c481bddcf0a63ce019f02"
+        },
+        "notebook": "/private/tmp/lb_gap_adaptive_v2/adaptive-route-agent-v2.ipynb",
+        "notebook_sha256": "70187bb00445505d64b68c272c7c8e05514afd8aa7801418f73c13d8f63717a3"
+      }
+    }
+  ],
+  "historical_controls": [
+    "previous frozen CurrentBest",
+    "V2"
+  ],
+  "schema_version": 1,
+  "source_license_note": "public-source licenses and notices were retained where supplied; no source was promoted or submitted"
+}

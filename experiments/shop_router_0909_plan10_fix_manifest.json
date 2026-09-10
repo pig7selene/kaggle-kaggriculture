@@ -1,0 +1,269 @@
+{
+  "candidate_count": 4,
+  "candidates": {
+    "fix_a_reserve_sale": {
+      "actor": "market",
+      "actual_plan10_games": 60,
+      "dead_slot_reused": false,
+      "expected_direct_cost": "forego one immediate wheat sale",
+      "known_failure_gate": {
+        "escapes": 0,
+        "games": 2,
+        "mean_advantage": 33500.0,
+        "mean_own_money": 94722.0
+      },
+      "natural_negative_controls": 12,
+      "new_action": [
+        "SELL",
+        "WHEAT",
+        8
+      ],
+      "old_action": [
+        "SELL",
+        "WHEAT",
+        9
+      ],
+      "path": "agents/shop_router_0909_hardened/v1_fix_a_reserve_sale.py",
+      "primitive_action_definition_changes": 1,
+      "reason": "retain one wheat before the day-14 shortage",
+      "source_sha256": "555871c6a8117c9eeded7433afa9c76ef695e1bd334a93a2467a1ca644cad305",
+      "step": 332,
+      "tape_alignment_changed": false,
+      "targeted_matrix": {
+        "advantage": {
+          "mean": 34584.36111111111,
+          "median": 32212.5,
+          "p10": 21257.6,
+          "p25": 25849.0,
+          "p5": 17228.3,
+          "worst": 16455.0
+        },
+        "agent_exceptions": 0,
+        "games": 72,
+        "games_with_livestock_escape": 0,
+        "livestock_escape_events": 0,
+        "losses": 0,
+        "own_money": {
+          "mean": 106176.44444444444,
+          "median": 103024.5,
+          "p10": 88193.1,
+          "p25": 96361.25,
+          "p5": 78364.8,
+          "worst": 62292.0
+        },
+        "runtime_exceptions": 0,
+        "strict_warning_classes": [
+          "AssertionError('invalid market operation')",
+          "AssertionError('wrong quantity market order')"
+        ],
+        "strict_warning_count": 1595,
+        "terminal_one_miss_animals": 576,
+        "terminal_stranded_inventory_games": 0,
+        "terminal_stranded_inventory_units": 0,
+        "terminal_stranded_inventory_value": 0.0,
+        "terminal_two_miss_animals": 0,
+        "ties": 0,
+        "win_rate": 1.0,
+        "wins": 72
+      }
+    },
+    "fix_b_buy_one": {
+      "actor": "market",
+      "actual_plan10_games": 60,
+      "dead_slot_reused": true,
+      "expected_direct_cost": "buy one wheat at the prevailing market price",
+      "known_failure_gate": {
+        "escapes": 0,
+        "games": 2,
+        "mean_advantage": 33500.0,
+        "mean_own_money": 94722.0
+      },
+      "natural_negative_controls": 12,
+      "new_action": [
+        "BUY_PRODUCT",
+        "WHEAT",
+        1
+      ],
+      "old_action": null,
+      "path": "agents/shop_router_0909_hardened/v1_fix_b_buy_one.py",
+      "primitive_action_definition_changes": 1,
+      "reason": "use otherwise idle market capacity to restore one wheat",
+      "source_sha256": "16039f90a411c36e643555b5828d2898f1715ff39f441aa2d3e32e821d758aa7",
+      "step": 335,
+      "tape_alignment_changed": false,
+      "targeted_matrix": {
+        "advantage": {
+          "mean": 34584.416666666664,
+          "median": 32212.5,
+          "p10": 21257.6,
+          "p25": 25849.0,
+          "p5": 17228.3,
+          "worst": 16455.0
+        },
+        "agent_exceptions": 0,
+        "games": 72,
+        "games_with_livestock_escape": 0,
+        "livestock_escape_events": 0,
+        "losses": 0,
+        "own_money": {
+          "mean": 106176.47222222222,
+          "median": 103024.5,
+          "p10": 88193.1,
+          "p25": 96361.25,
+          "p5": 78364.8,
+          "worst": 62292.0
+        },
+        "runtime_exceptions": 0,
+        "strict_warning_classes": [
+          "AssertionError('invalid market operation')",
+          "AssertionError('wrong quantity market order')"
+        ],
+        "strict_warning_count": 1595,
+        "terminal_one_miss_animals": 576,
+        "terminal_stranded_inventory_games": 0,
+        "terminal_stranded_inventory_units": 0,
+        "terminal_stranded_inventory_value": 0.0,
+        "terminal_two_miss_animals": 0,
+        "ties": 0,
+        "win_rate": 1.0,
+        "wins": 72
+      }
+    },
+    "fix_c_reallocate_day14": {
+      "actor": "hand_1",
+      "actual_plan10_games": 60,
+      "dead_slot_reused": false,
+      "expected_direct_cost": "no purchase or sale; reallocate one unit",
+      "known_failure_gate": {
+        "escapes": 0,
+        "games": 2,
+        "mean_advantage": 33299.0,
+        "mean_own_money": 94515.0
+      },
+      "natural_negative_controls": 12,
+      "new_action": [
+        "PICKUP",
+        "WHEAT",
+        4
+      ],
+      "old_action": [
+        "PICKUP",
+        "WHEAT",
+        5
+      ],
+      "path": "agents/shop_router_0909_hardened/v1_fix_c_reallocate_day14.py",
+      "primitive_action_definition_changes": 1,
+      "reason": "release one day-14 wheat to the final feeder",
+      "source_sha256": "92601b68ad090b8a02fdad0fe85a3549b7ca9e43caae9ca93333562e26be6d5d",
+      "step": 339,
+      "tape_alignment_changed": false,
+      "targeted_matrix": {
+        "advantage": {
+          "mean": 34481.305555555555,
+          "median": 32027.0,
+          "p10": 21257.6,
+          "p25": 25729.75,
+          "p5": 17228.3,
+          "worst": 16455.0
+        },
+        "agent_exceptions": 0,
+        "games": 72,
+        "games_with_livestock_escape": 0,
+        "livestock_escape_events": 0,
+        "losses": 0,
+        "own_money": {
+          "mean": 106093.61111111111,
+          "median": 102860.5,
+          "p10": 88268.5,
+          "p25": 96270.5,
+          "p5": 78415.40000000001,
+          "worst": 62292.0
+        },
+        "runtime_exceptions": 0,
+        "strict_warning_classes": [
+          "AssertionError('invalid market operation')",
+          "AssertionError('wrong quantity market order')"
+        ],
+        "strict_warning_count": 1595,
+        "terminal_one_miss_animals": 576,
+        "terminal_stranded_inventory_games": 0,
+        "terminal_stranded_inventory_units": 0,
+        "terminal_stranded_inventory_value": 0.0,
+        "terminal_two_miss_animals": 0,
+        "ties": 0,
+        "win_rate": 1.0,
+        "wins": 72
+      }
+    },
+    "fix_d_reallocate_day15": {
+      "actor": "farmer",
+      "actual_plan10_games": 60,
+      "dead_slot_reused": false,
+      "expected_direct_cost": "none; reallocate an unused carried unit",
+      "known_failure_gate": {
+        "escapes": 0,
+        "games": 2,
+        "mean_advantage": 33503.0,
+        "mean_own_money": 94723.0
+      },
+      "natural_negative_controls": 12,
+      "new_action": [
+        "PICKUP",
+        "WHEAT",
+        4
+      ],
+      "old_action": [
+        "PICKUP",
+        "WHEAT",
+        5
+      ],
+      "path": "agents/shop_router_0909_hardened/v1_fix_d_reallocate_day15.py",
+      "primitive_action_definition_changes": 1,
+      "reason": "release one otherwise unused day-15 farmer wheat to the final feeder",
+      "source_sha256": "f5187deae47e96a286b86d64d186b855bd0c42dd2ada58ff26b6dd79932d6389",
+      "step": 360,
+      "tape_alignment_changed": false,
+      "targeted_matrix": {
+        "advantage": {
+          "mean": 34645.055555555555,
+          "median": 32297.0,
+          "p10": 21257.6,
+          "p25": 25848.0,
+          "p5": 17228.3,
+          "worst": 16455.0
+        },
+        "agent_exceptions": 0,
+        "games": 72,
+        "games_with_livestock_escape": 0,
+        "livestock_escape_events": 0,
+        "losses": 0,
+        "own_money": {
+          "mean": 106229.0,
+          "median": 103080.5,
+          "p10": 88192.1,
+          "p25": 96362.0,
+          "p5": 78364.25,
+          "worst": 62292.0
+        },
+        "runtime_exceptions": 0,
+        "strict_warning_classes": [
+          "AssertionError('invalid market operation')",
+          "AssertionError('wrong quantity market order')"
+        ],
+        "strict_warning_count": 1595,
+        "terminal_one_miss_animals": 576,
+        "terminal_stranded_inventory_games": 0,
+        "terminal_stranded_inventory_units": 0,
+        "terminal_stranded_inventory_value": 0.0,
+        "terminal_two_miss_animals": 0,
+        "ties": 0,
+        "win_rate": 1.0,
+        "wins": 72
+      }
+    }
+  },
+  "exact_parent_untouched": true,
+  "schema_version": 1,
+  "selected": "fix_d_reallocate_day15",
+  "selection_reason": "All four fixes eliminated escapes; Fix D had the highest targeted mean own money and advantage, changes one numeric argument, consumes no extra resource, and introduces no new warning class."
+}

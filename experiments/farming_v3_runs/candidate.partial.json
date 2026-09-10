@@ -1,0 +1,7675 @@
+[
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 7305.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10188,
+      "first_shop": "PET_CAFE",
+      "money": 19822.0,
+      "rival_plant_tiles": 36,
+      "route": 1,
+      "shops": [
+        "PET_CAFE",
+        "BAKERY",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3200,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 228,
+        "STRAWBERRY": 261,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2823,
+        "WHEAT": 4582
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 17536,
+        "MELON": 16684,
+        "MILK": 5580,
+        "STRAWBERRY": 15137,
+        "WHEAT": 14009,
+        "WOOL": 6371
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 61.60001447077886,
+        "MELON": 210.43333333333334,
+        "MILK": 29.653759398496238,
+        "STRAWBERRY": 64.4779310601679,
+        "WHEAT": 36.943589332719135,
+        "WOOL": 43.55065476190477
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.698170731707318,
+        "MELON": 10.166666666666666,
+        "MILK": 19.98230088495575,
+        "STRAWBERRY": 21.37051792828685,
+        "WHEAT": 22.10164835164835,
+        "WOOL": 19.561855670103093
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 328,
+        "MELON": 72,
+        "MILK": 226,
+        "STRAWBERRY": 251,
+        "WHEAT": 364,
+        "WOOL": 194
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 4.910492334049195,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 8,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 22,
+        "structures": {
+          "PASTURE": 16
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 16,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 41733.0,
+    "own_money": 49038.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881300,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 8,
+        "WHEAT": 3
+      },
+      "units": 18,
+      "value": 438.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 7964.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10197,
+      "first_shop": "PET_CAFE",
+      "money": 20032.0,
+      "rival_plant_tiles": 36,
+      "route": 1,
+      "shops": [
+        "PET_CAFE",
+        "BAKERY",
+        "BAKERY",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2663,
+        "WHEAT": 4730
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 17982,
+        "MELON": 16684,
+        "MILK": 5703,
+        "STRAWBERRY": 15067,
+        "WHEAT": 13865,
+        "WOOL": 6372
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 59.48533078770748,
+        "MELON": 210.43333333333334,
+        "MILK": 25.965079365079365,
+        "STRAWBERRY": 60.406419238656085,
+        "WHEAT": 37.01167167561469,
+        "WOOL": 43.54991946778711
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 4.9777807500213385,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 41042.0,
+    "own_money": 49006.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881300,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 295.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 50113.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10210,
+      "first_shop": "SMOOTHIE_SHOP",
+      "money": 27107.0,
+      "rival_plant_tiles": 53,
+      "route": 1,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2558,
+        "WHEAT": 5032
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 17011,
+        "MELON": 16684,
+        "MILK": 55231,
+        "STRAWBERRY": 61707,
+        "WHEAT": 8844,
+        "WOOL": 14722
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 57.19836676494294,
+        "MELON": 210.43333333333334,
+        "MILK": 210.3866402116402,
+        "STRAWBERRY": 238.14479635861215,
+        "WHEAT": 29.129886788048555,
+        "WOOL": 85.74979946524064
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.441883499966934,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 97213.0,
+    "own_money": 147326.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881301,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 371.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 50113.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10210,
+      "first_shop": "SMOOTHIE_SHOP",
+      "money": 27107.0,
+      "rival_plant_tiles": 53,
+      "route": 1,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2558,
+        "WHEAT": 5032
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 17011,
+        "MELON": 16684,
+        "MILK": 55231,
+        "STRAWBERRY": 61707,
+        "WHEAT": 8844,
+        "WOOL": 14722
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 57.19836676494294,
+        "MELON": 210.43333333333334,
+        "MILK": 210.3866402116402,
+        "STRAWBERRY": 238.14479635861215,
+        "WHEAT": 29.129886788048555,
+        "WOOL": 85.74979946524064
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.397631708008703,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 97213.0,
+    "own_money": 147326.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881301,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 371.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 39785.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10212,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 27447.0,
+      "rival_plant_tiles": 53,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4500
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2387,
+        "WHEAT": 4941
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 341,
+        "FERTILIZER": 16882,
+        "MELON": 16684,
+        "MILK": 45025,
+        "STRAWBERRY": 62479,
+        "WHEAT": 13453,
+        "WOOL": 5571
+      },
+      "sale_average_prices": {
+        "CARROT": 35.3125,
+        "FERTILIZER": 57.04079472017846,
+        "MELON": 210.43333333333334,
+        "MILK": 176.8324074074074,
+        "STRAWBERRY": 239.547952413084,
+        "WHEAT": 36.91202856853335,
+        "WOOL": 39.693014705882355
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.664772727272727,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.4525542089832015,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 93170.0,
+    "own_money": 132955.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881302,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 241.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 39785.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10212,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 27447.0,
+      "rival_plant_tiles": 53,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4500
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2387,
+        "WHEAT": 4941
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 341,
+        "FERTILIZER": 16882,
+        "MELON": 16684,
+        "MILK": 45025,
+        "STRAWBERRY": 62479,
+        "WHEAT": 13453,
+        "WOOL": 5571
+      },
+      "sale_average_prices": {
+        "CARROT": 35.3125,
+        "FERTILIZER": 57.04079472017846,
+        "MELON": 210.43333333333334,
+        "MILK": 176.8324074074074,
+        "STRAWBERRY": 239.547952413084,
+        "WHEAT": 36.91202856853335,
+        "WOOL": 39.693014705882355
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.664772727272727,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.377321666979697,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 93170.0,
+    "own_money": 132955.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881302,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 241.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 23442.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10211,
+      "first_shop": "FARMERS_MARKET",
+      "money": 23147.0,
+      "rival_plant_tiles": 53,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 558,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2475,
+        "WHEAT": 5129
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16947,
+        "MELON": 16684,
+        "MILK": 14712,
+        "STRAWBERRY": 60223,
+        "WHEAT": 11429,
+        "WOOL": 5571
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 57.12218439203466,
+        "MELON": 210.43333333333334,
+        "MILK": 62.73743386243386,
+        "STRAWBERRY": 231.32552243078558,
+        "WHEAT": 35.876777919190836,
+        "WOOL": 39.693014705882355
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.86918604651163,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 344,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.515974207955878,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 75246.0,
+    "own_money": 98688.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881303,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 169.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 35646.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10211,
+      "first_shop": "FARMERS_MARKET",
+      "money": 23789.0,
+      "rival_plant_tiles": 53,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 560,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2475,
+        "WHEAT": 5129
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16947,
+        "MELON": 16684,
+        "MILK": 36858,
+        "STRAWBERRY": 60223,
+        "WHEAT": 10040,
+        "WOOL": 5571
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 57.12218439203466,
+        "MELON": 210.43333333333334,
+        "MILK": 138.57830687830688,
+        "STRAWBERRY": 231.32552243078558,
+        "WHEAT": 33.97795007187403,
+        "WOOL": 39.693014705882355
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.884393063583815,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 346,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.445186459051911,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "crop_dusta",
+    "opponent_money": 83799.0,
+    "own_money": 119445.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881303,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 163.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 11974.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 25456.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2308,
+        "WHEAT": 5303
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 360,
+        "FERTILIZER": 15527,
+        "MELON": 14389,
+        "MILK": 21082,
+        "STRAWBERRY": 20915,
+        "WHEAT": 15178,
+        "WOOL": 42783
+      },
+      "sale_average_prices": {
+        "CARROT": 40.0,
+        "FERTILIZER": 53.91996419905343,
+        "MELON": 162.14166666666665,
+        "MILK": 93.29034391534391,
+        "STRAWBERRY": 78.22393980288717,
+        "WHEAT": 40.22662590677296,
+        "WOOL": 217.90579004329007
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 16.47687033301918,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 90997.0,
+    "own_money": 102971.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881000,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 430.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 11974.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 25456.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2308,
+        "WHEAT": 5303
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 360,
+        "FERTILIZER": 15527,
+        "MELON": 14389,
+        "MILK": 21082,
+        "STRAWBERRY": 20915,
+        "WHEAT": 15178,
+        "WOOL": 42783
+      },
+      "sale_average_prices": {
+        "CARROT": 40.0,
+        "FERTILIZER": 53.91996419905343,
+        "MELON": 162.14166666666665,
+        "MILK": 93.29034391534391,
+        "STRAWBERRY": 78.22393980288717,
+        "WHEAT": 40.22662590677296,
+        "WOOL": 217.90579004329007
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 17.06131695897784,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 2
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 90997.0,
+    "own_money": 102971.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881000,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 430.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 13790.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 21779.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2308,
+        "WHEAT": 4708
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 354,
+        "FERTILIZER": 15527,
+        "MELON": 14389,
+        "MILK": 15111,
+        "STRAWBERRY": 48575,
+        "WHEAT": 13089,
+        "WOOL": 42783
+      },
+      "sale_average_prices": {
+        "CARROT": 39.1875,
+        "FERTILIZER": 53.91996419905343,
+        "MELON": 162.14166666666665,
+        "MILK": 62.62129629629629,
+        "STRAWBERRY": 181.71881444578815,
+        "WHEAT": 37.55483248855098,
+        "WOOL": 217.90579004329007
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.977337110481585,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 353,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 16.57718062499771,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 109370.0,
+    "own_money": 123160.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881001,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 340.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 13790.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 21779.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2308,
+        "WHEAT": 4708
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 354,
+        "FERTILIZER": 15527,
+        "MELON": 14389,
+        "MILK": 15111,
+        "STRAWBERRY": 48575,
+        "WHEAT": 13089,
+        "WOOL": 42783
+      },
+      "sale_average_prices": {
+        "CARROT": 39.1875,
+        "FERTILIZER": 53.91996419905343,
+        "MELON": 162.14166666666665,
+        "MILK": 62.62129629629629,
+        "STRAWBERRY": 181.71881444578815,
+        "WHEAT": 37.55483248855098,
+        "WOOL": 217.90579004329007
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.977337110481585,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 353,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 17.135538041009568,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 109370.0,
+    "own_money": 123160.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881001,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 340.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 13682.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 21135.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2308,
+        "WHEAT": 4730
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15527,
+        "MELON": 14389,
+        "MILK": 7738,
+        "STRAWBERRY": 23141,
+        "WHEAT": 13530,
+        "WOOL": 42783
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.91996419905343,
+        "MELON": 162.14166666666665,
+        "MILK": 35.93174603174604,
+        "STRAWBERRY": 84.37287639261324,
+        "WHEAT": 38.310550553554755,
+        "WOOL": 217.90579004329007
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.977337110481585,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 353,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 17.03286604199093,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 77114.0,
+    "own_money": 90796.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881002,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 382.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 13682.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 21135.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2308,
+        "WHEAT": 4730
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15527,
+        "MELON": 14389,
+        "MILK": 7738,
+        "STRAWBERRY": 23141,
+        "WHEAT": 13530,
+        "WOOL": 42783
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.91996419905343,
+        "MELON": 162.14166666666665,
+        "MILK": 35.93174603174604,
+        "STRAWBERRY": 84.37287639261324,
+        "WHEAT": 38.310550553554755,
+        "WOOL": 217.90579004329007
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.977337110481585,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 353,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 16.97043400001712,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 77114.0,
+    "own_money": 90796.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881002,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 382.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 717.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10225,
+      "first_shop": "BAKERY",
+      "money": 17384.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BAKERY",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2045,
+        "WHEAT": 4615
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15283,
+        "MELON": 14389,
+        "MILK": 5588,
+        "STRAWBERRY": 14422,
+        "WHEAT": 14355,
+        "WOOL": 5394
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.82761344929462,
+        "MELON": 162.14166666666665,
+        "MILK": 26.065079365079367,
+        "STRAWBERRY": 54.44425749688908,
+        "WHEAT": 39.54276710684274,
+        "WOOL": 39.04283613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.002857142857142,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 350,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 16.799218375002965,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 42780.0,
+    "own_money": 43497.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881003,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 238.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 717.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10225,
+      "first_shop": "BAKERY",
+      "money": 17384.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BAKERY",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2045,
+        "WHEAT": 4615
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15283,
+        "MELON": 14389,
+        "MILK": 5588,
+        "STRAWBERRY": 14422,
+        "WHEAT": 14355,
+        "WOOL": 5394
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.82761344929462,
+        "MELON": 162.14166666666665,
+        "MILK": 26.065079365079367,
+        "STRAWBERRY": 54.44425749688908,
+        "WHEAT": 39.54276710684274,
+        "WOOL": 39.04283613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.002857142857142,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 350,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 16.889237291004974,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 42780.0,
+    "own_money": 43497.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881003,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 238.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 318.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10225,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 23118.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2045,
+        "WHEAT": 5018
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15283,
+        "MELON": 14389,
+        "MILK": 16507,
+        "STRAWBERRY": 22823,
+        "WHEAT": 14473,
+        "WOOL": 6960
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 53.82761344929462,
+        "MELON": 162.14166666666665,
+        "MILK": 76.96084656084656,
+        "STRAWBERRY": 82.8670693341746,
+        "WHEAT": 39.54075392657063,
+        "WOOL": 46.34847338935574
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.670037332980428,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 63771.0,
+    "own_money": 64089.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881004,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 318.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10225,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 23118.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2045,
+        "WHEAT": 5018
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15283,
+        "MELON": 14389,
+        "MILK": 16507,
+        "STRAWBERRY": 22823,
+        "WHEAT": 14473,
+        "WOOL": 6960
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 53.82761344929462,
+        "MELON": 162.14166666666665,
+        "MILK": 76.96084656084656,
+        "STRAWBERRY": 82.8670693341746,
+        "WHEAT": 39.54075392657063,
+        "WOOL": 46.34847338935574
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.671860665956046,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 63771.0,
+    "own_money": 64089.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881004,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 15343.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 26734.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2128,
+        "WHEAT": 5332
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15347,
+        "MELON": 14389,
+        "MILK": 38562,
+        "STRAWBERRY": 42217,
+        "WHEAT": 13154,
+        "WOOL": 44693
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 53.91339605455425,
+        "MELON": 162.14166666666665,
+        "MILK": 157.52447089947088,
+        "STRAWBERRY": 153.08532476295633,
+        "WHEAT": 38.387151446048506,
+        "WOOL": 226.70832792207793
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.75,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.714926417043898,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 126276.0,
+    "own_money": 141619.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881005,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 383.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 15343.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 26734.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2128,
+        "WHEAT": 5332
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15347,
+        "MELON": 14389,
+        "MILK": 38562,
+        "STRAWBERRY": 42217,
+        "WHEAT": 13154,
+        "WOOL": 44693
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 53.91339605455425,
+        "MELON": 162.14166666666665,
+        "MILK": 157.52447089947088,
+        "STRAWBERRY": 153.08532476295633,
+        "WHEAT": 38.387151446048506,
+        "WOOL": 226.70832792207793
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.75,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.917847833014093,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 126276.0,
+    "own_money": 141619.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881005,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 383.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 467.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10226,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 23276.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 1964,
+        "WHEAT": 5268
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 386,
+        "FERTILIZER": 15220,
+        "MELON": 14389,
+        "MILK": 15688,
+        "STRAWBERRY": 39024,
+        "WHEAT": 14313,
+        "WOOL": 5394
+      },
+      "sale_average_prices": {
+        "CARROT": 42.9375,
+        "FERTILIZER": 53.74669564330075,
+        "MELON": 162.14166666666665,
+        "MILK": 74.93544973544974,
+        "STRAWBERRY": 142.05198441908968,
+        "WHEAT": 39.222609321506376,
+        "WOOL": 39.04283613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.731428571428573,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.5,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 350,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 258,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.420385333010927,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 77063.0,
+    "own_money": 77530.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881006,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 214.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 467.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10226,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 23276.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 1964,
+        "WHEAT": 5268
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 386,
+        "FERTILIZER": 15220,
+        "MELON": 14389,
+        "MILK": 15688,
+        "STRAWBERRY": 39024,
+        "WHEAT": 14313,
+        "WOOL": 5394
+      },
+      "sale_average_prices": {
+        "CARROT": 42.9375,
+        "FERTILIZER": 53.74669564330075,
+        "MELON": 162.14166666666665,
+        "MILK": 74.93544973544974,
+        "STRAWBERRY": 142.05198441908968,
+        "WHEAT": 39.222609321506376,
+        "WOOL": 39.04283613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.731428571428573,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.5,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 350,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 258,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.67224816698581,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 77063.0,
+    "own_money": 77530.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881006,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 214.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 1469.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10226,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 19007.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 1964,
+        "WHEAT": 4683
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15220,
+        "MELON": 14389,
+        "MILK": 7527,
+        "STRAWBERRY": 60030,
+        "WHEAT": 14241,
+        "WOOL": 5394
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.74669564330075,
+        "MELON": 162.14166666666665,
+        "MILK": 35.61137566137566,
+        "STRAWBERRY": 228.27014944120205,
+        "WHEAT": 39.76737347930625,
+        "WOOL": 39.04283613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.731428571428573,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.002857142857142,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 350,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 350,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.769066000008024,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 89411.0,
+    "own_money": 90880.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881007,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 226.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 1469.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10226,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 19007.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 1964,
+        "WHEAT": 4683
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15220,
+        "MELON": 14389,
+        "MILK": 7527,
+        "STRAWBERRY": 60030,
+        "WHEAT": 14241,
+        "WOOL": 5394
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.74669564330075,
+        "MELON": 162.14166666666665,
+        "MILK": 35.61137566137566,
+        "STRAWBERRY": 228.27014944120205,
+        "WHEAT": 39.76737347930625,
+        "WOOL": 39.04283613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.731428571428573,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.002857142857142,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 350,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 350,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 15.921226707985625,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "current_best",
+    "opponent_money": 89411.0,
+    "own_money": 90880.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881007,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 226.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 20821.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10216,
+      "first_shop": "FARMERS_MARKET",
+      "money": 23601.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2284,
+        "WHEAT": 4931
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16423,
+        "MELON": 16964,
+        "MILK": 10270,
+        "STRAWBERRY": 52455,
+        "WHEAT": 15380,
+        "WOOL": 31905
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.06472384121578,
+        "MELON": 216.66666666666669,
+        "MILK": 49.27301587301587,
+        "STRAWBERRY": 196.50619701935491,
+        "WHEAT": 40.71448258790696,
+        "WOOL": 163.14249045072575
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.664772727272727,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.96638655462185,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 357,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.342587666993495,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 96078.0,
+    "own_money": 116899.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881400,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 484.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 20821.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10216,
+      "first_shop": "FARMERS_MARKET",
+      "money": 23601.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2284,
+        "WHEAT": 4931
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16423,
+        "MELON": 16964,
+        "MILK": 10270,
+        "STRAWBERRY": 52455,
+        "WHEAT": 15380,
+        "WOOL": 31905
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.06472384121578,
+        "MELON": 216.66666666666669,
+        "MILK": 49.27301587301587,
+        "STRAWBERRY": 196.50619701935491,
+        "WHEAT": 40.71448258790696,
+        "WOOL": 163.14249045072575
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.664772727272727,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.96638655462185,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 357,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.305275790975429,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 96078.0,
+    "own_money": 116899.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881400,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 484.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 28015.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "YARN_STORE",
+      "money": 29602.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4500
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2363,
+        "WHEAT": 4937
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 351,
+        "FERTILIZER": 16488,
+        "MELON": 16964,
+        "MILK": 48233,
+        "STRAWBERRY": 7628,
+        "WHEAT": 14139,
+        "WOOL": 46455
+      },
+      "sale_average_prices": {
+        "CARROT": 39.0,
+        "FERTILIZER": 56.13489926248146,
+        "MELON": 216.66666666666669,
+        "MILK": 187.76137566137567,
+        "STRAWBERRY": 29.106259968102073,
+        "WHEAT": 38.52111729963303,
+        "WOOL": 237.88766774891775
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.362514332984574,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 94791.0,
+    "own_money": 122806.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881401,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 433.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 28015.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "YARN_STORE",
+      "money": 29602.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "YARN_STORE",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4500
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2363,
+        "WHEAT": 4937
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 351,
+        "FERTILIZER": 16488,
+        "MELON": 16964,
+        "MILK": 48233,
+        "STRAWBERRY": 7628,
+        "WHEAT": 14139,
+        "WOOL": 46455
+      },
+      "sale_average_prices": {
+        "CARROT": 39.0,
+        "FERTILIZER": 56.13489926248146,
+        "MELON": 216.66666666666669,
+        "MILK": 187.76137566137567,
+        "STRAWBERRY": 29.106259968102073,
+        "WHEAT": 38.52111729963303,
+        "WOOL": 237.88766774891775
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.421510457992554,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 94791.0,
+    "own_money": 122806.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881401,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 433.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 11033.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 26981.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2367,
+        "WHEAT": 5357
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16490,
+        "MELON": 16964,
+        "MILK": 52457,
+        "STRAWBERRY": 59161,
+        "WHEAT": 15769,
+        "WOOL": 4618
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.139825370855846,
+        "MELON": 216.66666666666669,
+        "MILK": 203.59457671957674,
+        "STRAWBERRY": 227.31137502848028,
+        "WHEAT": 41.14696587181881,
+        "WOOL": 33.31450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.517374517374517,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 259,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.23464816698106,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 127419.0,
+    "own_money": 138452.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881402,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 11033.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 26981.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2367,
+        "WHEAT": 5357
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16490,
+        "MELON": 16964,
+        "MILK": 52457,
+        "STRAWBERRY": 59161,
+        "WHEAT": 15769,
+        "WOOL": 4618
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.139825370855846,
+        "MELON": 216.66666666666669,
+        "MILK": 203.59457671957674,
+        "STRAWBERRY": 227.31137502848028,
+        "WHEAT": 41.14696587181881,
+        "WOOL": 33.31450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.517374517374517,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 259,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.281473083014134,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 127419.0,
+    "own_money": 138452.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881402,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 12747.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "PET_CAFE",
+      "money": 23451.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2367,
+        "WHEAT": 4787
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16490,
+        "MELON": 16964,
+        "MILK": 35048,
+        "STRAWBERRY": 11795,
+        "WHEAT": 13844,
+        "WOOL": 4618
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.139825370855846,
+        "MELON": 216.66666666666669,
+        "MILK": 134.60595238095237,
+        "STRAWBERRY": 45.78941489796753,
+        "WHEAT": 38.068836259014006,
+        "WOOL": 33.31450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.98603351955307,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 358,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.3504052920034155,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 59584.0,
+    "own_money": 72331.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881403,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 178.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 12747.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "PET_CAFE",
+      "money": 23451.0,
+      "rival_plant_tiles": 63,
+      "route": 1,
+      "shops": [
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2367,
+        "WHEAT": 4787
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16490,
+        "MELON": 16964,
+        "MILK": 35048,
+        "STRAWBERRY": 11795,
+        "WHEAT": 13844,
+        "WOOL": 4618
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.139825370855846,
+        "MELON": 216.66666666666669,
+        "MILK": 134.60595238095237,
+        "STRAWBERRY": 45.78941489796753,
+        "WHEAT": 38.068836259014006,
+        "WOOL": 33.31450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.98603351955307,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 358,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.4221028329920955,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "k3",
+    "opponent_money": 59584.0,
+    "own_money": 72331.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881403,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 178.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 13763.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10216,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 27266.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2094,
+        "WHEAT": 5255
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 360,
+        "FERTILIZER": 15606,
+        "MELON": 16064,
+        "MILK": 45422,
+        "STRAWBERRY": 55318,
+        "WHEAT": 16887,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 40.0,
+        "FERTILIZER": 54.568990976066985,
+        "MELON": 176.1,
+        "MILK": 181.60661375661377,
+        "STRAWBERRY": 209.95023215089003,
+        "WHEAT": 42.60910543704661,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.75,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.233728291990701,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 115002.0,
+    "own_money": 128765.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881500,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 298.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 13763.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10216,
+      "first_shop": "ICE_CREAM_SHOP",
+      "money": 27266.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2094,
+        "WHEAT": 5255
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 360,
+        "FERTILIZER": 15606,
+        "MELON": 16064,
+        "MILK": 45422,
+        "STRAWBERRY": 55318,
+        "WHEAT": 16887,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 40.0,
+        "FERTILIZER": 54.568990976066985,
+        "MELON": 176.1,
+        "MILK": 181.60661375661377,
+        "STRAWBERRY": 209.95023215089003,
+        "WHEAT": 42.60910543704661,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.75,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 352,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.278947709011845,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 115002.0,
+    "own_money": 128765.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881500,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 298.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 17877.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10217,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 25724.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2010,
+        "WHEAT": 5026
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15544,
+        "MELON": 16064,
+        "MILK": 24244,
+        "STRAWBERRY": 54449,
+        "WHEAT": 16060,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 54.49254082261048,
+        "MELON": 176.1,
+        "MILK": 106.54814814814814,
+        "STRAWBERRY": 204.51556740043583,
+        "WHEAT": 41.57932436540507,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.322209874982946,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 88274.0,
+    "own_money": 106151.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881501,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 274.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 17877.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10217,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 25724.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2010,
+        "WHEAT": 5026
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15544,
+        "MELON": 16064,
+        "MILK": 24244,
+        "STRAWBERRY": 54449,
+        "WHEAT": 16060,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 54.49254082261048,
+        "MELON": 176.1,
+        "MILK": 106.54814814814814,
+        "STRAWBERRY": 204.51556740043583,
+        "WHEAT": 41.57932436540507,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.275992582959589,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 88274.0,
+    "own_money": 106151.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881501,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 274.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 15576.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10217,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 22282.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2010,
+        "WHEAT": 4600
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 360,
+        "FERTILIZER": 15544,
+        "MELON": 16064,
+        "MILK": 11721,
+        "STRAWBERRY": 65314,
+        "WHEAT": 16039,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 40.0,
+        "FERTILIZER": 54.49254082261048,
+        "MELON": 176.1,
+        "MILK": 54.60542328042328,
+        "STRAWBERRY": 249.18704212454213,
+        "WHEAT": 42.13606776043751,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.022922636103154,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 349,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.29251179198036,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 89313.0,
+    "own_money": 104889.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881502,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 292.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 15576.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10217,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 22282.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2010,
+        "WHEAT": 4600
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 360,
+        "FERTILIZER": 15544,
+        "MELON": 16064,
+        "MILK": 11721,
+        "STRAWBERRY": 65314,
+        "WHEAT": 16039,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 40.0,
+        "FERTILIZER": 54.49254082261048,
+        "MELON": 176.1,
+        "MILK": 54.60542328042328,
+        "STRAWBERRY": 249.18704212454213,
+        "WHEAT": 42.13606776043751,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.022922636103154,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 349,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.276679750008043,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 89313.0,
+    "own_money": 104889.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881502,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 292.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 16038.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10217,
+      "first_shop": "PIZZA_SHOP",
+      "money": 26650.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2010,
+        "WHEAT": 5132
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 370,
+        "FERTILIZER": 15544,
+        "MELON": 16064,
+        "MILK": 47976,
+        "STRAWBERRY": 18099,
+        "WHEAT": 14800,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0625,
+        "FERTILIZER": 54.49254082261048,
+        "MELON": 176.1,
+        "MILK": 188.54986772486774,
+        "STRAWBERRY": 67.46177944862156,
+        "WHEAT": 39.18283406952525,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.517374517374517,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 259,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.25885212502908,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 76130.0,
+    "own_money": 92168.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881503,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 238.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 16038.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10217,
+      "first_shop": "PIZZA_SHOP",
+      "money": 26650.0,
+      "rival_plant_tiles": 55,
+      "route": 1,
+      "shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2010,
+        "WHEAT": 5132
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 370,
+        "FERTILIZER": 15544,
+        "MELON": 16064,
+        "MILK": 47976,
+        "STRAWBERRY": 18099,
+        "WHEAT": 14800,
+        "WOOL": 6109
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0625,
+        "FERTILIZER": 54.49254082261048,
+        "MELON": 176.1,
+        "MILK": 188.54986772486774,
+        "STRAWBERRY": 67.46177944862156,
+        "WHEAT": 39.18283406952525,
+        "WOOL": 42.10450280112045
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.74074074074074,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.517374517374517,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 351,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 259,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.42401008302113,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "nazmus",
+    "opponent_money": 76130.0,
+    "own_money": 92168.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881503,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 238.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 66427.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10219,
+      "first_shop": "PET_CAFE",
+      "money": 23723.0,
+      "rival_plant_tiles": 34,
+      "route": 1,
+      "shops": [
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2342,
+        "WHEAT": 4729
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15968,
+        "MELON": 17440,
+        "MILK": 46494,
+        "STRAWBERRY": 50539,
+        "WHEAT": 15142,
+        "WOOL": 5023
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 54.81083865052388,
+        "MELON": 233.43333333333334,
+        "MILK": 174.01071428571427,
+        "STRAWBERRY": 191.39969350824614,
+        "WHEAT": 39.72117648849701,
+        "WOOL": 35.29991946778712
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.98603351955307,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 358,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.572056415956467,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 57834.0,
+    "own_money": 124261.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881200,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 66427.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10219,
+      "first_shop": "PET_CAFE",
+      "money": 23723.0,
+      "rival_plant_tiles": 34,
+      "route": 1,
+      "shops": [
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2342,
+        "WHEAT": 4729
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15968,
+        "MELON": 17440,
+        "MILK": 46494,
+        "STRAWBERRY": 50539,
+        "WHEAT": 15142,
+        "WOOL": 5023
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 54.81083865052388,
+        "MELON": 233.43333333333334,
+        "MILK": 174.01071428571427,
+        "STRAWBERRY": 191.39969350824614,
+        "WHEAT": 39.72117648849701,
+        "WOOL": 35.29991946778712
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.98603351955307,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 358,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.658123417000752,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 57834.0,
+    "own_money": 124261.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881200,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": -6247.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "YARN_STORE",
+      "money": 23911.0,
+      "rival_plant_tiles": 56,
+      "route": 1,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2267,
+        "WHEAT": 5025
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15594,
+        "MELON": 17440,
+        "MILK": 8359,
+        "STRAWBERRY": 17892,
+        "WHEAT": 13706,
+        "WOOL": 47437
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.96320947971748,
+        "MELON": 233.43333333333334,
+        "MILK": 37.64748677248677,
+        "STRAWBERRY": 68.56395139947772,
+        "WHEAT": 37.70884438818263,
+        "WOOL": 242.72688852813855
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.534615384615385,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 260,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.715816833020654,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 100109.0,
+    "own_money": 93862.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881201,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 433.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": -7578.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10224,
+      "first_shop": "YARN_STORE",
+      "money": 23911.0,
+      "rival_plant_tiles": 56,
+      "route": 1,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 564,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2267,
+        "WHEAT": 5025
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 15594,
+        "MELON": 17440,
+        "MILK": 6942,
+        "STRAWBERRY": 20583,
+        "WHEAT": 13410,
+        "WOOL": 47526
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 53.96320947971748,
+        "MELON": 233.43333333333334,
+        "MILK": 32.80238095238095,
+        "STRAWBERRY": 77.95585116637749,
+        "WHEAT": 37.86563893735522,
+        "WOOL": 243.2066434300993
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.89801699716714,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 353,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.586128375027329,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 102507.0,
+    "own_money": 94929.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881201,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 430.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 25242.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10220,
+      "first_shop": "BAKERY",
+      "money": 22759.0,
+      "rival_plant_tiles": 46,
+      "route": 1,
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2344,
+        "WHEAT": 4885
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16005,
+        "MELON": 17440,
+        "MILK": 14192,
+        "STRAWBERRY": 31016,
+        "WHEAT": 15129,
+        "WOOL": 5009
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 54.8836807413626,
+        "MELON": 233.43333333333334,
+        "MILK": 63.22698412698413,
+        "STRAWBERRY": 108.48015690449901,
+        "WHEAT": 40.61792718369399,
+        "WOOL": 35.24658613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.96638655462185,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 357,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.457904540991876,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 47046.0,
+    "own_money": 72288.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881202,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 244.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 25242.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10220,
+      "first_shop": "BAKERY",
+      "money": 22759.0,
+      "rival_plant_tiles": 46,
+      "route": 1,
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2344,
+        "WHEAT": 4885
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16005,
+        "MELON": 17440,
+        "MILK": 14192,
+        "STRAWBERRY": 31016,
+        "WHEAT": 15129,
+        "WOOL": 5009
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 54.8836807413626,
+        "MELON": 233.43333333333334,
+        "MILK": 63.22698412698413,
+        "STRAWBERRY": 108.48015690449901,
+        "WHEAT": 40.61792718369399,
+        "WOOL": 35.24658613445378
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.96638655462185,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 357,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.547054041002411,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 47046.0,
+    "own_money": 72288.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881202,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 244.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 34023.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10218,
+      "first_shop": "SMOOTHIE_SHOP",
+      "money": 29334.0,
+      "rival_plant_tiles": 56,
+      "route": 1,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4500
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2332,
+        "WHEAT": 4725
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 15934,
+        "MELON": 17440,
+        "MILK": 55702,
+        "STRAWBERRY": 51744,
+        "WHEAT": 11252,
+        "WOOL": 24590
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 54.75507520291783,
+        "MELON": 233.43333333333334,
+        "MILK": 211.52261904761906,
+        "STRAWBERRY": 195.47577276524646,
+        "WHEAT": 35.46010362851163,
+        "WOOL": 135.27000031830914
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.025,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 360,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.62795641698176,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 115799.0,
+    "own_money": 149822.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881203,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 178.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 37995.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10219,
+      "first_shop": "BRUNCH_SPOT",
+      "money": 20855.0,
+      "rival_plant_tiles": 42,
+      "route": 1,
+      "shops": [
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2397,
+        "WHEAT": 4881
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 375,
+        "FERTILIZER": 16281,
+        "MELON": 17440,
+        "MILK": 6954,
+        "STRAWBERRY": 62658,
+        "WHEAT": 15718,
+        "WOOL": 5985
+      },
+      "sale_average_prices": {
+        "CARROT": 41.8125,
+        "FERTILIZER": 55.52577217999845,
+        "MELON": 233.43333333333334,
+        "MILK": 32.553174603174604,
+        "STRAWBERRY": 239.2874117841223,
+        "WHEAT": 41.42738928904895,
+        "WOOL": 42.272370448179274
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.96638655462185,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 357,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 5.268458874954376,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "tetsuya",
+    "opponent_money": 60486.0,
+    "own_money": 98481.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881203,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 333.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 14557.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "FARMERS_MARKET",
+      "money": 21634.0,
+      "rival_plant_tiles": 61,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2424,
+        "WHEAT": 4809
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16715,
+        "MELON": 16847,
+        "MILK": 6651,
+        "STRAWBERRY": 18230,
+        "WHEAT": 14594,
+        "WOOL": 16926
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.6206714665653,
+        "MELON": 211.79166666666669,
+        "MILK": 32.34920634920635,
+        "STRAWBERRY": 68.13880855986119,
+        "WHEAT": 39.75964319060957,
+        "WOOL": 93.54923064680418
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.971830985915492,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 355,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.361960624984931,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 2
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 48899.0,
+    "own_money": 63456.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881100,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 313.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 6058.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "FARMERS_MARKET",
+      "money": 21419.0,
+      "rival_plant_tiles": 61,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 558,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2424,
+        "WHEAT": 4809
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16715,
+        "MELON": 16847,
+        "MILK": 7854,
+        "STRAWBERRY": 27000,
+        "WHEAT": 14394,
+        "WOOL": 4876
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.6206714665653,
+        "MELON": 211.79166666666669,
+        "MILK": 37.52354497354497,
+        "STRAWBERRY": 97.18353685787896,
+        "WHEAT": 40.813193314960394,
+        "WOOL": 34.583154761904765
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 21.952095808383234,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 334,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.311909166979603,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 55121.0,
+    "own_money": 61179.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881100,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 256.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 26675.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10214,
+      "first_shop": "FARMERS_MARKET",
+      "money": 23529.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "PET_CAFE",
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2492,
+        "WHEAT": 4867
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16730,
+        "MELON": 16847,
+        "MILK": 6677,
+        "STRAWBERRY": 17706,
+        "WHEAT": 13072,
+        "WOOL": 46798
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.586198376460736,
+        "MELON": 211.79166666666669,
+        "MILK": 32.43386243386243,
+        "STRAWBERRY": 66.16965490649702,
+        "WHEAT": 37.60847934659976,
+        "WOOL": 237.71715718105423
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.239015707978979,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 64522.0,
+    "own_money": 91197.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881101,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 384.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 25580.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10214,
+      "first_shop": "FARMERS_MARKET",
+      "money": 23538.0,
+      "rival_plant_tiles": 61,
+      "route": 1,
+      "shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "BAKERY",
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2506,
+        "WHEAT": 4896
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16783,
+        "MELON": 16847,
+        "MILK": 6711,
+        "STRAWBERRY": 13444,
+        "WHEAT": 14596,
+        "WOOL": 46613
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.70003455431096,
+        "MELON": 211.79166666666669,
+        "MILK": 32.613756613756614,
+        "STRAWBERRY": 50.527553586764114,
+        "WHEAT": 39.374825659430435,
+        "WOOL": 236.83676948051948
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.7161983330152,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 62729.0,
+    "own_money": 88309.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881101,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 465.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 26517.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10214,
+      "first_shop": "BAKERY",
+      "money": 23627.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2499,
+        "WHEAT": 4867
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16762,
+        "MELON": 16847,
+        "MILK": 6739,
+        "STRAWBERRY": 7136,
+        "WHEAT": 13086,
+        "WOOL": 47512
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.6578840248646,
+        "MELON": 211.79166666666669,
+        "MILK": 32.75,
+        "STRAWBERRY": 26.284431577194734,
+        "WHEAT": 37.671971410091814,
+        "WOOL": 241.25610803412275
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.511629916960374,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 54916.0,
+    "own_money": 81433.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881102,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 387.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 26517.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10214,
+      "first_shop": "BAKERY",
+      "money": 23627.0,
+      "rival_plant_tiles": 60,
+      "route": 1,
+      "shops": [
+        "BAKERY",
+        "YARN_STORE",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2499,
+        "WHEAT": 4867
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 369,
+        "FERTILIZER": 16762,
+        "MELON": 16847,
+        "MILK": 6739,
+        "STRAWBERRY": 7136,
+        "WHEAT": 13086,
+        "WOOL": 47512
+      },
+      "sale_average_prices": {
+        "CARROT": 41.0,
+        "FERTILIZER": 56.6578840248646,
+        "MELON": 211.79166666666669,
+        "MILK": 32.75,
+        "STRAWBERRY": 26.284431577194734,
+        "WHEAT": 37.671971410091814,
+        "WOOL": 241.25610803412275
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.683615819209038,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.568702290076335,
+        "WHEAT": 22.00557103064067,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 354,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 359,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.866669333016034,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 54916.0,
+    "own_money": 81433.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881102,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 387.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 8525.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "SMOOTHIE_SHOP",
+      "money": 27184.0,
+      "rival_plant_tiles": 61,
+      "route": 1,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2424,
+        "WHEAT": 5153
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16715,
+        "MELON": 16847,
+        "MILK": 59034,
+        "STRAWBERRY": 57578,
+        "WHEAT": 13639,
+        "WOOL": 4798
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.6206714665653,
+        "MELON": 211.79166666666669,
+        "MILK": 225.92738095238096,
+        "STRAWBERRY": 219.47679148337042,
+        "WHEAT": 38.27837349469702,
+        "WOOL": 34.0227380952381
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.517374517374517,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 259,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.140760165988468,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 0
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 5
+      },
+      "first_land_step": 151,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 266
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 133235.0,
+    "own_money": 141760.0,
+    "runtime_error": null,
+    "seat": 0,
+    "seed": 881103,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 142.0
+    },
+    "variant": "v3_route1"
+  },
+  {
+    "action_hash": "c104d20cb70f2844e259b9b665bf5e42586ef98b53d3721ee5001bc5657b5c0a",
+    "advantage": 8525.0,
+    "budget_guard_events": [],
+    "decision": {
+      "fertilizer_inventory": 10215,
+      "first_shop": "SMOOTHIE_SHOP",
+      "money": 27184.0,
+      "rival_plant_tiles": 61,
+      "route": 1,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    "economics": {
+      "animal_spend": {
+        "COW": 3600,
+        "SHEEP": 4000
+      },
+      "harvest": {
+        "CARROT": 9,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 262,
+        "WHEAT": 579,
+        "WOOL": 195
+      },
+      "labor_spend": 5722.0,
+      "land_spend": 3000.0,
+      "product_spend": {
+        "FERTILIZER": 2424,
+        "WHEAT": 5153
+      },
+      "reconciliation_events": 0,
+      "revenue": {
+        "CARROT": 378,
+        "FERTILIZER": 16715,
+        "MELON": 16847,
+        "MILK": 59034,
+        "STRAWBERRY": 57578,
+        "WHEAT": 13639,
+        "WOOL": 4798
+      },
+      "sale_average_prices": {
+        "CARROT": 42.0,
+        "FERTILIZER": 56.6206714665653,
+        "MELON": 211.79166666666669,
+        "MILK": 225.92738095238096,
+        "STRAWBERRY": 219.47679148337042,
+        "WHEAT": 38.27837349469702,
+        "WOOL": 34.0227380952381
+      },
+      "sale_day_weighted": {
+        "CARROT": 28.11111111111111,
+        "FERTILIZER": 17.674220963172804,
+        "MELON": 10.166666666666666,
+        "MILK": 19.946360153256705,
+        "STRAWBERRY": 21.517374517374517,
+        "WHEAT": 22.04432132963989,
+        "WOOL": 19.594871794871796
+      },
+      "sales": {
+        "CARROT": 9,
+        "FERTILIZER": 353,
+        "MELON": 72,
+        "MILK": 261,
+        "STRAWBERRY": 259,
+        "WHEAT": 361,
+        "WOOL": 195
+      },
+      "seed_spend": {
+        "CARROT": 100,
+        "MELON": 960,
+        "STRAWBERRY": 3300,
+        "WHEAT": 1970
+      }
+    },
+    "elapsed_s": 9.522287041996606,
+    "exceptions": [],
+    "livestock_escapes": [],
+    "milestones": {
+      "final_counts": {
+        "animals": {
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "crops": {
+          "WHEAT": 6
+        },
+        "productive": 23,
+        "structures": {
+          "PASTURE": 17
+        },
+        "weeds": 1
+      },
+      "final_quadrants": [
+        "NW",
+        "NE",
+        "SW"
+      ],
+      "first_animals": {
+        "animals": {
+          "COW": 1
+        },
+        "step": 0
+      },
+      "first_land_step": 0,
+      "peak_animals": 17,
+      "peak_hands": 12,
+      "second_land_step": 0
+    },
+    "opening_action_hash_through_359": "0f1d5d66caf811fb17485c8f32fba00b51777d69b6d31edde4827fb7b0c1d79f",
+    "opponent": "v2",
+    "opponent_money": 133235.0,
+    "own_money": 141760.0,
+    "runtime_error": null,
+    "seat": 1,
+    "seed": 881103,
+    "semantic_failures": [],
+    "stage": "candidate",
+    "terminal": {
+      "field_inventory": {
+        "WHEAT": 6,
+        "WOOL": 1
+      },
+      "shed_inventory": {
+        "FERTILIZER": 9
+      },
+      "units": 16,
+      "value": 142.0
+    },
+    "variant": "v3_route1"
+  }
+]

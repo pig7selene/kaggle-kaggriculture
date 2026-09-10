@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "packaged_at": "2026-09-09T21:17:24+08:00",
+  "representation": "multi-file tar.gz with all members at archive root",
+  "contract": {
+    "required_root_file": "main.py",
+    "required_interface": "agent(observation, configuration=None)",
+    "extra_files_allowed": true,
+    "archive_format": "tar.gz",
+    "runtime_dependencies": ["Python standard library"],
+    "working_directory_dependency": false
+  },
+  "strategy_code": {
+    "exact_public_source": {
+      "path": "agents/shop_router_0909/main.py",
+      "sha256": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b"
+    },
+    "locked_hardening_wrapper": {
+      "path": "agents/shop_router_0909_hardened/main.py",
+      "sha256": "da5c6df2c71128ce1372a5adaf6d4859f5758e7854b399d6ff634fbca666d8a2"
+    },
+    "locked_composition_harness": {
+      "path": "agents/shop_router_0909_hardened/common.py",
+      "sha256": "a882ec25f64fea67e08f11cd4fe6940eb6509e778f469d9ae39679143e7dcc49"
+    },
+    "packaged_main": {
+      "path": "submission/main.py",
+      "sha256": "4a188ceaedaa5e37c2216c803517314a2cb2fd780a5bb65956ca016cf278c803",
+      "transformation": "Exact public source copied verbatim except its entry point now directly applies the already-locked Plan-10 wrapper; an Apache/attribution header was prepended.",
+      "reverse_transformation_reconstructed_exact_sha256": "d6d74997dc5b483db63d8e39cafa1afeec0f366824e75107e109123f111e866b",
+      "absolute_local_path_tokens": 0
+    }
+  },
+  "assets": [
+    {
+      "source": "agents/shop_router_0909/actions.json",
+      "source_sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "packaged": "submission/actions.json",
+      "packaged_sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+      "representation": "separate byte-identical JSON; not embedded"
+    },
+    {
+      "source": "agents/shop_router_0909_hardened/LICENSE.txt",
+      "source_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "packaged": "submission/LICENSE.txt",
+      "packaged_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "representation": "separate byte-identical Apache-2.0 license"
+    },
+    {
+      "source": "agents/shop_router_0909_hardened/NOTICE.md",
+      "source_sha256": "51ef4107c99caae6b11f199a5d79015ada7fd9e1eb51201aa72bb3e4d5aea17c",
+      "packaged": "submission/NOTICE.md",
+      "packaged_sha256": "51ef4107c99caae6b11f199a5d79015ada7fd9e1eb51201aa72bb3e4d5aea17c",
+      "representation": "separate byte-identical attribution notice"
+    }
+  ],
+  "archive": {
+    "path": "submission/shop_router_0909_hardened.tar.gz",
+    "sha256": "26e7d39eb1df83af7c595167298ad8f3d61afce76e216cd1e25d6416bb791046",
+    "members": ["main.py", "actions.json", "LICENSE.txt", "NOTICE.md"],
+    "extraneous_members": [],
+    "reproducible_metadata": true
+  }
+}
