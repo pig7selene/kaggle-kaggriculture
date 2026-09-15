@@ -76,7 +76,22 @@ OBSERVED_20260915 = {
 }
 CANDIDATE_SUBMISSION = 56250442          # the 0911 candidate, now COMPLETE
 CANDIDATE_SCORE = 2034.4
-V43_SUBMISSION = 56255914                # Ahmed V43 public baseline, PENDING
+V43_SUBMISSION = 56255914                # Ahmed V43 public baseline
+
+# Read from experiments/submission_score_trajectory_manifest.json at
+# 2026-09-15T19:27Z, 18 observations in. Both V43-based curves have plateaued:
+# the last three readings of each sit within ten points. The trajectory's shape
+# is a climb to a peak followed by a small settle, so a plateau reading is the
+# first one in this file that can be called converged rather than a snapshot.
+OBSERVED_20260915T19 = {
+    56258686: 2721.4,   # V43 + room_guard + clamp_sells; peak 2730.1
+    56255914: 2621.7,   # V43 unmodified; peak 2628.2
+    56250442: 2026.6,   # our 0911, flat since 09-15T16
+}
+ROOM_CLAMP_SUBMISSION = 56258686
+ROOM_CLAMP_SCORE = OBSERVED_20260915T19[56258686]
+ROOM_CLAMP_ARCHIVE_SHA = "fd710687180a0260742f25bb3205f0e6dab7ea9083f74d65037491d0b95f34c4"
+ROOM_CLAMP_MAIN_SHA = "9bc82ca6c2f22707f352a7f988fbfda153107d665d1f4cd328b8943f63e97647"
 
 
 def sha256(path: Path) -> str:
@@ -197,6 +212,31 @@ def main() -> None:
         "registry": {
             "highest_verified_leaderboard_agent": {
                 "role": "highest public score among our submissions with a strong local binding",
+                "version": "ahmed_v43_public_plus_room_guard_clamp_sells",
+                "submission_id": ROOM_CLAMP_SUBMISSION,
+                "public_score": ROOM_CLAMP_SCORE,
+                "public_score_peak": 2730.1,
+                "score_state": "ACTIVE_PLATEAU",
+                "score_captured_at_utc": "2026-09-15T19:27:03Z",
+                "origin": "ahmedberatozer/kaggriculture-v43-recovering-lost-harvests (Apache-2.0)",
+                "ours": "derived: the public V43 chassis with two of its own disabled layers "
+                        "enabled; the one-line change and its selection are ours, the agent is not",
+                "change_vs_base": {"room_guard": True, "clamp_sells": True},
+                "selected_by": "experiments/v43_layer_ablation.md (37/3/0, +440 mean margin)",
+                "main_sha256": ROOM_CLAMP_MAIN_SHA,
+                "submitted_archive": archive("v43_room_clamp.tar.gz"),
+                "submitted_archive_sha256_expected": ROOM_CLAMP_ARCHIVE_SHA,
+                "gain_over_unmodified_v43_same_window": round(
+                    ROOM_CLAMP_SCORE - OBSERVED_20260915T19[V43_SUBMISSION], 1),
+                "gain_over_terminal_d": round(ROOM_CLAMP_SCORE - SCORES[56138084][1], 1),
+                "binding_grade": "STRONG_INFERENCE",
+                "caveat": (
+                    "Kaggle does not expose the uploaded-byte SHA, so no submission has an "
+                    "EXACT cryptographic binding. Score is a plateau reading, still moving "
+                    "by single digits."
+                ),
+            },
+            "previous_highest_verified_leaderboard_agent": {
                 "path": "agents/shop_router_0909_terminal/main.py",
                 "version": "shop_router_0909_terminal_market_smart_2pass_512",
                 "submission_id": 56138084,
@@ -206,29 +246,35 @@ def main() -> None:
                 "source_sha256": sha256(TERMINAL_D / "main.py"),
                 "source_bundle_sha256": bundle_sha256(TERMINAL_D, SOURCE_FILES),
                 "submitted_archive": archive("shop_router_0909_terminal.tar.gz"),
-                "binding_grade": "STRONG_INFERENCE",
-                "caveat": (
-                    "Kaggle does not expose the uploaded-byte SHA, so no submission has an "
-                    "EXACT cryptographic binding. Every public score is a dynamic snapshot."
-                ),
+                "superseded_on": "2026-09-15",
+                "superseded_by": ROOM_CLAMP_SUBMISSION,
+                "note": "Frozen at an unknown point on its curve; lost 32/0 to unmodified V43 locally.",
             },
             "current_research_candidate": candidate_entry(),
             "latest_packaged_agent": packaged_entry(),
             "latest_submitted_agent": {
                 "role": "most recent upload to Kaggle",
-                "version": "ahmed_v43_public_unmodified",
+                "version": "ahmed_v43_public_plus_room_guard_clamp_sells",
+                "submission_id": ROOM_CLAMP_SUBMISSION,
+                "public_score": ROOM_CLAMP_SCORE,
+                "status": "COMPLETE, plateaued",
+                "submitted_archive": archive("v43_room_clamp.tar.gz"),
+                "note": "Same agent as highest_verified_leaderboard_agent.",
+            },
+            "v43_unmodified_baseline": {
+                "role": "the public base, submitted unmodified so its reading attributes to it alone",
                 "submission_id": V43_SUBMISSION,
-                "public_score": None,
-                "status": "PENDING",
+                "public_score": OBSERVED_20260915T19[V43_SUBMISSION],
+                "public_score_peak": 2628.2,
                 "origin": "ahmedberatozer/kaggriculture-v43-recovering-lost-harvests",
                 "license": "Apache-2.0",
                 "ours": False,
                 "submitted_archive": archive("ahmed_v43_public.tar.gz"),
                 "rationale": "experiments/ahmed_v43_adoption.md",
-                "note": (
-                    "Not our agent. Submitted unmodified so the reading attributes to the "
-                    "base alone, after it won 64 of 64 against both of ours in "
-                    "experiments/public_agent_tournament.md."
+                "predicted_before_submission": "2900-3000",
+                "prediction_outcome": (
+                    "wrong by roughly 300: the strongest public notebook alone reaches about "
+                    "2620, so the 2969-3034 leaderboard band is not public material plus tweaks"
                 ),
             },
         },
@@ -273,9 +319,17 @@ def main() -> None:
              "public_score": CANDIDATE_SCORE,
              "note": "+57.9 over its parent read the same day; the lineage sits near 2000"},
             {"date": "2026-09-15", "agent": "ahmed_v43_public_unmodified",
-             "status": "BASE_CHANGE_UNDER_EVALUATION", "submission_id": V43_SUBMISSION,
-             "public_score": None, "ours": False,
-             "note": "won 64 of 64 against both of ours locally; submitted unmodified"},
+             "status": "BASE_CHANGED", "submission_id": V43_SUBMISSION,
+             "public_score": OBSERVED_20260915T19[V43_SUBMISSION], "ours": False,
+             "note": "won 64 of 64 against both of ours locally; plateaued near 2622 online"},
+            {"date": "2026-09-15", "agent": "ahmed_v43_public_plus_room_guard_clamp_sells",
+             "status": "PROMOTED_HIGHEST_VERIFIED", "submission_id": ROOM_CLAMP_SUBMISSION,
+             "public_score": ROOM_CLAMP_SCORE,
+             "note": (
+                 "two of V43's nine layers enabled after a 360-game ablation; +440 local margin "
+                 "predicted about +37 online, observed about +100 -- the local-to-online "
+                 "conversion is more favourable than the cross-lineage V43-vs-0911 ratio implied"
+             )},
         ],
         "score_drift_20260911_to_20260915": {
             "note": (

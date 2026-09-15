@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at_utc": "2026-09-15T13:57:14+00:00",
+  "updated_at_utc": "2026-09-15T19:28:56+00:00",
   "schema_note": "agent_path / agent_version / source_sha256 / source_bundle_sha256 keep their v1 meaning and are the only keys other scripts read: they name the single agent used as the benchmark and analysis baseline. The registry block below carries the roles a single pointer cannot express.",
   "agent_path": "agents/shop_router_0909_terminal/main.py",
   "agent_version": "shop_router_0909_terminal_market_smart_2pass_512",
@@ -16,10 +16,36 @@
     "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
     "superseded_reason": "local W/L/T promotion not supported by the official score"
   },
-  "previous_current_best_manifest_sha256": "dc2e5b87e7c9a7f74f395cfd8d25587e5ddf3b9da7341a8f0096113cf2e60ca9",
+  "previous_current_best_manifest_sha256": "98b38a62af3aec5d53a02f8d48c3dc250ac14dcb6e2da3a941269d8bc82321bc",
   "registry": {
     "highest_verified_leaderboard_agent": {
       "role": "highest public score among our submissions with a strong local binding",
+      "version": "ahmed_v43_public_plus_room_guard_clamp_sells",
+      "submission_id": 56258686,
+      "public_score": 2721.4,
+      "public_score_peak": 2730.1,
+      "score_state": "ACTIVE_PLATEAU",
+      "score_captured_at_utc": "2026-09-15T19:27:03Z",
+      "origin": "ahmedberatozer/kaggriculture-v43-recovering-lost-harvests (Apache-2.0)",
+      "ours": "derived: the public V43 chassis with two of its own disabled layers enabled; the one-line change and its selection are ours, the agent is not",
+      "change_vs_base": {
+        "room_guard": true,
+        "clamp_sells": true
+      },
+      "selected_by": "experiments/v43_layer_ablation.md (37/3/0, +440 mean margin)",
+      "main_sha256": "9bc82ca6c2f22707f352a7f988fbfda153107d665d1f4cd328b8943f63e97647",
+      "submitted_archive": {
+        "path": "submission/v43_room_clamp.tar.gz",
+        "exists": true,
+        "sha256": "fd710687180a0260742f25bb3205f0e6dab7ea9083f74d65037491d0b95f34c4"
+      },
+      "submitted_archive_sha256_expected": "fd710687180a0260742f25bb3205f0e6dab7ea9083f74d65037491d0b95f34c4",
+      "gain_over_unmodified_v43_same_window": 99.7,
+      "gain_over_terminal_d": 224.6,
+      "binding_grade": "STRONG_INFERENCE",
+      "caveat": "Kaggle does not expose the uploaded-byte SHA, so no submission has an EXACT cryptographic binding. Score is a plateau reading, still moving by single digits."
+    },
+    "previous_highest_verified_leaderboard_agent": {
       "path": "agents/shop_router_0909_terminal/main.py",
       "version": "shop_router_0909_terminal_market_smart_2pass_512",
       "submission_id": 56138084,
@@ -33,8 +59,9 @@
         "exists": true,
         "sha256": "cc458128e8e51b5bc1047d7b391ecad358020aa4511a8b45e6b9f26360ada1a0"
       },
-      "binding_grade": "STRONG_INFERENCE",
-      "caveat": "Kaggle does not expose the uploaded-byte SHA, so no submission has an EXACT cryptographic binding. Every public score is a dynamic snapshot."
+      "superseded_on": "2026-09-15",
+      "superseded_by": 56258686,
+      "note": "Frozen at an unknown point on its curve; lost 32/0 to unmodified V43 locally."
     },
     "current_research_candidate": {
       "role": "submitted and scored; superseded as a research direction",
@@ -65,10 +92,22 @@
     },
     "latest_submitted_agent": {
       "role": "most recent upload to Kaggle",
-      "version": "ahmed_v43_public_unmodified",
+      "version": "ahmed_v43_public_plus_room_guard_clamp_sells",
+      "submission_id": 56258686,
+      "public_score": 2721.4,
+      "status": "COMPLETE, plateaued",
+      "submitted_archive": {
+        "path": "submission/v43_room_clamp.tar.gz",
+        "exists": true,
+        "sha256": "fd710687180a0260742f25bb3205f0e6dab7ea9083f74d65037491d0b95f34c4"
+      },
+      "note": "Same agent as highest_verified_leaderboard_agent."
+    },
+    "v43_unmodified_baseline": {
+      "role": "the public base, submitted unmodified so its reading attributes to it alone",
       "submission_id": 56255914,
-      "public_score": null,
-      "status": "PENDING",
+      "public_score": 2621.7,
+      "public_score_peak": 2628.2,
       "origin": "ahmedberatozer/kaggriculture-v43-recovering-lost-harvests",
       "license": "Apache-2.0",
       "ours": false,
@@ -78,7 +117,8 @@
         "sha256": "f76baf851aecc13edefcc640dbf61cd409fd321a719dccb2f1b00559041e4f1e"
       },
       "rationale": "experiments/ahmed_v43_adoption.md",
-      "note": "Not our agent. Submitted unmodified so the reading attributes to the base alone, after it won 64 of 64 against both of ours in experiments/public_agent_tournament.md."
+      "predicted_before_submission": "2900-3000",
+      "prediction_outcome": "wrong by roughly 300: the strongest public notebook alone reaches about 2620, so the 2969-3034 leaderboard band is not public material plus tweaks"
     }
   },
   "submission_score_history": [
@@ -168,11 +208,19 @@
     {
       "date": "2026-09-15",
       "agent": "ahmed_v43_public_unmodified",
-      "status": "BASE_CHANGE_UNDER_EVALUATION",
+      "status": "BASE_CHANGED",
       "submission_id": 56255914,
-      "public_score": null,
+      "public_score": 2621.7,
       "ours": false,
-      "note": "won 64 of 64 against both of ours locally; submitted unmodified"
+      "note": "won 64 of 64 against both of ours locally; plateaued near 2622 online"
+    },
+    {
+      "date": "2026-09-15",
+      "agent": "ahmed_v43_public_plus_room_guard_clamp_sells",
+      "status": "PROMOTED_HIGHEST_VERIFIED",
+      "submission_id": 56258686,
+      "public_score": 2721.4,
+      "note": "two of V43's nine layers enabled after a 360-game ablation; +440 local margin predicted about +37 online, observed about +100 -- the local-to-online conversion is more favourable than the cross-lineage V43-vs-0911 ratio implied"
     }
   ],
   "score_drift_20260911_to_20260915": {
