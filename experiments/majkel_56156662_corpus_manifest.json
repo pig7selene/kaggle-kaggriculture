@@ -1,0 +1,1125 @@
+{
+  "schema_version": 1,
+  "purpose": "Per-episode identity and checksum for the Majkel1337 submission 56156662 replay corpus (G0/G1 route reconstruction data), so the corpus can be re-downloaded and verified if /private/tmp/kaggriculture_majkel_56156662 is lost.",
+  "submission_id": 56156662,
+  "team": "Majkel1337",
+  "source_corpus": "/private/tmp/kaggriculture_majkel_56156662",
+  "seal": {
+    "file": "experiments/majkel_g1_split_lock.json",
+    "sha256": "390c2e80b47b20a77e4ef9fb2a069321e40013e4da59c32fe6b83a971084c136",
+    "status": "new_holdout_downloaded_and_hash_registered_but_unopened",
+    "holdout_actions_read": 0
+  },
+  "counts": {
+    "total_replays": 46,
+    "sealed_holdout": 6,
+    "open_development": 40,
+    "by_subset": {
+      "external:kaggriculture_current_meta": 3,
+      "g1_development_extra": 25,
+      "g1_holdout": 6,
+      "pool": 12
+    }
+  },
+  "seal_integrity": {
+    "sealed_ids_declared": [
+      107984601,
+      107988526,
+      107992612,
+      107997338,
+      108001570,
+      108061234
+    ],
+    "sealed_ids_on_disk": [
+      107984601,
+      107988526,
+      107992612,
+      107997338,
+      108001570,
+      108061234
+    ],
+    "all_declared_present": true,
+    "all_hashes_match_seal": true,
+    "holdout_contents_parsed_by_this_script": false
+  },
+  "development_coverage": {
+    "declared_development_ids": 40,
+    "open_replays_on_disk": 40,
+    "declared_but_absent": [],
+    "on_disk_but_undeclared": []
+  },
+  "open_development_outcomes": {
+    "wins": 37,
+    "losses": 3,
+    "ties": 0
+  },
+  "redownload_instructions": [
+    "kaggle competitions episodes 56156662",
+    "kaggle competitions replay <episode_id> -p <dest-dir>/<subset>",
+    "verify: sha256 of each file equals this manifest's 'sha256' for that episode_id",
+    "the six sealed episodes must be restored into a g1_holdout/ directory and left unparsed; their hashes are independently registered in experiments/majkel_g1_split_lock.json"
+  ],
+  "local_only": true,
+  "episodes": [
+    {
+      "episode_id": 107680115,
+      "replay_filename": "episode-107680115-replay.json",
+      "sha256": "064d34035be3d0c4a3af211e2530a447dd60a15c404d54293f00991e2fef1c2c",
+      "subset": "external:kaggriculture_current_meta",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 732005998,
+      "team_names": [
+        "Majkel1337",
+        "CLJY_2026"
+      ],
+      "target_seat": 0,
+      "opponent": "CLJY_2026",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "target_money": 150304.0,
+      "opponent_money": 147292.0,
+      "margin": 3012.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true,
+      "source_path": "/private/tmp/kaggriculture_current_meta/replays/episode-107680115-replay.json",
+      "g0_split_group": "training"
+    },
+    {
+      "episode_id": 107696921,
+      "replay_filename": "episode-107696921-replay.json",
+      "sha256": "58b2837070e0e4f9420936794a578f42c545ae08110839366336d61fdb9cd6d6",
+      "subset": "external:kaggriculture_current_meta",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 222289747,
+      "team_names": [
+        "Justin Yang",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Justin Yang",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 162592.0,
+      "opponent_money": 155896.0,
+      "margin": 6696.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true,
+      "source_path": "/private/tmp/kaggriculture_current_meta/replays/episode-107696921-replay.json",
+      "g0_split_group": "training"
+    },
+    {
+      "episode_id": 107871539,
+      "replay_filename": "episode-107871539-replay.json",
+      "sha256": "2324508e3fcc7ef177c2c56cc380db4a4d2e673b30157c7b20ab927f99e80112",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1515247798,
+      "team_names": [
+        "Majkel1337",
+        "Otter Vibe"
+      ],
+      "target_seat": 0,
+      "opponent": "Otter Vibe",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "target_money": 107623.0,
+      "opponent_money": 98502.0,
+      "margin": 9121.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107877718,
+      "replay_filename": "episode-107877718-replay.json",
+      "sha256": "8d86e4bf6bee32cfc9d32b921c8d978b567361a323adf7ed9b34beb963bf5d1a",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1808708025,
+      "team_names": [
+        "Majkel1337",
+        "ymg_aq"
+      ],
+      "target_seat": 0,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "target_money": 108274.0,
+      "opponent_money": 111509.0,
+      "margin": -3235.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107877730,
+      "replay_filename": "episode-107877730-replay.json",
+      "sha256": "44ff508eb130fae253b6fcbfefdfc41d0ffbea7bf8841caaba4acf3bbe5d0ada",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1624657559,
+      "team_names": [
+        "Majkel1337",
+        "feel the agi"
+      ],
+      "target_seat": 0,
+      "opponent": "feel the agi",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "target_money": 139334.0,
+      "opponent_money": 136952.0,
+      "margin": 2382.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107877731,
+      "replay_filename": "episode-107877731-replay.json",
+      "sha256": "f69693555f46d769631a60bb7f9a4ef3ef216d8f6887e735fb0eb09af2d67a20",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1994037484,
+      "team_names": [
+        "SpaTaro",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "target_money": 83163.0,
+      "opponent_money": 71356.0,
+      "margin": 11807.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107884530,
+      "replay_filename": "episode-107884530-replay.json",
+      "sha256": "6c54b295078341452c99b42a1eec3d39f99692008b2582d8cc914e76d53161ff",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 369049410,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "target_money": 94145.0,
+      "opponent_money": 80247.0,
+      "margin": 13898.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107891452,
+      "replay_filename": "episode-107891452-replay.json",
+      "sha256": "6817501170d0c85ecfc57bde07a855b5db2253b404176eb8d91bf15dad5b07d5",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1117988508,
+      "team_names": [
+        "Majkel1337",
+        "binghua"
+      ],
+      "target_seat": 0,
+      "opponent": "binghua",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 117837.0,
+      "opponent_money": 116716.0,
+      "margin": 1121.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107898399,
+      "replay_filename": "episode-107898399-replay.json",
+      "sha256": "3f3ae7d551dbc35752cfc25264d16aa2a5b43a9f8650a589dd1403f3f13d6e33",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 100933652,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "target_money": 109572.0,
+      "opponent_money": 101970.0,
+      "margin": 7602.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107904471,
+      "replay_filename": "episode-107904471-replay.json",
+      "sha256": "96cf99982e929153730070416dd3d3683d34519b6261791ed94a10815d4da180",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1872126178,
+      "team_names": [
+        "Majkel1337",
+        "SpaTaro"
+      ],
+      "target_seat": 0,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "target_money": 100263.0,
+      "opponent_money": 88516.0,
+      "margin": 11747.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107910428,
+      "replay_filename": "episode-107910428-replay.json",
+      "sha256": "d6cb7e5757434dfa483f50bfd9aab48c3b66388fc37617d349679db4f5707029",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 751091771,
+      "team_names": [
+        "SpaTaro",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "target_money": 102660.0,
+      "opponent_money": 93788.0,
+      "margin": 8872.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107910439,
+      "replay_filename": "episode-107910439-replay.json",
+      "sha256": "3fbf6abd8c14843f84f0aebb1f60dbe3e166b8efb1ab0619537d0fcb979c0971",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 359618456,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "target_money": 110481.0,
+      "opponent_money": 92230.0,
+      "margin": 18251.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107916354,
+      "replay_filename": "episode-107916354-replay.json",
+      "sha256": "47dc5c148ab74f138c60199d423654e5e96b67f5d7f486fde31fe88d9bf552a2",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 2003329645,
+      "team_names": [
+        "Majkel1337",
+        "SpaTaro"
+      ],
+      "target_seat": 0,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "target_money": 84089.0,
+      "opponent_money": 84224.0,
+      "margin": -135.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107921917,
+      "replay_filename": "episode-107921917-replay.json",
+      "sha256": "77983459ffcadd00f111a0e96b67fcd25cebc935723387bea66679af1e6b215a",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1032479963,
+      "team_names": [
+        "feel the agi",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "feel the agi",
+      "first_two_shops": [
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 76623.0,
+      "opponent_money": 70826.0,
+      "margin": 5797.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107927288,
+      "replay_filename": "episode-107927288-replay.json",
+      "sha256": "b9aead4d21a6b716b7b354e38f4509fb66d51bec68139c8da3f1b3805fa9ff1d",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 282551952,
+      "team_names": [
+        "Majkel1337",
+        "SpaTaro"
+      ],
+      "target_seat": 0,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "target_money": 107836.0,
+      "opponent_money": 93942.0,
+      "margin": 13894.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107932235,
+      "replay_filename": "episode-107932235-replay.json",
+      "sha256": "7907a2006f3e907973f04269f29cc214784851675bb0d0067fb55a5a77bdfdb0",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 776500844,
+      "team_names": [
+        "Majkel1337",
+        "ymg_aq"
+      ],
+      "target_seat": 0,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "target_money": 117178.0,
+      "opponent_money": 105240.0,
+      "margin": 11938.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107937126,
+      "replay_filename": "episode-107937126-replay.json",
+      "sha256": "13f3eaf810b274296ff0c226f094eef5a96a3c5f9ac979e3a3cf91fefcdd6980",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 2051988359,
+      "team_names": [
+        "Majkel1337",
+        "Otter Vibe"
+      ],
+      "target_seat": 0,
+      "opponent": "Otter Vibe",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "target_money": 120337.0,
+      "opponent_money": 106843.0,
+      "margin": 13494.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107941996,
+      "replay_filename": "episode-107941996-replay.json",
+      "sha256": "6145e08e1d3a8c20d177fa8194f47a4b303230a446fc9d0e7d582c995abdbd1b",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1246318855,
+      "team_names": [
+        "Majkel1337",
+        "feel the agi"
+      ],
+      "target_seat": 0,
+      "opponent": "feel the agi",
+      "first_two_shops": [
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "target_money": 115288.0,
+      "opponent_money": 116179.0,
+      "margin": -891.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107946846,
+      "replay_filename": "episode-107946846-replay.json",
+      "sha256": "d7645be5ae911b82e3a96eaac961deb85d8947c3d381df52f7a5ce28b815edcb",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1306251290,
+      "team_names": [
+        "Majkel1337",
+        "SpaTaro"
+      ],
+      "target_seat": 0,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "target_money": 83114.0,
+      "opponent_money": 75374.0,
+      "margin": 7740.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107951109,
+      "replay_filename": "episode-107951109-replay.json",
+      "sha256": "40c076761a64814140ad99d3b737a19c1b7c573e76e8d2b83dd0c388e31c125d",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1596729563,
+      "team_names": [
+        "SpaTaro",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "target_money": 97794.0,
+      "opponent_money": 88279.0,
+      "margin": 9515.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107955740,
+      "replay_filename": "episode-107955740-replay.json",
+      "sha256": "2881388e5503933d5cfbb3fd2ff4a9e356c75f50ebc7ccd9410f93f628ca8b38",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 292121302,
+      "team_names": [
+        "Otter Vibe",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Otter Vibe",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "target_money": 122604.0,
+      "opponent_money": 107941.0,
+      "margin": 14663.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107959866,
+      "replay_filename": "episode-107959866-replay.json",
+      "sha256": "4e16a5395308586418ff108fbf44d77d996309a5d3b38f28691935abcee20eb1",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1679297238,
+      "team_names": [
+        "SpaTaro",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "target_money": 108294.0,
+      "opponent_money": 93586.0,
+      "margin": 14708.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107964023,
+      "replay_filename": "episode-107964023-replay.json",
+      "sha256": "499b46af0f43840848e7cf2ea1424b841730026c64d4379724785f5e1711c0b3",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1347437239,
+      "team_names": [
+        "Majkel1337",
+        "SpaTaro"
+      ],
+      "target_seat": 0,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "BAKERY",
+        "BAKERY"
+      ],
+      "target_money": 75624.0,
+      "opponent_money": 69964.0,
+      "margin": 5660.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107968503,
+      "replay_filename": "episode-107968503-replay.json",
+      "sha256": "6accde8ab31f5cd753508fd8a8e583f652d7f9007d47bc53681e3ee9a3a7583f",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 2048254404,
+      "team_names": [
+        "Unknown Mother-Goose",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Unknown Mother-Goose",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "target_money": 111516.0,
+      "opponent_money": 98652.0,
+      "margin": 12864.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107972520,
+      "replay_filename": "episode-107972520-replay.json",
+      "sha256": "a0ffe0b07a22851bd25e359d20e461cfbed9b1ce16d2dda0369a8802b39b4fbd",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 755943196,
+      "team_names": [
+        "Otter Vibe",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Otter Vibe",
+      "first_two_shops": [
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "target_money": 89541.0,
+      "opponent_money": 78692.0,
+      "margin": 10849.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107976609,
+      "replay_filename": "episode-107976609-replay.json",
+      "sha256": "7de63d080362d3e4637dd2a6890da58d165e168da2f179a7c11c2dc653bb934b",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1725954300,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 110818.0,
+      "opponent_money": 100604.0,
+      "margin": 10214.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107980609,
+      "replay_filename": "episode-107980609-replay.json",
+      "sha256": "f1e3da1794a70dc019678127222a9608e123aeef99f38cb459e80e2e2f04381b",
+      "subset": "g1_development_extra",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1378872471,
+      "team_names": [
+        "Majkel1337",
+        "SpaTaro"
+      ],
+      "target_seat": 0,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      "target_money": 93836.0,
+      "opponent_money": 83358.0,
+      "margin": 10478.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 107984601,
+      "replay_filename": "episode-107984601-replay.json",
+      "sha256": "ecff101ca040df7c052e9f1e92f545b7be3310dad72ca18d28588a2fc1101cd5",
+      "subset": "g1_holdout",
+      "sealed": true,
+      "contents_parsed": false,
+      "matches_seal_registered_hash": true
+    },
+    {
+      "episode_id": 107988526,
+      "replay_filename": "episode-107988526-replay.json",
+      "sha256": "bb5151316c814def74901dfd83d9ad114f2a498402e9e9bc5c21abf5a74a4911",
+      "subset": "g1_holdout",
+      "sealed": true,
+      "contents_parsed": false,
+      "matches_seal_registered_hash": true
+    },
+    {
+      "episode_id": 107992612,
+      "replay_filename": "episode-107992612-replay.json",
+      "sha256": "e248a36ddedd1a7f151ece0f9dc8fb9dfec646f3853c41024823dd2f8b73ad3d",
+      "subset": "g1_holdout",
+      "sealed": true,
+      "contents_parsed": false,
+      "matches_seal_registered_hash": true
+    },
+    {
+      "episode_id": 107997338,
+      "replay_filename": "episode-107997338-replay.json",
+      "sha256": "f7cf7dee664e8c462a6ec17ffa395862f21719ff80622a2de7f485c8c2f2d3d8",
+      "subset": "g1_holdout",
+      "sealed": true,
+      "contents_parsed": false,
+      "matches_seal_registered_hash": true
+    },
+    {
+      "episode_id": 108001570,
+      "replay_filename": "episode-108001570-replay.json",
+      "sha256": "6e853df2e418cbb2331a7ad6d8cc72a4f38ad45117d6f7cbc12894e174aa41ba",
+      "subset": "g1_holdout",
+      "sealed": true,
+      "contents_parsed": false,
+      "matches_seal_registered_hash": true
+    },
+    {
+      "episode_id": 108005681,
+      "replay_filename": "episode-108005681-replay.json",
+      "sha256": "6aafd36729af18205ddb00a520a9dcdb4deb2c5fef44bf5a3c0dfd1e74a77915",
+      "subset": "external:kaggriculture_current_meta",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1518358115,
+      "team_names": [
+        "Majkel1337",
+        "ymg_aq"
+      ],
+      "target_seat": 0,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 159160.0,
+      "opponent_money": 151169.0,
+      "margin": 7991.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true,
+      "source_path": "/private/tmp/kaggriculture_current_meta/replays/episode-108005681-replay.json",
+      "g0_split_group": "training"
+    },
+    {
+      "episode_id": 108010345,
+      "replay_filename": "episode-108010345-replay.json",
+      "sha256": "eaa05999103f0e5e9c33bcc385fe6cb021f000a7c224e4ef8e5d0a037f4c9daa",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 538651855,
+      "team_names": [
+        "SpaTaro",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "SpaTaro",
+      "first_two_shops": [
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "target_money": 129011.0,
+      "opponent_money": 127419.0,
+      "margin": 1592.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108014552,
+      "replay_filename": "episode-108014552-replay.json",
+      "sha256": "3538d9c00f828357709263a102edc3494a3c1c5b9c7ff63ff39db9fa80ae86e3",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 2126266395,
+      "team_names": [
+        "Majkel1337",
+        "ymg_aq"
+      ],
+      "target_seat": 0,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 131711.0,
+      "opponent_money": 124880.0,
+      "margin": 6831.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108019268,
+      "replay_filename": "episode-108019268-replay.json",
+      "sha256": "e018c339385ed8a190f6bd1737275f28d8336a5db7b8bd0fc185641fd916bdb7",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 335799713,
+      "team_names": [
+        "Majkel1337",
+        "Unknown Mother-Goose"
+      ],
+      "target_seat": 0,
+      "opponent": "Unknown Mother-Goose",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      "target_money": 100765.0,
+      "opponent_money": 100163.0,
+      "margin": 602.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108023488,
+      "replay_filename": "episode-108023488-replay.json",
+      "sha256": "58a72a1784cf7ac78eeb63f946b1336c0a67e77d730bb70e71a4f0ed1038821b",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1652254691,
+      "team_names": [
+        "Artem The Farmer 🍅",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Artem The Farmer 🍅",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "target_money": 127887.0,
+      "opponent_money": 120097.0,
+      "margin": 7790.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108028156,
+      "replay_filename": "episode-108028156-replay.json",
+      "sha256": "98b9446f8c0e6d4c3068db119f1d56b5627551dd388614296524ed7620be41c7",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 175100161,
+      "team_names": [
+        "Artem The Farmer 🍅",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Artem The Farmer 🍅",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "target_money": 127386.0,
+      "opponent_money": 125356.0,
+      "margin": 2030.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108032330,
+      "replay_filename": "episode-108032330-replay.json",
+      "sha256": "01df4d0d4322e72d851c4db9581837940162d1d2b12ffa3cc57a86d83bf08b05",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 718088494,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "target_money": 100757.0,
+      "opponent_money": 90908.0,
+      "margin": 9849.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108032343,
+      "replay_filename": "episode-108032343-replay.json",
+      "sha256": "f7c933ec2cb1b4d9b2f3cbb9ff1ee2a655390cfca237c70adb8da5323a68c004",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 671587719,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "target_money": 115425.0,
+      "opponent_money": 105028.0,
+      "margin": 10397.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108036463,
+      "replay_filename": "episode-108036463-replay.json",
+      "sha256": "f5636b4f73eefe9447a4f428a5780da0c3d40fe7034340bf91166612b6a9f353",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1351306182,
+      "team_names": [
+        "Majkel1337",
+        "Unknown Mother-Goose"
+      ],
+      "target_seat": 0,
+      "opponent": "Unknown Mother-Goose",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "target_money": 100882.0,
+      "opponent_money": 95403.0,
+      "margin": 5479.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108041258,
+      "replay_filename": "episode-108041258-replay.json",
+      "sha256": "166901ad1c505265df48c32208cb5096fbc4b4e07ca8d7321486deebb7f216b4",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1144845317,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "target_money": 139190.0,
+      "opponent_money": 136254.0,
+      "margin": 2936.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108046165,
+      "replay_filename": "episode-108046165-replay.json",
+      "sha256": "a767c429d729478b44668160e7cdc429df694b49f18c8753a5c866948552c4c0",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1147460839,
+      "team_names": [
+        "Majkel1337",
+        "Unknown Mother-Goose"
+      ],
+      "target_seat": 0,
+      "opponent": "Unknown Mother-Goose",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "target_money": 126703.0,
+      "opponent_money": 122023.0,
+      "margin": 4680.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108051093,
+      "replay_filename": "episode-108051093-replay.json",
+      "sha256": "03291beb89118f1b1a547d8881211a7a39d3f2f5129f637b23c42ea1a3217ef3",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1725276200,
+      "team_names": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "target_money": 108580.0,
+      "opponent_money": 103912.0,
+      "margin": 4668.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108056121,
+      "replay_filename": "episode-108056121-replay.json",
+      "sha256": "78927d883e7cf817a08f399b44e94ced529c8bf7c79f6c4c32ab096b88ea0918",
+      "subset": "pool",
+      "sealed": false,
+      "contents_parsed": true,
+      "seed": 1744020180,
+      "team_names": [
+        "Otter Vibe",
+        "Majkel1337"
+      ],
+      "target_seat": 1,
+      "opponent": "Otter Vibe",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "target_money": 89788.0,
+      "opponent_money": 79748.0,
+      "margin": 10040.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108061234,
+      "replay_filename": "episode-108061234-replay.json",
+      "sha256": "f48d19708afa831826af70a7adb3b1699747211d49eb64087dad84f48752dc45",
+      "subset": "g1_holdout",
+      "sealed": true,
+      "contents_parsed": false,
+      "matches_seal_registered_hash": true
+    }
+  ]
+}

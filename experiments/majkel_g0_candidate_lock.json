@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_holdout_evaluation",
+  "source_team": "Majkel1337",
+  "source_submission_id": 56156662,
+  "candidate_main": "agents/majkel_56156662_g0/main.py",
+  "candidate_main_sha256": "ef6e62f99240406f4db073fa4278ef8321f5c501a61e2baad500bdb84bb9c54f",
+  "route_bank": "agents/majkel_56156662_g0/route_bank.json",
+  "route_bank_sha256": "8a849c2b01a95281fcd9f8748088e80cca02289eef59d4998260fec7baee4f7a",
+  "notice_sha256": "fdf411166fffb2bf906b3d3e70b84a35f95531a93db3103779ca99aa2d2d6ba4",
+  "split_manifest_sha256": "27789ac2f6d5f0a4bda733b9c00c25a49d6e1d12fa7ccbafaa344ee84812a8f7",
+  "training_equivalence_sha256": "dda9abab5b34355e146090de1514ccec50f7d5a5b404698a73f8465fffef9f32",
+  "training_episode_ids": [
+    107680115,
+    107696921,
+    108005681,
+    108010345,
+    108019268,
+    108023488,
+    108032330,
+    108041258,
+    108056121
+  ],
+  "sealed_holdout_episode_ids": [
+    108014552,
+    108028156,
+    108032343,
+    108036463,
+    108046165,
+    108051093
+  ],
+  "holdout_actions_read_before_lock": 0,
+  "training_equivalence": {
+    "steps": 6471,
+    "action_mismatches": 0,
+    "field_mismatches": 0,
+    "market_mismatches": 0,
+    "terminal_action_mismatches": 0,
+    "runtime_errors": 0
+  },
+  "immutability_rule": "Do not modify this candidate or route bank after holdout actions are opened. Any later learning requires a new generation and a new holdout."
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "candidate_lock": "experiments/majkel_g0_candidate_lock.json",
+  "candidate_main_sha256": "ef6e62f99240406f4db073fa4278ef8321f5c501a61e2baad500bdb84bb9c54f",
+  "route_bank_sha256": "8a849c2b01a95281fcd9f8748088e80cca02289eef59d4998260fec7baee4f7a",
+  "frozen_hashes_verified_before_holdout_open": true,
+  "holdout_actions_opened_after_lock": true,
+  "candidate_modified_from_holdout": false,
+  "totals": {
+    "steps": 4314,
+    "action_mismatches": 3452,
+    "farmer_action_mismatches": 1564,
+    "hand_action_slots": 39000,
+    "hand_action_mismatches": 17077,
+    "market_mismatches": 1987,
+    "terminal_action_mismatches": 425,
+    "runtime_errors": 0
+  },
+  "episodes": [
+    {
+      "steps": 719,
+      "action_mismatches": 469,
+      "farmer_action_mismatches": 199,
+      "hand_action_slots": 6499,
+      "hand_action_mismatches": 2161,
+      "market_mismatches": 296,
+      "terminal_action_mismatches": 71,
+      "runtime_errors": 0,
+      "episode_id": 108014552,
+      "seat": 0,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "first_action_mismatch": 217,
+      "selected_route_counts": {
+        "107680115": 1,
+        "108005681": 507,
+        "107696921": 211
+      }
+    },
+    {
+      "steps": 719,
+      "action_mismatches": 573,
+      "farmer_action_mismatches": 295,
+      "hand_action_slots": 6502,
+      "hand_action_mismatches": 3211,
+      "market_mismatches": 352,
+      "terminal_action_mismatches": 71,
+      "runtime_errors": 0,
+      "episode_id": 108028156,
+      "seat": 1,
+      "opponent": "Artem The Farmer \ud83c\udf45",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "first_action_mismatch": 73,
+      "selected_route_counts": {
+        "107680115": 450,
+        "108023488": 71,
+        "108019268": 198
+      }
+    },
+    {
+      "steps": 719,
+      "action_mismatches": 615,
+      "farmer_action_mismatches": 317,
+      "hand_action_slots": 6500,
+      "hand_action_mismatches": 3174,
+      "market_mismatches": 339,
+      "terminal_action_mismatches": 70,
+      "runtime_errors": 0,
+      "episode_id": 108032343,
+      "seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      "first_action_mismatch": 73,
+      "selected_route_counts": {
+        "107680115": 504,
+        "108005681": 71,
+        "108019268": 144
+      }
+    },
+    {
+      "steps": 719,
+      "action_mismatches": 646,
+      "farmer_action_mismatches": 347,
+      "hand_action_slots": 6500,
+      "hand_action_mismatches": 3690,
+      "market_mismatches": 387,
+      "terminal_action_mismatches": 71,
+      "runtime_errors": 0,
+      "episode_id": 108036463,
+      "seat": 0,
+      "opponent": "Unknown Mother-Goose",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "first_action_mismatch": 35,
+      "selected_route_counts": {
+        "107680115": 1,
+        "108019268": 263,
+        "108023488": 5,
+        "108005681": 14,
+        "107696921": 4,
+        "108032330": 432
+      }
+    },
+    {
+      "steps": 719,
+      "action_mismatches": 564,
+      "farmer_action_mismatches": 222,
+      "hand_action_slots": 6500,
+      "hand_action_mismatches": 2474,
+      "market_mismatches": 283,
+      "terminal_action_mismatches": 71,
+      "runtime_errors": 0,
+      "episode_id": 108046165,
+      "seat": 0,
+      "opponent": "Unknown Mother-Goose",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "first_action_mismatch": 35,
+      "selected_route_counts": {
+        "107680115": 1,
+        "108019268": 48,
+        "108023488": 604,
+        "108005681": 15,
+        "107696921": 51
+      }
+    },
+    {
+      "steps": 719,
+      "action_mismatches": 585,
+      "farmer_action_mismatches": 184,
+      "hand_action_slots": 6499,
+      "hand_action_mismatches": 2367,
+      "market_mismatches": 330,
+      "terminal_action_mismatches": 71,
+      "runtime_errors": 0,
+      "episode_id": 108051093,
+      "seat": 1,
+      "opponent": "ymg_aq",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "first_action_mismatch": 73,
+      "selected_route_counts": {
+        "107680115": 72,
+        "108005681": 71,
+        "108019268": 576
+      }
+    }
+  ]
+}

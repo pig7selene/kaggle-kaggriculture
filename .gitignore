@@ -38,3 +38,13 @@ experiments/*.json
 # says which agent is the verified leaderboard best, which is the live research
 # candidate, and what was last packaged. It must travel with the repository.
 !experiments/current_best.json
+
+# Sealed-holdout provenance, three named files only. These are not reproducible
+# results: the first declares which Majkel episodes were sealed away before any
+# of them was downloaded, and the other two are the G0 artifacts that
+# declaration binds by SHA-256. A holdout that cannot be proven sealed is worth
+# nothing, and re-downloading the replays cannot restore the proof, so this
+# chain has to travel with the repository.
+!experiments/majkel_g1_split_lock.json
+!experiments/majkel_g0_candidate_lock.json
+!experiments/majkel_g0_holdout_evaluation.json
