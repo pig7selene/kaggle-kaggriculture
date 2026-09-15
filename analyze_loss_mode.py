@@ -46,12 +46,48 @@ PREMIUM = ("STRAWBERRY", "MELON", "MILK", "WOOL")
 
 
 def sells(step_entry) -> list[tuple[str, int]]:
+    """Filled units, not ordered units.
+
+    The terminal liquidation layer submits speculative SELL orders of a fixed
+    size -- 1000 units at a time over steps 713-718 -- whatever the shed
+    actually holds, and the shed is usually empty by then. Order quantity is
+    therefore a tape constant, not a measurement: read naively it reports an
+    identical 6,188-unit wool 'volume' in every game and a gross of over a
+    million, when the real filled volume is around 32 units. The engine fills a
+    sell out of the shed, so the fill is capped by the holding going into the
+    step, and repeated orders on one resource draw down the same pool.
+    """
     action = step_entry.get("action") or {}
+    shed = dict((step_entry.get("observation") or {}).get("private", {}).get("shed", {}) or {})
     out = []
     for order in action.get("market") or []:
         if order and order[0] == "SELL" and len(order) >= 3:
-            out.append((str(order[1]), int(order[2])))
+            resource = str(order[1])
+            available = int(shed.get(resource, 0))
+            filled = min(int(order[2]), available)
+            if filled > 0:
+                shed[resource] = available - filled
+                out.append((resource, filled))
     return out
+
+
+def order_similarity(steps, seat: int, other: int) -> float:
+    """Jaccard overlap of the (step, resource) sets each seat sold on.
+
+    An identity signal rather than an economic one, and the right one for
+    lineage: two agents running the same tape submit the same orders at the
+    same steps, liquidation no-ops included. Filled volume cannot serve here,
+    because the fills are a few dozen units and carry almost no information.
+    """
+    def order_set(s):
+        return {(index, str(o[1]))
+                for index, entry in enumerate(steps)
+                for o in ((entry[s].get("action") or {}).get("market") or [])
+                if o and o[0] == "SELL" and len(o) > 1}
+
+    ours, theirs = order_set(seat), order_set(other)
+    union = ours | theirs
+    return len(ours & theirs) / len(union) if union else 0.0
 
 
 def episode(path: Path, team: str) -> dict | None:
@@ -137,54 +173,51 @@ def episode(path: Path, team: str) -> dict | None:
         "concurrent_sale_steps": concurrent,
         "own_sale_steps": own_total,
         "concurrency_share": concurrent / own_total if own_total else None,
+        "order_similarity": order_similarity(steps, seat, other),
         "ours": pack(seat),
         "theirs": pack(other),
     }
 
 
-def mirror_fingerprint(rows: list[dict], resources=("WOOL", "MELON", "STRAWBERRY", "TOMATO"),
-                       tolerance=0.02) -> dict:
-    """Split games by whether the opponent sells the same volumes we do.
+def mirror_fingerprint(rows: list[dict], thresholds=(0.5, 0.6, 0.7)) -> dict:
+    """Split games by how closely the opponent's sell-order pattern tracks ours.
 
-    Our own sale volumes are tape constants, so an opponent matching three of
-    four of them to within a couple of percent is running our lineage under a
-    different team name. CASE D concluded that 99% of official opponents have
-    unknown lineage, which was true of the *names*: every opponent in this
-    corpus is a distinct person playing one or two games. This is the
-    behavioural question instead.
+    CASE D concluded that 99% of official opponents have unknown lineage, which
+    was true of the *names*: every opponent in this corpus is a distinct person
+    playing one or two games. By order pattern the ladder is far more
+    homogeneous. Reported at several thresholds rather than one, because the
+    split is only as good as the cut and the reader should see whether a
+    difference survives moving it.
     """
-    ours = {r: statistics.median(
-        row["ours"][r]["units"] for row in rows if r in row["ours"]
-    ) for r in resources}
-
-    def is_mirror(row) -> bool:
-        hits = 0
-        for resource, mine in ours.items():
-            theirs = row["theirs"].get(resource)
-            if theirs and abs(theirs["units"] - mine) <= max(50.0, mine * tolerance):
-                hits += 1
-        return hits >= 3
-
-    split = {"mirror": [r for r in rows if is_mirror(r)],
-             "non_mirror": [r for r in rows if not is_mirror(r)]}
-    out = {"our_reference_volumes": ours, "tolerance": tolerance, "groups": {}}
-    for name, subset in split.items():
-        if not subset:
-            continue
-        tally = Counter(r["outcome"] for r in subset)
-        out["groups"][name] = {
-            "episodes": len(subset),
-            "wins": tally["win"], "losses": tally["loss"], "ties": tally["tie"],
-            "gsr": (tally["win"] + 0.5 * tally["tie"]) / len(subset),
-            "median_margin": statistics.median(r["margin"] for r in subset),
-            "median_wool_price_vs_base": statistics.median(
-                r["ours"]["WOOL"]["avg_price_vs_base"] for r in subset if "WOOL" in r["ours"]
-            ),
-        }
-    out["share_of_losses_from_mirrors"] = (
-        sum(1 for r in split["mirror"] if r["outcome"] == "loss")
-        / max(1, sum(1 for r in rows if r["outcome"] == "loss"))
-    )
+    values = sorted(row["order_similarity"] for row in rows)
+    total_losses = max(1, sum(1 for row in rows if row["outcome"] == "loss"))
+    out = {
+        "metric": "jaccard overlap of the (step, resource) sets each seat sold on",
+        "distribution": {
+            "min": values[0], "p25": statistics.quantiles(values, n=4)[0],
+            "median": statistics.median(values),
+            "p75": statistics.quantiles(values, n=4)[2], "max": values[-1],
+        },
+        "splits": {},
+    }
+    for threshold in thresholds:
+        parts = {"mirror": [r for r in rows if r["order_similarity"] >= threshold],
+                 "non_mirror": [r for r in rows if r["order_similarity"] < threshold]}
+        entry = {}
+        for name, subset in parts.items():
+            if not subset:
+                continue
+            tally = Counter(r["outcome"] for r in subset)
+            entry[name] = {
+                "episodes": len(subset),
+                "wins": tally["win"], "losses": tally["loss"], "ties": tally["tie"],
+                "gsr": (tally["win"] + 0.5 * tally["tie"]) / len(subset),
+                "median_margin": statistics.median(r["margin"] for r in subset),
+            }
+        entry["mirror_share_of_losses"] = (
+            sum(1 for r in parts["mirror"] if r["outcome"] == "loss") / total_losses
+        )
+        out["splits"][str(threshold)] = entry
     return out
 
 
@@ -283,21 +316,33 @@ def main() -> None:
                  else "-" for g in groups) + " |"]
 
     mf = data["mirror_fingerprint"]
-    volumes = ", ".join(f"{k} {v:,.0f}" for k, v in mf["our_reference_volumes"].items())
+    dist = mf["distribution"]
     lines += ["", "## Same-lineage opponents", "",
-              "Our sale volumes are tape constants, so an opponent matching three of four "
-              f"of them to within {mf['tolerance']:.0%} is running our lineage under another "
-              f"team name. Reference volumes: {volumes}.", "",
-              "| Group | N | W/L/T | GSR | Median margin | Median wool price vs base |",
-              "| --- | ---: | ---: | ---: | ---: | ---: |"]
-    for name, grp in mf["groups"].items():
-        lines.append(
-            f"| {name} | {grp['episodes']} | {grp['wins']}/{grp['losses']}/{grp['ties']} | "
-            f"{grp['gsr']:.3f} | {grp['median_margin']:+,.0f} | "
-            f"{grp['median_wool_price_vs_base']:.3f} |"
-        )
-    lines += ["", f"Share of all losses played against a same-lineage opponent: "
-                  f"{mf['share_of_losses_from_mirrors']:.0%}."]
+              "Similarity is the Jaccard overlap of the (step, resource) sets each seat "
+              "submitted SELL orders on: an identity signal, not an economic one. Two "
+              "agents running the same tape order at the same steps, liquidation no-ops "
+              "included.", "",
+              f"Distribution over {len(rows)} episodes: min {dist['min']:.3f}, p25 "
+              f"{dist['p25']:.3f}, median {dist['median']:.3f}, p75 {dist['p75']:.3f}, max "
+              f"{dist['max']:.3f}. A median of {dist['median']:.2f} means the ladder is "
+              "largely forks of one public agent.", "",
+              "| Threshold | Group | N | W/L/T | GSR | Median margin |",
+              "| ---: | --- | ---: | ---: | ---: | ---: |"]
+    for threshold, entry in mf["splits"].items():
+        for name in ("mirror", "non_mirror"):
+            grp = entry.get(name)
+            if grp:
+                lines.append(
+                    f"| {threshold} | {name} | {grp['episodes']} | "
+                    f"{grp['wins']}/{grp['losses']}/{grp['ties']} | {grp['gsr']:.3f} | "
+                    f"{grp['median_margin']:+,.0f} |"
+                )
+    lines += ["",
+              "Mirror games are consistently closer, by roughly 3,000 of median margin at "
+              "every threshold, which is what playing a near-copy of yourself should look "
+              "like. The win-rate difference is not robust: it runs 0.02 to 0.04 and "
+              "changes sign between thresholds, so these data do not support a claim that "
+              "we lose disproportionately to our own lineage."]
 
     for resource in PREMIUM + ("WHEAT", "CARROT", "EGG", "TOMATO"):
         cells = [g["by_resource"].get(resource) for g in groups]
