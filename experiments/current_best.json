@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "updated_at_utc": "2026-09-15T19:28:56+00:00",
+  "updated_at_utc": "2026-09-15T19:30:12+00:00",
   "schema_note": "agent_path / agent_version / source_sha256 / source_bundle_sha256 keep their v1 meaning and are the only keys other scripts read: they name the single agent used as the benchmark and analysis baseline. The registry block below carries the roles a single pointer cannot express.",
-  "agent_path": "agents/shop_router_0909_terminal/main.py",
-  "agent_version": "shop_router_0909_terminal_market_smart_2pass_512",
-  "source_sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
-  "source_bundle_sha256": "b66a08cd78fe13a4340c9707459e10ba11068f620d086a90abaa831467be9852",
+  "agent_path": "agents/v43_room_clamp/main.py",
+  "agent_version": "ahmed_v43_public_plus_room_guard_clamp_sells",
+  "source_sha256": "9bc82ca6c2f22707f352a7f988fbfda153107d665d1f4cd328b8943f63e97647",
+  "source_bundle_sha256": "20eb7a49d600f9a1744e74580aa328ab479bc09c2d353df05b368cde8197eb72",
   "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
   "promotion_reason": "Corrects the 2026-09-10 local-W/L/T promotion of the 708-only front-run agent. The 2026-09-11 leaderboard snapshot put 708-only at 2446.5 and FULL at 2461.9, both below Terminal D at 2496.8, so the local promotion was contradicted by later official evidence. See experiments/lb_calibration_report.md (CASE D), answer 32: the Terminal-D-to-front-run direction gate failed.",
   "previous_best": {
@@ -16,7 +16,7 @@
     "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
     "superseded_reason": "local W/L/T promotion not supported by the official score"
   },
-  "previous_current_best_manifest_sha256": "98b38a62af3aec5d53a02f8d48c3dc250ac14dcb6e2da3a941269d8bc82321bc",
+  "previous_current_best_manifest_sha256": "2b0a63af1d4fb3d1886700c4fab096d0a1009f8499d8805eea74b1644f648355",
   "registry": {
     "highest_verified_leaderboard_agent": {
       "role": "highest public score among our submissions with a strong local binding",

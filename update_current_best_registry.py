@@ -92,6 +92,11 @@ ROOM_CLAMP_SUBMISSION = 56258686
 ROOM_CLAMP_SCORE = OBSERVED_20260915T19[56258686]
 ROOM_CLAMP_ARCHIVE_SHA = "fd710687180a0260742f25bb3205f0e6dab7ea9083f74d65037491d0b95f34c4"
 ROOM_CLAMP_MAIN_SHA = "9bc82ca6c2f22707f352a7f988fbfda153107d665d1f4cd328b8943f63e97647"
+# The scoring bytes, extracted from the submitted archive into the repository so
+# the legacy agent_path pointer (read by benchmark.py and friends) resolves to a
+# loadable file rather than to a superseded agent. Single-file agent: the bundle
+# is just main.py.
+ROOM_CLAMP_DIR = ROOT / "agents/v43_room_clamp"
 
 
 def sha256(path: Path) -> str:
@@ -186,10 +191,10 @@ def main() -> None:
         ),
 
         # --- v1 keys, retargeted to the highest officially scored agent ---
-        "agent_path": "agents/shop_router_0909_terminal/main.py",
-        "agent_version": "shop_router_0909_terminal_market_smart_2pass_512",
-        "source_sha256": sha256(TERMINAL_D / "main.py"),
-        "source_bundle_sha256": bundle_sha256(TERMINAL_D, SOURCE_FILES),
+        "agent_path": "agents/v43_room_clamp/main.py",
+        "agent_version": "ahmed_v43_public_plus_room_guard_clamp_sells",
+        "source_sha256": sha256(ROOM_CLAMP_DIR / "main.py"),
+        "source_bundle_sha256": bundle_sha256(ROOM_CLAMP_DIR, ("main.py",)),
         "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
         "promotion_reason": (
             "Corrects the 2026-09-10 local-W/L/T promotion of the 708-only front-run agent. "
