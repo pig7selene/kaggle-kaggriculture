@@ -1,0 +1,220 @@
+"""Pilot for re-mapping V43's shop pairs to better routes.
+
+V43 assigns 64 first-two-shop pairs to only 27 of its 41 routes, and one route,
+105, serves 21 pairs by itself. Majkel's own play varies twofold in final money
+across shop pairs, so a single route for a third of the non-Yarn space is very
+unlikely to be the best choice for all of them.
+
+Re-mapping generates nothing. Every route is a tape V43 itself produced, all 41
+share route 0's first 144 steps exactly, and the router only switches at step
+144, so any assignment is as internally consistent as V43's own. The worst
+outcome is the current mapping. Route-bank size is unchanged, so the memory
+ceiling met by the 74-route hybrid does not apply.
+
+The pilot measures every non-Yarn route on the pairs route 105 currently serves.
+For each pair it uses seeds known (from the seed manifest) to produce that pair,
+and plays a forced-route variant against the room_plus_clamp baseline, which on
+that pair plays V43's current assignment. Margin is therefore "this route versus
+what V43 picks today", which is exactly the quantity a remap acts on.
+
+The forced route applies only in steps 144-647; the step-648 handover to route
+2 is left as V43 has it, so both sides agree on the endgame. What the pilot has
+to establish before any full run is whether the matrix has variance at all: if
+routes score alike on a pair, remapping is worthless and the full 64x41 run is
+not worth its four hours.
+"""
+
+from __future__ import annotations
+
+import argparse
+from collections import defaultdict
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import hashlib
+import json
+from pathlib import Path
+import statistics
+import sys
+import time
+
+from kaggle_environments import make
+
+
+ROOT = Path(__file__).resolve().parent
+BASE = Path("/private/tmp/kaggriculture_v43_variants/room_plus_clamp.py")
+VARIANTS = Path("/private/tmp/kaggriculture_v43_forced")
+SEEDS = ROOT / "experiments" / "seed_first_shops_manifest.json"
+ROUTEMAP = Path("/tmp/v43_routemap.json")
+OUTPUT = ROOT / "experiments" / "route_remap_pilot.json"
+REPORT = ROOT / "experiments" / "route_remap_pilot.md"
+ANCHOR = "_IMPL=make_agent(_ROUTES,router=_router,**_SETTINGS)"
+
+FORCED = '''
+# Route remap probe: play route @@R@@ for steps 144-647 regardless of the shop
+# lookup. The parent router still runs so its day-6/day-27 state is set exactly
+# as in the baseline, and the step-648 handover is left untouched.
+_FR_ROUTE = @@R@@
+_FR_PARENT = _router
+
+
+def _router(observation, step, state):
+    chosen = _FR_PARENT(observation, step, state)
+    if 144 <= step < 648:
+        return _FR_ROUTE
+    return chosen
+
+
+'''
+
+
+def build_forced_variants(routes) -> dict[int, Path]:
+    source = BASE.read_text()
+    if source.count(ANCHOR) != 1:
+        raise RuntimeError(f"expected one anchor, found {source.count(ANCHOR)}")
+    VARIANTS.mkdir(parents=True, exist_ok=True)
+    paths = {}
+    for route in routes:
+        text = source.replace(ANCHOR, FORCED.replace("@@R@@", str(route)) + ANCHOR, 1)
+        path = VARIANTS / f"forced_{route}.py"
+        path.write_text(text)
+        paths[route] = path
+    return paths
+
+
+def load_agent(path: Path, tag: str):
+    import importlib.util
+    name = "remap_" + hashlib.sha256(f"{path}:{tag}:{time.time_ns()}".encode()).hexdigest()[:24]
+    spec = importlib.util.spec_from_file_location(name, path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load {path}")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[name] = module
+    spec.loader.exec_module(module)
+    return getattr(module, "agent", None) or getattr(module, "kaggle_agent")
+
+
+def run_game(job):
+    pair, route, variant_path, seed, seat = job
+    try:
+        forced = load_agent(Path(variant_path), f"{route}:{seed}:{seat}")
+        base = load_agent(BASE, f"base:{seed}:{seat}")
+        players = [None, None]
+        players[seat] = forced
+        players[1 - seat] = base
+        env = make("kaggriculture", configuration={"episodeSteps": 720, "seed": seed}, debug=False)
+        env.run(players)
+        if len(env.steps) != 720:
+            return {"pair": pair, "route": route, "seed": seed, "seat": seat, "error": "incomplete"}
+        final = env.steps[-1]
+        mine = float(final[seat].reward)
+        theirs = float(final[1 - seat].reward)
+        shops = list(final[seat].observation["town"]["unlocked_shops"])[:2]
+        return {"pair": pair, "route": route, "seed": seed, "seat": seat,
+                "margin": mine - theirs, "money": mine,
+                "shops_seen": " + ".join(shops),
+                "statuses": [str(final[i].status) for i in range(2)]}
+    except Exception as exc:
+        return {"pair": pair, "route": route, "seed": seed, "seat": seat, "error": repr(exc)[:160]}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--seeds-per-pair", type=int, default=2)
+    parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--smoke", action="store_true",
+                        help="one game per route on seed 1, to check every forced variant runs")
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--report", type=Path, default=REPORT)
+    args = parser.parse_args()
+
+    routemap = json.loads(ROUTEMAP.read_text())
+    routes = [int(r) for r in routemap["nonyarn_routes"]]
+    current = routemap["shop_routes"]
+    paths = build_forced_variants(routes)
+
+    if args.smoke:
+        jobs = [("smoke", r, str(paths[r]), 1, 0) for r in routes]
+    else:
+        seeds = json.loads(SEEDS.read_text())["by_pair"]
+        targets = [" + ".join(p) for p in routemap["pairs_105"]]
+        missing = [t for t in targets if len(seeds.get(t, [])) < args.seeds_per_pair]
+        if missing:
+            raise RuntimeError(f"not enough seeds for {len(missing)} pairs: {missing[:5]}")
+        jobs = [(pair, r, str(paths[r]), seed, seat)
+                for pair in targets
+                for seed in seeds[pair][:args.seeds_per_pair]
+                for r in routes for seat in (0, 1)]
+
+    rows, started = [], time.time()
+    with ProcessPoolExecutor(max_workers=args.workers) as pool:
+        futures = [pool.submit(run_game, j) for j in jobs]
+        for done, future in enumerate(as_completed(futures), 1):
+            rows.append(future.result())
+            if done % 50 == 0 or done == len(jobs):
+                print(f"  {done}/{len(jobs)}  {time.time() - started:.0f}s", flush=True)
+
+    errors = [r for r in rows if "error" in r]
+    played = [r for r in rows if "margin" in r]
+    matrix: dict[str, dict[int, list[float]]] = defaultdict(lambda: defaultdict(list))
+    for r in played:
+        matrix[r["pair"]][r["route"]].append(r["margin"])
+
+    cells = {}
+    for pair, by_route in matrix.items():
+        means = {route: statistics.fmean(v) for route, v in by_route.items()}
+        best = max(means, key=lambda route: means[route])
+        cells[pair] = {
+            "current_route": current.get(pair),
+            "current_mean_margin": means.get(current.get(pair)),
+            "best_route": best,
+            "best_mean_margin": means[best],
+            "worst_mean_margin": min(means.values()),
+            "spread": means[best] - min(means.values()),
+            "gain_over_current": means[best] - means.get(current.get(pair), 0.0),
+            "by_route": {str(k): v for k, v in sorted(means.items())},
+        }
+
+    data = {
+        "schema_version": 1,
+        "smoke": args.smoke,
+        "routes_tested": routes,
+        "pairs_tested": sorted(cells),
+        "games": len(rows), "errors": len(errors),
+        "elapsed_seconds": time.time() - started,
+        "cells": cells,
+        "error_rows": errors[:20],
+        "kaggle_submission_made": False,
+    }
+    args.output.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+
+    if args.smoke:
+        print(f"smoke: {len(played)} ran, {len(errors)} errors")
+        for r in errors[:5]:
+            print("  ", r)
+        return
+
+    lines = ["# Route remap pilot", "",
+             f"{len(routes)} non-Yarn routes on the {len(cells)} pairs route 105 serves, "
+             f"{args.seeds_per_pair} seeds per pair, both seats; {len(played)} games, "
+             f"{len(errors)} errors. Margin is the forced route against V43's current "
+             f"assignment for that pair.", "",
+             "| Pair | Current | Cur. margin | Best | Best margin | Spread | Gain |",
+             "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
+    for pair, c in sorted(cells.items(), key=lambda kv: -kv[1]["gain_over_current"]):
+        cur = c["current_mean_margin"]
+        lines.append(
+            f"| {pair} | {c['current_route']} | {cur:+,.0f} | {c['best_route']} | "
+            f"{c['best_mean_margin']:+,.0f} | {c['spread']:,.0f} | {c['gain_over_current']:+,.0f} |"
+        )
+    gains = [c["gain_over_current"] for c in cells.values()]
+    spreads = [c["spread"] for c in cells.values()]
+    lines += ["", f"Median spread across routes within a pair: {statistics.median(spreads):,.0f}. "
+                  f"Median gain of best route over current: {statistics.median(gains):+,.0f}. "
+                  f"Pairs where a different route beats the current one: "
+                  f"{sum(1 for g in gains if g > 0)}/{len(gains)}."]
+    args.report.write_text("\n".join(lines) + "\n")
+    print(args.output)
+    print(lines[-1])
+
+
+if __name__ == "__main__":
+    main()

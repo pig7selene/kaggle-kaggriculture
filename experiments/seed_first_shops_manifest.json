@@ -1,0 +1,2206 @@
+{
+  "schema_version": 1,
+  "purpose": "seed -> first two unlocked shops, for shop-pair-conditioned experiments",
+  "episode_steps_used": 720,
+  "seeds_scanned": 400,
+  "validated_against_full_games": {
+    "1": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "2": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "3": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "4": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "5": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "6": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "7": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "8": [
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "9": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "10": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "11": [
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "12": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "13": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "14": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "15": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "16": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ]
+  },
+  "pairs_observed": 64,
+  "min_seeds_per_observed_pair": 2,
+  "by_pair": {
+    "BAKERY + BAKERY": [
+      114,
+      174,
+      182,
+      279,
+      322,
+      348
+    ],
+    "BAKERY + BRUNCH_SPOT": [
+      5,
+      88,
+      100,
+      136,
+      219,
+      239,
+      245,
+      247,
+      249,
+      263,
+      287
+    ],
+    "BAKERY + FARMERS_MARKET": [
+      43,
+      109,
+      154,
+      231,
+      302,
+      319,
+      324,
+      328,
+      373,
+      379
+    ],
+    "BAKERY + ICE_CREAM_SHOP": [
+      15,
+      106,
+      123,
+      149,
+      262,
+      316,
+      385
+    ],
+    "BAKERY + PET_CAFE": [
+      54,
+      97,
+      108,
+      152,
+      228,
+      340,
+      380
+    ],
+    "BAKERY + PIZZA_SHOP": [
+      27,
+      58,
+      92,
+      133,
+      283,
+      310,
+      346,
+      398
+    ],
+    "BAKERY + SMOOTHIE_SHOP": [
+      101,
+      116,
+      135,
+      157,
+      177,
+      188,
+      193
+    ],
+    "BAKERY + YARN_STORE": [
+      3,
+      126,
+      210,
+      240,
+      276,
+      337
+    ],
+    "BRUNCH_SPOT + BAKERY": [
+      10,
+      12,
+      21,
+      77,
+      80,
+      117,
+      213,
+      267
+    ],
+    "BRUNCH_SPOT + BRUNCH_SPOT": [
+      29,
+      63,
+      93,
+      141,
+      242,
+      317,
+      329
+    ],
+    "BRUNCH_SPOT + FARMERS_MARKET": [
+      215,
+      233,
+      345,
+      347
+    ],
+    "BRUNCH_SPOT + ICE_CREAM_SHOP": [
+      46,
+      56,
+      102,
+      104,
+      128,
+      176,
+      244,
+      253,
+      258,
+      284,
+      291,
+      313
+    ],
+    "BRUNCH_SPOT + PET_CAFE": [
+      8,
+      32,
+      33,
+      180,
+      356
+    ],
+    "BRUNCH_SPOT + PIZZA_SHOP": [
+      41,
+      44,
+      52,
+      74,
+      333,
+      339
+    ],
+    "BRUNCH_SPOT + SMOOTHIE_SHOP": [
+      50,
+      107,
+      185,
+      260,
+      273,
+      308,
+      311,
+      369
+    ],
+    "BRUNCH_SPOT + YARN_STORE": [
+      120,
+      234,
+      272,
+      376
+    ],
+    "FARMERS_MARKET + BAKERY": [
+      148,
+      161,
+      230,
+      236,
+      326,
+      327,
+      390
+    ],
+    "FARMERS_MARKET + BRUNCH_SPOT": [
+      65,
+      335,
+      372
+    ],
+    "FARMERS_MARKET + FARMERS_MARKET": [
+      160,
+      197,
+      199,
+      250,
+      386
+    ],
+    "FARMERS_MARKET + ICE_CREAM_SHOP": [
+      103,
+      134,
+      155,
+      191,
+      270,
+      277,
+      288,
+      312,
+      391,
+      399
+    ],
+    "FARMERS_MARKET + PET_CAFE": [
+      20,
+      70,
+      166,
+      274,
+      351,
+      352,
+      396
+    ],
+    "FARMERS_MARKET + PIZZA_SHOP": [
+      1,
+      40,
+      60,
+      87,
+      179,
+      243,
+      251
+    ],
+    "FARMERS_MARKET + SMOOTHIE_SHOP": [
+      59,
+      75,
+      131,
+      172,
+      320,
+      378,
+      382
+    ],
+    "FARMERS_MARKET + YARN_STORE": [
+      45,
+      66,
+      169,
+      171,
+      204,
+      208,
+      363
+    ],
+    "ICE_CREAM_SHOP + BAKERY": [
+      4,
+      62,
+      81,
+      205,
+      256,
+      296,
+      315,
+      332,
+      397
+    ],
+    "ICE_CREAM_SHOP + BRUNCH_SPOT": [
+      71,
+      85,
+      164,
+      170,
+      194,
+      255,
+      331,
+      392
+    ],
+    "ICE_CREAM_SHOP + FARMERS_MARKET": [
+      49,
+      78,
+      82,
+      187,
+      218,
+      281,
+      349
+    ],
+    "ICE_CREAM_SHOP + ICE_CREAM_SHOP": [
+      84,
+      112,
+      163,
+      202,
+      259,
+      344
+    ],
+    "ICE_CREAM_SHOP + PET_CAFE": [
+      34,
+      37,
+      67,
+      147,
+      190,
+      257,
+      350,
+      371
+    ],
+    "ICE_CREAM_SHOP + PIZZA_SHOP": [
+      266,
+      367,
+      370
+    ],
+    "ICE_CREAM_SHOP + SMOOTHIE_SHOP": [
+      264,
+      297,
+      305,
+      314,
+      357
+    ],
+    "ICE_CREAM_SHOP + YARN_STORE": [
+      153,
+      158,
+      269,
+      368
+    ],
+    "PET_CAFE + BAKERY": [
+      24,
+      79,
+      111
+    ],
+    "PET_CAFE + BRUNCH_SPOT": [
+      173,
+      192,
+      295,
+      366
+    ],
+    "PET_CAFE + FARMERS_MARKET": [
+      22,
+      35,
+      121,
+      178,
+      280,
+      293,
+      318,
+      360
+    ],
+    "PET_CAFE + ICE_CREAM_SHOP": [
+      23,
+      30,
+      36,
+      57,
+      139,
+      220,
+      221,
+      303
+    ],
+    "PET_CAFE + PET_CAFE": [
+      64,
+      83,
+      99,
+      122,
+      125,
+      132,
+      138,
+      142,
+      195
+    ],
+    "PET_CAFE + PIZZA_SHOP": [
+      124,
+      203
+    ],
+    "PET_CAFE + SMOOTHIE_SHOP": [
+      6,
+      115,
+      129,
+      189,
+      198,
+      209,
+      212,
+      246,
+      355,
+      381
+    ],
+    "PET_CAFE + YARN_STORE": [
+      301,
+      374,
+      395
+    ],
+    "PIZZA_SHOP + BAKERY": [
+      11,
+      18,
+      94
+    ],
+    "PIZZA_SHOP + BRUNCH_SPOT": [
+      9,
+      16,
+      19,
+      98,
+      292,
+      400
+    ],
+    "PIZZA_SHOP + FARMERS_MARKET": [
+      144,
+      186,
+      254,
+      306,
+      342,
+      362,
+      393
+    ],
+    "PIZZA_SHOP + ICE_CREAM_SHOP": [
+      156,
+      168
+    ],
+    "PIZZA_SHOP + PET_CAFE": [
+      130,
+      143,
+      211,
+      299,
+      354
+    ],
+    "PIZZA_SHOP + PIZZA_SHOP": [
+      39,
+      76,
+      105,
+      151,
+      207,
+      223
+    ],
+    "PIZZA_SHOP + SMOOTHIE_SHOP": [
+      48,
+      184,
+      225,
+      338
+    ],
+    "PIZZA_SHOP + YARN_STORE": [
+      127,
+      140,
+      261,
+      336,
+      353
+    ],
+    "SMOOTHIE_SHOP + BAKERY": [
+      7,
+      14,
+      47,
+      51,
+      90,
+      201,
+      241,
+      268,
+      282,
+      307,
+      323,
+      375
+    ],
+    "SMOOTHIE_SHOP + BRUNCH_SPOT": [
+      69,
+      89,
+      113,
+      167,
+      224,
+      289,
+      294,
+      304
+    ],
+    "SMOOTHIE_SHOP + FARMERS_MARKET": [
+      91,
+      181,
+      359,
+      383
+    ],
+    "SMOOTHIE_SHOP + ICE_CREAM_SHOP": [
+      13,
+      26,
+      31,
+      73,
+      110,
+      196,
+      248,
+      285,
+      334
+    ],
+    "SMOOTHIE_SHOP + PET_CAFE": [
+      72,
+      86,
+      119,
+      183,
+      229,
+      365
+    ],
+    "SMOOTHIE_SHOP + PIZZA_SHOP": [
+      68,
+      95,
+      137,
+      216,
+      252
+    ],
+    "SMOOTHIE_SHOP + SMOOTHIE_SHOP": [
+      146,
+      309,
+      364,
+      394
+    ],
+    "SMOOTHIE_SHOP + YARN_STORE": [
+      17,
+      53,
+      237,
+      278,
+      321
+    ],
+    "YARN_STORE + BAKERY": [
+      2,
+      42,
+      145,
+      206,
+      235,
+      265,
+      271,
+      341,
+      361,
+      388
+    ],
+    "YARN_STORE + BRUNCH_SPOT": [
+      175,
+      214,
+      290
+    ],
+    "YARN_STORE + FARMERS_MARKET": [
+      55,
+      61,
+      96,
+      300
+    ],
+    "YARN_STORE + ICE_CREAM_SHOP": [
+      28,
+      118,
+      162,
+      165,
+      200,
+      238,
+      389
+    ],
+    "YARN_STORE + PET_CAFE": [
+      38,
+      286,
+      384,
+      387
+    ],
+    "YARN_STORE + PIZZA_SHOP": [
+      222,
+      227,
+      325,
+      358
+    ],
+    "YARN_STORE + SMOOTHIE_SHOP": [
+      25,
+      159,
+      226,
+      232,
+      275,
+      298,
+      330,
+      343,
+      377
+    ],
+    "YARN_STORE + YARN_STORE": [
+      150,
+      217
+    ]
+  },
+  "by_seed": {
+    "1": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "2": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "3": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "4": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "5": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "6": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "7": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "8": [
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "9": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "10": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "11": [
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "12": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "13": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "14": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "15": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "16": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "17": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "18": [
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "19": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "20": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "21": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "22": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "23": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "24": [
+      "PET_CAFE",
+      "BAKERY"
+    ],
+    "25": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "26": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "27": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "28": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "29": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "30": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "31": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "32": [
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "33": [
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "34": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "35": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "36": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "37": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "38": [
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "39": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "40": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "41": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "42": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "43": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "44": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "45": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "46": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "47": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "48": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "49": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "50": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "51": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "52": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "53": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "54": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "55": [
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "56": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "57": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "58": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "59": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "60": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "61": [
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "62": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "63": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "64": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "65": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT"
+    ],
+    "66": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "67": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "68": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "69": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "70": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "71": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "72": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE"
+    ],
+    "73": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "74": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "75": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "76": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "77": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "78": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "79": [
+      "PET_CAFE",
+      "BAKERY"
+    ],
+    "80": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "81": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "82": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "83": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "84": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "85": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "86": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE"
+    ],
+    "87": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "88": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "89": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "90": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "91": [
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "92": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "93": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "94": [
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "95": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "96": [
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "97": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "98": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "99": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "100": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "101": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "102": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "103": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "104": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "105": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "106": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "107": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "108": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "109": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "110": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "111": [
+      "PET_CAFE",
+      "BAKERY"
+    ],
+    "112": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "113": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "114": [
+      "BAKERY",
+      "BAKERY"
+    ],
+    "115": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "116": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "117": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "118": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "119": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE"
+    ],
+    "120": [
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "121": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "122": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "123": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "124": [
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "125": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "126": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "127": [
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "128": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "129": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "130": [
+      "PIZZA_SHOP",
+      "PET_CAFE"
+    ],
+    "131": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "132": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "133": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "134": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "135": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "136": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "137": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "138": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "139": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "140": [
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "141": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "142": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "143": [
+      "PIZZA_SHOP",
+      "PET_CAFE"
+    ],
+    "144": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "145": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "146": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "147": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "148": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "149": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "150": [
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "151": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "152": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "153": [
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "154": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "155": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "156": [
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "157": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "158": [
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "159": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "160": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "161": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "162": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "163": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "164": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "165": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "166": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "167": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "168": [
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "169": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "170": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "171": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "172": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "173": [
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "174": [
+      "BAKERY",
+      "BAKERY"
+    ],
+    "175": [
+      "YARN_STORE",
+      "BRUNCH_SPOT"
+    ],
+    "176": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "177": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "178": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "179": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "180": [
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "181": [
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "182": [
+      "BAKERY",
+      "BAKERY"
+    ],
+    "183": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE"
+    ],
+    "184": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "185": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "186": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "187": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "188": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "189": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "190": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "191": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "192": [
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "193": [
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "194": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "195": [
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "196": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "197": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "198": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "199": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "200": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "201": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "202": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "203": [
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "204": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "205": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "206": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "207": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "208": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "209": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "210": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "211": [
+      "PIZZA_SHOP",
+      "PET_CAFE"
+    ],
+    "212": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "213": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "214": [
+      "YARN_STORE",
+      "BRUNCH_SPOT"
+    ],
+    "215": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "216": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "217": [
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "218": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "219": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "220": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "221": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "222": [
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "223": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "224": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "225": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "226": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "227": [
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "228": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "229": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE"
+    ],
+    "230": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "231": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "232": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "233": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "234": [
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "235": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "236": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "237": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "238": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "239": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "240": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "241": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "242": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "243": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "244": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "245": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "246": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "247": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "248": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "249": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "250": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "251": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "252": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "253": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "254": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "255": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "256": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "257": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "258": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "259": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "260": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "261": [
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "262": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "263": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "264": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "265": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "266": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "267": [
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "268": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "269": [
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "270": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "271": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "272": [
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "273": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "274": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "275": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "276": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "277": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "278": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "279": [
+      "BAKERY",
+      "BAKERY"
+    ],
+    "280": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "281": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "282": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "283": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "284": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "285": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "286": [
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "287": [
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "288": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "289": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "290": [
+      "YARN_STORE",
+      "BRUNCH_SPOT"
+    ],
+    "291": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "292": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "293": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "294": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "295": [
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "296": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "297": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "298": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "299": [
+      "PIZZA_SHOP",
+      "PET_CAFE"
+    ],
+    "300": [
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "301": [
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "302": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "303": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "304": [
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "305": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "306": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "307": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "308": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "309": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "310": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "311": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "312": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "313": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "314": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "315": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "316": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "317": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "318": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "319": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "320": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "321": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "322": [
+      "BAKERY",
+      "BAKERY"
+    ],
+    "323": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "324": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "325": [
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "326": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "327": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "328": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "329": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "330": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "331": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "332": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "333": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "334": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "335": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT"
+    ],
+    "336": [
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "337": [
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "338": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "339": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP"
+    ],
+    "340": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "341": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "342": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "343": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "344": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "345": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "346": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "347": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "348": [
+      "BAKERY",
+      "BAKERY"
+    ],
+    "349": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "350": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "351": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "352": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "353": [
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "354": [
+      "PIZZA_SHOP",
+      "PET_CAFE"
+    ],
+    "355": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "356": [
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "357": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "358": [
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "359": [
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "360": [
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "361": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "362": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "363": [
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "364": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "365": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE"
+    ],
+    "366": [
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "367": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "368": [
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "369": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "370": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "371": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "372": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT"
+    ],
+    "373": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "374": [
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "375": [
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "376": [
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "377": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "378": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "379": [
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "380": [
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "381": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "382": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "383": [
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "384": [
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "385": [
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "386": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "387": [
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "388": [
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "389": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "390": [
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "391": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "392": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "393": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "394": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "395": [
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "396": [
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "397": [
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "398": [
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "399": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "400": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ]
+  }
+}

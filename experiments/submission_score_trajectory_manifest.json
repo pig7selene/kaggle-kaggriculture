@@ -395,10 +395,1035 @@
           "public_score": 343.8
         }
       ]
+    },
+    {
+      "observed_at_utc": "2026-09-15T16:14:13+00:00",
+      "submissions": [
+        {
+          "submission_id": 56258686,
+          "file": "v43_room_clamp.tar.gz",
+          "submitted_at": "2026-09-15 16:13:51.173000",
+          "description": "V43 + room_guard + clamp_sells",
+          "status": "PENDING",
+          "public_score": null
+        },
+        {
+          "submission_id": 56255914,
+          "file": "ahmed_v43_public.tar.gz",
+          "submitted_at": "2026-09-15 13:54:48.167000",
+          "description": "Ahmed V43 public baseline (unmodified) - base evaluation",
+          "status": "COMPLETE",
+          "public_score": 2602.1
+        },
+        {
+          "submission_id": 56250442,
+          "file": "smaller_market_shock_v233h_non_yarn_0911.tar.gz",
+          "submitted_at": "2026-09-15 08:56:04.957000",
+          "description": "V233H + 42 non-Yarn 0911 routes",
+          "status": "COMPLETE",
+          "public_score": 2026.6
+        },
+        {
+          "submission_id": 56183575,
+          "file": "smaller_market_shock_v233h_safe.tar.gz",
+          "submitted_at": "2026-09-12 10:20:34.157000",
+          "description": "SmallerShock V233H safe: bounded sheep/feed reserve",
+          "status": "COMPLETE",
+          "public_score": 1976.5
+        },
+        {
+          "submission_id": 56177298,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-12 03:15:06.457000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1778.3
+        },
+        {
+          "submission_id": 56177294,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-12 03:14:50.910000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2159.7
+        },
+        {
+          "submission_id": 56176082,
+          "file": "main.py",
+          "submitted_at": "2026-09-12 01:45:21.143000",
+          "description": "v4: drain-gated strawberry program with fertilizer doubling + carrot filler",
+          "status": "COMPLETE",
+          "public_score": 577.6
+        },
+        {
+          "submission_id": 56169584,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 17:02:07.510000",
+          "description": "v3: shop-drain adaptive portfolio - cows/sheep/geese mix by town demand, drain-aware wheat scale",
+          "status": "COMPLETE",
+          "public_score": 573.7
+        },
+        {
+          "submission_id": 56169220,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:38:15.663000",
+          "description": "v2: tuned flock size 35-40, 11 hands, 12 wheat tiles, purchase throttling, carried-goose accounting",
+          "status": "COMPLETE",
+          "public_score": 471.8
+        },
+        {
+          "submission_id": 56169055,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:32:46.410000",
+          "description": "v1: melon opening + goose/fertilizer engine + wheat filler, task-centric worker scheduler",
+          "status": "COMPLETE",
+          "public_score": 404.0
+        },
+        {
+          "submission_id": 56143925,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-10 12:13:10.500000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2327.1
+        },
+        {
+          "submission_id": 56143730,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-10 12:00:39.607000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2298.3
+        },
+        {
+          "submission_id": 56138084,
+          "file": "shop_router_0909_terminal.tar.gz",
+          "submitted_at": "2026-09-10 05:43:46.080000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2496.8
+        },
+        {
+          "submission_id": 56123896,
+          "file": "shop_router_0909_hardened.tar.gz",
+          "submitted_at": "2026-09-09 13:24:20.373000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2377.9
+        },
+        {
+          "submission_id": 55928232,
+          "file": "main.py",
+          "submitted_at": "2026-09-01 00:58:10.603000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1450.4
+        },
+        {
+          "submission_id": 55473991,
+          "file": "main.py",
+          "submitted_at": "2026-08-13 04:29:22.593000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1226.1
+        },
+        {
+          "submission_id": 55467403,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 21:24:48.517000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1362.2
+        },
+        {
+          "submission_id": 55463623,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 16:56:42.840000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2561.0
+        },
+        {
+          "submission_id": 55438811,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 17:37:13.623000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 775.6
+        },
+        {
+          "submission_id": 55435253,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 14:32:08.607000",
+          "description": "public-opening + scalable router v6",
+          "status": "COMPLETE",
+          "public_score": 787.9
+        },
+        {
+          "submission_id": 55429527,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 09:59:38.433000",
+          "description": "3-quadrant scalable router v5",
+          "status": "COMPLETE",
+          "public_score": 709.6
+        },
+        {
+          "submission_id": 55423888,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 04:59:30.620000",
+          "description": "8 cows + day11 expansion v4",
+          "status": "COMPLETE",
+          "public_score": 662.1
+        },
+        {
+          "submission_id": 55416060,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 20:57:05.883000",
+          "description": "phased crops + day11 cows v3",
+          "status": "COMPLETE",
+          "public_score": 524.4
+        },
+        {
+          "submission_id": 55412862,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 17:31:05.457000",
+          "description": "melon scale 12 v2",
+          "status": "COMPLETE",
+          "public_score": 484.0
+        },
+        {
+          "submission_id": 55412009,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 16:41:23.477000",
+          "description": "carrot scale 20 v1",
+          "status": "COMPLETE",
+          "public_score": 343.8
+        }
+      ]
+    },
+    {
+      "observed_at_utc": "2026-09-15T16:16:00+00:00",
+      "submissions": [
+        {
+          "submission_id": 56258686,
+          "file": "v43_room_clamp.tar.gz",
+          "submitted_at": "2026-09-15 16:13:51.173000",
+          "description": "V43 + room_guard + clamp_sells",
+          "status": "PENDING",
+          "public_score": null
+        },
+        {
+          "submission_id": 56255914,
+          "file": "ahmed_v43_public.tar.gz",
+          "submitted_at": "2026-09-15 13:54:48.167000",
+          "description": "Ahmed V43 public baseline (unmodified) - base evaluation",
+          "status": "COMPLETE",
+          "public_score": 2613.1
+        },
+        {
+          "submission_id": 56250442,
+          "file": "smaller_market_shock_v233h_non_yarn_0911.tar.gz",
+          "submitted_at": "2026-09-15 08:56:04.957000",
+          "description": "V233H + 42 non-Yarn 0911 routes",
+          "status": "COMPLETE",
+          "public_score": 2026.6
+        },
+        {
+          "submission_id": 56183575,
+          "file": "smaller_market_shock_v233h_safe.tar.gz",
+          "submitted_at": "2026-09-12 10:20:34.157000",
+          "description": "SmallerShock V233H safe: bounded sheep/feed reserve",
+          "status": "COMPLETE",
+          "public_score": 1976.5
+        },
+        {
+          "submission_id": 56177298,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-12 03:15:06.457000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1778.3
+        },
+        {
+          "submission_id": 56177294,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-12 03:14:50.910000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2159.7
+        },
+        {
+          "submission_id": 56176082,
+          "file": "main.py",
+          "submitted_at": "2026-09-12 01:45:21.143000",
+          "description": "v4: drain-gated strawberry program with fertilizer doubling + carrot filler",
+          "status": "COMPLETE",
+          "public_score": 577.6
+        },
+        {
+          "submission_id": 56169584,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 17:02:07.510000",
+          "description": "v3: shop-drain adaptive portfolio - cows/sheep/geese mix by town demand, drain-aware wheat scale",
+          "status": "COMPLETE",
+          "public_score": 573.7
+        },
+        {
+          "submission_id": 56169220,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:38:15.663000",
+          "description": "v2: tuned flock size 35-40, 11 hands, 12 wheat tiles, purchase throttling, carried-goose accounting",
+          "status": "COMPLETE",
+          "public_score": 471.8
+        },
+        {
+          "submission_id": 56169055,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:32:46.410000",
+          "description": "v1: melon opening + goose/fertilizer engine + wheat filler, task-centric worker scheduler",
+          "status": "COMPLETE",
+          "public_score": 404.0
+        },
+        {
+          "submission_id": 56143925,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-10 12:13:10.500000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2327.1
+        },
+        {
+          "submission_id": 56143730,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-10 12:00:39.607000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2298.3
+        },
+        {
+          "submission_id": 56138084,
+          "file": "shop_router_0909_terminal.tar.gz",
+          "submitted_at": "2026-09-10 05:43:46.080000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2496.8
+        },
+        {
+          "submission_id": 56123896,
+          "file": "shop_router_0909_hardened.tar.gz",
+          "submitted_at": "2026-09-09 13:24:20.373000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2377.9
+        },
+        {
+          "submission_id": 55928232,
+          "file": "main.py",
+          "submitted_at": "2026-09-01 00:58:10.603000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1450.4
+        },
+        {
+          "submission_id": 55473991,
+          "file": "main.py",
+          "submitted_at": "2026-08-13 04:29:22.593000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1226.1
+        },
+        {
+          "submission_id": 55467403,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 21:24:48.517000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1362.2
+        },
+        {
+          "submission_id": 55463623,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 16:56:42.840000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2561.0
+        },
+        {
+          "submission_id": 55438811,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 17:37:13.623000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 775.6
+        },
+        {
+          "submission_id": 55435253,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 14:32:08.607000",
+          "description": "public-opening + scalable router v6",
+          "status": "COMPLETE",
+          "public_score": 787.9
+        },
+        {
+          "submission_id": 55429527,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 09:59:38.433000",
+          "description": "3-quadrant scalable router v5",
+          "status": "COMPLETE",
+          "public_score": 709.6
+        },
+        {
+          "submission_id": 55423888,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 04:59:30.620000",
+          "description": "8 cows + day11 expansion v4",
+          "status": "COMPLETE",
+          "public_score": 662.1
+        },
+        {
+          "submission_id": 55416060,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 20:57:05.883000",
+          "description": "phased crops + day11 cows v3",
+          "status": "COMPLETE",
+          "public_score": 524.4
+        },
+        {
+          "submission_id": 55412862,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 17:31:05.457000",
+          "description": "melon scale 12 v2",
+          "status": "COMPLETE",
+          "public_score": 484.0
+        },
+        {
+          "submission_id": 55412009,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 16:41:23.477000",
+          "description": "carrot scale 20 v1",
+          "status": "COMPLETE",
+          "public_score": 343.8
+        }
+      ]
+    },
+    {
+      "observed_at_utc": "2026-09-15T16:31:01+00:00",
+      "submissions": [
+        {
+          "submission_id": 56258686,
+          "file": "v43_room_clamp.tar.gz",
+          "submitted_at": "2026-09-15 16:13:51.173000",
+          "description": "V43 + room_guard + clamp_sells",
+          "status": "COMPLETE",
+          "public_score": 828.0
+        },
+        {
+          "submission_id": 56255914,
+          "file": "ahmed_v43_public.tar.gz",
+          "submitted_at": "2026-09-15 13:54:48.167000",
+          "description": "Ahmed V43 public baseline (unmodified) - base evaluation",
+          "status": "COMPLETE",
+          "public_score": 2607.0
+        },
+        {
+          "submission_id": 56250442,
+          "file": "smaller_market_shock_v233h_non_yarn_0911.tar.gz",
+          "submitted_at": "2026-09-15 08:56:04.957000",
+          "description": "V233H + 42 non-Yarn 0911 routes",
+          "status": "COMPLETE",
+          "public_score": 2026.6
+        },
+        {
+          "submission_id": 56183575,
+          "file": "smaller_market_shock_v233h_safe.tar.gz",
+          "submitted_at": "2026-09-12 10:20:34.157000",
+          "description": "SmallerShock V233H safe: bounded sheep/feed reserve",
+          "status": "COMPLETE",
+          "public_score": 1976.5
+        },
+        {
+          "submission_id": 56177298,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-12 03:15:06.457000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1778.3
+        },
+        {
+          "submission_id": 56177294,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-12 03:14:50.910000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2159.7
+        },
+        {
+          "submission_id": 56176082,
+          "file": "main.py",
+          "submitted_at": "2026-09-12 01:45:21.143000",
+          "description": "v4: drain-gated strawberry program with fertilizer doubling + carrot filler",
+          "status": "COMPLETE",
+          "public_score": 577.6
+        },
+        {
+          "submission_id": 56169584,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 17:02:07.510000",
+          "description": "v3: shop-drain adaptive portfolio - cows/sheep/geese mix by town demand, drain-aware wheat scale",
+          "status": "COMPLETE",
+          "public_score": 573.7
+        },
+        {
+          "submission_id": 56169220,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:38:15.663000",
+          "description": "v2: tuned flock size 35-40, 11 hands, 12 wheat tiles, purchase throttling, carried-goose accounting",
+          "status": "COMPLETE",
+          "public_score": 471.8
+        },
+        {
+          "submission_id": 56169055,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:32:46.410000",
+          "description": "v1: melon opening + goose/fertilizer engine + wheat filler, task-centric worker scheduler",
+          "status": "COMPLETE",
+          "public_score": 404.0
+        },
+        {
+          "submission_id": 56143925,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-10 12:13:10.500000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2327.1
+        },
+        {
+          "submission_id": 56143730,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-10 12:00:39.607000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2298.3
+        },
+        {
+          "submission_id": 56138084,
+          "file": "shop_router_0909_terminal.tar.gz",
+          "submitted_at": "2026-09-10 05:43:46.080000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2496.8
+        },
+        {
+          "submission_id": 56123896,
+          "file": "shop_router_0909_hardened.tar.gz",
+          "submitted_at": "2026-09-09 13:24:20.373000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2377.9
+        },
+        {
+          "submission_id": 55928232,
+          "file": "main.py",
+          "submitted_at": "2026-09-01 00:58:10.603000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1450.4
+        },
+        {
+          "submission_id": 55473991,
+          "file": "main.py",
+          "submitted_at": "2026-08-13 04:29:22.593000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1226.1
+        },
+        {
+          "submission_id": 55467403,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 21:24:48.517000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1362.2
+        },
+        {
+          "submission_id": 55463623,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 16:56:42.840000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2561.0
+        },
+        {
+          "submission_id": 55438811,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 17:37:13.623000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 775.6
+        },
+        {
+          "submission_id": 55435253,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 14:32:08.607000",
+          "description": "public-opening + scalable router v6",
+          "status": "COMPLETE",
+          "public_score": 787.9
+        },
+        {
+          "submission_id": 55429527,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 09:59:38.433000",
+          "description": "3-quadrant scalable router v5",
+          "status": "COMPLETE",
+          "public_score": 709.6
+        },
+        {
+          "submission_id": 55423888,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 04:59:30.620000",
+          "description": "8 cows + day11 expansion v4",
+          "status": "COMPLETE",
+          "public_score": 662.1
+        },
+        {
+          "submission_id": 55416060,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 20:57:05.883000",
+          "description": "phased crops + day11 cows v3",
+          "status": "COMPLETE",
+          "public_score": 524.4
+        },
+        {
+          "submission_id": 55412862,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 17:31:05.457000",
+          "description": "melon scale 12 v2",
+          "status": "COMPLETE",
+          "public_score": 484.0
+        },
+        {
+          "submission_id": 55412009,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 16:41:23.477000",
+          "description": "carrot scale 20 v1",
+          "status": "COMPLETE",
+          "public_score": 343.8
+        }
+      ]
+    },
+    {
+      "observed_at_utc": "2026-09-15T16:40:53+00:00",
+      "submissions": [
+        {
+          "submission_id": 56258686,
+          "file": "v43_room_clamp.tar.gz",
+          "submitted_at": "2026-09-15 16:13:51.173000",
+          "description": "V43 + room_guard + clamp_sells",
+          "status": "COMPLETE",
+          "public_score": 1113.4
+        },
+        {
+          "submission_id": 56255914,
+          "file": "ahmed_v43_public.tar.gz",
+          "submitted_at": "2026-09-15 13:54:48.167000",
+          "description": "Ahmed V43 public baseline (unmodified) - base evaluation",
+          "status": "COMPLETE",
+          "public_score": 2576.9
+        },
+        {
+          "submission_id": 56250442,
+          "file": "smaller_market_shock_v233h_non_yarn_0911.tar.gz",
+          "submitted_at": "2026-09-15 08:56:04.957000",
+          "description": "V233H + 42 non-Yarn 0911 routes",
+          "status": "COMPLETE",
+          "public_score": 2026.6
+        },
+        {
+          "submission_id": 56183575,
+          "file": "smaller_market_shock_v233h_safe.tar.gz",
+          "submitted_at": "2026-09-12 10:20:34.157000",
+          "description": "SmallerShock V233H safe: bounded sheep/feed reserve",
+          "status": "COMPLETE",
+          "public_score": 1976.5
+        },
+        {
+          "submission_id": 56177298,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-12 03:15:06.457000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1778.3
+        },
+        {
+          "submission_id": 56177294,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-12 03:14:50.910000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2159.7
+        },
+        {
+          "submission_id": 56176082,
+          "file": "main.py",
+          "submitted_at": "2026-09-12 01:45:21.143000",
+          "description": "v4: drain-gated strawberry program with fertilizer doubling + carrot filler",
+          "status": "COMPLETE",
+          "public_score": 577.6
+        },
+        {
+          "submission_id": 56169584,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 17:02:07.510000",
+          "description": "v3: shop-drain adaptive portfolio - cows/sheep/geese mix by town demand, drain-aware wheat scale",
+          "status": "COMPLETE",
+          "public_score": 573.7
+        },
+        {
+          "submission_id": 56169220,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:38:15.663000",
+          "description": "v2: tuned flock size 35-40, 11 hands, 12 wheat tiles, purchase throttling, carried-goose accounting",
+          "status": "COMPLETE",
+          "public_score": 471.8
+        },
+        {
+          "submission_id": 56169055,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:32:46.410000",
+          "description": "v1: melon opening + goose/fertilizer engine + wheat filler, task-centric worker scheduler",
+          "status": "COMPLETE",
+          "public_score": 404.0
+        },
+        {
+          "submission_id": 56143925,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-10 12:13:10.500000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2327.1
+        },
+        {
+          "submission_id": 56143730,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-10 12:00:39.607000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2298.3
+        },
+        {
+          "submission_id": 56138084,
+          "file": "shop_router_0909_terminal.tar.gz",
+          "submitted_at": "2026-09-10 05:43:46.080000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2496.8
+        },
+        {
+          "submission_id": 56123896,
+          "file": "shop_router_0909_hardened.tar.gz",
+          "submitted_at": "2026-09-09 13:24:20.373000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2377.9
+        },
+        {
+          "submission_id": 55928232,
+          "file": "main.py",
+          "submitted_at": "2026-09-01 00:58:10.603000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1450.4
+        },
+        {
+          "submission_id": 55473991,
+          "file": "main.py",
+          "submitted_at": "2026-08-13 04:29:22.593000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1226.1
+        },
+        {
+          "submission_id": 55467403,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 21:24:48.517000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1362.2
+        },
+        {
+          "submission_id": 55463623,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 16:56:42.840000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2561.0
+        },
+        {
+          "submission_id": 55438811,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 17:37:13.623000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 775.6
+        },
+        {
+          "submission_id": 55435253,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 14:32:08.607000",
+          "description": "public-opening + scalable router v6",
+          "status": "COMPLETE",
+          "public_score": 787.9
+        },
+        {
+          "submission_id": 55429527,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 09:59:38.433000",
+          "description": "3-quadrant scalable router v5",
+          "status": "COMPLETE",
+          "public_score": 709.6
+        },
+        {
+          "submission_id": 55423888,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 04:59:30.620000",
+          "description": "8 cows + day11 expansion v4",
+          "status": "COMPLETE",
+          "public_score": 662.1
+        },
+        {
+          "submission_id": 55416060,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 20:57:05.883000",
+          "description": "phased crops + day11 cows v3",
+          "status": "COMPLETE",
+          "public_score": 524.4
+        },
+        {
+          "submission_id": 55412862,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 17:31:05.457000",
+          "description": "melon scale 12 v2",
+          "status": "COMPLETE",
+          "public_score": 484.0
+        },
+        {
+          "submission_id": 55412009,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 16:41:23.477000",
+          "description": "carrot scale 20 v1",
+          "status": "COMPLETE",
+          "public_score": 343.8
+        }
+      ]
+    },
+    {
+      "observed_at_utc": "2026-09-15T16:46:03+00:00",
+      "submissions": [
+        {
+          "submission_id": 56258686,
+          "file": "v43_room_clamp.tar.gz",
+          "submitted_at": "2026-09-15 16:13:51.173000",
+          "description": "V43 + room_guard + clamp_sells",
+          "status": "COMPLETE",
+          "public_score": 1249.0
+        },
+        {
+          "submission_id": 56255914,
+          "file": "ahmed_v43_public.tar.gz",
+          "submitted_at": "2026-09-15 13:54:48.167000",
+          "description": "Ahmed V43 public baseline (unmodified) - base evaluation",
+          "status": "COMPLETE",
+          "public_score": 2584.5
+        },
+        {
+          "submission_id": 56250442,
+          "file": "smaller_market_shock_v233h_non_yarn_0911.tar.gz",
+          "submitted_at": "2026-09-15 08:56:04.957000",
+          "description": "V233H + 42 non-Yarn 0911 routes",
+          "status": "COMPLETE",
+          "public_score": 2026.6
+        },
+        {
+          "submission_id": 56183575,
+          "file": "smaller_market_shock_v233h_safe.tar.gz",
+          "submitted_at": "2026-09-12 10:20:34.157000",
+          "description": "SmallerShock V233H safe: bounded sheep/feed reserve",
+          "status": "COMPLETE",
+          "public_score": 1976.5
+        },
+        {
+          "submission_id": 56177298,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-12 03:15:06.457000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1778.3
+        },
+        {
+          "submission_id": 56177294,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-12 03:14:50.910000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2159.7
+        },
+        {
+          "submission_id": 56176082,
+          "file": "main.py",
+          "submitted_at": "2026-09-12 01:45:21.143000",
+          "description": "v4: drain-gated strawberry program with fertilizer doubling + carrot filler",
+          "status": "COMPLETE",
+          "public_score": 577.6
+        },
+        {
+          "submission_id": 56169584,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 17:02:07.510000",
+          "description": "v3: shop-drain adaptive portfolio - cows/sheep/geese mix by town demand, drain-aware wheat scale",
+          "status": "COMPLETE",
+          "public_score": 573.7
+        },
+        {
+          "submission_id": 56169220,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:38:15.663000",
+          "description": "v2: tuned flock size 35-40, 11 hands, 12 wheat tiles, purchase throttling, carried-goose accounting",
+          "status": "COMPLETE",
+          "public_score": 471.8
+        },
+        {
+          "submission_id": 56169055,
+          "file": "main.py",
+          "submitted_at": "2026-09-11 16:32:46.410000",
+          "description": "v1: melon opening + goose/fertilizer engine + wheat filler, task-centric worker scheduler",
+          "status": "COMPLETE",
+          "public_score": 404.0
+        },
+        {
+          "submission_id": 56143925,
+          "file": "shop_router_0909_front_run_full.tar.gz",
+          "submitted_at": "2026-09-10 12:13:10.500000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2327.1
+        },
+        {
+          "submission_id": 56143730,
+          "file": "shop_router_0909_front_run_step708.tar.gz",
+          "submitted_at": "2026-09-10 12:00:39.607000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2298.3
+        },
+        {
+          "submission_id": 56138084,
+          "file": "shop_router_0909_terminal.tar.gz",
+          "submitted_at": "2026-09-10 05:43:46.080000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2496.8
+        },
+        {
+          "submission_id": 56123896,
+          "file": "shop_router_0909_hardened.tar.gz",
+          "submitted_at": "2026-09-09 13:24:20.373000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2377.9
+        },
+        {
+          "submission_id": 55928232,
+          "file": "main.py",
+          "submitted_at": "2026-09-01 00:58:10.603000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1450.4
+        },
+        {
+          "submission_id": 55473991,
+          "file": "main.py",
+          "submitted_at": "2026-08-13 04:29:22.593000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1226.1
+        },
+        {
+          "submission_id": 55467403,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 21:24:48.517000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 1362.2
+        },
+        {
+          "submission_id": 55463623,
+          "file": "main.py",
+          "submitted_at": "2026-08-12 16:56:42.840000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 2561.0
+        },
+        {
+          "submission_id": 55438811,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 17:37:13.623000",
+          "description": "",
+          "status": "COMPLETE",
+          "public_score": 775.6
+        },
+        {
+          "submission_id": 55435253,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 14:32:08.607000",
+          "description": "public-opening + scalable router v6",
+          "status": "COMPLETE",
+          "public_score": 787.9
+        },
+        {
+          "submission_id": 55429527,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 09:59:38.433000",
+          "description": "3-quadrant scalable router v5",
+          "status": "COMPLETE",
+          "public_score": 709.6
+        },
+        {
+          "submission_id": 55423888,
+          "file": "main.py",
+          "submitted_at": "2026-08-11 04:59:30.620000",
+          "description": "8 cows + day11 expansion v4",
+          "status": "COMPLETE",
+          "public_score": 662.1
+        },
+        {
+          "submission_id": 55416060,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 20:57:05.883000",
+          "description": "phased crops + day11 cows v3",
+          "status": "COMPLETE",
+          "public_score": 524.4
+        },
+        {
+          "submission_id": 55412862,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 17:31:05.457000",
+          "description": "melon scale 12 v2",
+          "status": "COMPLETE",
+          "public_score": 484.0
+        },
+        {
+          "submission_id": 55412009,
+          "file": "main.py",
+          "submitted_at": "2026-08-10 16:41:23.477000",
+          "description": "carrot scale 20 v1",
+          "status": "COMPLETE",
+          "public_score": 343.8
+        }
+      ]
     }
   ],
-  "last_observed_at_utc": "2026-09-15T16:00:59+00:00",
-  "observation_count": 2,
+  "last_observed_at_utc": "2026-09-15T16:46:03+00:00",
+  "observation_count": 7,
   "series": {
     "56255914": [
       [
@@ -408,6 +1433,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         2558.6
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2602.1
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2613.1
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2607.0
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2576.9
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        2584.5
       ]
     ],
     "56250442": [
@@ -418,6 +1463,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         2030.7
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2026.6
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2026.6
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2026.6
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2026.6
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        2026.6
       ]
     ],
     "56183575": [
@@ -427,6 +1492,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        1976.5
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        1976.5
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        1976.5
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        1976.5
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        1976.5
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         1976.5
       ]
     ],
@@ -438,6 +1523,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         1778.3
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        1778.3
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        1778.3
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        1778.3
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        1778.3
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        1778.3
       ]
     ],
     "56177294": [
@@ -447,6 +1552,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        2159.7
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2159.7
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2159.7
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2159.7
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2159.7
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         2159.7
       ]
     ],
@@ -458,6 +1583,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         577.6
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        577.6
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        577.6
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        577.6
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        577.6
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        577.6
       ]
     ],
     "56169584": [
@@ -467,6 +1612,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        573.7
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        573.7
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        573.7
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        573.7
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        573.7
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         573.7
       ]
     ],
@@ -478,6 +1643,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         471.8
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        471.8
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        471.8
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        471.8
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        471.8
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        471.8
       ]
     ],
     "56169055": [
@@ -487,6 +1672,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        404.0
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        404.0
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        404.0
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        404.0
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        404.0
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         404.0
       ]
     ],
@@ -498,6 +1703,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         2327.1
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2327.1
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2327.1
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2327.1
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2327.1
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        2327.1
       ]
     ],
     "56143730": [
@@ -507,6 +1732,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        2298.3
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2298.3
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2298.3
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2298.3
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2298.3
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         2298.3
       ]
     ],
@@ -518,6 +1763,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         2496.8
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2496.8
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2496.8
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2496.8
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2496.8
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        2496.8
       ]
     ],
     "56123896": [
@@ -527,6 +1792,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        2377.9
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2377.9
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2377.9
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2377.9
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2377.9
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         2377.9
       ]
     ],
@@ -538,6 +1823,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         1450.4
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        1450.4
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        1450.4
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        1450.4
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        1450.4
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        1450.4
       ]
     ],
     "55473991": [
@@ -547,6 +1852,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        1226.1
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        1226.1
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        1226.1
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        1226.1
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        1226.1
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         1226.1
       ]
     ],
@@ -558,6 +1883,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         1362.2
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        1362.2
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        1362.2
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        1362.2
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        1362.2
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        1362.2
       ]
     ],
     "55463623": [
@@ -567,6 +1912,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        2561.0
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        2561.0
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        2561.0
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        2561.0
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        2561.0
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         2561.0
       ]
     ],
@@ -578,6 +1943,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         775.6
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        775.6
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        775.6
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        775.6
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        775.6
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        775.6
       ]
     ],
     "55435253": [
@@ -587,6 +1972,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        787.9
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        787.9
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        787.9
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        787.9
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        787.9
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         787.9
       ]
     ],
@@ -598,6 +2003,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         709.6
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        709.6
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        709.6
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        709.6
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        709.6
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        709.6
       ]
     ],
     "55423888": [
@@ -607,6 +2032,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        662.1
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        662.1
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        662.1
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        662.1
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        662.1
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         662.1
       ]
     ],
@@ -618,6 +2063,26 @@
       [
         "2026-09-15T16:00:59+00:00",
         524.4
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        524.4
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        524.4
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        524.4
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        524.4
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        524.4
       ]
     ],
     "55412862": [
@@ -627,6 +2092,26 @@
       ],
       [
         "2026-09-15T16:00:59+00:00",
+        484.0
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        484.0
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        484.0
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        484.0
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        484.0
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
         484.0
       ]
     ],
@@ -638,6 +2123,40 @@
       [
         "2026-09-15T16:00:59+00:00",
         343.8
+      ],
+      [
+        "2026-09-15T16:14:13+00:00",
+        343.8
+      ],
+      [
+        "2026-09-15T16:16:00+00:00",
+        343.8
+      ],
+      [
+        "2026-09-15T16:31:01+00:00",
+        343.8
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        343.8
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        343.8
+      ]
+    ],
+    "56258686": [
+      [
+        "2026-09-15T16:31:01+00:00",
+        828.0
+      ],
+      [
+        "2026-09-15T16:40:53+00:00",
+        1113.4
+      ],
+      [
+        "2026-09-15T16:46:03+00:00",
+        1249.0
       ]
     ]
   }
