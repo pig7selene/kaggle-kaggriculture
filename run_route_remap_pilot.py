@@ -94,6 +94,12 @@ def load_agent(path: Path, tag: str):
 
 def run_game(job):
     pair, route, variant_path, seed, seat = job
+    # Every load registers a fresh module in sys.modules, and a V43 module holds
+    # 41 routes of 719 actions. Left registered, 2,268 games grew each worker to
+    # over 600 MB and thrashed the machine into a hang. Unregister and collect
+    # after every game; the serial hybrid A/B already did this and it should
+    # have been carried over.
+    loaded = [n for n in sys.modules if n.startswith("remap_")]
     try:
         forced = load_agent(Path(variant_path), f"{route}:{seed}:{seat}")
         base = load_agent(BASE, f"base:{seed}:{seat}")
@@ -114,6 +120,11 @@ def run_game(job):
                 "statuses": [str(final[i].status) for i in range(2)]}
     except Exception as exc:
         return {"pair": pair, "route": route, "seed": seed, "seat": seat, "error": repr(exc)[:160]}
+    finally:
+        for name in [n for n in sys.modules if n.startswith("remap_") and n not in loaded]:
+            sys.modules.pop(name, None)
+        import gc
+        gc.collect()
 
 
 def main() -> None:
@@ -144,13 +155,28 @@ def main() -> None:
                 for seed in seeds[pair][:args.seeds_per_pair]
                 for r in routes for seat in (0, 1)]
 
+    # Two lessons from the first full run, which finished all 2,268 games and
+    # then hung: the machine was thrashing (parent swapped to under 1 MB RSS,
+    # workers in uninterruptible I/O), and every result lived only in the
+    # parent's memory. So each row is appended to a JSONL checkpoint the moment
+    # it arrives, and the pool is released without waiting for workers to die
+    # once every future has returned -- their exit is not needed for the
+    # results, and blocking on it is what stranded 74 minutes of compute.
+    checkpoint = args.output.with_suffix(".rows.jsonl")
     rows, started = [], time.time()
-    with ProcessPoolExecutor(max_workers=args.workers) as pool:
+    pool = ProcessPoolExecutor(max_workers=args.workers)
+    try:
         futures = [pool.submit(run_game, j) for j in jobs]
-        for done, future in enumerate(as_completed(futures), 1):
-            rows.append(future.result())
-            if done % 50 == 0 or done == len(jobs):
-                print(f"  {done}/{len(jobs)}  {time.time() - started:.0f}s", flush=True)
+        with checkpoint.open("w") as sink:
+            for done, future in enumerate(as_completed(futures), 1):
+                row = future.result()
+                rows.append(row)
+                sink.write(json.dumps(row) + "\n")
+                sink.flush()
+                if done % 50 == 0 or done == len(jobs):
+                    print(f"  {done}/{len(jobs)}  {time.time() - started:.0f}s", flush=True)
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
 
     errors = [r for r in rows if "error" in r]
     played = [r for r in rows if "margin" in r]
