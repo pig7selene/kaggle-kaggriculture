@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at_utc": "2026-09-15T08:26:13+00:00",
+  "updated_at_utc": "2026-09-15T13:57:14+00:00",
   "schema_note": "agent_path / agent_version / source_sha256 / source_bundle_sha256 keep their v1 meaning and are the only keys other scripts read: they name the single agent used as the benchmark and analysis baseline. The registry block below carries the roles a single pointer cannot express.",
   "agent_path": "agents/shop_router_0909_terminal/main.py",
   "agent_version": "shop_router_0909_terminal_market_smart_2pass_512",
@@ -16,7 +16,7 @@
     "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
     "superseded_reason": "local W/L/T promotion not supported by the official score"
   },
-  "previous_current_best_manifest_sha256": "542b4996976bb3429a360ffcd702ee2810bb9ad3240eac5653900883255fc4ed",
+  "previous_current_best_manifest_sha256": "dc2e5b87e7c9a7f74f395cfd8d25587e5ddf3b9da7341a8f0096113cf2e60ca9",
   "registry": {
     "highest_verified_leaderboard_agent": {
       "role": "highest public score among our submissions with a strong local binding",
@@ -37,15 +37,19 @@
       "caveat": "Kaggle does not expose the uploaded-byte SHA, so no submission has an EXACT cryptographic binding. Every public score is a dynamic snapshot."
     },
     "current_research_candidate": {
-      "role": "the live local research candidate; no official episode has ever been played",
+      "role": "submitted and scored; superseded as a research direction",
       "path": "agents/smaller_market_shock_v233h_non_yarn_0911",
       "version": "smaller_market_shock_v233h_non_yarn_0911",
       "bundle_sha256": "04cd97b3d329813b148f55afde5df877ed8f73207a543d99447c278d19d2dd9e",
       "executable_bundle_sha256": "acb8e2739b32bc9088145505af7034ed65fa576e00061ca19c3e2a97bf1f8651",
       "parent": "agents/smaller_market_shock_v233h_safe",
       "report": "experiments/smaller_v233h_non_yarn_0911_report.md",
-      "public_score": null,
-      "promotion_status": "LOCAL_RESEARCH_CANDIDATE",
+      "submission_id": 56250442,
+      "public_score": 2034.4,
+      "parent_public_score_same_day": 1976.5,
+      "gain_over_parent_same_day": 57.9,
+      "promotion_status": "SUBMITTED_AND_SCORED",
+      "verdict": "The 42 non-Yarn routes are worth +57.9 against the parent read on the same day, which answers the pre-registered primary question in the affirmative and is also almost irrelevant: the whole lineage sits near 2000 while the leaderboard's fourth to fifteenth places sit between 2969 and 3034, and Ahmed V43 beat this candidate 32-0 locally.",
       "lock": "experiments/smaller_v233h_non_yarn_0911_lock_manifest.json",
       "lock_sha256": "1ce5c9df22c80b79e051a93ac57051c23116abb9a11ffb5abff9b4115dbe6bf7",
       "locked_candidate_validation_games": 292
@@ -61,19 +65,20 @@
     },
     "latest_submitted_agent": {
       "role": "most recent upload to Kaggle",
-      "path": "agents/smaller_market_shock_v233h_safe/main.py",
-      "version": "smaller_market_shock_v233h_safe",
-      "submission_id": 56183575,
-      "public_score": 2249.4,
-      "record": "109W/26L/1T over 136 public games, GSR 0.8051",
-      "bundle_sha256": "76bf23237a2112268a6b459f4013ad04a1c1cdb688b4ce68fc3674b93cff49fc",
+      "version": "ahmed_v43_public_unmodified",
+      "submission_id": 56255914,
+      "public_score": null,
+      "status": "PENDING",
+      "origin": "ahmedberatozer/kaggriculture-v43-recovering-lost-harvests",
+      "license": "Apache-2.0",
+      "ours": false,
       "submitted_archive": {
-        "path": "submission/smaller_market_shock_v233h_safe.tar.gz",
+        "path": "submission/ahmed_v43_public.tar.gz",
         "exists": true,
-        "sha256": "b36377cde03555fda90f48a8f9938e5411c97590b19f0f34bd65e44be9bd7f00"
+        "sha256": "f76baf851aecc13edefcc640dbf61cd409fd321a719dccb2f1b00559041e4f1e"
       },
-      "diagnosis": "experiments/smaller_v233h_online_submission.md",
-      "note": "Scored 2249.4, below the highest verified agent. Being the newest submission does not make it the best."
+      "rationale": "experiments/ahmed_v43_adoption.md",
+      "note": "Not our agent. Submitted unmodified so the reading attributes to the base alone, after it won 64 of 64 against both of ours in experiments/public_agent_tournament.md."
     }
   },
   "submission_score_history": [
@@ -155,11 +160,75 @@
     {
       "date": "2026-09-15",
       "agent": "smaller_market_shock_v233h_non_yarn_0911",
-      "status": "LOCAL_RESEARCH_CANDIDATE",
-      "submission_id": null,
-      "public_score": null
+      "status": "SUBMITTED_AND_SCORED",
+      "submission_id": 56250442,
+      "public_score": 2034.4,
+      "note": "+57.9 over its parent read the same day; the lineage sits near 2000"
+    },
+    {
+      "date": "2026-09-15",
+      "agent": "ahmed_v43_public_unmodified",
+      "status": "BASE_CHANGE_UNDER_EVALUATION",
+      "submission_id": 56255914,
+      "public_score": null,
+      "ours": false,
+      "note": "won 64 of 64 against both of ours locally; submitted unmodified"
     }
   ],
+  "score_drift_20260911_to_20260915": {
+    "note": "The same submissions read at two dates. Dormant submissions do not move; active ones fall. A score recorded while a submission was still playing was therefore not a converged value, and cross-date comparisons in the rest of this file, Terminal D's 2496.8 included, inherit that doubt.",
+    "rows": [
+      {
+        "submission_id": 56138084,
+        "agent": "Terminal D",
+        "recorded_20260911": 2496.8,
+        "observed_20260915": 2496.8,
+        "delta": 0.0
+      },
+      {
+        "submission_id": 56143925,
+        "agent": "front-run FULL",
+        "recorded_20260911": 2461.9,
+        "observed_20260915": 2327.1,
+        "delta": -134.8
+      },
+      {
+        "submission_id": 56143730,
+        "agent": "front-run 708-only",
+        "recorded_20260911": 2446.5,
+        "observed_20260915": 2298.3,
+        "delta": -148.2
+      },
+      {
+        "submission_id": 56123896,
+        "agent": "Shop0909 Hardened",
+        "recorded_20260911": 2377.9,
+        "observed_20260915": 2377.9,
+        "delta": 0.0
+      },
+      {
+        "submission_id": 56183575,
+        "agent": "SmallerShockV233HSafe",
+        "recorded_20260911": 2249.4,
+        "observed_20260915": 1976.5,
+        "delta": -272.9
+      }
+    ]
+  },
+  "leaderboard_context_20260915": {
+    "top": {
+      "Majkel1337": 3166.7,
+      "Artem The Farmer": 3138.8,
+      "Unknown Mother-Goose": 3093.9,
+      "DSM": 3034.0
+    },
+    "places_4_to_15_band": [
+      2969.7,
+      3034.0
+    ],
+    "our_best_observed": 2496.8,
+    "gap_to_band": 472.9
+  },
   "open_question": "No local benchmark currently predicts leaderboard direction. experiments/lb_calibration_report.md declined to lock Benchmark V2 because source lineage is unknown for 99.05% of official matches. Treat every LOCAL_RESEARCH_CANDIDATE as unproven online.",
   "kaggle_submission_made": false
 }

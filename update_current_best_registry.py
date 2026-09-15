@@ -56,6 +56,28 @@ SCORES = {
     56183575: ("SmallerShockV233HSafe", 2249.4),
 }
 
+# Re-read from `kaggle competitions submissions` on 2026-09-15. This is the
+# first time the same submissions have been observed at two separate dates, and
+# the readings move a long way: V233H Safe has fallen 272.9 points since it was
+# recorded, and the two front-run variants over 130 each, while Terminal D and
+# Hardened have not moved at all. The stationary pair are dormant; the moving
+# ones kept playing. So a score recorded while a submission was still active was
+# never a converged value, which puts every cross-date comparison in this file
+# in doubt -- including Terminal D's 2496.8, frozen at whatever point it stopped.
+OBSERVED_20260915 = {
+    56138084: 2496.8,
+    56123896: 2377.9,
+    56143925: 2327.1,
+    56143730: 2298.3,
+    56177294: 2159.7,
+    56250442: 2034.4,
+    56183575: 1976.5,
+    56177298: 1778.3,
+}
+CANDIDATE_SUBMISSION = 56250442          # the 0911 candidate, now COMPLETE
+CANDIDATE_SCORE = 2034.4
+V43_SUBMISSION = 56255914                # Ahmed V43 public baseline, PENDING
+
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -78,15 +100,25 @@ def archive(name: str) -> dict:
 def candidate_entry() -> dict:
     lock_path = EXP / "smaller_v233h_non_yarn_0911_lock_manifest.json"
     entry = {
-        "role": "the live local research candidate; no official episode has ever been played",
+        "role": "submitted and scored; superseded as a research direction",
         "path": str(CANDIDATE.relative_to(ROOT)),
         "version": "smaller_market_shock_v233h_non_yarn_0911",
         "bundle_sha256": bundle_sha256(CANDIDATE, CANDIDATE_MEMBERS),
         "executable_bundle_sha256": bundle_sha256(CANDIDATE, EXECUTABLE),
         "parent": "agents/smaller_market_shock_v233h_safe",
         "report": "experiments/smaller_v233h_non_yarn_0911_report.md",
-        "public_score": None,
-        "promotion_status": "LOCAL_RESEARCH_CANDIDATE",
+        "submission_id": CANDIDATE_SUBMISSION,
+        "public_score": CANDIDATE_SCORE,
+        "parent_public_score_same_day": OBSERVED_20260915[56183575],
+        "gain_over_parent_same_day": round(CANDIDATE_SCORE - OBSERVED_20260915[56183575], 1),
+        "promotion_status": "SUBMITTED_AND_SCORED",
+        "verdict": (
+            "The 42 non-Yarn routes are worth +57.9 against the parent read on the same "
+            "day, which answers the pre-registered primary question in the affirmative "
+            "and is also almost irrelevant: the whole lineage sits near 2000 while the "
+            "leaderboard's fourth to fifteenth places sit between 2969 and 3034, and "
+            "Ahmed V43 beat this candidate 32-0 locally."
+        ),
     }
     if lock_path.is_file():
         lock = json.loads(lock_path.read_text())
@@ -184,17 +216,19 @@ def main() -> None:
             "latest_packaged_agent": packaged_entry(),
             "latest_submitted_agent": {
                 "role": "most recent upload to Kaggle",
-                "path": "agents/smaller_market_shock_v233h_safe/main.py",
-                "version": "smaller_market_shock_v233h_safe",
-                "submission_id": 56183575,
-                "public_score": SCORES[56183575][1],
-                "record": "109W/26L/1T over 136 public games, GSR 0.8051",
-                "bundle_sha256": bundle_sha256(V233H_SAFE, CANDIDATE_MEMBERS),
-                "submitted_archive": archive("smaller_market_shock_v233h_safe.tar.gz"),
-                "diagnosis": "experiments/smaller_v233h_online_submission.md",
+                "version": "ahmed_v43_public_unmodified",
+                "submission_id": V43_SUBMISSION,
+                "public_score": None,
+                "status": "PENDING",
+                "origin": "ahmedberatozer/kaggriculture-v43-recovering-lost-harvests",
+                "license": "Apache-2.0",
+                "ours": False,
+                "submitted_archive": archive("ahmed_v43_public.tar.gz"),
+                "rationale": "experiments/ahmed_v43_adoption.md",
                 "note": (
-                    "Scored 2249.4, below the highest verified agent. Being the newest "
-                    "submission does not make it the best."
+                    "Not our agent. Submitted unmodified so the reading attributes to the "
+                    "base alone, after it won 64 of 64 against both of ours in "
+                    "experiments/public_agent_tournament.md."
                 ),
             },
         },
@@ -235,9 +269,37 @@ def main() -> None:
              "status": "LOCAL_RESEARCH_CANDIDATE, later submitted",
              "submission_id": 56183575, "public_score": SCORES[56183575][1]},
             {"date": "2026-09-15", "agent": "smaller_market_shock_v233h_non_yarn_0911",
-             "status": "LOCAL_RESEARCH_CANDIDATE", "submission_id": None,
-             "public_score": None},
+             "status": "SUBMITTED_AND_SCORED", "submission_id": CANDIDATE_SUBMISSION,
+             "public_score": CANDIDATE_SCORE,
+             "note": "+57.9 over its parent read the same day; the lineage sits near 2000"},
+            {"date": "2026-09-15", "agent": "ahmed_v43_public_unmodified",
+             "status": "BASE_CHANGE_UNDER_EVALUATION", "submission_id": V43_SUBMISSION,
+             "public_score": None, "ours": False,
+             "note": "won 64 of 64 against both of ours locally; submitted unmodified"},
         ],
+        "score_drift_20260911_to_20260915": {
+            "note": (
+                "The same submissions read at two dates. Dormant submissions do not move; "
+                "active ones fall. A score recorded while a submission was still playing "
+                "was therefore not a converged value, and cross-date comparisons in the "
+                "rest of this file, Terminal D's 2496.8 included, inherit that doubt."
+            ),
+            "rows": [
+                {"submission_id": sid, "agent": SCORES[sid][0],
+                 "recorded_20260911": SCORES[sid][1],
+                 "observed_20260915": OBSERVED_20260915[sid],
+                 "delta": round(OBSERVED_20260915[sid] - SCORES[sid][1], 1)}
+                for sid in sorted(SCORES, key=lambda s: -SCORES[s][1])
+                if sid in OBSERVED_20260915
+            ],
+        },
+        "leaderboard_context_20260915": {
+            "top": {"Majkel1337": 3166.7, "Artem The Farmer": 3138.8,
+                    "Unknown Mother-Goose": 3093.9, "DSM": 3034.0},
+            "places_4_to_15_band": [2969.7, 3034.0],
+            "our_best_observed": OBSERVED_20260915[56138084],
+            "gap_to_band": round(2969.7 - OBSERVED_20260915[56138084], 1),
+        },
         "open_question": (
             "No local benchmark currently predicts leaderboard direction. "
             "experiments/lb_calibration_report.md declined to lock Benchmark V2 because "
