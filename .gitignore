@@ -33,3 +33,8 @@ experiments/*route_executor.json
 # Keep lightweight manifests that describe the source datasets.
 experiments/*.json
 !experiments/*manifest*.json
+
+# The current-state registry is not a generated result: it is the pointer that
+# says which agent is the verified leaderboard best, which is the live research
+# candidate, and what was last packaged. It must travel with the repository.
+!experiments/current_best.json

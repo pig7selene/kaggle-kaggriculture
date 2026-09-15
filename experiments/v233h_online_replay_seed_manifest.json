@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "purpose": "Episode id to RNG seed for the public episodes of submission 56183575 (SmallerShockV233HSafe). Replaces reading the 4.2 GB replay corpus under /private/tmp; the shop sequences themselves already live in experiments/smaller_v233h_online_submission.json.",
+  "extracted_at_utc": "2026-09-15T08:08:29+00:00",
+  "source_corpus": "/private/tmp/kaggriculture_v233h_online",
+  "source_replay_count": 137,
+  "submission_id": 56183575,
+  "crosscheck": {
+    "performed": true,
+    "source": "experiments/smaller_v233h_non_yarn_0911_full_screen.json",
+    "compared": 136,
+    "missing_from_manifest": [],
+    "mismatches": [],
+    "identical": true
+  },
+  "payload_sha256": "9a654f1675dfd8a2fa21614d020cfcf2bb5597fa6359ec27057803bd90577228",
+  "local_only": true,
+  "kaggle_submission_made": false,
+  "seeds": [
+    {
+      "episode_id": 108143350,
+      "seed": 0
+    },
+    {
+      "episode_id": 108144520,
+      "seed": 1540213010
+    },
+    {
+      "episode_id": 108145536,
+      "seed": 1211909699
+    },
+    {
+      "episode_id": 108146482,
+      "seed": 615752795
+    },
+    {
+      "episode_id": 108147478,
+      "seed": 1086136041
+    },
+    {
+      "episode_id": 108148461,
+      "seed": 608976018
+    },
+    {
+      "episode_id": 108149477,
+      "seed": 1689241464
+    },
+    {
+      "episode_id": 108150466,
+      "seed": 2796523
+    },
+    {
+      "episode_id": 108151432,
+      "seed": 1090433714
+    },
+    {
+      "episode_id": 108152438,
+      "seed": 228601945
+    },
+    {
+      "episode_id": 108153452,
+      "seed": 1360204583
+    },
+    {
+      "episode_id": 108154492,
+      "seed": 1578278730
+    },
+    {
+      "episode_id": 108155504,
+      "seed": 88920025
+    },
+    {
+      "episode_id": 108156500,
+      "seed": 842323815
+    },
+    {
+      "episode_id": 108157550,
+      "seed": 27886483
+    },
+    {
+      "episode_id": 108158554,
+      "seed": 235510472
+    },
+    {
+      "episode_id": 108159572,
+      "seed": 812380132
+    },
+    {
+      "episode_id": 108160572,
+      "seed": 527808796
+    },
+    {
+      "episode_id": 108161598,
+      "seed": 111136392
+    },
+    {
+      "episode_id": 108162617,
+      "seed": 1926035098
+    },
+    {
+      "episode_id": 108163585,
+      "seed": 617596024
+    },
+    {
+      "episode_id": 108164648,
+      "seed": 962397371
+    },
+    {
+      "episode_id": 108165701,
+      "seed": 1037271072
+    },
+    {
+      "episode_id": 108166648,
+      "seed": 1639297199
+    },
+    {
+      "episode_id": 108167653,
+      "seed": 1301998444
+    },
+    {
+      "episode_id": 108168657,
+      "seed": 1392091166
+    },
+    {
+      "episode_id": 108169659,
+      "seed": 897085080
+    },
+    {
+      "episode_id": 108170662,
+      "seed": 936226998
+    },
+    {
+      "episode_id": 108171677,
+      "seed": 146704439
+    },
+    {
+      "episode_id": 108172673,
+      "seed": 913759999
+    },
+    {
+      "episode_id": 108173680,
+      "seed": 1638659281
+    },
+    {
+      "episode_id": 108174683,
+      "seed": 1021840991
+    },
+    {
+      "episode_id": 108175681,
+      "seed": 2102327180
+    },
+    {
+      "episode_id": 108176702,
+      "seed": 171286903
+    },
+    {
+      "episode_id": 108177745,
+      "seed": 392189633
+    },
+    {
+      "episode_id": 108177929,
+      "seed": 1031123228
+    },
+    {
+      "episode_id": 108178703,
+      "seed": 1559502383
+    },
+    {
+      "episode_id": 108179735,
+      "seed": 1753512719
+    },
+    {
+      "episode_id": 108180754,
+      "seed": 1007165553
+    },
+    {
+      "episode_id": 108181752,
+      "seed": 1500643964
+    },
+    {
+      "episode_id": 108182772,
+      "seed": 1987110927
+    },
+    {
+      "episode_id": 108183777,
+      "seed": 1832606449
+    },
+    {
+      "episode_id": 108184791,
+      "seed": 2092123273
+    },
+    {
+      "episode_id": 108185797,
+      "seed": 348896446
+    },
+    {
+      "episode_id": 108186823,
+      "seed": 1719095139
+    },
+    {
+      "episode_id": 108187820,
+      "seed": 247468417
+    },
+    {
+      "episode_id": 108188835,
+      "seed": 81300853
+    },
+    {
+      "episode_id": 108189849,
+      "seed": 884831186
+    },
+    {
+      "episode_id": 108190858,
+      "seed": 710005126
+    },
+    {
+      "episode_id": 108191873,
+      "seed": 1210162807
+    },
+    {
+      "episode_id": 108192222,
+      "seed": 185490319
+    },
+    {
+      "episode_id": 108192883,
+      "seed": 673043781
+    },
+    {
+      "episode_id": 108193698,
+      "seed": 1497340816
+    },
+    {
+      "episode_id": 108194148,
+      "seed": 895785583
+    },
+    {
+      "episode_id": 108194907,
+      "seed": 645569460
+    },
+    {
+      "episode_id": 108195912,
+      "seed": 13533311
+    },
+    {
+      "episode_id": 108196911,
+      "seed": 1317344162
+    },
+    {
+      "episode_id": 108197914,
+      "seed": 58079668
+    },
+    {
+      "episode_id": 108198922,
+      "seed": 868998067
+    },
+    {
+      "episode_id": 108199925,
+      "seed": 1473452354
+    },
+    {
+      "episode_id": 108200944,
+      "seed": 1286524862
+    },
+    {
+      "episode_id": 108201315,
+      "seed": 261451543
+    },
+    {
+      "episode_id": 108201963,
+      "seed": 1009464068
+    },
+    {
+      "episode_id": 108202978,
+      "seed": 1562650380
+    },
+    {
+      "episode_id": 108203990,
+      "seed": 2043232330
+    },
+    {
+      "episode_id": 108205009,
+      "seed": 826067653
+    },
+    {
+      "episode_id": 108206026,
+      "seed": 1234650719
+    },
+    {
+      "episode_id": 108207066,
+      "seed": 1128634084
+    },
+    {
+      "episode_id": 108208055,
+      "seed": 1933261980
+    },
+    {
+      "episode_id": 108211705,
+      "seed": 1169389948
+    },
+    {
+      "episode_id": 108212301,
+      "seed": 633105853
+    },
+    {
+      "episode_id": 108218291,
+      "seed": 441394000
+    },
+    {
+      "episode_id": 108224310,
+      "seed": 1520678958
+    },
+    {
+      "episode_id": 108230374,
+      "seed": 488224512
+    },
+    {
+      "episode_id": 108232149,
+      "seed": 1376771402
+    },
+    {
+      "episode_id": 108232391,
+      "seed": 822720814
+    },
+    {
+      "episode_id": 108236204,
+      "seed": 1684614808
+    },
+    {
+      "episode_id": 108241308,
+      "seed": 687249104
+    },
+    {
+      "episode_id": 108247301,
+      "seed": 835862336
+    },
+    {
+      "episode_id": 108252536,
+      "seed": 841389536
+    },
+    {
+      "episode_id": 108257529,
+      "seed": 1412429989
+    },
+    {
+      "episode_id": 108259583,
+      "seed": 1662795007
+    },
+    {
+      "episode_id": 108261502,
+      "seed": 1097232043
+    },
+    {
+      "episode_id": 108261634,
+      "seed": 639778527
+    },
+    {
+      "episode_id": 108264025,
+      "seed": 73495260
+    },
+    {
+      "episode_id": 108269051,
+      "seed": 1179167147
+    },
+    {
+      "episode_id": 108269582,
+      "seed": 764395465
+    },
+    {
+      "episode_id": 108270767,
+      "seed": 1441469975
+    },
+    {
+      "episode_id": 108276401,
+      "seed": 77877592
+    },
+    {
+      "episode_id": 108280950,
+      "seed": 1154692613
+    },
+    {
+      "episode_id": 108281495,
+      "seed": 256889926
+    },
+    {
+      "episode_id": 108281629,
+      "seed": 1468465915
+    },
+    {
+      "episode_id": 108286625,
+      "seed": 464731104
+    },
+    {
+      "episode_id": 108287958,
+      "seed": 1273512900
+    },
+    {
+      "episode_id": 108292396,
+      "seed": 305210630
+    },
+    {
+      "episode_id": 108292686,
+      "seed": 1770771632
+    },
+    {
+      "episode_id": 108294375,
+      "seed": 1261996275
+    },
+    {
+      "episode_id": 108295489,
+      "seed": 1061528142
+    },
+    {
+      "episode_id": 108298732,
+      "seed": 349841535
+    },
+    {
+      "episode_id": 108303506,
+      "seed": 1323336873
+    },
+    {
+      "episode_id": 108306786,
+      "seed": 499693786
+    },
+    {
+      "episode_id": 108307002,
+      "seed": 1992844777
+    },
+    {
+      "episode_id": 108309610,
+      "seed": 1799324555
+    },
+    {
+      "episode_id": 108313465,
+      "seed": 2098892467
+    },
+    {
+      "episode_id": 108313811,
+      "seed": 1222704981
+    },
+    {
+      "episode_id": 108318552,
+      "seed": 2095627292
+    },
+    {
+      "episode_id": 108319213,
+      "seed": 1925773084
+    },
+    {
+      "episode_id": 108323114,
+      "seed": 794535864
+    },
+    {
+      "episode_id": 108323700,
+      "seed": 522919252
+    },
+    {
+      "episode_id": 108326147,
+      "seed": 1968769031
+    },
+    {
+      "episode_id": 108327805,
+      "seed": 85785250
+    },
+    {
+      "episode_id": 108332518,
+      "seed": 666655987
+    },
+    {
+      "episode_id": 108333847,
+      "seed": 1680868916
+    },
+    {
+      "episode_id": 108337526,
+      "seed": 1912171277
+    },
+    {
+      "episode_id": 108337949,
+      "seed": 1187848320
+    },
+    {
+      "episode_id": 108340057,
+      "seed": 204043974
+    },
+    {
+      "episode_id": 108340235,
+      "seed": 405337655
+    },
+    {
+      "episode_id": 108343339,
+      "seed": 1567433198
+    },
+    {
+      "episode_id": 108344103,
+      "seed": 910003979
+    },
+    {
+      "episode_id": 108347861,
+      "seed": 137241638
+    },
+    {
+      "episode_id": 108349744,
+      "seed": 612045554
+    },
+    {
+      "episode_id": 108350681,
+      "seed": 253556466
+    },
+    {
+      "episode_id": 108355049,
+      "seed": 496447403
+    },
+    {
+      "episode_id": 108356304,
+      "seed": 675380439
+    },
+    {
+      "episode_id": 108356835,
+      "seed": 1231742253
+    },
+    {
+      "episode_id": 108357118,
+      "seed": 756952602
+    },
+    {
+      "episode_id": 108361876,
+      "seed": 130747782
+    },
+    {
+      "episode_id": 108366130,
+      "seed": 1454527891
+    },
+    {
+      "episode_id": 108366835,
+      "seed": 1304128608
+    },
+    {
+      "episode_id": 108370117,
+      "seed": 811522815
+    },
+    {
+      "episode_id": 108374778,
+      "seed": 266617657
+    },
+    {
+      "episode_id": 108375450,
+      "seed": 1182889063
+    },
+    {
+      "episode_id": 108379962,
+      "seed": 730209942
+    },
+    {
+      "episode_id": 108384108,
+      "seed": 325168942
+    },
+    {
+      "episode_id": 108384574,
+      "seed": 1812541834
+    },
+    {
+      "episode_id": 108388321,
+      "seed": 1403674707
+    },
+    {
+      "episode_id": 108389221,
+      "seed": 1345655173
+    }
+  ]
+}

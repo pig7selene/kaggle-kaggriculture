@@ -1,0 +1,165 @@
+{
+  "schema_version": 2,
+  "updated_at_utc": "2026-09-15T08:26:13+00:00",
+  "schema_note": "agent_path / agent_version / source_sha256 / source_bundle_sha256 keep their v1 meaning and are the only keys other scripts read: they name the single agent used as the benchmark and analysis baseline. The registry block below carries the roles a single pointer cannot express.",
+  "agent_path": "agents/shop_router_0909_terminal/main.py",
+  "agent_version": "shop_router_0909_terminal_market_smart_2pass_512",
+  "source_sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+  "source_bundle_sha256": "b66a08cd78fe13a4340c9707459e10ba11068f620d086a90abaa831467be9852",
+  "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
+  "promotion_reason": "Corrects the 2026-09-10 local-W/L/T promotion of the 708-only front-run agent. The 2026-09-11 leaderboard snapshot put 708-only at 2446.5 and FULL at 2461.9, both below Terminal D at 2496.8, so the local promotion was contradicted by later official evidence. See experiments/lb_calibration_report.md (CASE D), answer 32: the Terminal-D-to-front-run direction gate failed.",
+  "previous_best": {
+    "path": "agents/shop_router_0909_terminal/main.py",
+    "version": "shop_router_0909_terminal_market_smart_2pass_512",
+    "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+    "source_bundle_sha256": "b66a08cd78fe13a4340c9707459e10ba11068f620d086a90abaa831467be9852",
+    "promotion_status": "HIGHEST_VERIFIED_LEADERBOARD_AGENT",
+    "superseded_reason": "local W/L/T promotion not supported by the official score"
+  },
+  "previous_current_best_manifest_sha256": "542b4996976bb3429a360ffcd702ee2810bb9ad3240eac5653900883255fc4ed",
+  "registry": {
+    "highest_verified_leaderboard_agent": {
+      "role": "highest public score among our submissions with a strong local binding",
+      "path": "agents/shop_router_0909_terminal/main.py",
+      "version": "shop_router_0909_terminal_market_smart_2pass_512",
+      "submission_id": 56138084,
+      "public_score": 2496.8,
+      "score_state": "DORMANT_DYNAMIC_SNAPSHOT",
+      "score_captured_at_utc": "2026-09-11T02:28:44Z",
+      "source_sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+      "source_bundle_sha256": "b66a08cd78fe13a4340c9707459e10ba11068f620d086a90abaa831467be9852",
+      "submitted_archive": {
+        "path": "submission/shop_router_0909_terminal.tar.gz",
+        "exists": true,
+        "sha256": "cc458128e8e51b5bc1047d7b391ecad358020aa4511a8b45e6b9f26360ada1a0"
+      },
+      "binding_grade": "STRONG_INFERENCE",
+      "caveat": "Kaggle does not expose the uploaded-byte SHA, so no submission has an EXACT cryptographic binding. Every public score is a dynamic snapshot."
+    },
+    "current_research_candidate": {
+      "role": "the live local research candidate; no official episode has ever been played",
+      "path": "agents/smaller_market_shock_v233h_non_yarn_0911",
+      "version": "smaller_market_shock_v233h_non_yarn_0911",
+      "bundle_sha256": "04cd97b3d329813b148f55afde5df877ed8f73207a543d99447c278d19d2dd9e",
+      "executable_bundle_sha256": "acb8e2739b32bc9088145505af7034ed65fa576e00061ca19c3e2a97bf1f8651",
+      "parent": "agents/smaller_market_shock_v233h_safe",
+      "report": "experiments/smaller_v233h_non_yarn_0911_report.md",
+      "public_score": null,
+      "promotion_status": "LOCAL_RESEARCH_CANDIDATE",
+      "lock": "experiments/smaller_v233h_non_yarn_0911_lock_manifest.json",
+      "lock_sha256": "1ce5c9df22c80b79e051a93ac57051c23116abb9a11ffb5abff9b4115dbe6bf7",
+      "locked_candidate_validation_games": 292
+    },
+    "latest_packaged_agent": {
+      "role": "most recently packaged local artifact; packaging does not imply submission",
+      "version": "smaller_market_shock_v233h_non_yarn_0911",
+      "archive": "submission/smaller_market_shock_v233h_non_yarn_0911.tar.gz",
+      "archive_sha256": "baef9ecb866acb41a9bd069e813802a83353a7d772855a313082f4b605d43a03",
+      "packaging_report": "experiments/smaller_v233h_non_yarn_0911_packaging.json",
+      "all_equivalent": true,
+      "kaggle_submission_performed": false
+    },
+    "latest_submitted_agent": {
+      "role": "most recent upload to Kaggle",
+      "path": "agents/smaller_market_shock_v233h_safe/main.py",
+      "version": "smaller_market_shock_v233h_safe",
+      "submission_id": 56183575,
+      "public_score": 2249.4,
+      "record": "109W/26L/1T over 136 public games, GSR 0.8051",
+      "bundle_sha256": "76bf23237a2112268a6b459f4013ad04a1c1cdb688b4ce68fc3674b93cff49fc",
+      "submitted_archive": {
+        "path": "submission/smaller_market_shock_v233h_safe.tar.gz",
+        "exists": true,
+        "sha256": "b36377cde03555fda90f48a8f9938e5411c97590b19f0f34bd65e44be9bd7f00"
+      },
+      "diagnosis": "experiments/smaller_v233h_online_submission.md",
+      "note": "Scored 2249.4, below the highest verified agent. Being the newest submission does not make it the best."
+    }
+  },
+  "submission_score_history": [
+    {
+      "submission_id": 56138084,
+      "agent": "Terminal D",
+      "public_score": 2496.8
+    },
+    {
+      "submission_id": 56143925,
+      "agent": "front-run FULL",
+      "public_score": 2461.9
+    },
+    {
+      "submission_id": 56143730,
+      "agent": "front-run 708-only",
+      "public_score": 2446.5
+    },
+    {
+      "submission_id": 56123896,
+      "agent": "Shop0909 Hardened",
+      "public_score": 2377.9
+    },
+    {
+      "submission_id": 56183575,
+      "agent": "SmallerShockV233HSafe",
+      "public_score": 2249.4
+    }
+  ],
+  "score_history_note": "Snapshots from experiments/lb_calibration_submissions.json at 2026-09-11T02:28:44Z, except 56183575. Scores drift as episodes accumulate and as the opponent population evolves, so values captured at different times are not directly comparable. Submission 55463623 scored 2561.0 on 2026-08-12 but has no local binding and played a much weaker population.",
+  "frozen_reference_agents": {
+    "TerminalD": {
+      "dir": "agents/shop_router_0909_terminal",
+      "bundle_sha256": "b66a08cd78fe13a4340c9707459e10ba11068f620d086a90abaa831467be9852"
+    },
+    "FULL": {
+      "dir": "agents/shop_router_0909_front_run/full",
+      "bundle_sha256": "9b43bc12f2e6c6ba01111b536b8c922e964b2d52cb93543ec3fd471396644072",
+      "submission_id": 56143925,
+      "public_score": 2461.9
+    },
+    "STEP708": {
+      "dir": "agents/shop_router_0909_front_run/step708",
+      "bundle_sha256": "9436c077233b18a84b718839d9e1ae97b78548727f3cc865c5fe2b7e05977909",
+      "submission_id": 56143730,
+      "public_score": 2446.5
+    }
+  },
+  "promotion_history": [
+    {
+      "date": "2026-09-09",
+      "agent": "shop_router_0909_hardened",
+      "status": "PROMOTED_RESEARCH_BEST",
+      "submission_id": 56123896,
+      "public_score": 2377.9
+    },
+    {
+      "date": "2026-09-10",
+      "agent": "shop_router_0909_terminal",
+      "status": "PROMOTED_RESEARCH_BEST",
+      "submission_id": 56138084,
+      "public_score": 2496.8
+    },
+    {
+      "date": "2026-09-10",
+      "agent": "shop_router_0909_terminal_d_front_run_step708",
+      "status": "PROMOTED_RESEARCH_BEST",
+      "submission_id": 56143730,
+      "public_score": 2446.5,
+      "superseded": "contradicted by the 2026-09-11 leaderboard snapshot"
+    },
+    {
+      "date": "2026-09-12",
+      "agent": "smaller_market_shock_v233h_safe",
+      "status": "LOCAL_RESEARCH_CANDIDATE, later submitted",
+      "submission_id": 56183575,
+      "public_score": 2249.4
+    },
+    {
+      "date": "2026-09-15",
+      "agent": "smaller_market_shock_v233h_non_yarn_0911",
+      "status": "LOCAL_RESEARCH_CANDIDATE",
+      "submission_id": null,
+      "public_score": null
+    }
+  ],
+  "open_question": "No local benchmark currently predicts leaderboard direction. experiments/lb_calibration_report.md declined to lock Benchmark V2 because source lineage is unknown for 99.05% of official matches. Treat every LOCAL_RESEARCH_CANDIDATE as unproven online.",
+  "kaggle_submission_made": false
+}

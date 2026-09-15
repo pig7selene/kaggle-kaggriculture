@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact shop schedules and RNG seeds of the 15 current top-five official replays. Replaces reading the 466 MB replay corpus under /private/tmp.",
+  "extracted_at_utc": "2026-09-15T08:08:29+00:00",
+  "source_corpus": "/private/tmp/kaggriculture_cross_lineage_20260912/replays",
+  "source_replay_count": 15,
+  "crosscheck": {
+    "performed": true,
+    "source": "experiments/smaller_v233h_non_yarn_0911_fixed_current_top_schedules.json",
+    "compared": 15,
+    "mismatches": [],
+    "identical": true
+  },
+  "payload_sha256": "d777892861ef2c1fa6b42f0472a0b15c77dfd18fec0096d67a9baa9df533f25c",
+  "local_only": true,
+  "kaggle_submission_made": false,
+  "schedules": [
+    {
+      "episode_id": 108104079,
+      "seed": 663989352,
+      "teams": [
+        "feel the agi",
+        "Artem The Farmer 🍅"
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ]
+    },
+    {
+      "episode_id": 108104104,
+      "seed": 990720352,
+      "teams": [
+        "Artem The Farmer 🍅",
+        "SpaTaro"
+      ],
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "episode_id": 108109289,
+      "seed": 1308474658,
+      "teams": [
+        "Majkel1337",
+        "ymg_aq"
+      ],
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 108110082,
+      "seed": 342064326,
+      "teams": [
+        "SpaTaro",
+        "Unknown Mother-Goose"
+      ],
+      "shops": [
+        "PET_CAFE",
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "episode_id": 108112029,
+      "seed": 955931402,
+      "teams": [
+        "SpaTaro",
+        "feel the agi"
+      ],
+      "shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "BAKERY",
+        "PET_CAFE"
+      ]
+    },
+    {
+      "episode_id": 108115160,
+      "seed": 1263486956,
+      "teams": [
+        "Majkel1337",
+        "ymg_aq"
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "episode_id": 108115169,
+      "seed": 2044467911,
+      "teams": [
+        "ymg_aq",
+        "Suliman Tadros"
+      ],
+      "shops": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ]
+    },
+    {
+      "episode_id": 108115171,
+      "seed": 1252143616,
+      "teams": [
+        "Artem The Farmer 🍅",
+        "Unknown Mother-Goose"
+      ],
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BAKERY",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 108118069,
+      "seed": 581883232,
+      "teams": [
+        "SpaTaro",
+        "Unknown Mother-Goose"
+      ],
+      "shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 108121147,
+      "seed": 795148593,
+      "teams": [
+        "ymg_aq",
+        "Majkel1337"
+      ],
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "episode_id": 108121150,
+      "seed": 472701202,
+      "teams": [
+        "Majkel1337",
+        "Unknown Mother-Goose"
+      ],
+      "shops": [
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ]
+    },
+    {
+      "episode_id": 108121157,
+      "seed": 789156196,
+      "teams": [
+        "ymg_aq",
+        "Unknown Mother-Goose"
+      ],
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "episode_id": 108121160,
+      "seed": 1412125977,
+      "teams": [
+        "Unknown Mother-Goose",
+        "Otter Vibe"
+      ],
+      "shops": [
+        "YARN_STORE",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    },
+    {
+      "episode_id": 108121161,
+      "seed": 1318929085,
+      "teams": [
+        "Artem The Farmer 🍅",
+        "Le Viet"
+      ],
+      "shops": [
+        "PET_CAFE",
+        "BAKERY",
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PIZZA_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "episode_id": 108124100,
+      "seed": 647714414,
+      "teams": [
+        "SpaTaro",
+        "feel the agi"
+      ],
+      "shops": [
+        "PET_CAFE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    }
+  ]
+}

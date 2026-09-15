@@ -1,0 +1,54 @@
+E184 Sale Window, modified September 10, 2026 by Dmitrii Gluzdov.
+Parent: prvsiyan, Kaggriculture Frontier | The Moon Counts Melons, public v37.
+https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-moon-counts-melons
+Original 13 production tapes: yhay81, Shop Router 0909.
+https://www.kaggle.com/code/yhay81/shop-router-0909
+Sale timing and shed projection credit: aurax7, Reactive Router.
+https://www.kaggle.com/code/aurax7/kaggriculture-reactive-router
+Parent terminal collection credits Dmitrii Gluzdov's Seven-Turn Rescue.
+All original in-source author notices are retained. Apache License 2.0.
+
+Changes: sale reservations across two or three known future own actions;
+per-due-step debt avoids counting an advanced sale twice; stock projection
+runs after all worker repairs; queue, consumer, capacity and route-boundary
+guards. Routes, feed and crop-investment logic remain inherited.
+Packaging: inline route JSON restored as actions.json, complete license moved
+from comments to LICENSE.txt; executable source remains readable, uncompressed.
+
+E185, September11 2026, Dmitrii Gluzdov: repeated sale-receipt probes and
+productive-layout similarity gate a short extra reservation lead. Inspired by
+https://www.kaggle.com/code/leoprovorov/kaggricult-man-reverse-engineering-top-agents
+Implementation preserves E184 financing, due-step debt and actual-stock guards.
+
+E186, September11 2026, Dmitrii Gluzdov: merge eligible future sales into an
+already scheduled same-item sale, subtracting current orders from actual stock.
+Preserve financing, consumers, order capacity and due-step debt settlement.
+
+E186: public-quote priority within existing contiguous sale-only order blocks.
+No sale crosses a purchase; quantities and protected opening stay unchanged.
+
+E187 research: capped actual-stock market-depth ordering. Price formula from
+Kaggle Environments Kaggriculture 1.32.7; retain upstream Apache-2.0 license.
+
+E187 guarded impact variant: single sale-only block, default quote identity;
+rival-first stress batch is ceil(own executable quantity / 2).
+
+V233H-0911, September 13 2026: added non-Yarn continuations.
+
+This bundle carries 21 action tapes, not the 13 of the parent. Tapes 0-12 are
+unchanged from A Smaller Market Shock and its Shop Router 0909 ancestry, and
+still serve every Yarn-related first-shop pair. Tapes 13-20 are eight complete
+continuations taken verbatim from a second public Apache-2.0 notebook:
+
+  yhay81, Shop Router 0911 Simple
+  https://www.kaggle.com/code/yhay81/shop-router-0911-simple
+
+They are reached only through 42 non-Yarn first-shop pairs. Seven further
+non-Yarn pairs were measured as negative locally and deliberately left on the
+inherited tape 0.
+
+Changes made here, not inherited: the SHOP_PLANS route map is extended with
+those 42 pairs; the V233 six-sheep investment is gated off on exactly those
+routes; and donor hand slots are normalised to the observed hired-hand count.
+No inherited routing, repair, sale, liquidation or feed rule was modified, and
+no donor source file is redistributed other than the eight tapes above.

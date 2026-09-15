@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "purpose": "Persistent copies of the external donor assets that the in-repo research candidates were built and validated against. Copied out of /private/tmp, which macOS reaps. Every entry is byte-identical to the /private/tmp source at copy time and to the SHA-256 recorded in the corresponding build receipt or research lock.",
+  "copied_at_utc": "2026-09-15T08:07:51+00:00",
+  "license_note": "All donor sources are public Apache-2.0 Kaggle notebooks. Their own LICENSE and NOTICE files are preserved verbatim. No donor source is redistributed as our own work; see each agent's NOTICE for the attribution chain.",
+  "kaggle_submission_made": false,
+  "donors": {
+    "shop_router_0911_simple": {
+      "role": "route donor for smaller_market_shock_v233h_non_yarn_0911",
+      "origin_tmp_path": "/private/tmp/kaggriculture_shop_router_0911_simple",
+      "kaggle_url": "https://www.kaggle.com/code/yhay81/shop-router-0911-simple",
+      "consumed_by": [
+        "build_smaller_v233h_non_yarn_0911.py"
+      ],
+      "supplies": "14 fixed tapes and 64 ordered shop-pair mappings; 42 non-Yarn continuations were transplanted",
+      "files": {
+        "kernel-metadata.json": {
+          "sha256": "91077dca1176b0b90e59ea487016f81be7fab51b5066fb10df05cd0fdca3bd67",
+          "bytes": 592
+        },
+        "main.py": {
+          "sha256": "10bc8d733f9f638a70817979b4e1d14ef5d958f0865db15237cbf4bc3553f110",
+          "bytes": 168882
+        },
+        "shop-router-0911-simple.ipynb": {
+          "sha256": "6b351ae331e48735dd78c749137198b7de19b1282578d3700e715f641c7e2f56",
+          "bytes": 172934
+        }
+      }
+    },
+    "smaller_market_shock_public": {
+      "role": "public parent of the whole V233H lineage",
+      "origin_tmp_path": "/private/tmp/kaggriculture_latest_notebooks/smaller_market_shock",
+      "kaggle_url": "https://www.kaggle.com/code/dmitriigluzdov/kaggriculture-a-smaller-market-shock",
+      "consumed_by": [
+        "package_smaller_v233h_safe.py (PublicSmallerParent equivalence opponent)",
+        "run_latest_public_challenger_screen.py (SmallerMarketShock)",
+        "build_smaller_market_shock_v233_hybrid.py (SOURCE)"
+      ],
+      "files": {
+        "agent/LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "agent/NOTICE.txt": {
+          "sha256": "280e3901b7361ab401306d969adb82ca55bbc0d5a2ffa4a19a8248243e69e8ec",
+          "bytes": 2065
+        },
+        "agent/actions.json": {
+          "sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+          "bytes": 5099830
+        },
+        "agent/main.py": {
+          "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "bytes": 1083
+        },
+        "agent/policy.py": {
+          "sha256": "7bba4627d009925f309376da5112ba9724bd7d49154d7057980853ae3d8e9be2",
+          "bytes": 839
+        },
+        "agent/router.py": {
+          "sha256": "8a7407f4a4ae0da3557746a3338b884d1f8b47b98d2775ae14adf8749af44ad2",
+          "bytes": 53879
+        },
+        "agent/settings.json": {
+          "sha256": "7078887bbda0165699ab641a79610caa7e31f3235954b3c321fbb5e34d58ab4e",
+          "bytes": 24
+        },
+        "kaggriculture-a-smaller-market-shock.ipynb": {
+          "sha256": "4f9bfc716385c7a9b19a965d1776b9f0a16840bdb46ce94508ae847b082600c1",
+          "bytes": 292929
+        },
+        "kernel-metadata.json": {
+          "sha256": "4032597bdc9737bb248e33d5f96cca22092a8f631ac4217a633d4a3076de3736",
+          "bytes": 639
+        }
+      }
+    },
+    "soil_remembers_rain_public": {
+      "role": "source notebook of the exact V233/V234 six-sheep module embedded in the candidate",
+      "origin_tmp_path": "/private/tmp/kaggriculture_latest_notebooks/soil_remembers_rain",
+      "kaggle_url": "https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "note": "The extracted executable form (current_meta_agents/soil_v235_combined/main.py, sha256 6c1f6dfa29f1064608f7760e827897aa6c590f9ba7550ecff23610c5ecabac2d) was already lost to the /private/tmp reaper before this copy. This notebook is the remaining recovery path for that module's provenance.",
+      "files": {
+        "kaggriculture-frontier-the-soil-remembers-rain.ipynb": {
+          "sha256": "ef0a50233f5c554791788d5e17aa792ea93ebcdd1c45923d542166ea33ad8986",
+          "bytes": 601558
+        },
+        "kernel-metadata.json": {
+          "sha256": "c380176d263629fa2b5a676be9578fc3701a306f598ce273731cde5be44d8b60",
+          "bytes": 664
+        }
+      }
+    },
+    "current_meta_agents": {
+      "role": "intermediate build chain for smaller_market_shock_v233h_safe, plus the salvaged origin record of the lost public opponents",
+      "origin_tmp_path": "/private/tmp/current_meta_agents",
+      "consumed_by": [
+        "build_smaller_v233h_safe.py (SOURCE = smaller_market_shock_v233_hybrid)",
+        "run_current_meta_fast_league.py / run_current_meta_deep_validation.py / run_latest_public_challenger_screen.py (opponent table)"
+      ],
+      "files": {
+        "manifest.json": {
+          "sha256": "563d5225706cafbfb79e2719e7f5d8c6cd20e9370ae0746955dea2ccac335f39",
+          "bytes": 2550
+        },
+        "smaller_market_shock_v233_hybrid/LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "smaller_market_shock_v233_hybrid/NOTICE.txt": {
+          "sha256": "280e3901b7361ab401306d969adb82ca55bbc0d5a2ffa4a19a8248243e69e8ec",
+          "bytes": 2065
+        },
+        "smaller_market_shock_v233_hybrid/actions.json": {
+          "sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+          "bytes": 5099830
+        },
+        "smaller_market_shock_v233_hybrid/main.py": {
+          "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "bytes": 1083
+        },
+        "smaller_market_shock_v233_hybrid/policy.py": {
+          "sha256": "7bba4627d009925f309376da5112ba9724bd7d49154d7057980853ae3d8e9be2",
+          "bytes": 839
+        },
+        "smaller_market_shock_v233_hybrid/router.py": {
+          "sha256": "7dd819c9b4e4cbac1c3b3b9ad351a46594b9ed58ebc1086bf70fc5cd1f63a85a",
+          "bytes": 64123
+        },
+        "smaller_market_shock_v233_hybrid/settings.json": {
+          "sha256": "7078887bbda0165699ab641a79610caa7e31f3235954b3c321fbb5e34d58ab4e",
+          "bytes": 24
+        },
+        "smaller_market_shock_v233h_safe/LICENSE.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358
+        },
+        "smaller_market_shock_v233h_safe/NOTICE.txt": {
+          "sha256": "280e3901b7361ab401306d969adb82ca55bbc0d5a2ffa4a19a8248243e69e8ec",
+          "bytes": 2065
+        },
+        "smaller_market_shock_v233h_safe/actions.json": {
+          "sha256": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+          "bytes": 5099830
+        },
+        "smaller_market_shock_v233h_safe/main.py": {
+          "sha256": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+          "bytes": 1083
+        },
+        "smaller_market_shock_v233h_safe/policy.py": {
+          "sha256": "7bba4627d009925f309376da5112ba9724bd7d49154d7057980853ae3d8e9be2",
+          "bytes": 839
+        },
+        "smaller_market_shock_v233h_safe/router.py": {
+          "sha256": "caf20d5b471c65d78beb835fe30fd21e390dac0e8bbef4d63bfc2710677aa781",
+          "bytes": 66331
+        },
+        "smaller_market_shock_v233h_safe/settings.json": {
+          "sha256": "7078887bbda0165699ab641a79610caa7e31f3235954b3c321fbb5e34d58ab4e",
+          "bytes": 24
+        }
+      }
+    }
+  },
+  "lost_before_copy": {
+    "note": "These assets were already emptied by the macOS /private/tmp reaper (observed 2026-09-15) before this migration ran. They are NOT recovered here. Their origin and SHA-256 survive in agents/_donors/current_meta_agents/manifest.json, so each is re-downloadable from Kaggle with a verifiable identity check.",
+    "current_meta_agents": [
+      "ahmed_v31",
+      "ahmed_v32",
+      "dynamic_route_v2",
+      "fields_of_fortune",
+      "melon_baseline_v4",
+      "moon_v232_late",
+      "soil_v235_combined"
+    ],
+    "current_meta_agents_detail": [
+      {
+        "candidate": "ahmed_v31",
+        "origin": "ahmedberatozer/notebook5d4a0f4e5c v1",
+        "bytes": 235111,
+        "main_sha256": "3a72da1f2b3b31386366988408503f01581c285529137317c785ea4863b341ab"
+      },
+      {
+        "candidate": "ahmed_v32",
+        "origin": "ahmedberatozer/notebook22beb6025a v1",
+        "bytes": 244825,
+        "main_sha256": "54383d46ae4101108d43073dd15b7ac86647307bc29d97131970d5fa6d8e596d"
+      },
+      {
+        "candidate": "dynamic_route_v2",
+        "origin": "reyhanksatria/kaggriculture-dynamic-route-agent v2",
+        "bytes": 8766,
+        "main_sha256": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281"
+      },
+      {
+        "candidate": "fields_of_fortune",
+        "origin": "ayeshasummaiyya/fields-of-fortune-strategic-farming-agent",
+        "bytes": 32289,
+        "main_sha256": "a659f7654f14a356c22e9a3de3abb8ae208dc76dde1edbc3914f88145c4809f0"
+      },
+      {
+        "candidate": "melon_baseline_v4",
+        "origin": "xuantianfengwu/kaggriculture-melon-baseline-v4",
+        "bytes": 17176,
+        "main_sha256": "39261651739e37137f48f7f2a37f99587fc62dfe91539afb0ae5095275b3cf44"
+      },
+      {
+        "candidate": "moon_v232_late",
+        "origin": "prvsiyan/kaggriculture-frontier-the-moon-counts-melons v39",
+        "bytes": 89193,
+        "main_sha256": "02b1fee4b0e48027d4d3baeeb99518346f4fc5a14724cdb202d09a3425b15a79"
+      },
+      {
+        "candidate": "soil_v235_combined",
+        "origin": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain v34",
+        "bytes": 99438,
+        "main_sha256": "6c1f6dfa29f1064608f7760e827897aa6c590f9ba7550ecff23610c5ecabac2d"
+      }
+    ],
+    "other_directories": [
+      {
+        "path": "/private/tmp/lb_gap_opponents",
+        "contained": "market_smart, most_powerfull, farming_v3_current, shape_shop_current, seven_rescue",
+        "breaks": [
+          "run_wlt_benchmark_v1.py",
+          "run_front_run_candidates.py",
+          "package_front_run_candidate.py",
+          "run_terminal_overlay_sprint.py",
+          "validate_terminal_overlay_packaging.py",
+          "run_terminal_d_tie_diagnostics.py"
+        ]
+      },
+      {
+        "path": "/private/tmp/v27_exact",
+        "contained": "exact public V27 front-running agent and archive",
+        "breaks": [
+          "run_v27_front_running.py",
+          "build_v27_front_running_artifacts.py"
+        ]
+      }
+    ]
+  }
+}

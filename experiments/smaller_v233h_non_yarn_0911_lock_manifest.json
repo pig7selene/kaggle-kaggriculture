@@ -1,0 +1,776 @@
+{
+  "schema_version": 1,
+  "locked_at_utc": "2026-09-15T08:24:24+00:00",
+  "status": "research_candidate_packaged_not_submitted",
+  "candidate": "SmallerShockV233HNonYarn0911",
+  "identity": {
+    "path": "agents/smaller_market_shock_v233h_non_yarn_0911",
+    "members": {
+      "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "NOTICE.txt": "f1de289ac8415604a8c7cab9dc15b98d1b2388594db2367ba46c6ff98eec1246",
+      "actions.json": "4db620b7b25f7cc4b958000e7f33685f4c314498da4ff0204e72c6eadc8dc4c2",
+      "main.py": "495bfa4825c9e58638e804aeeb62a9537826f6d4d869222815e1bbeefd84d3dc",
+      "policy.py": "7bba4627d009925f309376da5112ba9724bd7d49154d7057980853ae3d8e9be2",
+      "router.py": "86893d150e7beba0e0fe8e28a3a126409f02b9a9d371b51ebfa761ad7efbcae8",
+      "settings.json": "7078887bbda0165699ab641a79610caa7e31f3235954b3c321fbb5e34d58ab4e"
+    },
+    "bundle_sha256": "04cd97b3d329813b148f55afde5df877ed8f73207a543d99447c278d19d2dd9e",
+    "executable_members": [
+      "main.py",
+      "policy.py",
+      "router.py",
+      "actions.json",
+      "settings.json"
+    ],
+    "executable_bundle_sha256": "acb8e2739b32bc9088145505af7034ed65fa576e00061ca19c3e2a97bf1f8651"
+  },
+  "parent": {
+    "candidate": "SmallerShockV233HSafe",
+    "path": "agents/smaller_market_shock_v233h_safe",
+    "bundle_sha256": "76bf23237a2112268a6b459f4013ad04a1c1cdb688b4ce68fc3674b93cff49fc",
+    "executable_bundle_sha256": "d2a36a3e71fd38f1c487ae1891ef28a22b62301015be51f7a57876f628b8ebf3",
+    "online_submission_id": 56183575,
+    "online_public_score": 2249.4,
+    "online_record": "109W/26L/1T over 136 public games, GSR 0.8051"
+  },
+  "donor": {
+    "notebook": "yhay81, Shop Router 0911 Simple",
+    "kaggle_url": "https://www.kaggle.com/code/yhay81/shop-router-0911-simple",
+    "license": "Apache-2.0",
+    "in_repo_copy": "agents/_donors/shop_router_0911_simple/main.py",
+    "sha256": "10bc8d733f9f638a70817979b4e1d14ef5d958f0865db15237cbf4bc3553f110",
+    "provenance_manifest": "agents/_donors/DONOR_MANIFEST.json"
+  },
+  "build": {
+    "script": "build_smaller_v233h_non_yarn_0911.py",
+    "receipt": "experiments/smaller_v233h_non_yarn_0911_build.json",
+    "receipt_sha256": "89e42d5e58f797f748b9a1dba56c3b04f04cdf59570efc5940e99eb0aac8bc8a",
+    "reproducible_from_repository_only": true,
+    "total_candidate_tapes": 21,
+    "retained_yarn_routes": 15,
+    "added_non_yarn_routes": 42,
+    "added_donor_plans": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "candidate_plan_indices": {
+      "3": 13,
+      "6": 14,
+      "7": 15,
+      "8": 16,
+      "9": 17,
+      "10": 18,
+      "11": 19,
+      "12": 20
+    },
+    "opening_field_equivalence_steps": 144,
+    "added_non_yarn_pairs": [
+      [
+        "BAKERY",
+        "BAKERY"
+      ],
+      [
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      [
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      [
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      [
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      [
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP"
+      ],
+      [
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      [
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      [
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      [
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      [
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      [
+        "PIZZA_SHOP",
+        "BAKERY"
+      ],
+      [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      [
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "BAKERY"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ]
+    ],
+    "blacklisted_non_yarn_pairs": [
+      [
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      [
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "FARMERS_MARKET",
+        "FARMERS_MARKET"
+      ],
+      [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      [
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ]
+    ]
+  },
+  "deltas_vs_parent": [
+    "SHOP_PLANS extended with 42 non-Yarn first-shop pairs routed to 8 donor tapes (indices 13-20).",
+    "V233 six-sheep investment gated off on exactly those 42 routes.",
+    "Donor hand slots normalised to the observed hired-hand count (V0911 layer).",
+    "actions.json grows from 13 to 21 tapes; tapes 0-12 are byte-identical to the parent's.",
+    "NOTICE.txt extended with the donor attribution required by Apache-2.0."
+  ],
+  "unchanged_vs_parent": [
+    "main.py, policy.py and settings.json are byte-identical to the parent.",
+    "All 15 Yarn-related routes and the plan-0 fallback for non-enabled pairs.",
+    "Every inherited repair, sale-reservation, market-depth, liquidation and feed rule."
+  ],
+  "blacklist_provenance": {
+    "rule": "A non-Yarn pair was excluded from the candidate route map if the transplanted continuation lost at least one screen game against the V233H Safe baseline on that pair.",
+    "pairs": {
+      "BRUNCH_SPOT + BRUNCH_SPOT": {
+        "full_screen": {
+          "losses": 2,
+          "advantages": [
+            -179.0,
+            -179.0
+          ]
+        },
+        "pair_screen": {
+          "losses": 2,
+          "advantages": [
+            -1416.0,
+            -1072.0
+          ]
+        }
+      },
+      "BRUNCH_SPOT + ICE_CREAM_SHOP": {
+        "pair_screen": {
+          "losses": 2,
+          "advantages": [
+            -7753.0,
+            -7753.0
+          ]
+        }
+      },
+      "FARMERS_MARKET + FARMERS_MARKET": {
+        "pair_screen": {
+          "losses": 1,
+          "advantages": [
+            -1115.0
+          ]
+        }
+      },
+      "FARMERS_MARKET + ICE_CREAM_SHOP": {
+        "full_screen": {
+          "losses": 2,
+          "advantages": [
+            -1256.0,
+            -1628.0
+          ]
+        }
+      },
+      "ICE_CREAM_SHOP + FARMERS_MARKET": {
+        "pair_screen": {
+          "losses": 2,
+          "advantages": [
+            -8348.0,
+            -8348.0
+          ]
+        }
+      },
+      "PET_CAFE + PIZZA_SHOP": {
+        "full_screen": {
+          "losses": 2,
+          "advantages": [
+            -9155.0,
+            -9155.0
+          ]
+        }
+      },
+      "SMOOTHIE_SHOP + FARMERS_MARKET": {
+        "screen": {
+          "losses": 2,
+          "advantages": [
+            -7745.0,
+            -7745.0
+          ]
+        },
+        "full_screen": {
+          "losses": 2,
+          "advantages": [
+            -9742.0,
+            -9742.0
+          ]
+        }
+      }
+    },
+    "every_blacklisted_pair_has_an_observed_loss": true
+  },
+  "validation": {
+    "screen": {
+      "artifact": "smaller_v233h_non_yarn_0911_screen.json",
+      "artifact_sha256": "4a54c3b5403dc040896461a2f1ca9bc6454192d1cb052cc2ca2a6cc88f0daa94",
+      "binds_to": "superseded_selection_build",
+      "purpose": "causal 0911 non-Yarn suffix screen on every V233H online loss schedule",
+      "overall": {
+        "games": 52,
+        "wins": 44,
+        "losses": 2,
+        "ties": 6,
+        "gsr": 0.9038461538461539,
+        "mean_advantage": 1176.5961538461538,
+        "median_advantage": 1301.0,
+        "worst_advantage": -7745.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 920,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 12,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "changed_non_yarn_routes": {
+        "games": 46,
+        "wins": 44,
+        "losses": 2,
+        "ties": 0,
+        "gsr": 0.9565217391304348,
+        "mean_advantage": 1330.0652173913043,
+        "median_advantage": 1360.0,
+        "worst_advantage": -7745.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 920,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 12,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "unchanged_yarn_controls": {
+        "games": 6,
+        "wins": 0,
+        "losses": 0,
+        "ties": 6,
+        "gsr": 0.5,
+        "mean_advantage": 0.0,
+        "median_advantage": 0.0,
+        "worst_advantage": 0.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      }
+    },
+    "full_screen": {
+      "artifact": "smaller_v233h_non_yarn_0911_full_screen.json",
+      "artifact_sha256": "aacb81005784199f1fb5623032dfbd4d6ee77c8aa8404095d4e786cabdf35545",
+      "binds_to": "superseded_selection_build",
+      "purpose": "causal 0911 non-Yarn suffix screen on V233H online all schedules",
+      "overall": {
+        "games": 272,
+        "wins": 205,
+        "losses": 9,
+        "ties": 58,
+        "gsr": 0.8602941176470589,
+        "mean_advantage": 1262.6948529411766,
+        "median_advantage": 1301.0,
+        "worst_advantage": -9742.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "changed_non_yarn_routes": {
+        "games": 212,
+        "wins": 204,
+        "losses": 8,
+        "ties": 0,
+        "gsr": 0.9622641509433962,
+        "mean_advantage": 1620.061320754717,
+        "median_advantage": 1660.0,
+        "worst_advantage": -9742.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "unchanged_yarn_controls": {
+        "games": 60,
+        "wins": 1,
+        "losses": 1,
+        "ties": 58,
+        "gsr": 0.5,
+        "mean_advantage": 0.0,
+        "median_advantage": 0.0,
+        "worst_advantage": -741.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      }
+    },
+    "pair_screen": {
+      "artifact": "smaller_v233h_non_yarn_0911_pair_screen.json",
+      "artifact_sha256": "24d971707afd2089d87ea7d96c5fb194369c5430a19498fa29d52139846abca9",
+      "binds_to": "superseded_selection_build",
+      "purpose": "fresh-seed exhaustive validation of all 49 non-Yarn first-shop pairs",
+      "overall": {
+        "games": 294,
+        "wins": 287,
+        "losses": 7,
+        "ties": 0,
+        "gsr": 0.9761904761904762,
+        "mean_advantage": 1724.1462585034014,
+        "median_advantage": 1602.0,
+        "worst_advantage": -8348.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "pair_classification": {
+        "positive": 45,
+        "negative": 4
+      }
+    },
+    "whitelist_loss_screen": {
+      "artifact": "smaller_v233h_non_yarn_0911_whitelist_loss_screen.json",
+      "artifact_sha256": "d72e019a6a2bd650c565c31f9903d25ebb0a1e966c2ee23d019ab8c12cb82fa2",
+      "binds_to": "locked_candidate",
+      "purpose": "causal 0911 non-Yarn suffix screen on V233H online losses schedules",
+      "overall": {
+        "games": 52,
+        "wins": 38,
+        "losses": 0,
+        "ties": 14,
+        "gsr": 0.8653846153846154,
+        "mean_advantage": 1302.0192307692307,
+        "median_advantage": 1070.0,
+        "worst_advantage": 0.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "changed_non_yarn_routes": {
+        "games": 38,
+        "wins": 38,
+        "losses": 0,
+        "ties": 0,
+        "gsr": 1.0,
+        "mean_advantage": 1781.7105263157894,
+        "median_advantage": 1368.5,
+        "worst_advantage": 475.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "unchanged_yarn_controls": {
+        "games": 14,
+        "wins": 0,
+        "losses": 0,
+        "ties": 14,
+        "gsr": 0.5,
+        "mean_advantage": 0.0,
+        "median_advantage": 0.0,
+        "worst_advantage": 0.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "agent_exceptions": 0,
+        "candidate_livestock_escapes": 0,
+        "baseline_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      }
+    },
+    "fixed_current_top_schedules": {
+      "artifact": "smaller_v233h_non_yarn_0911_fixed_current_top_schedules.json",
+      "artifact_sha256": "69aaaee6b89683d531c442c88c00d16812884aaa5e7eec4c812ed78794201bbc",
+      "binds_to": "locked_candidate",
+      "purpose": "locked candidate on exact fixed shop schedules from current top-five replays",
+      "overall": {
+        "games": 90,
+        "wins": 90,
+        "losses": 0,
+        "ties": 0,
+        "gsr": 1.0,
+        "mean_advantage": 14269.58888888889,
+        "median_advantage": 9527.0,
+        "worst_advantage": 7.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "candidate_livestock_escapes": 0,
+        "opponent_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      },
+      "by_opponent": {
+        "Top50RedBlackSafe": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 11744.6,
+          "median_advantage": 8561.0,
+          "worst_advantage": 7.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0,
+          "shop_schedule_mismatches": 0
+        },
+        "Top50HanserongSafe": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 17543.766666666666,
+          "median_advantage": 14686.0,
+          "worst_advantage": 4242.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0,
+          "shop_schedule_mismatches": 0
+        },
+        "EndToEndCohort": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 13520.4,
+          "median_advantage": 9230.0,
+          "worst_advantage": 844.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0,
+          "shop_schedule_mismatches": 0
+        }
+      },
+      "episode_108109289": {
+        "games": 6,
+        "wins": 6,
+        "losses": 0,
+        "ties": 0,
+        "gsr": 1.0,
+        "mean_advantage": 6325.333333333333,
+        "median_advantage": 844.0,
+        "worst_advantage": 7.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "semantic_failures": 0,
+        "candidate_livestock_escapes": 0,
+        "opponent_livestock_escapes": 0,
+        "shop_schedule_mismatches": 0
+      }
+    },
+    "cross_lineage_gauntlet": {
+      "artifact": "smaller_v233h_non_yarn_0911_cross_lineage_gauntlet.json",
+      "artifact_sha256": "d71e3a4da782c3a75e85bfbebb60430fe0cb7d81c5c5dd311ed24f9247c582c6",
+      "binds_to": "locked_candidate",
+      "purpose": "locked candidate cross-lineage gauntlet anchored to current official replay RNG seeds",
+      "overall": {
+        "games": 150,
+        "wins": 148,
+        "losses": 2,
+        "ties": 0,
+        "gsr": 0.9866666666666667,
+        "mean_advantage": 35464.22666666667,
+        "median_advantage": 37387.0,
+        "p10_advantage": 6047.0,
+        "worst_advantage": -689.0,
+        "runtime_errors": 0,
+        "agent_errors": 0,
+        "candidate_semantic_failures": 0,
+        "candidate_livestock_escapes": 0,
+        "opponent_livestock_escapes": 0
+      },
+      "by_opponent": {
+        "Top50Portfolio": {
+          "games": 30,
+          "wins": 28,
+          "losses": 2,
+          "ties": 0,
+          "gsr": 0.9333333333333333,
+          "mean_advantage": 14119.333333333334,
+          "median_advantage": 9440.0,
+          "p10_advantage": 4421.0,
+          "worst_advantage": -689.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "candidate_semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0
+        },
+        "Top50HanserongSafe": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 20947.8,
+          "median_advantage": 17868.0,
+          "p10_advantage": 5454.0,
+          "worst_advantage": 4668.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "candidate_semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0
+        },
+        "EndToEndCohort": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 16323.466666666667,
+          "median_advantage": 9958.0,
+          "p10_advantage": 4907.0,
+          "worst_advantage": 164.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "candidate_semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0
+        },
+        "Cow6Capital": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 62965.26666666667,
+          "median_advantage": 61551.5,
+          "p10_advantage": 53334.0,
+          "worst_advantage": 42430.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "candidate_semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0
+        },
+        "CropHeavy": {
+          "games": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "gsr": 1.0,
+          "mean_advantage": 62965.26666666667,
+          "median_advantage": 61551.5,
+          "p10_advantage": 53334.0,
+          "worst_advantage": 42430.0,
+          "runtime_errors": 0,
+          "agent_errors": 0,
+          "candidate_semantic_failures": 0,
+          "candidate_livestock_escapes": 0,
+          "opponent_livestock_escapes": 0
+        }
+      }
+    }
+  },
+  "validation_note": "Panels marked superseded_selection_build ran against earlier 49-route builds and are the selection evidence that produced the 7-pair blacklist. The locked candidate's own confirmation record is the three panels marked locked_candidate: 292 games.",
+  "known_risks": [
+    "No online evidence. The candidate has never played a Kaggle episode; its parent scored 2249.4, below the frozen Terminal D at 2496.8.",
+    "Local panels are not leaderboard-calibrated. experiments/lb_calibration_report.md (CASE D) found 99.05% of official opponents have unknown lineage, and the Terminal-D-to-front-run direction was predicted wrong by local GSR.",
+    "The 42 transplanted continuations come from a notebook whose author states it is a simplified release, not their scoring deployment.",
+    "The blacklist was fitted on the same screens that measured the gain, so the +1782 changed-route mean is an optimistic in-sample estimate.",
+    "Engine skew: the local default is kaggle-environments 1.32.6 while official replays report 1.32.7."
+  ],
+  "promotion_status": "LOCAL_RESEARCH_CANDIDATE",
+  "not_claimed": [
+    "stronger than the frozen Terminal D on the leaderboard",
+    "stronger than its own parent on the leaderboard"
+  ],
+  "frozen_artifacts_unchanged": true,
+  "current_best_changed": false,
+  "kaggle_submission_made": false
+}

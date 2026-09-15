@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "candidate": "soil_v235_combined",
+      "path": "/private/tmp/current_meta_agents/soil_v235_combined/main.py",
+      "origin": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain v34",
+      "entrypoint": "agent",
+      "bytes": 99438,
+      "main_sha256": "6c1f6dfa29f1064608f7760e827897aa6c590f9ba7550ecff23610c5ecabac2d"
+    },
+    {
+      "candidate": "moon_v232_late",
+      "path": "/private/tmp/current_meta_agents/moon_v232_late/main.py",
+      "origin": "prvsiyan/kaggriculture-frontier-the-moon-counts-melons v39",
+      "entrypoint": "agent",
+      "bytes": 89193,
+      "main_sha256": "02b1fee4b0e48027d4d3baeeb99518346f4fc5a14724cdb202d09a3425b15a79"
+    },
+    {
+      "candidate": "ahmed_v32",
+      "path": "/private/tmp/current_meta_agents/ahmed_v32/main.py",
+      "origin": "ahmedberatozer/notebook22beb6025a v1",
+      "entrypoint": "agent",
+      "bytes": 244825,
+      "main_sha256": "54383d46ae4101108d43073dd15b7ac86647307bc29d97131970d5fa6d8e596d"
+    },
+    {
+      "candidate": "ahmed_v31",
+      "path": "/private/tmp/current_meta_agents/ahmed_v31/main.py",
+      "origin": "ahmedberatozer/notebook5d4a0f4e5c v1",
+      "entrypoint": "agent",
+      "bytes": 235111,
+      "main_sha256": "3a72da1f2b3b31386366988408503f01581c285529137317c785ea4863b341ab"
+    },
+    {
+      "candidate": "dynamic_route_v2",
+      "path": "/private/tmp/current_meta_agents/dynamic_route_v2/main.py",
+      "origin": "reyhanksatria/kaggriculture-dynamic-route-agent v2",
+      "entrypoint": "agent",
+      "bytes": 8766,
+      "main_sha256": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281",
+      "files": {
+        "actions.json": "17d503f2fd20d59f9c0f14024d1e74a8add8bb9b5561d4d908b45deecb5495ef",
+        "main.py": "f2b220fc188ef8682debf729ea76f377b8a23a424c05eb375ef287dbc5533281"
+      }
+    },
+    {
+      "candidate": "fields_of_fortune",
+      "path": "/private/tmp/current_meta_agents/fields_of_fortune/main.py",
+      "origin": "ayeshasummaiyya/fields-of-fortune-strategic-farming-agent",
+      "entrypoint": "agent",
+      "bytes": 32289,
+      "main_sha256": "a659f7654f14a356c22e9a3de3abb8ae208dc76dde1edbc3914f88145c4809f0"
+    },
+    {
+      "candidate": "melon_baseline_v4",
+      "path": "/private/tmp/current_meta_agents/melon_baseline_v4/main.py",
+      "origin": "xuantianfengwu/kaggriculture-melon-baseline-v4",
+      "entrypoint": "agent",
+      "bytes": 17176,
+      "main_sha256": "39261651739e37137f48f7f2a37f99587fc62dfe91539afb0ae5095275b3cf44"
+    }
+  ]
+}

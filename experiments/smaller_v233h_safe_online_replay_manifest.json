@@ -1,0 +1,3169 @@
+{
+  "schema_version": 1,
+  "purpose": "Per-episode identity and checksum for the public replay corpus of V233H Safe submission 56183575, so the same baseline batch can be re-downloaded via `kaggle competitions replay <episode_id>` and verified by SHA-256 if /private/tmp/kaggriculture_v233h_online is lost.",
+  "submission_id": 56183575,
+  "team": "pig7selene",
+  "source_corpus": "/private/tmp/kaggriculture_v233h_online",
+  "source_replay_file_count": 137,
+  "valid_baseline_episode_count": 136,
+  "skipped_file_count": 1,
+  "valid_episode_outcomes": {
+    "wins": 109,
+    "losses": 26,
+    "ties": 1
+  },
+  "crosscheck_against_online_submission_report": {
+    "source": "experiments/smaller_v233h_online_submission.md",
+    "reported": "109W/26L/1T over 136 public games, GSR 0.8051",
+    "matches": true
+  },
+  "redownload_instructions": [
+    "kaggle competitions episodes 56183575",
+    "kaggle competitions replay <episode_id> -p <dest-dir>   # for each episode_id below",
+    "verify: sha256(<dest-dir>/episode-<episode_id>-replay.json) == this manifest's 'sha256' field for that episode_id"
+  ],
+  "kaggle_submission_made": false,
+  "local_only": true,
+  "episodes": [
+    {
+      "episode_id": 108143350,
+      "replay_filename": "episode-108143350-replay.json",
+      "sha256": "648ef556d4f0d34ca000c536f37f48dd949366f6ea349ba5028c315eeb7b15cd",
+      "seed": 0,
+      "team_names": [
+        "pig7selene",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": false,
+      "skip_reason": "mirror self-play (both seats same team)"
+    },
+    {
+      "episode_id": 108144520,
+      "replay_filename": "episode-108144520-replay.json",
+      "sha256": "9fda1683f849bd1e4be686b494612a3c8f8c96de4066b4f4d9aedf500f610681",
+      "seed": 1540213010,
+      "team_names": [
+        "pig7selene",
+        "Shivam Kushwaha"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Shivam Kushwaha",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 116940.0,
+      "opponent_money": 27267.0,
+      "margin": 89673.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108145536,
+      "replay_filename": "episode-108145536-replay.json",
+      "sha256": "7100b208d40fe04a095c0cae4ee1f691ad4680cedf5655ffff0e36ed7a696036",
+      "seed": 1211909699,
+      "team_names": [
+        "pig7selene",
+        "Nightshade Family"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Nightshade Family",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 155706.0,
+      "opponent_money": 83720.0,
+      "margin": 71986.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108146482,
+      "replay_filename": "episode-108146482-replay.json",
+      "sha256": "a2a1aa96e2fc549e2766f9acd9b1842b43b13e4171b026a0229c95144975f7ff",
+      "seed": 615752795,
+      "team_names": [
+        "K.Piro",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "K.Piro",
+      "first_two_shops": [
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 89700.0,
+      "opponent_money": 59976.0,
+      "margin": 29724.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108147478,
+      "replay_filename": "episode-108147478-replay.json",
+      "sha256": "7c737a13e4db081817557b1d66408f7a7ebb100ead61718ef01a11cd5890a853",
+      "seed": 1086136041,
+      "team_names": [
+        "bgsszsa",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "bgsszsa",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "own_money": 99571.0,
+      "opponent_money": 54354.0,
+      "margin": 45217.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108148461,
+      "replay_filename": "episode-108148461-replay.json",
+      "sha256": "520994d60801838fe0ce00119a90075ddc8a1a66c83fc03495eb802b3794de01",
+      "seed": 608976018,
+      "team_names": [
+        "Pavel Kazlou",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Pavel Kazlou",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "own_money": 126082.0,
+      "opponent_money": 94915.0,
+      "margin": 31167.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108149477,
+      "replay_filename": "episode-108149477-replay.json",
+      "sha256": "f0fb69105c105a3b2e1206761f4dd787ba530445375034148c73e8d604bff750",
+      "seed": 1689241464,
+      "team_names": [
+        "Cultuurstelsel",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Cultuurstelsel",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "own_money": 106717.0,
+      "opponent_money": 79585.0,
+      "margin": 27132.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108150466,
+      "replay_filename": "episode-108150466-replay.json",
+      "sha256": "edb1ff173e3cd74e19c8e569a76c7b90048cc6f370efe23afc4aa65436210cb4",
+      "seed": 2796523,
+      "team_names": [
+        "next-best-agent",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "next-best-agent",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 155910.0,
+      "opponent_money": 100548.0,
+      "margin": 55362.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108151432,
+      "replay_filename": "episode-108151432-replay.json",
+      "sha256": "e09a7bebad64d34ccad8dbbb487c0e8b528a440fa5b21d7de1db8c2c7c9757c5",
+      "seed": 1090433714,
+      "team_names": [
+        "pig7selene",
+        "Gaston Zarate"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Gaston Zarate",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 111393.0,
+      "opponent_money": 115275.0,
+      "margin": -3882.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108152438,
+      "replay_filename": "episode-108152438-replay.json",
+      "sha256": "eb8b278f10a68a287059366a2d24119337743c5971e87d5dba142c7bcd627450",
+      "seed": 228601945,
+      "team_names": [
+        "Re2lawd",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Re2lawd",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 107614.0,
+      "opponent_money": 94260.0,
+      "margin": 13354.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108153452,
+      "replay_filename": "episode-108153452-replay.json",
+      "sha256": "6228c49b23b29e70b449d53c90897c934b7008861f478d93c22629f31fd2ed7f",
+      "seed": 1360204583,
+      "team_names": [
+        "pig7selene",
+        "Guido Tapia"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Guido Tapia",
+      "first_two_shops": [
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 96547.0,
+      "opponent_money": 77247.0,
+      "margin": 19300.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108154492,
+      "replay_filename": "episode-108154492-replay.json",
+      "sha256": "50dde3070fb07ba686bb7edb0ef9822b05cc1fed5408d0f36da82f687684a3a6",
+      "seed": 1578278730,
+      "team_names": [
+        "Dennis HT",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Dennis HT",
+      "first_two_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 136970.0,
+      "opponent_money": 136312.0,
+      "margin": 658.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108155504,
+      "replay_filename": "episode-108155504-replay.json",
+      "sha256": "8d6194530762c32c117a0ef42956c0d4dd41ec1c4dae8fc8859f6df131f98970",
+      "seed": 88920025,
+      "team_names": [
+        "pig7selene",
+        "Shadowell888"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Shadowell888",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 84903.0,
+      "opponent_money": 91053.0,
+      "margin": -6150.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108156500,
+      "replay_filename": "episode-108156500-replay.json",
+      "sha256": "bc0e5217ca48f3f15060bfe50c4c24200195cb4a2a701f2f570151f882f2843f",
+      "seed": 842323815,
+      "team_names": [
+        "Mohamed Salah",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Mohamed Salah",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 129291.0,
+      "opponent_money": 115616.0,
+      "margin": 13675.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108157550,
+      "replay_filename": "episode-108157550-replay.json",
+      "sha256": "f4695a972aa9987ad020a0df6779fba59cd77cb18ed3778a466ec8607e406ce4",
+      "seed": 27886483,
+      "team_names": [
+        "pig7selene",
+        "Suzuki Yuto - W"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Suzuki Yuto - W",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 118955.0,
+      "opponent_money": 105305.0,
+      "margin": 13650.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108158554,
+      "replay_filename": "episode-108158554-replay.json",
+      "sha256": "adbcc101bef3efc430883be1beb2ec971c5360568b569a9cfaaef9a4910ff7d7",
+      "seed": 235510472,
+      "team_names": [
+        "pig7selene",
+        "Ryuichi"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Ryuichi",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 129313.0,
+      "opponent_money": 119213.0,
+      "margin": 10100.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108159572,
+      "replay_filename": "episode-108159572-replay.json",
+      "sha256": "4fd86711b6f5e17f0184283102a34480eebfb809ea3a0cb0541a64bd1cb0386c",
+      "seed": 812380132,
+      "team_names": [
+        "pig7selene",
+        "Oleg Smirnov"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Oleg Smirnov",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 69353.0,
+      "opponent_money": 64123.0,
+      "margin": 5230.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108160572,
+      "replay_filename": "episode-108160572-replay.json",
+      "sha256": "e76b6ba1c981a36d8bf01a74451807a3ffb1ca33b4ff97833cf8d7714ec25d23",
+      "seed": 527808796,
+      "team_names": [
+        "housssaamos",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "housssaamos",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "own_money": 93005.0,
+      "opponent_money": 67122.0,
+      "margin": 25883.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108161598,
+      "replay_filename": "episode-108161598-replay.json",
+      "sha256": "e5d494e721fb7015cb085899098d6b2f8b7f4f078681030d12ca0b4410f5dcc6",
+      "seed": 111136392,
+      "team_names": [
+        "MioValentine",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "MioValentine",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 88831.0,
+      "opponent_money": 82836.0,
+      "margin": 5995.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108162617,
+      "replay_filename": "episode-108162617-replay.json",
+      "sha256": "9efc50d88b43dd0b6994bdbb492e353fe20ec0df79bd90e4915d7743e00ef8c8",
+      "seed": 1926035098,
+      "team_names": [
+        "Andrej Carpenter",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Andrej Carpenter",
+      "first_two_shops": [
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 63543.0,
+      "opponent_money": 47488.0,
+      "margin": 16055.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108163585,
+      "replay_filename": "episode-108163585-replay.json",
+      "sha256": "dd70a4592b4d33fee679877419e88ffe661882bbf181fabe895cd5c6d12f177b",
+      "seed": 617596024,
+      "team_names": [
+        "pig7selene",
+        "Bark at the Barnyard"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Bark at the Barnyard",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "own_money": 85146.0,
+      "opponent_money": 83871.0,
+      "margin": 1275.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108164648,
+      "replay_filename": "episode-108164648-replay.json",
+      "sha256": "9cc548c3d431645c1fdd36d04ec7c1d99b8eb80efdc5c137850a7935ebb3c3a2",
+      "seed": 962397371,
+      "team_names": [
+        "dk2lone",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "dk2lone",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 94142.0,
+      "opponent_money": 90079.0,
+      "margin": 4063.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108165701,
+      "replay_filename": "episode-108165701-replay.json",
+      "sha256": "9b849e25dcd39041e9df6379202b94f03a6fa9498b6f48b8db10a01f6070146c",
+      "seed": 1037271072,
+      "team_names": [
+        "ruizhichen",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "ruizhichen",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "own_money": 92927.0,
+      "opponent_money": 80855.0,
+      "margin": 12072.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108166648,
+      "replay_filename": "episode-108166648-replay.json",
+      "sha256": "a3d4ee1e2832a3114ecb0a8ca6a978554fb51a3b922d1972bc2d12c4bbd5e77c",
+      "seed": 1639297199,
+      "team_names": [
+        "pig7selene",
+        "WANG HONGXIANG"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "WANG HONGXIANG",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "PET_CAFE"
+      ],
+      "own_money": 65846.0,
+      "opponent_money": 63748.0,
+      "margin": 2098.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108167653,
+      "replay_filename": "episode-108167653-replay.json",
+      "sha256": "5031dcaa48669e85e4b67c65d98fc5eed9c0a75947a28d850163858f49aaf5d2",
+      "seed": 1301998444,
+      "team_names": [
+        "Kamma",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Kamma",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 131902.0,
+      "opponent_money": 126279.0,
+      "margin": 5623.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108168657,
+      "replay_filename": "episode-108168657-replay.json",
+      "sha256": "699f533e4d25fdcf3ff0b43b4d912965d52aa70924fae38cc69e887849d432a6",
+      "seed": 1392091166,
+      "team_names": [
+        "pig7selene",
+        "Yichi"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Yichi",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 120120.0,
+      "opponent_money": 114100.0,
+      "margin": 6020.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108169659,
+      "replay_filename": "episode-108169659-replay.json",
+      "sha256": "8655bd70f3d8dc0cda31a869bc3951b41f19204085945b7ea2a2c9e622ae74b8",
+      "seed": 897085080,
+      "team_names": [
+        "pig7selene",
+        "Haramball forever!"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Haramball forever!",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 127485.0,
+      "opponent_money": 120608.0,
+      "margin": 6877.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108170662,
+      "replay_filename": "episode-108170662-replay.json",
+      "sha256": "fb25be5dce86db7081a7208cdf3d924a8b473ad859a63c562672f49fe4acb4e0",
+      "seed": 936226998,
+      "team_names": [
+        "peeta pit",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "peeta pit",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 115790.0,
+      "opponent_money": 109162.0,
+      "margin": 6628.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108171677,
+      "replay_filename": "episode-108171677-replay.json",
+      "sha256": "6accf16f2fb9e0287b90a087bcbb96417c8bf2ec975075ff2fc875d8758aecaf",
+      "seed": 146704439,
+      "team_names": [
+        "SuzukiKazuma",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "SuzukiKazuma",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 89103.0,
+      "opponent_money": 69035.0,
+      "margin": 20068.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108172673,
+      "replay_filename": "episode-108172673-replay.json",
+      "sha256": "bc1e50ec2605b0acfbe44267532b550cea6ae635316c68ecd5f2ef8ab6940e84",
+      "seed": 913759999,
+      "team_names": [
+        "daoviet",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "daoviet",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "own_money": 75269.0,
+      "opponent_money": 71607.0,
+      "margin": 3662.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108173680,
+      "replay_filename": "episode-108173680-replay.json",
+      "sha256": "6f8d0a5db614f21e2a574c20295b5e81d4ebaa273860dab9c7734fb5b4750e30",
+      "seed": 1638659281,
+      "team_names": [
+        "pig7selene",
+        "aaaaLiu123"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "aaaaLiu123",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 92059.0,
+      "opponent_money": 73753.0,
+      "margin": 18306.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108174683,
+      "replay_filename": "episode-108174683-replay.json",
+      "sha256": "fdb9d42f4ccd9e19eec59cbd82f9237e51737d86d17706118dc275d31071ca3c",
+      "seed": 1021840991,
+      "team_names": [
+        "pig7selene",
+        "Suneeth reddy"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Suneeth reddy",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 118417.0,
+      "opponent_money": 126016.0,
+      "margin": -7599.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108175681,
+      "replay_filename": "episode-108175681-replay.json",
+      "sha256": "09edfc57623de369193f3adc091d1d3b3462ecbac13e0f08c811bbad6e294f70",
+      "seed": 2102327180,
+      "team_names": [
+        "宗宗没有英文名",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "宗宗没有英文名",
+      "first_two_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 85072.0,
+      "opponent_money": 78718.0,
+      "margin": 6354.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108176702,
+      "replay_filename": "episode-108176702-replay.json",
+      "sha256": "86f9c480dea86e9396e15948e93a2c3e0b536cae7e6ba86b2f8aa7ef1bbd0334",
+      "seed": 171286903,
+      "team_names": [
+        "pig7selene",
+        "trung"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "trung",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 70190.0,
+      "opponent_money": 63384.0,
+      "margin": 6806.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108177745,
+      "replay_filename": "episode-108177745-replay.json",
+      "sha256": "8394cef193eb860cd53052d6d3f611a73eed2f2eb5be035484cd1fdf3ec2c66f",
+      "seed": 392189633,
+      "team_names": [
+        "ShiviWhivi",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "ShiviWhivi",
+      "first_two_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 133418.0,
+      "opponent_money": 128752.0,
+      "margin": 4666.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108177929,
+      "replay_filename": "episode-108177929-replay.json",
+      "sha256": "0f3736a44c88b2636f6306b9361629d05e3ea74780d9abe0360fa5d18cefe6a4",
+      "seed": 1031123228,
+      "team_names": [
+        "MD Concepcion",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "MD Concepcion",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 118967.0,
+      "opponent_money": 122482.0,
+      "margin": -3515.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108178703,
+      "replay_filename": "episode-108178703-replay.json",
+      "sha256": "c02f833d9ff85bd56d8bbcafc65a66b2ffc255351a1a6c3eedbf3adf2ef39d33",
+      "seed": 1559502383,
+      "team_names": [
+        "Yvonne.",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Yvonne.",
+      "first_two_shops": [
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 74481.0,
+      "opponent_money": 67712.0,
+      "margin": 6769.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108179735,
+      "replay_filename": "episode-108179735-replay.json",
+      "sha256": "3d02bffd0d5e19a4c0e623b0f4c58313255fee481d8b1cef6cea727daad76996",
+      "seed": 1753512719,
+      "team_names": [
+        "Dmytro Maliarenko",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Dmytro Maliarenko",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 119788.0,
+      "opponent_money": 124761.0,
+      "margin": -4973.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108180754,
+      "replay_filename": "episode-108180754-replay.json",
+      "sha256": "19cb9281d655e09c5ad55600a9a16326e428401c6d75cecd247ace089c5e74b9",
+      "seed": 1007165553,
+      "team_names": [
+        "Ilya & Yurnero",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Ilya & Yurnero",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "own_money": 85075.0,
+      "opponent_money": 81215.0,
+      "margin": 3860.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108181752,
+      "replay_filename": "episode-108181752-replay.json",
+      "sha256": "70274cd4ed892dd80996f6eca79cd7482058e1f58f25779dbaf68d6aa6be9a31",
+      "seed": 1500643964,
+      "team_names": [
+        "pig7selene",
+        "b13902103_yuhung94"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "b13902103_yuhung94",
+      "first_two_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 77605.0,
+      "opponent_money": 80029.0,
+      "margin": -2424.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108182772,
+      "replay_filename": "episode-108182772-replay.json",
+      "sha256": "f63ef1fac73fb59469e81fa12706a39cf88e0930892861a1f0590cf5736dd148",
+      "seed": 1987110927,
+      "team_names": [
+        "GPTatoes",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "GPTatoes",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 123460.0,
+      "opponent_money": 122743.0,
+      "margin": 717.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108183777,
+      "replay_filename": "episode-108183777-replay.json",
+      "sha256": "36c690728c2772c3c8f770a8d7d8d7e88f491689602168da2ff8adfa77a6a929",
+      "seed": 1832606449,
+      "team_names": [
+        "Дворкин Евгений Владимирович",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Дворкин Евгений Владимирович",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 147119.0,
+      "opponent_money": 146256.0,
+      "margin": 863.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108184791,
+      "replay_filename": "episode-108184791-replay.json",
+      "sha256": "2714425622c1b0ac7f6b50342cae80810a160d64d53002572155d5d6c96a3d4a",
+      "seed": 2092123273,
+      "team_names": [
+        "magu1234",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "magu1234",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "own_money": 85984.0,
+      "opponent_money": 84704.0,
+      "margin": 1280.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108185797,
+      "replay_filename": "episode-108185797-replay.json",
+      "sha256": "d5bfbbffa63f740e87bdf48f8c75e149e2e0408c2e220d8819ca2f733678eee8",
+      "seed": 348896446,
+      "team_names": [
+        "Tian hao Qing Nano7ko",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Tian hao Qing Nano7ko",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "YARN_STORE"
+      ],
+      "own_money": 130027.0,
+      "opponent_money": 125896.0,
+      "margin": 4131.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108186823,
+      "replay_filename": "episode-108186823-replay.json",
+      "sha256": "79b1bfa32789f99fd0907a06846d623f3165d5731069ecd0342c243c609883f5",
+      "seed": 1719095139,
+      "team_names": [
+        "taopy2",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "taopy2",
+      "first_two_shops": [
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 104005.0,
+      "opponent_money": 98145.0,
+      "margin": 5860.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108187820,
+      "replay_filename": "episode-108187820-replay.json",
+      "sha256": "fa7751d4408f8544ba29d531178b2d5e98c4ff9f84aa4215c2162c60d05cb4b9",
+      "seed": 247468417,
+      "team_names": [
+        "PapaSoda",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "PapaSoda",
+      "first_two_shops": [
+        "BAKERY",
+        "BAKERY"
+      ],
+      "own_money": 50347.0,
+      "opponent_money": 46713.0,
+      "margin": 3634.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108188835,
+      "replay_filename": "episode-108188835-replay.json",
+      "sha256": "fd0685a8243439a464fb5e9839793061cbc3d0d55f974df18caca5c5d33126ed",
+      "seed": 81300853,
+      "team_names": [
+        "Snorlax",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Snorlax",
+      "first_two_shops": [
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 61977.0,
+      "opponent_money": 63272.0,
+      "margin": -1295.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108189849,
+      "replay_filename": "episode-108189849-replay.json",
+      "sha256": "92f6f1c055d1ea9ecbc4036dec3b68a6a24aa46a4d876ba303cd5b740ec92298",
+      "seed": 884831186,
+      "team_names": [
+        "Touk00",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Touk00",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 114587.0,
+      "opponent_money": 110259.0,
+      "margin": 4328.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108190858,
+      "replay_filename": "episode-108190858-replay.json",
+      "sha256": "e839f7cee36de602097df07a8097899fc50301c37f41960fdb4c2223993ca977",
+      "seed": 710005126,
+      "team_names": [
+        "pig7selene",
+        "No Name #2"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "No Name #2",
+      "first_two_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 75053.0,
+      "opponent_money": 65844.0,
+      "margin": 9209.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108191873,
+      "replay_filename": "episode-108191873-replay.json",
+      "sha256": "5589b38013dab1b588c238ccc532e91dde72cfb0b6a4a01095f11046e9231880",
+      "seed": 1210162807,
+      "team_names": [
+        "pig7selene",
+        "Дворкин Евгений Владимирович"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Дворкин Евгений Владимирович",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "own_money": 69194.0,
+      "opponent_money": 64941.0,
+      "margin": 4253.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108192222,
+      "replay_filename": "episode-108192222-replay.json",
+      "sha256": "063b00dc3fc0e7dd09e82023d9c3108f8598799c5c6eede1cb7ea41bce36401e",
+      "seed": 185490319,
+      "team_names": [
+        "Dresden",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Dresden",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 92637.0,
+      "opponent_money": 85425.0,
+      "margin": 7212.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108192883,
+      "replay_filename": "episode-108192883-replay.json",
+      "sha256": "b167b0608c6219d8ab7ec8f659c327d9421eadf3e1685c25c9f893a3d5e658c7",
+      "seed": 673043781,
+      "team_names": [
+        "pig7selene",
+        "Nav N"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Nav N",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 111304.0,
+      "opponent_money": 107032.0,
+      "margin": 4272.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108193698,
+      "replay_filename": "episode-108193698-replay.json",
+      "sha256": "a784edba19a5310cbf221702ddbfe1d8d9319c6bd561f770530935ab063b2a3f",
+      "seed": 1497340816,
+      "team_names": [
+        "俺是耕田哩",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "俺是耕田哩",
+      "first_two_shops": [
+        "BAKERY",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 50898.0,
+      "opponent_money": 53239.0,
+      "margin": -2341.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108194148,
+      "replay_filename": "episode-108194148-replay.json",
+      "sha256": "25e1915ae2c7e9d0c6a2e1d29f49ec31d874113b6984d2b1b97bb8bae541d2e0",
+      "seed": 895785583,
+      "team_names": [
+        "pig7selene",
+        "bharat"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "bharat",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "own_money": 92120.0,
+      "opponent_money": 84164.0,
+      "margin": 7956.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108194907,
+      "replay_filename": "episode-108194907-replay.json",
+      "sha256": "f611a36c69d6bbb03dd2422f4dd2f5e8354e8d3244acdc9a502f1dfa57f72046",
+      "seed": 645569460,
+      "team_names": [
+        "yefenfei",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "yefenfei",
+      "first_two_shops": [
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "own_money": 109894.0,
+      "opponent_money": 73800.0,
+      "margin": 36094.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108195912,
+      "replay_filename": "episode-108195912-replay.json",
+      "sha256": "966daa04b95e16070dc78c0954b671b0f257b935bf7b9268c06665edd315b456",
+      "seed": 13533311,
+      "team_names": [
+        "Vsevolod Rakita",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Vsevolod Rakita",
+      "first_two_shops": [
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 69340.0,
+      "opponent_money": 64848.0,
+      "margin": 4492.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108196911,
+      "replay_filename": "episode-108196911-replay.json",
+      "sha256": "128f89c507e047b4a3d1d5b07d477118cbddfe6d76d30d25107e7b12f69ea1dc",
+      "seed": 1317344162,
+      "team_names": [
+        "pig7selene",
+        "ChandramouliNagasundaram"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "ChandramouliNagasundaram",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "own_money": 87174.0,
+      "opponent_money": 82389.0,
+      "margin": 4785.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108197914,
+      "replay_filename": "episode-108197914-replay.json",
+      "sha256": "b4f8055f42dc5a0e7c25d86d5dbac4b286f51b813ab19618ab71e83417709eb1",
+      "seed": 58079668,
+      "team_names": [
+        "pig7selene",
+        "Bohdan Boklah"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Bohdan Boklah",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "own_money": 103037.0,
+      "opponent_money": 95400.0,
+      "margin": 7637.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108198922,
+      "replay_filename": "episode-108198922-replay.json",
+      "sha256": "a376b978240a9e583108f0f0f876a4188580e7a845855be3da7034e54a75ef3e",
+      "seed": 868998067,
+      "team_names": [
+        "pig7selene",
+        "lime0001"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "lime0001",
+      "first_two_shops": [
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 82303.0,
+      "opponent_money": 78204.0,
+      "margin": 4099.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108199925,
+      "replay_filename": "episode-108199925-replay.json",
+      "sha256": "93fceceb858a8e4c93086f27e646cb4e583d655799d0cbc12770fe6e907d5d96",
+      "seed": 1473452354,
+      "team_names": [
+        "Kragglenote2 Forwork",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Kragglenote2 Forwork",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 94859.0,
+      "opponent_money": 91042.0,
+      "margin": 3817.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108200944,
+      "replay_filename": "episode-108200944-replay.json",
+      "sha256": "eb01bb2825227aa64736531d16f10d777285d5689e58d4e85c63d0c4f8b03670",
+      "seed": 1286524862,
+      "team_names": [
+        "pig7selene",
+        "Alex Paul"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Alex Paul",
+      "first_two_shops": [
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 77780.0,
+      "opponent_money": 75245.0,
+      "margin": 2535.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108201315,
+      "replay_filename": "episode-108201315-replay.json",
+      "sha256": "aa6a21c14682ec517fc0c5f3f95d231b0f0d6b53411061aeb7f32737e8665638",
+      "seed": 261451543,
+      "team_names": [
+        "Vân Nguyễn",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Vân Nguyễn",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 102453.0,
+      "opponent_money": 96255.0,
+      "margin": 6198.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108201963,
+      "replay_filename": "episode-108201963-replay.json",
+      "sha256": "98ba7ddfd4f1147bc11e2ff417a359dfa04b3772f9868105a9b740123e2a78c9",
+      "seed": 1009464068,
+      "team_names": [
+        "LuanHengYu",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "LuanHengYu",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 102853.0,
+      "opponent_money": 103167.0,
+      "margin": -314.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108202978,
+      "replay_filename": "episode-108202978-replay.json",
+      "sha256": "55f3be5c7af7dfa1b558b58f7dc31a5f1e329c2cb01cafe7feecfbe43d58c81f",
+      "seed": 1562650380,
+      "team_names": [
+        "Akhil Chinta",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Akhil Chinta",
+      "first_two_shops": [
+        "YARN_STORE",
+        "YARN_STORE"
+      ],
+      "own_money": 130698.0,
+      "opponent_money": 115075.0,
+      "margin": 15623.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108203990,
+      "replay_filename": "episode-108203990-replay.json",
+      "sha256": "24bc869e3d38ff3e3ca75b8e4dbf66c0e8fc3300d5d47bbb7dfc5d05c5c89d29",
+      "seed": 2043232330,
+      "team_names": [
+        "pig7selene",
+        "CleoCantCompete"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "CleoCantCompete",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "own_money": 69776.0,
+      "opponent_money": 64213.0,
+      "margin": 5563.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108205009,
+      "replay_filename": "episode-108205009-replay.json",
+      "sha256": "2b67fc9512e4a6e837cf912d86590edaad1eb979ef423982112ca0d516b9a68e",
+      "seed": 826067653,
+      "team_names": [
+        "Jacky Chan",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Jacky Chan",
+      "first_two_shops": [
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 95794.0,
+      "opponent_money": 88488.0,
+      "margin": 7306.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108206026,
+      "replay_filename": "episode-108206026-replay.json",
+      "sha256": "9e1cbec66c8460a7f72fa1914ddaba30863fb6abbb08741d5d1339133f86e591",
+      "seed": 1234650719,
+      "team_names": [
+        "Ryotaro Minato",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Ryotaro Minato",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 87661.0,
+      "opponent_money": 83204.0,
+      "margin": 4457.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108207066,
+      "replay_filename": "episode-108207066-replay.json",
+      "sha256": "79a668b7d04101850f1ab8f53426c4a750578615690f0cdfcaa883a15204369e",
+      "seed": 1128634084,
+      "team_names": [
+        "ykhnkf",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "ykhnkf",
+      "first_two_shops": [
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 77986.0,
+      "opponent_money": 74914.0,
+      "margin": 3072.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108208055,
+      "replay_filename": "episode-108208055-replay.json",
+      "sha256": "6c6553cc32bdfb1fadc3ca5e218e30e8f89c6e1d4d96167a4e60e0e0965be93f",
+      "seed": 1933261980,
+      "team_names": [
+        "pig7selene",
+        "OxFFFs"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "OxFFFs",
+      "first_two_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 124673.0,
+      "opponent_money": 116114.0,
+      "margin": 8559.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108211705,
+      "replay_filename": "episode-108211705-replay.json",
+      "sha256": "183248334ecdec75855f6047b109cb2188eda3898edfa0b0322f9c16f303392c",
+      "seed": 1169389948,
+      "team_names": [
+        "pig7selene",
+        "Justin Yang"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Justin Yang",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "own_money": 97877.0,
+      "opponent_money": 100428.0,
+      "margin": -2551.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108212301,
+      "replay_filename": "episode-108212301-replay.json",
+      "sha256": "3af6a145a9be6350bebf72e2e586287d23ec83acd00ea33dfe8c3cc92dd96b7f",
+      "seed": 633105853,
+      "team_names": [
+        "pig7selene",
+        "Ryuto Yoda"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Ryuto Yoda",
+      "first_two_shops": [
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 74925.0,
+      "opponent_money": 67509.0,
+      "margin": 7416.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108218291,
+      "replay_filename": "episode-108218291-replay.json",
+      "sha256": "20e7aee76090d0bdba89e6e276659d1efaaaa05384469b5ec159722fc5ec67f8",
+      "seed": 441394000,
+      "team_names": [
+        "pig7selene",
+        "momo"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "momo",
+      "first_two_shops": [
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 69221.0,
+      "opponent_money": 62187.0,
+      "margin": 7034.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108224310,
+      "replay_filename": "episode-108224310-replay.json",
+      "sha256": "452cca1f0fc4619adfc8c412ebc926d1708e2c51faaac65a72fb14bc84dae129",
+      "seed": 1520678958,
+      "team_names": [
+        "pig7selene",
+        "retiring to farm"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "retiring to farm",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "own_money": 89377.0,
+      "opponent_money": 81815.0,
+      "margin": 7562.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108230374,
+      "replay_filename": "episode-108230374-replay.json",
+      "sha256": "660733fb1cad53dd1787904c8838c38115c1867decf539f76753377e3b0fce0e",
+      "seed": 488224512,
+      "team_names": [
+        "pig7selene",
+        "Alejandro Ayestaran"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Alejandro Ayestaran",
+      "first_two_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 94914.0,
+      "opponent_money": 86213.0,
+      "margin": 8701.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108232149,
+      "replay_filename": "episode-108232149-replay.json",
+      "sha256": "cc3dae368ef0210eb338b0b26943f0be6734998a8b73da0d7e34dcf797e5b628",
+      "seed": 1376771402,
+      "team_names": [
+        "pig7selene",
+        "Bibek"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Bibek",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 102597.0,
+      "opponent_money": 102033.0,
+      "margin": 564.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108232391,
+      "replay_filename": "episode-108232391-replay.json",
+      "sha256": "9217e16bd48b5b5156c634bf3f926fdc9e87f203ce6057b1d0b01d77ff756a69",
+      "seed": 822720814,
+      "team_names": [
+        "pig7selene",
+        "Takamichi Toda"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Takamichi Toda",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "own_money": 126899.0,
+      "opponent_money": 114791.0,
+      "margin": 12108.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108236204,
+      "replay_filename": "episode-108236204-replay.json",
+      "sha256": "e6e72fdb85d536c7e3951d2259ef09a74fcf760e4a3098c3d2ebfc04a23037a8",
+      "seed": 1684614808,
+      "team_names": [
+        "pig7selene",
+        "Nevska"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Nevska",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 126257.0,
+      "opponent_money": 115492.0,
+      "margin": 10765.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108241308,
+      "replay_filename": "episode-108241308-replay.json",
+      "sha256": "39418008326f442026a9a550e599abe2af97547c621dbb256e47132144543330",
+      "seed": 687249104,
+      "team_names": [
+        "Sergey Kutepov",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Sergey Kutepov",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "own_money": 90438.0,
+      "opponent_money": 91622.0,
+      "margin": -1184.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108247301,
+      "replay_filename": "episode-108247301-replay.json",
+      "sha256": "5538bb35606a6af86fba7b52118670e0807f2224db8ac362d8d524dc625ceeea",
+      "seed": 835862336,
+      "team_names": [
+        "pig7selene",
+        "omoch1"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "omoch1",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 71582.0,
+      "opponent_money": 66157.0,
+      "margin": 5425.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108252536,
+      "replay_filename": "episode-108252536-replay.json",
+      "sha256": "8154f1c5574bca4be23535e0991ba1fd7f28e03b74ce91ab1c1fab521ae50a6b",
+      "seed": 841389536,
+      "team_names": [
+        "pig7selene",
+        "darktetradgod"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "darktetradgod",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "own_money": 75571.0,
+      "opponent_money": 67171.0,
+      "margin": 8400.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108257529,
+      "replay_filename": "episode-108257529-replay.json",
+      "sha256": "734a149b24bb37504598da95a210c9c20613cf603f1157f683e8846561106a9b",
+      "seed": 1412429989,
+      "team_names": [
+        "Kaito Fukami",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Kaito Fukami",
+      "first_two_shops": [
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "own_money": 75755.0,
+      "opponent_money": 70351.0,
+      "margin": 5404.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108259583,
+      "replay_filename": "episode-108259583-replay.json",
+      "sha256": "13e38b6b06780b37a979bfe5f9af20681f5a948b41c82e69dc314c0073108c7c",
+      "seed": 1662795007,
+      "team_names": [
+        "ShunkiKyoya",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "ShunkiKyoya",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE"
+      ],
+      "own_money": 83411.0,
+      "opponent_money": 76688.0,
+      "margin": 6723.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108261502,
+      "replay_filename": "episode-108261502-replay.json",
+      "sha256": "7629f709bd055e786ac996e8922764eb44c9cf6b8f78f534a24fff397c8a3283",
+      "seed": 1097232043,
+      "team_names": [
+        "pig7selene",
+        "junesdata"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "junesdata",
+      "first_two_shops": [
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 138542.0,
+      "opponent_money": 136914.0,
+      "margin": 1628.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108261634,
+      "replay_filename": "episode-108261634-replay.json",
+      "sha256": "964d558c2550603f5c3ac6258f0bc223f06fd74ffb3559a2d37b1e086ff92532",
+      "seed": 639778527,
+      "team_names": [
+        "pig7selene",
+        "dp23334"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "dp23334",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 97614.0,
+      "opponent_money": 95540.0,
+      "margin": 2074.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108264025,
+      "replay_filename": "episode-108264025-replay.json",
+      "sha256": "a0629f3292f7f3b7dd080eb0135ebdbab4bd1c3511cc1210f410981d22e8948c",
+      "seed": 73495260,
+      "team_names": [
+        "Mohamed El-Nageeb",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Mohamed El-Nageeb",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 108345.0,
+      "opponent_money": 109516.0,
+      "margin": -1171.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108269051,
+      "replay_filename": "episode-108269051-replay.json",
+      "sha256": "4b94b1d2cb964f874e6c6d1b70cb545aaa7022d3add45182f04115705c6a2f78",
+      "seed": 1179167147,
+      "team_names": [
+        "pig7selene",
+        "Winter01"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Winter01",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 105726.0,
+      "opponent_money": 97159.0,
+      "margin": 8567.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108269582,
+      "replay_filename": "episode-108269582-replay.json",
+      "sha256": "2afd42c80b358facd78ffdd4d4e8dc04562b7b4f17e8aa70e0ce5f2847a692a1",
+      "seed": 764395465,
+      "team_names": [
+        "pig7selene",
+        "X"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "X",
+      "first_two_shops": [
+        "YARN_STORE",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 114779.0,
+      "opponent_money": 106466.0,
+      "margin": 8313.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108270767,
+      "replay_filename": "episode-108270767-replay.json",
+      "sha256": "4fdceabf511c70c540d7614b0b1330a6ed1f37cfd6ed21a6786f035be0ff33a4",
+      "seed": 1441469975,
+      "team_names": [
+        "pig7selene",
+        "Raagav Anand"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Raagav Anand",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 129185.0,
+      "opponent_money": 137361.0,
+      "margin": -8176.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108276401,
+      "replay_filename": "episode-108276401-replay.json",
+      "sha256": "fb2b3475cf0d375174c8241075ac1832adbe295e856631135ad38e474db312b4",
+      "seed": 77877592,
+      "team_names": [
+        "Ju",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Ju",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 99707.0,
+      "opponent_money": 97223.0,
+      "margin": 2484.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108280950,
+      "replay_filename": "episode-108280950-replay.json",
+      "sha256": "a7237564af85f848b6679a5ae007409e4c4a592ce77e7c08014e49b00fbbe37c",
+      "seed": 1154692613,
+      "team_names": [
+        "pig7selene",
+        "俺是耕田哩"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "俺是耕田哩",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 97802.0,
+      "opponent_money": 99098.0,
+      "margin": -1296.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108281495,
+      "replay_filename": "episode-108281495-replay.json",
+      "sha256": "f0befde6a3bb1389215387935079cb4969601d9ed2eb2af00bdcf628a6b10b69",
+      "seed": 256889926,
+      "team_names": [
+        "pig7selene",
+        "curiosity"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "curiosity",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "own_money": 112043.0,
+      "opponent_money": 116793.0,
+      "margin": -4750.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108281629,
+      "replay_filename": "episode-108281629-replay.json",
+      "sha256": "2d4e73c1468a27331649bf768ad32da176fa1e5261ad547dc374f475a74593a7",
+      "seed": 1468465915,
+      "team_names": [
+        "mikelou1",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "mikelou1",
+      "first_two_shops": [
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 89082.0,
+      "opponent_money": 85457.0,
+      "margin": 3625.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108286625,
+      "replay_filename": "episode-108286625-replay.json",
+      "sha256": "f444593a39f9187ac3de6de387a29e87175e523c8359e45e6f38df57d1f51ac1",
+      "seed": 464731104,
+      "team_names": [
+        "pig7selene",
+        "Berat Egemen Gök"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Berat Egemen Gök",
+      "first_two_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 97158.0,
+      "opponent_money": 91508.0,
+      "margin": 5650.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108287958,
+      "replay_filename": "episode-108287958-replay.json",
+      "sha256": "ee2fa8b6a5235b0bb49119390d915e54b692abeb2a34b871e8a10cbf3507a90a",
+      "seed": 1273512900,
+      "team_names": [
+        "DaoHe Liu",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "DaoHe Liu",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 139873.0,
+      "opponent_money": 140761.0,
+      "margin": -888.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108292396,
+      "replay_filename": "episode-108292396-replay.json",
+      "sha256": "c949d2ea5d51c3c6c3c94c67dcfc7e71f918a9f3d15e1b389efe7e481d01edd1",
+      "seed": 305210630,
+      "team_names": [
+        "umair zia",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "umair zia",
+      "first_two_shops": [
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 53169.0,
+      "opponent_money": 50070.0,
+      "margin": 3099.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108292686,
+      "replay_filename": "episode-108292686-replay.json",
+      "sha256": "30ca7f918c4927cc33c6efe2250b27902fb791d83d784abffedf9539f7e2c1b4",
+      "seed": 1770771632,
+      "team_names": [
+        "pig7selene",
+        "Gradient Grazing"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Gradient Grazing",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 144998.0,
+      "opponent_money": 135564.0,
+      "margin": 9434.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108294375,
+      "replay_filename": "episode-108294375-replay.json",
+      "sha256": "d14df1b675350816315e0ae892415b2f3027bdc11cf19b4a4ae000878f017bef",
+      "seed": 1261996275,
+      "team_names": [
+        "pig7selene",
+        "BayramAnnakov"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "BayramAnnakov",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 96861.0,
+      "opponent_money": 92691.0,
+      "margin": 4170.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108295489,
+      "replay_filename": "episode-108295489-replay.json",
+      "sha256": "da7a2b071d5cc0f35195c92c1e930555c18e6e86ce83eaff85d35383bf7af54e",
+      "seed": 1061528142,
+      "team_names": [
+        "pig7selene",
+        "Leonardo Viola10"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Leonardo Viola10",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 125300.0,
+      "opponent_money": 123601.0,
+      "margin": 1699.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108298732,
+      "replay_filename": "episode-108298732-replay.json",
+      "sha256": "ee7002297417411cf44874337836fa2b697df93af4f9aea3403f46c4185a62a2",
+      "seed": 349841535,
+      "team_names": [
+        "Quantum Farm",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Quantum Farm",
+      "first_two_shops": [
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 91069.0,
+      "opponent_money": 84872.0,
+      "margin": 6197.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108303506,
+      "replay_filename": "episode-108303506-replay.json",
+      "sha256": "2d7690825855f1248f54cee281693f63e2c4f957f7159664d75d4b9b3e904415",
+      "seed": 1323336873,
+      "team_names": [
+        "pig7selene",
+        "Nabeel Shar"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Nabeel Shar",
+      "first_two_shops": [
+        "PET_CAFE",
+        "YARN_STORE"
+      ],
+      "own_money": 93776.0,
+      "opponent_money": 94129.0,
+      "margin": -353.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108306786,
+      "replay_filename": "episode-108306786-replay.json",
+      "sha256": "03926c3f5447dca91ee43fdc6b205cfa7035a5c024e399b93e58e5f05dfb988f",
+      "seed": 499693786,
+      "team_names": [
+        "pig7selene",
+        "Paarth Patel"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Paarth Patel",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 86688.0,
+      "opponent_money": 84873.0,
+      "margin": 1815.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108307002,
+      "replay_filename": "episode-108307002-replay.json",
+      "sha256": "0307f23fef3fe4579523acabe47ee23d459511ac8cceff562c321848678026e5",
+      "seed": 1992844777,
+      "team_names": [
+        "pig7selene",
+        "Batuhan Ustun"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Batuhan Ustun",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 65774.0,
+      "opponent_money": 60808.0,
+      "margin": 4966.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108309610,
+      "replay_filename": "episode-108309610-replay.json",
+      "sha256": "49f4f1ad6d0e869665e3383de48c44bc5b656bebbfdfbb7d8d4e3579188002f6",
+      "seed": 1799324555,
+      "team_names": [
+        "Uncle Scooge",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Uncle Scooge",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 105600.0,
+      "opponent_money": 103352.0,
+      "margin": 2248.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108313465,
+      "replay_filename": "episode-108313465-replay.json",
+      "sha256": "f7a63411537a5415179f654d59bb891e2983c129a64fcabaa8c008f3f9ab114d",
+      "seed": 2098892467,
+      "team_names": [
+        "pig7selene",
+        "先过我的Gemini"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "先过我的Gemini",
+      "first_two_shops": [
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 84045.0,
+      "opponent_money": 77739.0,
+      "margin": 6306.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108313811,
+      "replay_filename": "episode-108313811-replay.json",
+      "sha256": "de840573c0a0f4e50edceb858341dca02fb49efa519191f616211304e7e11e3d",
+      "seed": 1222704981,
+      "team_names": [
+        "Cliffton",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Cliffton",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "BAKERY"
+      ],
+      "own_money": 70470.0,
+      "opponent_money": 73881.0,
+      "margin": -3411.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108318552,
+      "replay_filename": "episode-108318552-replay.json",
+      "sha256": "31f86fa23fe55620e6244919a3b837efc25ee771074a7b6bd25645384da0d00c",
+      "seed": 2095627292,
+      "team_names": [
+        "eryue shisi",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "eryue shisi",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "own_money": 58944.0,
+      "opponent_money": 53078.0,
+      "margin": 5866.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108319213,
+      "replay_filename": "episode-108319213-replay.json",
+      "sha256": "f7d7fa6ac1b3d88e39bf05d9203b9560bf9aa4540d24c269f9ed9bf4e8052bf9",
+      "seed": 1925773084,
+      "team_names": [
+        "pig7selene",
+        "Mark Baushenko"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Mark Baushenko",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "own_money": 78506.0,
+      "opponent_money": 77718.0,
+      "margin": 788.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108323114,
+      "replay_filename": "episode-108323114-replay.json",
+      "sha256": "bc27c0d4f1045213bf18fe5171edac9b322d16d01a69898e87361965a5b06827",
+      "seed": 794535864,
+      "team_names": [
+        "JezzLynn",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "JezzLynn",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 111553.0,
+      "opponent_money": 115468.0,
+      "margin": -3915.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108323700,
+      "replay_filename": "episode-108323700-replay.json",
+      "sha256": "aff6b9a8080e2f8ade78697f8bf364620407076efc4c829b4238ff00fbdd88be",
+      "seed": 522919252,
+      "team_names": [
+        "pig7selene",
+        "Pawan Rama Mali"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Pawan Rama Mali",
+      "first_two_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 89592.0,
+      "opponent_money": 88860.0,
+      "margin": 732.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108326147,
+      "replay_filename": "episode-108326147-replay.json",
+      "sha256": "a8e314120f8751d4f493e8444f238dcde5e439694b6cab19ac98ed87af15fca7",
+      "seed": 1968769031,
+      "team_names": [
+        "SHALWIN SANJU",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "SHALWIN SANJU",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 93223.0,
+      "opponent_money": 90777.0,
+      "margin": 2446.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108327805,
+      "replay_filename": "episode-108327805-replay.json",
+      "sha256": "0bb98c1ddbbcc8a470a00c8803fc1177965b47d5a15a52a6eca7c3042dac3bf2",
+      "seed": 85785250,
+      "team_names": [
+        "Yuvraj Bhati",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Yuvraj Bhati",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PET_CAFE"
+      ],
+      "own_money": 93083.0,
+      "opponent_money": 88557.0,
+      "margin": 4526.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108332518,
+      "replay_filename": "episode-108332518-replay.json",
+      "sha256": "0310ccb230b4b143ce84879b15be4815464418843d7002423bd4ccf02f1eb599",
+      "seed": 666655987,
+      "team_names": [
+        "pig7selene",
+        "ZiYiMing"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "ZiYiMing",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 144239.0,
+      "opponent_money": 139922.0,
+      "margin": 4317.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108333847,
+      "replay_filename": "episode-108333847-replay.json",
+      "sha256": "66a3063b29525cd2a5c62e5b5ed4e30a154e7fcc0b88511dc04175cea5faff1f",
+      "seed": 1680868916,
+      "team_names": [
+        "pig7selene",
+        "keeplooking"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "keeplooking",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 124893.0,
+      "opponent_money": 113255.0,
+      "margin": 11638.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108337526,
+      "replay_filename": "episode-108337526-replay.json",
+      "sha256": "adb6b9bf7a77556d37b7b73573b32b2c555ba2ed50fb4acb84e2e1cffac36ca6",
+      "seed": 1912171277,
+      "team_names": [
+        "Abhi Datta",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Abhi Datta",
+      "first_two_shops": [
+        "PET_CAFE",
+        "YARN_STORE"
+      ],
+      "own_money": 102988.0,
+      "opponent_money": 92201.0,
+      "margin": 10787.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108337949,
+      "replay_filename": "episode-108337949-replay.json",
+      "sha256": "a7dcf0ee74b491b3872e6b32277836442aee0ab6b3d597b185ed8084c3f1bceb",
+      "seed": 1187848320,
+      "team_names": [
+        "pig7selene",
+        "Handry Novianto"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Handry Novianto",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 124920.0,
+      "opponent_money": 120123.0,
+      "margin": 4797.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108340057,
+      "replay_filename": "episode-108340057-replay.json",
+      "sha256": "40db4cb47c33d0ae49cfb652b33bad11ebdda7e0cf0b0116f86273ae79f8fd40",
+      "seed": 204043974,
+      "team_names": [
+        "Haramball forever!",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Haramball forever!",
+      "first_two_shops": [
+        "PET_CAFE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 87289.0,
+      "opponent_money": 91396.0,
+      "margin": -4107.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108340235,
+      "replay_filename": "episode-108340235-replay.json",
+      "sha256": "9ead0febdf79bcf3a63d616186c7659d77c9bcd7e45030bb15a0cece77fbf94d",
+      "seed": 405337655,
+      "team_names": [
+        "pig7selene",
+        "Yash Yadav"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Yash Yadav",
+      "first_two_shops": [
+        "BAKERY",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 85688.0,
+      "opponent_money": 82341.0,
+      "margin": 3347.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108343339,
+      "replay_filename": "episode-108343339-replay.json",
+      "sha256": "dfd8abd4c95b62092fc809d9e32c848ff99ae5644b890787e69f32dfad03cf08",
+      "seed": 1567433198,
+      "team_names": [
+        "pig7selene",
+        "SHALWIN SANJU"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "SHALWIN SANJU",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 122630.0,
+      "opponent_money": 119182.0,
+      "margin": 3448.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108344103,
+      "replay_filename": "episode-108344103-replay.json",
+      "sha256": "888eeddab15eccdbdeb3ba2abbbd5b9633bd9750ff7be3870bee46671a06b7e4",
+      "seed": 910003979,
+      "team_names": [
+        "pig7selene",
+        "Artem The Farmer 🍅"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Artem The Farmer 🍅",
+      "first_two_shops": [
+        "PIZZA_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 102645.0,
+      "opponent_money": 105925.0,
+      "margin": -3280.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108347861,
+      "replay_filename": "episode-108347861-replay.json",
+      "sha256": "c9503ffed712c16af7c162a4d17b3f5f8eb9d3213c4e9c41f380c5c63db2e909",
+      "seed": 137241638,
+      "team_names": [
+        "yefenfei",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "yefenfei",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "own_money": 89447.0,
+      "opponent_money": 84046.0,
+      "margin": 5401.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108349744,
+      "replay_filename": "episode-108349744-replay.json",
+      "sha256": "7c4c24023cf484fd298efe6f381f7fafdf55bc1b967a0eb4e73e95b20a11530f",
+      "seed": 612045554,
+      "team_names": [
+        "pig7selene",
+        "kolesnikovia"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "kolesnikovia",
+      "first_two_shops": [
+        "YARN_STORE",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 105185.0,
+      "opponent_money": 98660.0,
+      "margin": 6525.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108350681,
+      "replay_filename": "episode-108350681-replay.json",
+      "sha256": "8168bf86b1f7d8796a1af6cca896094397b5cf681b29556d0072bb4beb8ff959",
+      "seed": 253556466,
+      "team_names": [
+        "pig7selene",
+        "John Doge"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "John Doge",
+      "first_two_shops": [
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ],
+      "own_money": 124392.0,
+      "opponent_money": 119348.0,
+      "margin": 5044.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108355049,
+      "replay_filename": "episode-108355049-replay.json",
+      "sha256": "2f82e20b8b348db28d4a5d5e7b41395ffbda7eebccabf12d31e9a73c49e7ba18",
+      "seed": 496447403,
+      "team_names": [
+        "GzmCR632",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "GzmCR632",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 136898.0,
+      "opponent_money": 134222.0,
+      "margin": 2676.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108356304,
+      "replay_filename": "episode-108356304-replay.json",
+      "sha256": "c8333a3bdf7f739652a7b6e0b76d71655d1d3072ccd76619fef5b306f4c1bc35",
+      "seed": 675380439,
+      "team_names": [
+        "pig7selene",
+        "TS"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "TS",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "own_money": 54219.0,
+      "opponent_money": 60675.0,
+      "margin": -6456.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108356835,
+      "replay_filename": "episode-108356835-replay.json",
+      "sha256": "b78585bc05f4f66687a6a6c1cf26fafd3709fc7350ae9569c6283fbaed1ed33f",
+      "seed": 1231742253,
+      "team_names": [
+        "pig7selene",
+        "Brandon Calderon-Morales"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Brandon Calderon-Morales",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE"
+      ],
+      "own_money": 108753.0,
+      "opponent_money": 104022.0,
+      "margin": 4731.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108357118,
+      "replay_filename": "episode-108357118-replay.json",
+      "sha256": "cfc82c059552df334de5573b5acd6402d5b50f31c528b7be59442cfd945bb06c",
+      "seed": 756952602,
+      "team_names": [
+        "Capitaalgain",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Capitaalgain",
+      "first_two_shops": [
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 113375.0,
+      "opponent_money": 110569.0,
+      "margin": 2806.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108361876,
+      "replay_filename": "episode-108361876-replay.json",
+      "sha256": "4aa23426ab29a81cc2cb5fcee7467065bc14633628eb7f9ae95a84547cf8932a",
+      "seed": 130747782,
+      "team_names": [
+        "pig7selene",
+        "t3l3kin3sis"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "t3l3kin3sis",
+      "first_two_shops": [
+        "YARN_STORE",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 125764.0,
+      "opponent_money": 121421.0,
+      "margin": 4343.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108366130,
+      "replay_filename": "episode-108366130-replay.json",
+      "sha256": "f0f26f36a50d4206ac407d70f51f4564ac62aaeda2856572bcd76af541916767",
+      "seed": 1454527891,
+      "team_names": [
+        "Yang Kuang Ou",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Yang Kuang Ou",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "own_money": 86573.0,
+      "opponent_money": 86573.0,
+      "margin": 0.0,
+      "outcome": "tie",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108366835,
+      "replay_filename": "episode-108366835-replay.json",
+      "sha256": "5952ac5b5551c375f1f80b16207308cc5b5d324a172354149b7cb160950129a4",
+      "seed": 1304128608,
+      "team_names": [
+        "pig7selene",
+        "KSKBL"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "KSKBL",
+      "first_two_shops": [
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "own_money": 63718.0,
+      "opponent_money": 60401.0,
+      "margin": 3317.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108370117,
+      "replay_filename": "episode-108370117-replay.json",
+      "sha256": "1789005eaf9c6072d495220c43617c5744d1001789e90192555708984855122a",
+      "seed": 811522815,
+      "team_names": [
+        "Whyme Labs",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Whyme Labs",
+      "first_two_shops": [
+        "BAKERY",
+        "PET_CAFE"
+      ],
+      "own_money": 54018.0,
+      "opponent_money": 55829.0,
+      "margin": -1811.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108374778,
+      "replay_filename": "episode-108374778-replay.json",
+      "sha256": "28e6e1efaf41aab6c194d0eb8f94fe7b360d903e4580bdf39a1b4233f1d4678a",
+      "seed": 266617657,
+      "team_names": [
+        "UtaAzu",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "UtaAzu",
+      "first_two_shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "own_money": 116740.0,
+      "opponent_money": 110833.0,
+      "margin": 5907.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108375450,
+      "replay_filename": "episode-108375450-replay.json",
+      "sha256": "eee093d3d7b04f14d894c207ec41822ebf06fcee29ddfede069fb0b2e3be65e8",
+      "seed": 1182889063,
+      "team_names": [
+        "xingyun_byto",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "xingyun_byto",
+      "first_two_shops": [
+        "FARMERS_MARKET",
+        "PET_CAFE"
+      ],
+      "own_money": 87606.0,
+      "opponent_money": 94692.0,
+      "margin": -7086.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108379962,
+      "replay_filename": "episode-108379962-replay.json",
+      "sha256": "c74b530d637bccb133a993338c5fa934cf0f53233d3dcfed8b7682c534ab14a1",
+      "seed": 730209942,
+      "team_names": [
+        "pig7selene",
+        "Abhinav0370"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Abhinav0370",
+      "first_two_shops": [
+        "PET_CAFE",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 69503.0,
+      "opponent_money": 73655.0,
+      "margin": -4152.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108384108,
+      "replay_filename": "episode-108384108-replay.json",
+      "sha256": "a2cd90488787800119eb6a69fb2724f656975f51f5e4a970ad80a67ea48f3196",
+      "seed": 325168942,
+      "team_names": [
+        "pig7selene",
+        "Ammar Aziz"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 0,
+      "opponent": "Ammar Aziz",
+      "first_two_shops": [
+        "PET_CAFE",
+        "ICE_CREAM_SHOP"
+      ],
+      "own_money": 70325.0,
+      "opponent_money": 66248.0,
+      "margin": 4077.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108384574,
+      "replay_filename": "episode-108384574-replay.json",
+      "sha256": "86769dc4bd06e263e48be2f7f0b15fc381854677ec0af8bec6a4d991220bb2b2",
+      "seed": 1812541834,
+      "team_names": [
+        "jiatu.l",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "jiatu.l",
+      "first_two_shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "own_money": 94927.0,
+      "opponent_money": 96712.0,
+      "margin": -1785.0,
+      "outcome": "loss",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108388321,
+      "replay_filename": "episode-108388321-replay.json",
+      "sha256": "056293c0fda74a04d2e3e026d917b95d93db3202d4b5835b4cc25092fb6a10c8",
+      "seed": 1403674707,
+      "team_names": [
+        "Levin",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Levin",
+      "first_two_shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "own_money": 95441.0,
+      "opponent_money": 92546.0,
+      "margin": 2895.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    },
+    {
+      "episode_id": 108389221,
+      "replay_filename": "episode-108389221-replay.json",
+      "sha256": "febee7e1114ed624450335c8c24843e9048678dbde23a73ea4e06bd676c5b42e",
+      "seed": 1345655173,
+      "team_names": [
+        "Sailor Ren",
+        "pig7selene"
+      ],
+      "valid_baseline_episode": true,
+      "seat": 1,
+      "opponent": "Sailor Ren",
+      "first_two_shops": [
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "own_money": 75181.0,
+      "opponent_money": 66749.0,
+      "margin": 8432.0,
+      "outcome": "win",
+      "steps_recorded": 719,
+      "complete": true
+    }
+  ]
+}
