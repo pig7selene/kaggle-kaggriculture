@@ -46,3 +46,21 @@ population counts. Selection rule: compare settled values at equal age with
 100+ episodes; make sure the strongest agent is among the active submissions
 at the deadline. Open question: how many submissions per team stay active, and
 the daily submission limit (Evaluation section).
+
+## Active-submission rule (user-confirmed 2026-09-16)
+
+Kaggle evaluates only a team's **two most recent** submissions. Older ones stop
+playing and their score freezes (56258686 froze at 2637.6 after ~17 h; 56270914
+lead5 froze at 2624.3 after ~3.5 h, mid-settle -- its online reading is
+inconclusive and stays so).
+
+Consequences:
+- Every new submission retires the older of the two active ones. A submission
+  is therefore also a selection decision, not a free online test.
+- At the deadline the two active submissions are the two that play the
+  convergence period; the final rank is the better of those two.
+- Active now: 56274059 (adapt5) and 56274431 (adapt5 + r124). They are a clean
+  same-window pair; their settled gap is the remap's online value.
+- No further submission unless it is meant to replace adapt5 as one of the
+  final two. Candidate criteria unchanged: beats the incumbent in direct
+  matches on pilot and holdout with zero errors.
