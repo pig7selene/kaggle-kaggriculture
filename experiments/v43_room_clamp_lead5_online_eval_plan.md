@@ -64,3 +64,19 @@ Consequences:
 - No further submission unless it is meant to replace adapt5 as one of the
   final two. Candidate criteria unchanged: beats the incumbent in direct
   matches on pilot and holdout with zero errors.
+
+## Evaluation text (pasted 2026-09-16)
+
+- 5 submissions per team per day. Validation episode (self-play) on upload.
+- "Only the latest 2 submissions are tracked. The latest 2 submissions are also
+  used for final leaderboard evaluation." Older bots keep playing rarely;
+  newer bots play far more often. Leaderboard shows the best-scoring bot.
+- Rating: win/loss/tie only; margin irrelevant; change scales with the rating gap.
+- Final: submissions lock at the deadline; games run ~2 more weeks "to reduce
+  uncertainty, especially for new agents"; **a final Bradley-Terry tournament on
+  those episodes produces the final leaderboard.**
+
+Plan: the final two submissions must be our two best agents, submitted about a
+day before the deadline so they are the newest (most episodes in the final
+window) with time left to recover from a validation error. No agent change
+before then unless it beats adapt5 in direct matches with a holdout.
