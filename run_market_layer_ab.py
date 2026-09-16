@@ -26,10 +26,10 @@ ROOT = Path(__file__).resolve().parent
 SEEDS = ROOT / "experiments" / "seed_first_shops_manifest.json"
 
 
-def play(variant: Path, seed: int, seat: int) -> dict:
+def play(variant: Path, seed: int, seat: int, opponent: Path = BASE) -> dict:
     tag = f"{time.time_ns()}"
     v = load_agent(variant, f"v:{tag}")
-    b = load_agent(BASE, f"b:{tag}")
+    b = load_agent(opponent, f"b:{tag}")
     players = [v, b] if seat == 0 else [b, v]
     env = make("kaggriculture", configuration={"episodeSteps": 720, "seed": seed}, debug=False)
     env.run(players)
@@ -56,6 +56,8 @@ def main() -> None:
     parser.add_argument("--pair-every", type=int, default=4)
     parser.add_argument("--pair-offset", type=int, default=0)
     parser.add_argument("--seed-slice", default="0:2")
+    parser.add_argument("--opponent", type=Path, default=BASE,
+                        help="opponent agent main.py (default: room_plus_clamp base)")
     args = parser.parse_args()
     lo, hi = (int(x) for x in args.seed_slice.split(":"))
     by_pair = json.loads(SEEDS.read_text())["by_pair"]
@@ -72,7 +74,7 @@ def main() -> None:
         for i, (pair, seed, seat) in enumerate(jobs):
             if (pair, seed, seat) in done:
                 continue
-            row = play(args.variant, seed, seat)
+            row = play(args.variant, seed, seat, args.opponent)
             row["pair"] = pair
             fh.write(json.dumps(row) + "\n")
             fh.flush()
@@ -81,7 +83,7 @@ def main() -> None:
     ok = [r for r in rows if "margin" in r]
     m = [r["margin"] for r in ok]
     w = sum(1 for x in m if x > 0); l = sum(1 for x in m if x < 0)
-    print(f"{args.name} vs room_clamp: {len(ok)} games W/L/T {w}/{l}/{len(m) - w - l} "
+    print(f"{args.name} vs {args.opponent.parent.name}: {len(ok)} games W/L/T {w}/{l}/{len(m) - w - l} "
           f"mean {statistics.mean(m):+,.0f} median {statistics.median(m):+,.0f} "
           f"worst {min(m):+,.0f} best {max(m):+,.0f} | errors {len(rows) - len(ok)}")
     per_pair = {}

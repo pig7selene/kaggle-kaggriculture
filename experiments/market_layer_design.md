@@ -182,3 +182,30 @@ margin became about +100 of rating.
 - `lead6` pilot: 64 games 63/1/0, mean +1,324, median +1,157, worst -52 (114.9 units led).
 - `lead8` pilot: 64 games 63/1/0, mean +1,177, median +1,100, worst -224.
   Lookahead peaks at 5; lead6 and lead8 fall back. lead5 stays selected.
+
+## Mechanism (instrumented game, seed 4242, lead5 vs base and base vs base)
+
+Every fill logged from the engine. Both sides sell the same units (161 WOOL,
+236 MILK, 251 STRAWBERRY, 72 MELON each); nothing is destroyed or left unsold.
+The margin is price alone: ours +858, the clone's -815 on premium sales versus
+the base-vs-base counterfactual. On a cliff-shaped curve the first seller of a
+lot takes the high price and the second the low one, so the gain applies to any
+opponent selling the same item after us; what is clone-specific is only that
+we know when it sells. lead5 beats lead2 because the tape's premium lots come in
+bursts of 1-4 consecutive steps: a lead longer than the burst puts our whole
+stream ahead of the clone's one-step lead, a lead of 2 overlaps it.
+
+Opponent inference: inventory delta + town consumption - our fills recovers the
+clone's non-floor premium fills exactly (abs error 0 over 634 units). Our own
+fills are not min(qty, shed at observation) -- hands DROP into the shed before
+the market runs -- abs error 341 over 716; the chassis's `_projected_shed` is
+the right estimator.
+
+## Opponent inference validated online (validate_opponent_inference.py)
+
+Passive probe on the base chassis vs LynnV44 (non-lineage), seed 4242, scored
+against engine ground truth (every fill logged): premium items -- our fills abs
+error 24 of 641 units, opponent fills abs error 24 of 654 units, opponent sale
+steps hit 118 / missed 4 / false 0. All items: opponent error 465 of 1,517,
+from unmodelled BUY_PRODUCT of WHEAT/FERTILIZER -- irrelevant to premium goods.
+The agent can see what the opponent sells, one step late, with no false alarms.
