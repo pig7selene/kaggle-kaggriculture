@@ -76,3 +76,36 @@ variant money - base money.
   gap to the top 30 (+240) wants a local margin around +1000; anything positive
   still ships, because it is measured against the exact agent we have online.
 - The submission is compared with 56258686 in the same rating window only.
+
+## Results
+
+- `sell_on_arrival` (v1): 64 games 31/33/0, mean -142, median -126, zero errors.
+  Telemetry: the layer changed only ~35 of 719 steps per game (80 units raised,
+  51 orders added). V43's sell_lead already sells nearly on arrival; the
+  hypothesis that its tape leaves stock unsold is dead.
+
+## Price gate (added after the realized-price table)
+
+Realized price index (quoted price at the step x shed-capped fill, per
+seat-game): アルモンド WOOL 0.45 x base with 41% of units at the floor, MILK
+0.66, STRAWBERRY 1.00; V43 self-play WOOL 0.73 (20% floor), MILK 0.73,
+STRAWBERRY 0.81 (27% floor); アルモンド's top-10 opponents WOOL 0.62, MILK 0.83,
+STRAWBERRY 1.25. The engine's town consumption (`_town_consume`: every 4 steps
+each unlocked shop instance takes 1 unit of each of its products, 2 for a
+single-product shop; every 24 steps the town centre takes 1 of everything)
+means a crashed premium price does recover, slowly. Dumping at $1 is therefore
+a pure loss of the unit's later value, bounded only by shed room.
+
+`gate_35_70` / `gate_50_80`: hold WOOL/MILK/STRAWBERRY/MELON while the quote is
+below 0.35 (0.50) x base, release the whole stock at or above 0.70 (0.80) x
+base; hold only if the products in the shed total <= 60, never in the last two
+hours of a day, never on the final day. Same pilot/holdout protocol.
+
+- `slot_priority_v2`: 64 games 11/53/0, mean -213, median -173, zero errors, with
+  only 10.6 reorders per game. Consistently negative: premium quotes sit at the
+  floor a fifth to a third of the time (floor sales add no inventory, so slot
+  order is moot there) and moving a cheap SELL one slot later hands the
+  opponent's identical order the first fills. Slot priority is closed; a v3 that
+  pins zero-quantity placeholders was built but not run (placeholders occur in 8
+  of 719 steps and only for inputs).
+- `both_v2`: 64 games 23/41/0, mean -129, median -153. Closed.
