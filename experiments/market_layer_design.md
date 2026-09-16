@@ -132,3 +132,50 @@ Holdouts for lead2 and lead3 are running regardless, as extra evidence.
   61/3/0, mean +268, median +216, worst -1,075, best +2,451; positive on all 16
   pairs (+31 .. +578). Passes the pre-registered ship rule; the pilot estimate
   (+287 / +212) replicated within noise.
+- `lead3` holdout (pairs [2::4], seeds [2:4]): 64 games 63/1/0, mean +389, median
+  +308, worst -691, best +2,898; positive on all 16 pairs (+58 .. +962).
+  Telemetry: 44.6 units led over 14.9 steps per game. Replicates the pilot
+  (+388 / +404). Passes the ship rule.
+- `lead4` pilot: 64 games 61/3/0, mean +447, median +451, worst -397, best +1,607
+  (46.6 units led over 16.9 steps per game). Ahead of lead3 on the pilot; its
+  holdout is running.
+- `lead5` pilot: 64 games 64/0/0, mean +1,557, median +1,380, worst +201, best
+  +4,218 (159.8 units led over 32.1 steps per game -- three times lead4's
+  intervention). The jump from lead4 is discontinuous and not yet explained;
+  the holdout decides. lead6 and lead8 added to the pilot family.
+
+### Where the lead margin comes from (pilot seeds, same pairs for every variant)
+
+| variant | our money | clone's money | margin | vs lead2 run: ours / clone's |
+|---|---:|---:|---:|---:|
+| lead2 | 78,557 | 78,270 | +287 | — |
+| lead3 | 78,604 | 78,217 | +388 | +48 / −53 |
+| lead4 | 78,661 | 78,214 | +447 | +104 / −56 |
+| lead5 | 79,039 | 77,481 | +1,557 | +482 / −789 |
+
+Static stock availability is flat in the lookahead (225 -> 189 leadable units
+per game for k = 2..8), so lead5's tripled intervention is a dynamic effect.
+Roughly 40% of its extra margin is our own revenue and 60% is the clone's
+loss -- the earlier supply pushes the clone's own price-gated layers into
+holding stock. The clone's share is real against every V43-lineage opponent
+(the most-forked public agent in our band) and absent against others; our own
+share stands either way.
+- `lead4` holdout: 64 games 63/1/0, mean +445, median +321, worst -199, best
+  +3,392 (40.7 units led over 15.5 steps). Replicates the pilot (+447 / +451).
+- `lead5` holdout: 64 games 64/0/0, mean +1,713, median +1,418, worst +121, best
+  +6,389; positive on all 16 pairs (+130 .. +4,113); 124.5 units led over 27.8
+  steps. Replicates the pilot (+1,557 / +1,380). Money split on the holdout vs
+  the lead2 run: ours +513, clone's -932.
+
+## Decision (2026-09-16 13:55)
+
+Selected: **lead5** -- best pilot mean among variants with a passing holdout
+(lead2 +287/+268, lead3 +388/+389, lead4 +447/+445, lead5 +1,557/+1,713).
+Package `submission/v43_room_clamp_lead5.tar.gz` (sha256 5821a9bd215731d0...,
+source sha 572ef4a7f132be2f...); the extracted archive played 720 steps against
+the base on seed 4242 for +1,680 with zero errors. lead6 and lead8 pilots are
+still running as candidates for a follow-up submission; they do not gate this one.
+
+Online comparison: same-window only, against 56258686 (2657.9 at 13:20 today,
+dormant and drifting down from its 2730 peak). Local scale so far: +440 of
+margin became about +100 of rating.

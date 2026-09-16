@@ -279,6 +279,8 @@ LEADS = {
     "lead3": {"lookahead": 3},
     "lead4": {"lookahead": 4},
     "lead5": {"lookahead": 5},
+    "lead6": {"lookahead": 6},
+    "lead8": {"lookahead": 8},
 }
 LEAD_DEFAULTS = {"items": ("WOOL", "MILK", "STRAWBERRY", "MELON"), "min_price": 2}
 
