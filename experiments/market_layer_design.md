@@ -284,3 +284,16 @@ base) come from matching supply to consumption rather than from timing alone.
 A capacity-aware intra-day planner is bounded by the free shed room (~55 units
 during the day): a rough ceiling of +2-4k a game, realistic +1-2k, against
 every opponent. Worth one bounded attempt after adapt5 ships; not before.
+- adapt5 clone holdout (pairs [2::4], seeds [2:4]): 64 games 64/0/0, mean +1,675,
+  median +1,346, worst +118, best +6,311, zero errors; paired against lead5's
+  holdout -38 (median -27): keeps 98%. Classifier: enters at step ~336, hit rate
+  1.0 on the clone, 118 units led.
+
+## Decision (2026-09-16 16:30)
+
+Selected for the next submission: **adapt5** (`submission/v43_room_clamp_adapt5.tar.gz`,
+sha256 6e472b08a8318788...). Same gain as lead5 against V43-lineage opponents
+(pilot 64/0 +1,492, holdout 64/0 +1,675), and the base to the dollar against
+opponents that do not race our lots (pool paired -24 / 0 / 0), where lead5 paid
+about -220. It replaces lead5 as the candidate; 56270914 stays live for its own
+same-window reading.
