@@ -41,21 +41,35 @@ EXTRA_ROUTES = (124, 110)
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pilot", type=Path, default=PILOT,
+                        help="pilot JSON to confirm; outputs are named after its stem")
+    parser.add_argument("--select-on", choices=("gain", "best"), default="gain",
+                        help="gain: gain_over_current (valid when the pilot's 'current' is what the "
+                             "baseline really played); best: best_mean_margin against the baseline "
+                             "directly (use when 'current' was mislabelled, as in the first Yarn run)")
     parser.add_argument("--min-pilot-gain", type=float, default=2000.0)
+    parser.add_argument("--extra-routes", default="124,110",
+                        help="routes tested on every selected pair in addition to its pilot best")
     parser.add_argument("--holdout-seeds", type=int, default=4)
     parser.add_argument("--workers", type=int, default=3)
-    parser.add_argument("--output", type=Path, default=OUTPUT)
-    parser.add_argument("--report", type=Path, default=REPORT)
+    parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument("--report", type=Path, default=None)
     args = parser.parse_args()
 
-    pilot = json.loads(PILOT.read_text())
+    stem = args.pilot.stem.replace("route_remap_pilot", "route_remap_holdout")
+    args.output = args.output or (ROOT / "experiments" / f"{stem}.json")
+    args.report = args.report or (ROOT / "experiments" / f"{stem}.md")
+    extra_routes = tuple(int(r) for r in args.extra_routes.split(",") if r.strip())
+
+    pilot = json.loads(args.pilot.read_text())
     if pilot.get("smoke"):
         raise RuntimeError("pilot JSON is the smoke run; rerun the pilot first")
     seeds = json.loads(SEEDS.read_text())["by_pair"]
+    metric = "gain_over_current" if args.select_on == "gain" else "best_mean_margin"
     targets = {pair: cell for pair, cell in pilot["cells"].items()
-               if cell["gain_over_current"] > args.min_pilot_gain}
+               if cell[metric] > args.min_pilot_gain}
     if not targets:
-        raise RuntimeError("no pilot pair exceeds the gain threshold")
+        raise RuntimeError(f"no pilot pair has {metric} above {args.min_pilot_gain}")
 
     plan, skipped = {}, {}
     for pair, cell in targets.items():
@@ -63,7 +77,7 @@ def main() -> None:
         if len(held) < 2:
             skipped[pair] = f"only {len(held)} unseen seeds"
             continue
-        routes = sorted({int(cell["best_route"]), *EXTRA_ROUTES})
+        routes = sorted({int(cell["best_route"]), *extra_routes})
         plan[pair] = {"seeds": held, "routes": routes,
                       "pilot_best": int(cell["best_route"]),
                       "pilot_gain": cell["gain_over_current"],
@@ -115,8 +129,10 @@ def main() -> None:
     data = {
         "schema_version": 1,
         "purpose": "out-of-sample check of the remap pilot's largest gains",
+        "pilot": str(args.pilot.relative_to(ROOT)) if args.pilot.is_relative_to(ROOT) else str(args.pilot),
+        "selected_on": metric,
         "min_pilot_gain": args.min_pilot_gain,
-        "extra_routes": list(EXTRA_ROUTES),
+        "extra_routes": list(extra_routes),
         "skipped": skipped,
         "games": len(rows), "errors": len(errors),
         "elapsed_seconds": time.time() - started,
@@ -125,20 +141,22 @@ def main() -> None:
     }
     args.output.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
-    lines = ["# Route remap held-out check", "",
-             f"Pairs with pilot gain > {args.min_pilot_gain:,.0f}, on seeds the pilot never "
-             f"used, both seats, against the baseline's current assignment. "
+    extra_cols = " | ".join(f"{r} held-out" for r in extra_routes)
+    lines = [f"# Route remap held-out check ({args.pilot.stem})", "",
+             f"Pairs whose pilot {metric} exceeded {args.min_pilot_gain:,.0f}, replayed on "
+             f"seeds the pilot never used, both seats, against the baseline's actual play. "
              f"{len(played)} games, {len(errors)} errors.", "",
-             "| Pair | Pilot best | Pilot gain | Held-out gain | Kept | 124 held-out | 110 held-out |",
-             "| --- | ---: | ---: | ---: | ---: | ---: | ---: |"]
+             f"| Pair | Pilot best | Pilot {metric} | Held-out margin of pilot best | Kept | {extra_cols} |",
+             "| --- | ---: | ---: | ---: | ---: | " + " | ".join("---:" for _ in extra_routes) + " |"]
     for pair, c in sorted(cells.items(), key=lambda kv: -kv[1]["pilot_gain"]):
         h = c["holdout_by_route"]
         hg = c["holdout_gain_of_pilot_best"]
+        extra_vals = " | ".join(
+            f"{h[str(r)]:+,.0f}" if str(r) in h else "-" for r in extra_routes)
         lines.append(
             f"| {pair} | {c['pilot_best_route']} | {c['pilot_gain']:+,.0f} | "
             f"{(f'{hg:+,.0f}' if hg is not None else '-')} | "
-            f"{(f'{c['shrinkage']:.0%}' if c['shrinkage'] is not None else '-')} | "
-            f"{h.get('124', float('nan')):+,.0f} | {h.get('110', float('nan')):+,.0f} |"
+            f"{(f'{c['shrinkage']:.0%}' if c['shrinkage'] is not None else '-')} | {extra_vals} |"
         )
     survivors = [p for p, c in cells.items()
                  if c["holdout_gain_of_pilot_best"] is not None

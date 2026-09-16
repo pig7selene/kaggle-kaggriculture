@@ -127,11 +127,17 @@ Cheap items that remain, each already has a harness:
 - **B**: route 124 as default on the 21 non-Yarn pairs (+398 in-sample average,
   positive on 4/4 held-out pairs at +296..+622). One-line remap, a few points,
   rides along with any submission.
-- **Yarn-side probe**: route 0 serves 49 of 64 Yarn pairs and was never
-  measured. The non-Yarn result (author's choice ranks top-5) makes the prior
-  low, but it is the last place a coarse assignment could hide anything, and it
-  is the remap pilot rerun on the 12 Yarn routes -- about an hour. Kill
-  criterion fixed now: if route 0 ranks top-5 on the probed pairs, close it.
+- **Yarn-side probe** -- *premise withdrawn 2026-09-16.* This item was written
+  on a misreading: `_R110_OLD_SHOPS` lists route 0 against 49 pairs, but none
+  of those 49 contains YARN_STORE and the router consults that table only for
+  pairs that do. The 49 rows are dead entries from an older version; route 0
+  is never selected at step 144 for any pair. The real Yarn side is the 15
+  YARN_STORE pairs, which V43 already spreads over 11 distinct routes -- a
+  finer assignment than the non-Yarn side's, so the coarse-assignment premise
+  does not apply there. The probe as run (2,352 games) therefore measured the
+  Yarn-family routes 0-12 forced onto 49 *non-Yarn* pairs against the 105
+  family the baseline actually plays; see `route_remap_pilot_yarn.md` and the
+  corrected reading below.
 - **C** stays an option with an unproven premise.
 
 ## Not doing

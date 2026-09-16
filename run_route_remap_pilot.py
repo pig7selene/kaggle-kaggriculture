@@ -152,15 +152,34 @@ def main() -> None:
 
     routemap = json.loads(ROUTEMAP.read_text())
     routes = [int(r) for r in routemap[keys[0]]]
-    current = routemap[keys[1]]
     workhorse = keys[3]
     paths = build_forced_variants(routes)
 
+    # What the baseline actually plays on a pair is decided by V43's router, not
+    # by whichever map we happen to be probing: pairs whose first two shops
+    # include YARN_STORE use _R110_OLD_SHOPS, every other pair uses
+    # _R108_SHOP_ROUTES. The first Yarn run took _R110_OLD_SHOPS at face value
+    # as "the 49 pairs route 0 serves"; most of those are non-Yarn pairs the
+    # router never sends to that map, so the baseline was playing route 105's
+    # family and the "current" margin was not zero. Resolve per pair.
+    def effective_current(pair: str):
+        table = routemap["yarn_shop_routes"] if "YARN_STORE" in pair else routemap["shop_routes"]
+        return table.get(pair)
+
+    current: dict[str, int | None] = {}
     if args.smoke:
         jobs = [("smoke", r, str(paths[r]), 1, 0) for r in routes]
     else:
         seeds = json.loads(SEEDS.read_text())["by_pair"]
-        targets = [" + ".join(p) for p in routemap[keys[2]]]
+        if args.side == "yarn":
+            # The router consults _R110_OLD_SHOPS only for pairs containing
+            # YARN_STORE; its 49 route-0 rows are dead entries from an older
+            # version and route 0 is never chosen at step 144 for any pair. The
+            # real Yarn side is the 15 YARN_STORE pairs, spread over 11 routes.
+            targets = [p for p in routemap["yarn_shop_routes"] if "YARN_STORE" in p]
+        else:
+            targets = [" + ".join(p) for p in routemap[keys[2]]]
+        current = {pair: effective_current(pair) for pair in targets}
         missing = [t for t in targets if len(seeds.get(t, [])) < args.seeds_per_pair]
         if missing:
             raise RuntimeError(f"not enough seeds for {len(missing)} pairs: {missing[:5]}")
@@ -202,14 +221,19 @@ def main() -> None:
     for pair, by_route in matrix.items():
         means = {route: statistics.fmean(v) for route, v in by_route.items()}
         best = max(means, key=lambda route: means[route])
+        cur = current.get(pair)
+        cur_margin = means.get(cur) if cur is not None else None
         cells[pair] = {
-            "current_route": current.get(pair),
-            "current_mean_margin": means.get(current.get(pair)),
+            "current_route": cur,
+            "current_mean_margin": cur_margin,
             "best_route": best,
             "best_mean_margin": means[best],
             "worst_mean_margin": min(means.values()),
             "spread": means[best] - min(means.values()),
-            "gain_over_current": means[best] - means.get(current.get(pair), 0.0),
+            # Only meaningful when `current` is what the baseline really played;
+            # otherwise best_mean_margin (against the baseline directly) is the
+            # number to read, and the holdout script's --select-on best uses it.
+            "gain_over_current": means[best] - (cur_margin if cur_margin is not None else 0.0),
             "by_route": {str(k): v for k, v in sorted(means.items())},
         }
 
