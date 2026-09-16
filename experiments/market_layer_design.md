@@ -209,3 +209,39 @@ error 24 of 641 units, opponent fills abs error 24 of 654 units, opponent sale
 steps hit 118 / missed 4 / false 0. All items: opponent error 465 of 1,517,
 from unmodelled BUY_PRODUCT of WHEAT/FERTILIZER -- irrelevant to premium goods.
 The agent can see what the opponent sells, one step late, with no false alarms.
+
+## Public pool (pairs [0::8], seeds [0:2], both seats; paired by game)
+
+| opponent | room_clamp vs opp | lead5 vs opp | paired lead5 - base |
+|---|---|---|---|
+| LynnV44 (V43 descendant) | 31/1, +2,379 | 31/1, +2,716 | +337 mean, +86 median, 22/32 > 0 |
+| MoonMelons | 32/0, +8,575 | 31/0, +8,277 | -225, -283, 2/31 |
+| MoonMarketSmart | 30/0, +8,162 | 27/0, +7,587 | -224, -217, 1/27 |
+| TerminalD (our old lineage) | 24/0, +7,888 | 21/0, +7,994 | -224, -210, 0/21 |
+
+Against an opponent that is not racing us for the same lots, the five-step
+lead costs about 220 a game: the town's consumption would have lifted the price
+in those steps. Wins are unaffected here (these opponents are far weaker), but a
+near-equal non-lineage opponent could flip close games. Hence `adapt5`: infer
+the opponent's premium sales online; switch the lead on only when they line up
+with our own tape's lots (>= 60% of >= 6 observed sale steps), which is the
+signature of a V43-lineage opponent; otherwise leave the parent's action alone.
+
+## adapt5: lead only against opponents that race our lots
+
+Classifier reference: the opponent's inferred sale items at step t against the
+items in *our own chassis's* market orders at t (placeholders included). Hit
+rate on one seed: clone 1.00 (per-step set equality 0.94), LynnV44 0.64,
+MoonMelons 0.49; the raw tape is useless as a reference (0.53 for the clone)
+because the effective schedule differs from it through sell_lead and clamp.
+Classification uses WOOL/MILK/STRAWBERRY/MELON/EGG/CARROT/TOMATO (all exactly
+inferable; WHEAT/FERTILIZER are confounded by BUY_PRODUCT), skips hours 0-1 of
+each day (everyone dumps after the end-of-day deposit) and any item we led in
+the last 6 steps (our lead distorts the reference). Enter clone mode at >= 20
+events with hit rate >= 0.85, leave below 0.70. Premium sales only begin around
+step 250, so the decision lands near step 340 and costs almost no lead: the
+clone smoke games led 159/142 units against lead5's ~160.
+
+Smoke (seeds 4242, 7): clone enters at 339, score 0.95, margins +1,628/+2,009;
+MoonMelons never enters (0.48), led 0; TerminalD one short false entry (28
+units); LynnV44 borderline (0.65), partial entry.

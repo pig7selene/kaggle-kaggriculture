@@ -1,0 +1,6 @@
+{"seed": 114, "seat": 0, "steps": 720, "variant_money": 68222.0, "base_money": 61553.0, "shops": ["BAKERY", "BAKERY"], "telemetry": null, "margin": 6669.0, "pair": "BAKERY + BAKERY"}
+{"seed": 114, "seat": 1, "steps": 720, "variant_money": 68222.0, "base_money": 61553.0, "shops": ["BAKERY", "BAKERY"], "telemetry": null, "margin": 6669.0, "pair": "BAKERY + BAKERY"}
+{"seed": 174, "seat": 0, "steps": 720, "variant_money": 53173.0, "base_money": 41314.0, "shops": ["BAKERY", "BAKERY"], "telemetry": null, "margin": 11859.0, "pair": "BAKERY + BAKERY"}
+{"seed": 174, "seat": 1, "steps": 720, "variant_money": 53173.0, "base_money": 41314.0, "shops": ["BAKERY", "BAKERY"], "telemetry": null, "margin": 11859.0, "pair": "BAKERY + BAKERY"}
+{"seed": 10, "seat": 0, "steps": 720, "variant_money": 82279.0, "base_money": 73554.0, "shops": ["BRUNCH_SPOT", "BAKERY"], "telemetry": null, "margin": 8725.0, "pair": "BRUNCH_SPOT + BAKERY"}
+{"seed": 10, "seat": 1, "steps": 720, "variant_money": 82279.0, "base_money": 73554.0, "shops": ["BRUNCH_SPOT", "BAKERY"], "telemetry": null, "margin": 8725.0, "pair": "BRUNCH_SPOT + BAKERY"}
