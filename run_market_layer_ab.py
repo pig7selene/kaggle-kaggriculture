@@ -58,10 +58,16 @@ def main() -> None:
     parser.add_argument("--seed-slice", default="0:2")
     parser.add_argument("--opponent", type=Path, default=BASE,
                         help="opponent agent main.py (default: room_plus_clamp base)")
+    parser.add_argument("--pairs-file", type=Path,
+                        help='JSON with {"pairs": [[shopA, shopB], ...]}; overrides --pair-every')
     args = parser.parse_args()
     lo, hi = (int(x) for x in args.seed_slice.split(":"))
     by_pair = json.loads(SEEDS.read_text())["by_pair"]
-    pairs = sorted(by_pair)[args.pair_offset::args.pair_every]
+    if args.pairs_file:
+        pairs = [" + ".join(p) for p in json.loads(args.pairs_file.read_text())["pairs"]]
+        pairs = [p for p in pairs if p in by_pair]
+    else:
+        pairs = sorted(by_pair)[args.pair_offset::args.pair_every]
     jobs = [(pair, seed, seat) for pair in pairs for seed in by_pair[pair][lo:hi] for seat in (0, 1)]
     out = ROOT / "experiments" / f"market_layer_ab_{args.name}.rows.jsonl"
     done = set()

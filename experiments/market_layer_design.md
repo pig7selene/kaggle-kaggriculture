@@ -329,3 +329,27 @@ cannot model in time, and advancing without a reliable burst prediction is the
 Note: the builder's adapt5 output now carries the (disabled) history branch and
 differs byte-wise from the submitted 56274059 source; the submitted bytes are
 agents/v43_room_clamp_adapt5/main.py (sha 42b3c41ee320...).
+
+## adapt5 + route-124 remap (rider)
+
+Built from the submitted adapt5 bytes (agents/v43_room_clamp_adapt5/main.py,
+sha 42b3c41ee320...) by inserting the 21-pair `_R108_SHOP_ROUTES` remap before
+the make_agent anchor (pairs in experiments/adapt5_r124_pairs_manifest.json).
+Wiring check on three non-remapped pairs vs adapt5: four exact zeros plus the
+known seed-43 seat asymmetry (+/-3,005 with identical trajectories). Pilot
+(21 pairs, seeds 0-1) and holdout (seeds 2-3) running against adapt5.
+- adapt5+r124 pilot (21 remapped pairs, seeds 0-1, both seats, vs adapt5): 84 games
+  64/20/0, mean +265, median +287, worst -596, best +1,686; all 21 pairs
+  positive (+4 .. +772). Over the whole pair space that is about +87 a game.
+- adapt5+r124 holdout (seeds 2-3): 84 games 63/21/0, mean +248, median +295,
+  worst -1,023, best +868; 17 of 21 pairs positive. Replicates the pilot.
+  Passes the ship rule. Packaged as submission/v43_room_clamp_adapt5_r124.tar.gz
+  (sha256 befde16669ac9fdf..., source 56b701e07a94...); the extracted archive
+  plays +507 against adapt5 on a remapped pair and exactly 0 on a non-remapped one.
+
+## Decision (2026-09-16 16:50)
+
+Next submission: **adapt5 + r124**. Against adapt5 it is +265 / +248 on the 21
+remapped pairs (about +87 a game over the pair space) and byte-identical
+behaviour elsewhere. Read against 56274059 (adapt5) in the same window; the
+gap is the remap's online value.
