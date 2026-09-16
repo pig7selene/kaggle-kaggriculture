@@ -133,20 +133,34 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--smoke", action="store_true",
                         help="one game per route on seed 1, to check every forced variant runs")
-    parser.add_argument("--output", type=Path, default=OUTPUT)
-    parser.add_argument("--report", type=Path, default=REPORT)
+    parser.add_argument("--side", choices=("nonyarn", "yarn"), default="nonyarn",
+                        help="nonyarn: the 27 routes on the 21 pairs route 105 serves; "
+                             "yarn: the 12 routes on the 49 pairs route 0 serves")
+    parser.add_argument("--output", type=Path, default=None)
+    parser.add_argument("--report", type=Path, default=None)
     args = parser.parse_args()
 
+    # The Yarn side is the same experiment on V43's other router branch: route 0
+    # serves 49 of the 64 Yarn pairs and was never measured. Keys come from the
+    # routemap JSON, outputs get a side suffix so the two pilots never collide.
+    keys = {"nonyarn": ("nonyarn_routes", "shop_routes", "pairs_105", 105),
+            "yarn": ("yarn_routes", "yarn_shop_routes", "pairs_0", 0)}[args.side]
+    suffix = "" if args.side == "nonyarn" else "_yarn"
+    output = args.output or OUTPUT.with_name(OUTPUT.stem + suffix + OUTPUT.suffix)
+    report = args.report or REPORT.with_name(REPORT.stem + suffix + REPORT.suffix)
+    args.output, args.report = output, report
+
     routemap = json.loads(ROUTEMAP.read_text())
-    routes = [int(r) for r in routemap["nonyarn_routes"]]
-    current = routemap["shop_routes"]
+    routes = [int(r) for r in routemap[keys[0]]]
+    current = routemap[keys[1]]
+    workhorse = keys[3]
     paths = build_forced_variants(routes)
 
     if args.smoke:
         jobs = [("smoke", r, str(paths[r]), 1, 0) for r in routes]
     else:
         seeds = json.loads(SEEDS.read_text())["by_pair"]
-        targets = [" + ".join(p) for p in routemap["pairs_105"]]
+        targets = [" + ".join(p) for p in routemap[keys[2]]]
         missing = [t for t in targets if len(seeds.get(t, [])) < args.seeds_per_pair]
         if missing:
             raise RuntimeError(f"not enough seeds for {len(missing)} pairs: {missing[:5]}")
@@ -218,8 +232,8 @@ def main() -> None:
             print("  ", r)
         return
 
-    lines = ["# Route remap pilot", "",
-             f"{len(routes)} non-Yarn routes on the {len(cells)} pairs route 105 serves, "
+    lines = [f"# Route remap pilot ({args.side})", "",
+             f"{len(routes)} {args.side} routes on the {len(cells)} pairs route {workhorse} serves, "
              f"{args.seeds_per_pair} seeds per pair, both seats; {len(played)} games, "
              f"{len(errors)} errors. Margin is the forced route against V43's current "
              f"assignment for that pair.", "",
