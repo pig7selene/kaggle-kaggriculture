@@ -1,0 +1,27 @@
+paths resolved to absolute
+  "routes_added": 17,
+  "pairs_covered": 17,
+  "output_bytes": 534096,
+covered pairs 17 | games 74
+完成 74/74 | 错误 0
+未覆盖对 wiring margins=[0.0, 0.0, 0.0, 0.0, -3005.0, 3005.0] 全为0: False
+覆盖对: n=68 W/L/T 24/44/0 GSR 0.353 mean -2,258 median -1,250 worst -13,106 best +7,454
+     -12,886  BRUNCH_SPOT + PIZZA_SHOP
+      -5,093  SMOOTHIE_SHOP + SMOOTHIE_SHOP
+      -4,573  PET_CAFE + PET_CAFE
+      -4,456  FARMERS_MARKET + FARMERS_MARKET
+      -3,530  YARN_STORE + PIZZA_SHOP
+      -3,372  PET_CAFE + BRUNCH_SPOT
+      -2,428  ICE_CREAM_SHOP + ICE_CREAM_SHOP
+      -2,084  SMOOTHIE_SHOP + BRUNCH_SPOT
+      -2,067  BRUNCH_SPOT + ICE_CREAM_SHOP
+      -1,966  PIZZA_SHOP + SMOOTHIE_SHOP
+         +92  SMOOTHIE_SHOP + FARMERS_MARKET
+        +459  PIZZA_SHOP + ICE_CREAM_SHOP
+        +571  PET_CAFE + SMOOTHIE_SHOP
+        +595  FARMERS_MARKET + YARN_STORE
+        +615  SMOOTHIE_SHOP + PET_CAFE
+        +736  PIZZA_SHOP + YARN_STORE
+      +1,005  YARN_STORE + ICE_CREAM_SHOP
+
+[exited with code 0]

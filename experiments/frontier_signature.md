@@ -1,5 +1,12 @@
 # Frontier plan signature (daily top-10, 2026-09-12..14)
 
+> **Correction (2026-09-16, full public leaderboard, 9,186 teams):** the daily
+> proxy of 3103 overstated both lineage teams. On the board アルモンド is rank 38
+> at 2902.4 and redblackbst rank 169 at 2798.8; the top-30 line is 2916.3 and we
+> (56258686) are rank 401 at 2677.3. The post-144 policy on V43's plan is worth
+> about +225, not +300 -- which is also exactly our gap to the top 30.
+
+
 237 episodes, up to 15 per team, highest daily score first. Opening Jaccard is order-set overlap in steps 0-143 with each public agent run locally; a tape agent's opening does not depend on seed or shop draw.
 
 | Team | N | Score | Money | Land (mode) | Cash@221 | Tiles | Hands | Tomato | Cows/Sheep/Geese | J(V43) | J(V44) | J(Moon) |
