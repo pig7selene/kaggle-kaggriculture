@@ -297,3 +297,35 @@ sha256 6e472b08a8318788...). Same gain as lead5 against V43-lineage opponents
 opponents that do not race our lots (pool paired -24 / 0 / 0), where lead5 paid
 about -220. It replaces lead5 as the candidate; 56270914 stays live for its own
 same-window reading.
+
+## plan1: receding-horizon water-filling planner -- failed
+
+Per step, per premium item: predict the inventory path to hour 66 (known
+consumption + opponent prediction), spread the stock by water-filling, execute
+this step's quantity, hold the rest within the shed's free room minus 25.
+Smoke, 8 games against clone / MoonMelons / LynnV44 / TerminalD: every game
+-11k to -15k (adapt5 on the same seeds: +1.5k to +6.3k). Telemetry: ~500 units
+held and ~570 force-sold per game; planning cost 0.4-0.9 ms a step. The
+predicted consumption makes every path descend, so the planner holds all day;
+the held stock takes the room the tape's deposits need, and production
+collapses -- the price gates' failure mode again, now with an optimiser
+driving it. A planner that holds needs the shed's shadow price, which means
+predicting the tape's deposits step by step; not buildable reliably in the
+time left. Closed.
+
+## plan2: advance-only, history-gated -- no gain; DP line closed
+
+adapt5 plus one rule for non-lineage opponents: if the opponent sold the item
+at the same hour yesterday within the next 5 steps, sell our tape's lots from
+that step on now. Smoke on the same seeds: identical to adapt5 against the
+clone; against MoonMelons -142 / -55, TerminalD -123 / -78, LynnV44 +687 / -150
+relative to adapt5, with 35-47 units advanced per game. Five of six
+non-lineage games negative -- yesterday's pattern does not predict a burst that
+would hurt us, and advancing forgoes the recovery. Below the pre-set +150 bar.
+Both forms of the planner are closed: holding is priced by the shed, which we
+cannot model in time, and advancing without a reliable burst prediction is the
+-220 already measured. adapt5 stands as the market-side result.
+
+Note: the builder's adapt5 output now carries the (disabled) history branch and
+differs byte-wise from the submitted 56274059 source; the submitted bytes are
+agents/v43_room_clamp_adapt5/main.py (sha 42b3c41ee320...).
