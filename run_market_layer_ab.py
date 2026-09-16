@@ -38,7 +38,7 @@ def play(variant: Path, seed: int, seat: int, opponent: Path = BASE) -> dict:
            "variant_money": last[seat]["reward"], "base_money": last[1 - seat]["reward"],
            "shops": list(last[0]["observation"]["town"]["unlocked_shops"][:2]),
            "telemetry": next((t for k, t in (getattr(v, "telemetry", {}) or {}).items()
-                              if k in ("market_layer", "price_gate", "premium_lead")), None)}
+                              if k in ("market_layer", "price_gate", "premium_lead", "adaptive_lead")), None)}
     if len(env.steps) != 720 or row["variant_money"] is None or row["base_money"] is None:
         row["error"] = "incomplete"
     else:

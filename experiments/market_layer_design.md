@@ -245,3 +245,18 @@ clone smoke games led 159/142 units against lead5's ~160.
 Smoke (seeds 4242, 7): clone enters at 339, score 0.95, margins +1,628/+2,009;
 MoonMelons never enters (0.48), led 0; TerminalD one short false entry (28
 units); LynnV44 borderline (0.65), partial entry.
+
+### adapt5 pilot (pool pairs [0::8], seeds [0:2]; clone pairs [0::4], seeds [0:2])
+
+| opponent | adapt5 vs opp | paired adapt5 - base | paired adapt5 - lead5 |
+|---|---|---|---|
+| MoonMelons | 32/0, +8,551 | -24 (median 0) | +202 |
+| MoonMarketSmart | 32/0, +8,104 | 0 | +226 |
+| TerminalD | 30/0, +8,055 | 0 | +200 |
+| LynnV44 | 31/1, +2,638 | +260 (median 0, 7 of 32 > 0) | -77 |
+| clone (39 of 64 at this read) | 39/0, +1,137 (median +1,207) | — | -63 (median -68) |
+
+Against non-lineage opponents the classifier never enters clone mode and the
+agent is the base to the dollar, recovering lead5's -220. Against the clone it
+keeps about 95% of lead5's gain. Packaged as submission/v43_room_clamp_adapt5.tar.gz
+(not submitted); clone holdout running.
