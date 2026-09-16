@@ -260,3 +260,27 @@ Against non-lineage opponents the classifier never enters clone mode and the
 agent is the base to the dollar, recovering lead5's -220. Against the clone it
 keeps about 95% of lead5's gain. Packaged as submission/v43_room_clamp_adapt5.tar.gz
 (not submitted); clone holdout running.
+- adapt5 clone pilot, final: 64 games 64/0/0, mean +1,492, median +1,314, worst
+  +125, best +4,073; paired against lead5 on the same games -65 (median -68):
+  adapt5 keeps 96% of lead5's margin against the clone while being the base to
+  the dollar against everyone else. Holdout running.
+
+## How much is left in sell timing? (analyze_retiming_upper_bound.py)
+
+One instrumented game per opponent, seed 4242. Holding the opponent's sales
+and the town's consumption fixed, if our premium units could be sold at any
+step after reaching the shed, ignoring shed capacity and end-of-day
+destruction: actual premium revenue ~79k, bound ~132-134k, headroom ~+54k a
+game (60% of final money). MILK sells at an average of 74 against a base of
+160, STRAWBERRY at 44 against 120: both players dump bursts into a market that
+consumes half a unit a step, so the price sits deep on the cliff; without our
+supply the market is *under*-supplied late in the game and prices exceed base.
+
+The bound is not reachable as stated -- the shed holds 100 units in total, the
+end-of-day deposit fills it, and holding is what the price gates tried
+(-1,600). What it does show is that the price, not the unit count, is where the
+game's money is, and that the top teams' realized prices (STRAWBERRY 1.25 x
+base) come from matching supply to consumption rather than from timing alone.
+A capacity-aware intra-day planner is bounded by the free shed room (~55 units
+during the day): a rough ceiling of +2-4k a game, realistic +1-2k, against
+every opponent. Worth one bounded attempt after adapt5 ships; not before.
