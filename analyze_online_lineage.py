@@ -56,6 +56,8 @@ def main() -> None:
     route0 = runpy.run_path(str(BASE), run_name="v43base")["_ROUTES"][0]
     rows = []
     for e in manifest["episodes"]:
+        if e.get("opp_team_name") == "pig7selene":
+            continue   # the upload's validation episode: a copy of ourselves
         replay = json.loads(Path(e["file"]).read_text())
         seat, opp = e["seat"], 1 - e["seat"]
         agree = sum(field(normalized_action(replay, opp, s)) == field(route0[s]) for s in range(144)) / 144
