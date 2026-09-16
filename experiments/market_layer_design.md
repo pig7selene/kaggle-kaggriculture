@@ -109,3 +109,26 @@ hours of a day, never on the final day. Same pilot/holdout protocol.
   pins zero-quantity placeholders was built but not run (placeholders occur in 8
   of 719 steps and only for inputs).
 - `both_v2`: 64 games 23/41/0, mean -129, median -153. Closed.
+
+- `gate_35_70`: stopped at 41 of 64 games, 4/37/0, mean -1,601, median -1,714, worst -3,929.
+- `gate_50_80`: stopped at 40 of 64 games, 2/38/0, mean -2,340, median -2,409, worst -4,277.
+  Holding premium stock is expensive on this chassis: the tape's later PICKUP/
+  DROP traffic and end-of-day deposits need the shed room, a crashed wool price
+  without a yarn store never recovers (3 units/day of town-centre demand against
+  ~30/day of joint production), and the held units are dumped anyway when the
+  hold limit binds. Closed at the interim read; both runs stopped to free CPU.
+
+## Premium lead results (pilot: pairs [0::4], seeds [0:2], both seats, vs room_plus_clamp)
+
+- `lead2`: 64 games 61/3/0, mean +287, median +212, worst -508, best +1,470; positive on all 16 pairs (+39 .. +935).
+- `lead3`: 64 games 61/3/0, mean +388, median +404, worst -436, best +1,548.
+
+Gain grows with lookahead, as the mechanism predicts against a one-step-lead
+clone (a longer lead also gets ahead of the clone's consecutive lots). `lead4`
+and `lead5` are added to the pilot family; selection stays "best pilot mean",
+confirmed on the holdout (pairs [2::4], seeds [2:4]) of the selected variant.
+Holdouts for lead2 and lead3 are running regardless, as extra evidence.
+- `lead2` holdout (pairs [2::4], seeds [2:4], never seen by the pilot): 64 games
+  61/3/0, mean +268, median +216, worst -1,075, best +2,451; positive on all 16
+  pairs (+31 .. +578). Passes the pre-registered ship rule; the pilot estimate
+  (+287 / +212) replicated within noise.

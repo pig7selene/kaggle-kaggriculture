@@ -277,6 +277,8 @@ kaggle_agent = agent
 LEADS = {
     "lead2": {"lookahead": 2},
     "lead3": {"lookahead": 3},
+    "lead4": {"lookahead": 4},
+    "lead5": {"lookahead": 5},
 }
 LEAD_DEFAULTS = {"items": ("WOOL", "MILK", "STRAWBERRY", "MELON"), "min_price": 2}
 
