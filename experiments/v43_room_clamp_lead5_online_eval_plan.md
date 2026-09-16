@@ -33,3 +33,16 @@ Identical to lead5 against V43-lineage opponents, identical to 56258686 against
 everyone else. Read peak-to-peak against both 56258686 (2730) and 56270914
 (lead5) in the same window; the gap lead5 - adapt5 estimates how much of the
 population is not racing our lots.
+
+## Competition timeline (from the Overview, pasted 2026-09-16)
+
+- 2026-09-30 23:59 UTC final submission deadline.
+- 2026-10-01 to ~10-15: games continue "until the leaderboard has reached
+  convergence"; the leaderboard is final at the end of that period.
+
+So the post-submission overshoot (peak 3-5 h in, -70..90 over the next 12 h)
+is irrelevant to the final ranking; only the settled skill against the final
+population counts. Selection rule: compare settled values at equal age with
+100+ episodes; make sure the strongest agent is among the active submissions
+at the deadline. Open question: how many submissions per team stay active, and
+the daily submission limit (Evaluation section).
