@@ -179,3 +179,6 @@ still running as candidates for a follow-up submission; they do not gate this on
 Online comparison: same-window only, against 56258686 (2657.9 at 13:20 today,
 dormant and drifting down from its 2730 peak). Local scale so far: +440 of
 margin became about +100 of rating.
+- `lead6` pilot: 64 games 63/1/0, mean +1,324, median +1,157, worst -52 (114.9 units led).
+- `lead8` pilot: 64 games 63/1/0, mean +1,177, median +1,100, worst -224.
+  Lookahead peaks at 5; lead6 and lead8 fall back. lead5 stays selected.
