@@ -83,28 +83,48 @@ _SETTINGS = @@SETTINGS@@
 '''
 
 
-def development_paths() -> list[Path]:
-    manifest = json.loads(MANIFEST.read_text())
-    sealed = set(manifest["seal_integrity"]["sealed_ids_declared"])
+def development_paths(manifest_path: Path, corpus: Path, team: str | None = None) -> list[Path]:
+    """Episode files from either manifest shape.
+
+    The Majkel corpus manifest carries a sealed holdout that must never enter
+    the route bank; the frontier lineage manifest (extract_lineage_frontier.py)
+    has no seal, rows keyed by team with an absolute ``path``.
+    """
+    manifest = json.loads(manifest_path.read_text())
+    sealed = set(manifest.get("seal_integrity", {}).get("sealed_ids_declared", []))
     paths = []
     for row in manifest["episodes"]:
-        if row["sealed"] or row["episode_id"] in sealed:
+        if row.get("sealed") or row["episode_id"] in sealed:
             continue
-        paths.append(Path(row["source_path"]) if "source_path" in row
-                     else CORPUS / row["subset"] / row["replay_filename"])
+        if team and row.get("team") not in (None, team):
+            continue
+        if "path" in row:
+            paths.append(Path(row["path"]))
+        elif "source_path" in row:
+            paths.append(Path(row["source_path"]))
+        else:
+            paths.append(corpus / row["subset"] / row["replay_filename"])
     if {int(p.stem.split("-")[1]) for p in paths} & sealed:
         raise RuntimeError("sealed holdout episode entered the route bank")
     return [p for p in paths if p.is_file()]
 
 
 def main() -> None:
+    global BASE, TEAM
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--base", type=Path, default=BASE,
+                        help="V43-family main.py to inject into (default: shipped V43)")
+    parser.add_argument("--manifest", type=Path, default=MANIFEST)
+    parser.add_argument("--corpus", type=Path, default=CORPUS)
+    parser.add_argument("--team", default=TEAM)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     parser.add_argument("--receipt", type=Path, default=RECEIPT)
     args = parser.parse_args()
+    BASE, TEAM = args.base, args.team
+    args.output, args.receipt = args.output.resolve(), args.receipt.resolve()
 
     best: dict[tuple, dict] = {}
-    for path in development_paths():
+    for path in development_paths(args.manifest, args.corpus, args.team):
         replay = json.loads(path.read_text())
         teams = list(replay["info"]["TeamNames"])
         if TEAM not in teams:
