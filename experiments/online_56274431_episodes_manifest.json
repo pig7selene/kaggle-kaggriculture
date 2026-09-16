@@ -1,0 +1,81 @@
+{
+ "submission_id": 56274431,
+ "pulled_at": "2026-09-16T17:06:16",
+ "episodes_listed": 4,
+ "episodes_downloaded": 4,
+ "record": {
+  "W": 3,
+  "L": 1,
+  "T": 0
+ },
+ "episodes": [
+  {
+   "episode_id": 109607398,
+   "create_time": "2026-09-16T08:46:23.595925100Z",
+   "end_time": "2026-09-16T08:48:48.501234300Z",
+   "seat": 0,
+   "our_reward": 67079,
+   "opp_reward": 67753,
+   "our_initial_score": null,
+   "our_updated_score": 600,
+   "opp_submission_id": 56274431,
+   "opp_team_id": 16701024,
+   "opp_team_name": "pig7selene",
+   "opp_score": null,
+   "file": "/private/tmp/kaggriculture_online/56274431/episode-109607398-replay.json",
+   "sha256": "3f4d4ce0ecbf2b912315bcbf4c15f133f48e7226fe735ad1b86515b933e8a747",
+   "result": "L"
+  },
+  {
+   "episode_id": 109608587,
+   "create_time": "2026-09-16T08:50:41.250082200Z",
+   "end_time": "2026-09-16T08:51:58.590656400Z",
+   "seat": 1,
+   "our_reward": 177841,
+   "opp_reward": 23698,
+   "our_initial_score": 600,
+   "our_updated_score": 720.1474033235619,
+   "opp_submission_id": 55439938,
+   "opp_team_id": 16662128,
+   "opp_team_name": "BenPalmer59",
+   "opp_score": 637.6034246001021,
+   "file": "/private/tmp/kaggriculture_online/56274431/episode-109608587-replay.json",
+   "sha256": "092a057d7a0ac5c17ef6410fda2640f8e0e9fdd4716252b59dcddb5e82b92362",
+   "result": "W"
+  },
+  {
+   "episode_id": 109609672,
+   "create_time": "2026-09-16T08:54:47.689655600Z",
+   "end_time": "2026-09-16T08:59:45.738095400Z",
+   "seat": 0,
+   "our_reward": 161344,
+   "opp_reward": 65821,
+   "our_initial_score": 720.1474033235619,
+   "our_updated_score": 803.3909455659754,
+   "opp_submission_id": 55294278,
+   "opp_team_id": 16660345,
+   "opp_team_name": "Aadhithya Ramesh",
+   "opp_score": 628.5351867737926,
+   "file": "/private/tmp/kaggriculture_online/56274431/episode-109609672-replay.json",
+   "sha256": "ef6f6c62946bde15880b66ce6275fcae150e4a32f934813df629f742fdc0cf1b",
+   "result": "W"
+  },
+  {
+   "episode_id": 109610728,
+   "create_time": "2026-09-16T08:58:52.408029200Z",
+   "end_time": "2026-09-16T09:03:55.949671600Z",
+   "seat": 1,
+   "our_reward": 143416,
+   "opp_reward": 105675,
+   "our_initial_score": 803.3909455659754,
+   "our_updated_score": 898.0015306915569,
+   "opp_submission_id": 55272189,
+   "opp_team_id": 16656345,
+   "opp_team_name": "sunchang71",
+   "opp_score": 753.9214250439197,
+   "file": "/private/tmp/kaggriculture_online/56274431/episode-109610728-replay.json",
+   "sha256": "36856f6e1279bc87641c60f5849b2df128e580734aecb17c42e9b2987392e1e1",
+   "result": "W"
+  }
+ ]
+}
