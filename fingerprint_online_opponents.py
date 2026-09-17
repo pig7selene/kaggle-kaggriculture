@@ -69,8 +69,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--submission", type=int, required=True)
     parser.add_argument("--limit", type=int, default=400)
+    parser.add_argument("--variants", default=",".join(VARIANTS), help="comma-separated variant file stems in the variants dir")
+    parser.add_argument("--tag", default="", help="suffix for the output files")
     args = parser.parse_args()
     ensure_layers_off()
+    variants = [v for v in args.variants.split(",") if v]
     manifest = json.loads((ROOT / "experiments" / f"online_{args.submission}_episodes_manifest.json").read_text())
     ns = runpy.run_path(str(VDIR / "room_plus_clamp.py"), run_name="v43base")
     routes, route0 = ns["_ROUTES"], ns["_ROUTES"][0]
@@ -86,14 +89,14 @@ def main() -> None:
             continue
         row = {"episode_id": e["episode_id"], "opp": e.get("opp_team_name"), "opp_score": e.get("opp_score"),
                "result": e["result"], "margin": (e["our_reward"] or 0) - (e["opp_reward"] or 0), "variants": {}}
-        for v in VARIANTS:
+        for v in variants:
             acts = run_variant(rep, opp, v, f"fp:{e['episode_id']}:{v}")
             mk = sum(norm_market(actual[s]) == norm_market(acts[s]) for s in range(144, 719)) / (719 - 144)
             fd = sum(field(actual[s]) == field(acts[s]) for s in range(144, 719)) / (719 - 144)
             row["variants"][v] = {"market": round(mk, 3), "field": round(fd, 3)}
         best = max(row["variants"], key=lambda v: row["variants"][v]["market"])
         row["best_variant"], row["best_market"] = best, row["variants"][best]["market"]
-        row["field_vs_base"] = row["variants"]["room_plus_clamp"]["field"]
+        row["field_vs_base"] = row["variants"].get("room_plus_clamp", row["variants"][variants[0]])["field"]
         if row["field_vs_base"] < 0.9:
             scores = sorted(((sum(field(actual[s]) == field(routes[r][s]) for s in range(144, 648)) / 504, r)
                              for r in routes if len(routes[r]) >= 648), reverse=True)
@@ -101,7 +104,7 @@ def main() -> None:
         rows.append(row)
         print(f"  {len(rows)} {row['opp'][:20]:20s} best {best:26s} market {row['best_market']:.2f} field-vs-base {row['field_vs_base']:.2f} "
               f"{('route ' + str(row.get('best_route')) + ' @' + str(row.get('best_route_agree'))) if 'best_route' in row else ''}", flush=True)
-    (ROOT / "experiments" / f"online_{args.submission}_fingerprints.rows.json").write_text(json.dumps(rows, indent=0) + "\n")
+    (ROOT / "experiments" / f"online_{args.submission}_fingerprints{args.tag}.rows.json").write_text(json.dumps(rows, indent=0) + "\n")
 
     lines = [f"# Fingerprints of lineage opponents: submission {args.submission}", "", f"{len(rows)} lineage opponents.", "",
              "## Best-matching layer configuration (market list equality, steps 144-718)", "",
@@ -128,7 +131,7 @@ def main() -> None:
     lines += ["", "## Market match distribution (how well does the best configuration explain them?)", "",
               "- " + ", ".join(f"{q:.2f}" for q in statistics.quantiles([r["best_market"] for r in rows], n=4)) + " (quartiles)"]
     text = "\n".join(lines) + "\n"
-    (ROOT / "experiments" / f"online_{args.submission}_fingerprints.md").write_text(text)
+    (ROOT / "experiments" / f"online_{args.submission}_fingerprints{args.tag}.md").write_text(text)
     print(text)
 
 

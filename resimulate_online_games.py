@@ -34,8 +34,11 @@ ORIG = {k: v for k, v in vars(K).items() if k in ("MARKET_PARAMS", "_shape", "ma
 
 def patch_engine(version):
     if version == "1.32.7":
-        ns = {}
-        exec(compile(ENGINE_1327.read_text(), str(ENGINE_1327), "exec"), ns)
+        # only the market-curve section changed between the versions; exec just that
+        src = ENGINE_1327.read_text()
+        seg = src[src.index("MARKET_I0 = "):src.index("def _refresh_prices")]
+        ns = dict(vars(K))   # every engine name the segment may reference
+        exec(compile(seg, "engine_1327_market", "exec"), ns)
         for k in ("MARKET_PARAMS", "_shape", "market_price", "HINGE_GAIN"):
             if k in ns:
                 setattr(K, k, ns[k])

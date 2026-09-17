@@ -403,3 +403,21 @@ late and half as often. The local benchmark opponent is shipped V43 from here on
    Premium curves are identical. resimulate_online_games.py replays online
    seeds locally under both engines to test whether local games reproduce
    online outcomes at all.
+
+## Re-simulation of online games (resimulate_online_games.py, 24 games)
+
+Same seed, same seats, our submitted adapt5 bytes against local shipped V43:
+all 24 are local wins (+2,660 for the 12 online wins, +1,893 for the 12 online
+losses) under both 1.32.6 and 1.32.7 curves; shops reproduce in 15/24 (the shop
+draw depends on both agents' behaviour, not only the seed). The engine is not
+the gap and neither is the seed sample: the online opponents are not local
+shipped. The current notebook's main.py is byte-identical to our 2026-09-15
+copy (sha 3abe0ca7...), so it is not a newer V43 either.
+
+Divergence inspection (inspect_online_divergence.py): field agreement 1.00,
+market 0.85-0.91, and the differences are premium lots sold **4 steps earlier**
+than local shipped (MILK 3 at 314 vs 318, WOOL 5 at 323 vs 327). The pool
+plays V43's farm with an earlier premium schedule -- a "timing" fork family --
+so room_clamp's one-step sell_lead loses the race to them, and adapt5's lead
+fires only when its classifier recognises them. Hypothesis under test: shipped
++ premium lead 4 reproduces them (fingerprint against shipped_lead2..5, LynnV44).
