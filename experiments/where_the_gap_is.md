@@ -132,3 +132,62 @@ low because both players dump into a market with no demand.
 lead8 (submitted as 56296489) against the room_clamp control (56293133) is the
 live question, and route differentiation against shipped is still running.
 Everything else is closed.
+
+## The trajectory import is closed too (2026-09-17, late)
+
+`prototype_corrective_replay.py` replays a recorded trajectory by chasing its
+*state* rather than repeating its actions: it walks a unit back to the tile the
+recording had it on, buys the hands, seeds, animals and land the recording owned
+at that step whenever it can afford them, digs a weed sitting where the
+recording wanted to plant, and posts sell orders sized to the stock we actually
+hold. On Majkel's own episode and seed it climbs
+
+| layer | money | share of the original 116,326 |
+|---|---:|---:|
+| raw tape | 4,194 | 3.6% |
+| + purchase catch-up | 98,986 | 85.1% |
+| + position correction | 114,856 | 98.7% |
+| + weed digging | 120,848 | 103.9% |
+
+so the engineering problem is solved: a recorded trajectory can be executed
+faithfully. The plan still does not transfer. Three of his winning trajectories
+against shipped V43 on four fresh seeds:
+
+| trajectory | original margin | mean margin vs shipped |
+|---|---:|---:|
+| 109668603 | +17,945 | **-16,943** |
+| 109607344 | +16,570 | **-31,618** |
+| 109466152 | +12,071 | **-12,306** |
+| (room_plus_clamp, same seeds) | | +114 |
+
+Two reasons. His 141 episodes agree with each other on only 29% of opening
+actions -- he is a reactive agent, not a tape, so there is no shop-independent
+opening to branch from. And the shop draw is not a function of the seed alone:
+weed spawning and shop unlocking share one RNG per day, so how many empty tiles
+each farm has changes which shops the town unlocks. A transplanted trajectory
+therefore always meets a different town than it was recorded against, and its
+crop programme is aimed at the wrong demand. Against shipped it not only earns
+less than V43 does, it leaves the goods shipped sells untouched and lifts the
+opponent's money from ~95k to 100-156k.
+
+## What is still open: V43's own route bank
+
+Forcing each of the 41 routes for steps 144-647 against shipped V43 (4 pairs,
+both seats):
+
+| route | W/L | mean margin | premium units | premium index |
+|---|---|---:|---:|---:|
+| 103 | 8/0 | **+1,639** | 288 | 0.43 |
+| 112 | 8/0 | +1,369 | 300 | 0.42 |
+| 101 / 116 / 119 | 6/2 | +934 | 314 | 0.42 |
+| 104 | 6/2 | +243 | 294 | 0.42 |
+| 124 | 2/6 | -143 | 329 | 0.40 |
+| 105 (the default for most pairs) | 2/6 | -718 | 328 | 0.41 |
+| 0 | 0/8 | -3,107 | 352 | 0.40 |
+
+The ranking follows premium volume: the routes that win sell 288-314 premium
+units, the routes that lose sell 326-386. Against an opponent flooding the same
+market, producing less premium is worth more than producing more -- the effect
+the crop swap could not reach by editing the tape is already present in the
+route bank. Best-of-41 on eight games is a selection risk, so a holdout on
+eight unseen pairs and two unseen seeds is running.
