@@ -418,3 +418,11 @@ Why less feeding: the care bonus needs fed-and-cared and is worth one extra
 unit on a production day; for cows and geese that unit is $30-40 of glutted
 milk or egg and costs a wheat ($35) plus a step, while an animal only escapes
 after two consecutive unfed days. Sheep (wool $240) are the exception.
+
+**Feeding less, replicated naively, loses animals (-12k).** Turning FEED into
+PASS on a cow or goose fed yesterday (`consecutive_unfed == 0`) skipped 51-90
+feeds a game and still lost three animals by step 600: the tape does not feed
+every animal every day, so our skipped day plus the tape's own gap makes two
+and the animal escapes. Including sheep: -29k. The forks' fewer feeds must be
+scheduled against their own feeding calendar; the wheat saved is worth ~1k, so
+this is not worth the machinery. Closed.
