@@ -25,9 +25,18 @@ OUT_ROOT = Path("/private/tmp/kaggriculture_online")
 
 def list_episodes(submission: int) -> dict:
     req = urllib.request.Request(LIST_URL, data=json.dumps({"submissionId": submission}).encode(),
-                                 headers={"Content-Type": "application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read())
+                                 headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}, method="POST")
+    # the listing endpoint rate-limits bursts (HTTP 429); back off and retry
+    for attempt in range(7):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read())
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == 6:
+                raise
+            wait = 30 * (2 ** attempt)
+            print(f"  429 on listing; waiting {wait}s", flush=True)
+            time.sleep(wait)
 
 
 def main() -> None:

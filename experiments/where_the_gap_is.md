@@ -381,3 +381,40 @@ the *opponent's* sheep layer fired and ours could not -- the whole -20k.
 to the town, which needs a farm program, not tape edits (crop swaps break the
 tape's harvest timing) and not the fourth quadrant (V43 already takes the one
 profitable case). The market side is at its ceiling (lead5 ~ best response).
+
+## What the strong V43 forks actually change (2026-09-18, from their 9/16 replays)
+
+`analyze_fork_submission.py` feeds a fork's recorded observations through
+shipped to learn the route the tape would play, then diffs the fork's actions
+against that tape. Driz Lo (12 games), Thomas Tschinkel (12), Catalyst (2),
+mikelou1 (3): **the farm is V43's** -- plants by crop, builds, land steps and
+hires per day match the tape to within one -- and the edits are in how the
+units spend their steps and when sales are posted:
+
+| per game | Driz Lo | Thomas | Catalyst | mikelou1 | tape |
+|---|---:|---:|---:|---:|---:|
+| FERTILIZE | 135 | 107 | 89 | 105 | 82 |
+| FEED | 314 | 315 | 289 | 302 | 345 |
+| CARE | 337 | 380 | 352 | 370 | 372 |
+| PASS | 374 | 370 | 334 | 385 | 324 |
+| SELL FERTILIZER orders | 58 | 91 | - | - | 89 |
+| SELL WHEAT orders | 36 | 68 | - | - | 60 |
+
+Common to all four: feed less, fertilize more, and (Driz Lo) post sales at
+hours 0-1. Driz Lo's +53 fertilizations come with +52 extra moves and -52
+redundant waters, -35 cares, -30 feeds: he frees tape steps and spends them on
+a one-step detour to fertilize.
+
+Why fertilizer: in the yield window each watering adds +1, or +2 when
+fertilized, and one application lasts three days -- the whole wheat window --
+so one fertilizer (sold by V43 at $39 on average, $100 early, $1 late) becomes
++3 wheat (~$105). V43 harvests wheat 148 times a game and 115 of those are
+unfertilized (mean yield 3.7 of 6). The tape has 188 moments a game where a
+unit stands on young unfertilized wheat with fertilizer in hand; in 69 of them
+its action is a move that could be delayed a step. Ceiling about +5k net;
+Driz Lo realises perhaps half.
+
+Why less feeding: the care bonus needs fed-and-cared and is worth one extra
+unit on a production day; for cows and geese that unit is $30-40 of glutted
+milk or egg and costs a wheat ($35) plus a step, while an animal only escapes
+after two consecutive unfed days. Sheep (wool $240) are the exception.
