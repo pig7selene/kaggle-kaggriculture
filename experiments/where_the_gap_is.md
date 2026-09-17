@@ -244,3 +244,33 @@ seeds:
 
 Uncovered pairs are identical to the base to the dollar, so the wiring is
 clean; covered pairs gain 1,900-4,800. That is the magnitude the rating needs.
+
+### Route differentiation is closed by its holdout
+
+Forcing route 103 globally measured +1,639 on four pairs and **-6,140 (2/28)**
+on eight unseen pairs and two unseen seeds; the router's own defaults 124 and
+105 came out best (-291, -627). The pilot was a best-of-41 on eight games and
+did not survive. A route is good for the pairs it was built for, not globally.
+
+### Fork tails: select by measurement, not by the fork's own result
+
+Over the full 64-game A/B the first bank is neutral (mean delta -75 against
+room_plus_clamp; 26 of 59 games identical because the pair is uncovered). The
+per-pair split is what matters:
+
+| pair | tail source | fork's own margin | delta vs room_clamp |
+|---|---|---:|---:|
+| BAKERY + PET_CAFE | Driz Lo ep109826301 | -16,153 | **+4,208** |
+| FARMERS_MARKET + BAKERY | Thomas Tschinkel ep109835653 | -12,314 | **+2,168** |
+| BAKERY + BAKERY | mikelou1 ep109762388 | -4,141 | +1,084 |
+| PIZZA_SHOP + PET_CAFE | Driz Lo ep109729483 | -4,968 | -1,458 |
+| PET_CAFE + BAKERY | Driz Lo ep109656981 | -10,079 | -1,496 |
+| ICE_CREAM_SHOP + PET_CAFE | Driz Lo ep109817461 | -4,181 | -3,434 |
+| PIZZA_SHOP + BAKERY | Driz Lo ep109807931 | -11,048 | -3,836 |
+
+The fork's own margin does not predict the transplanted tail's value: the best
+tail we have came from a game its author lost by 16k. So the selection rule is
+our own measurement against shipped, per pair, with a holdout on unseen seeds --
+the same discipline that just killed route 103. The bank is rebuilt from the
+2026-09-15 and 2026-09-16 daily sets (45 of 64 pairs; Catalyst 18, Driz Lo 14,
+Thomas Tschinkel 11, mikelou1 2) and every pair is being measured.
