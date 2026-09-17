@@ -369,3 +369,21 @@ clone locally). Lineage opponents change the farm almost not at all (38 field
 steps of 575 after 144) and the market a lot (138 steps): about 86 extra
 1000-unit SELL orders a game, ~27 on premium and ~59 on other goods -- close to
 9 products x 9 days. None of the 120 is an unmodified V43.
+
+## Fingerprint of the online pool (fingerprint_online_opponents.py, 120 lineage opponents)
+
+114 of 120 match **shipped V43** -- the public notebook's default switches
+(hand_align, weed_repair, sell_lead on; room_guard, clamp_sells, dead_stock,
+terminal_liquidation, budget_guard, front_run off) -- with market-list
+equality 0.88 median (quartiles 0.84 / 0.99). The "86 extra thousand-unit
+orders a game" seen in the counterfactual are shipped's unclamped raw-tape
+orders, not a modification. 93 play the same route the base picks; 27 play
+older route ids (104, 0, 103) and we beat those 22/5. Against same-route
+shipped V43 our adapt5 is 50/43 (54%), mean margin +326.
+
+Consequence: every market-layer A/B this week used room_plus_clamp as the
+clone. The population is shipped V43. lead5's +1,500 was measured against the
+wrong opponent, and adapt5's classifier compares the opponent's fills with our
+clamped parent's orders, which shipped's schedule does not reproduce (room_guard
+sells at hour 71, clamp zeroes orders shipped still posts), so clone mode fired
+late and half as often. The local benchmark opponent is shipped V43 from here on.
