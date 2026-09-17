@@ -80,3 +80,12 @@ Plan: the final two submissions must be our two best agents, submitted about a
 day before the deadline so they are the newest (most episodes in the final
 window) with time left to recover from a validation error. No agent change
 before then unless it beats adapt5 in direct matches with a holdout.
+
+## Control resubmission (2026-09-17 11:40)
+
+56293133 = the exact 56258686 bytes (v43_room_clamp.tar.gz, sha fd710687...),
+resubmitted as a same-pool control. adapt5 (56274059) settled at ~2515 after
+145 episodes against a pool that is 83% V43-lineage (120/144), 60% wins
+against lineage with a mean margin of +807 and premium price index equal to
+the opponents' (0.65 vs 0.64). If the control also settles near 2520 the pool
+drifted; if it returns to ~2640 the lead is a net loss against real forks.
