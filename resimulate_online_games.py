@@ -64,15 +64,18 @@ def main() -> None:
     parser.add_argument("--submission", type=int, required=True)
     parser.add_argument("--agent", type=Path, required=True, help="our submitted main.py bytes")
     parser.add_argument("--per-class", type=int, default=12, help="games to sample per result (W/L)")
+    parser.add_argument("--opponent", type=Path, default=SHIPPED, help="local stand-in for the online opponent")
+    parser.add_argument("--skip", type=int, default=0, help="skip the first N episodes when sampling")
+    parser.add_argument("--tag", default="")
     args = parser.parse_args()
     manifest = json.loads((ROOT / "experiments" / f"online_{args.submission}_episodes_manifest.json").read_text())
     fp = {r["episode_id"]: r for r in json.loads((ROOT / "experiments" / f"online_{args.submission}_fingerprints.rows.json").read_text())} \
         if (ROOT / "experiments" / f"online_{args.submission}_fingerprints.rows.json").exists() else {}
     picks = {"W": [], "L": []}
-    for e in manifest["episodes"]:
+    for e in manifest["episodes"][args.skip:]:
         if e.get("opp_team_name") == "pig7selene" or e["episode_id"] not in fp:
             continue
-        if fp[e["episode_id"]]["best_variant"] != "shipped" or fp[e["episode_id"]]["field_vs_base"] < 0.9:
+        if fp[e["episode_id"]]["field_vs_base"] < 0.9:
             continue
         if len(picks[e["result"]]) < args.per_class:
             picks[e["result"]].append(e)
@@ -87,7 +90,7 @@ def main() -> None:
                    "opp": e.get("opp_team_name"), "shops": rep["steps"][-1][0]["observation"]["town"]["unlocked_shops"][:2]}
             for ver in ("1.32.6", "1.32.7"):
                 patch_engine(ver)
-                env, m = play(args.agent, SHIPPED, seed, seat, f"{e['episode_id']}:{ver}")
+                env, m = play(args.agent, args.opponent, seed, seat, f"{e['episode_id']}:{ver}")
                 row[f"local_{ver}"] = m
                 if ver == "1.32.7":
                     # where does the online opponent first depart from local shipped, and do the shops match?
@@ -112,8 +115,8 @@ def main() -> None:
             rows.append(row)
             print(f"  {res} {e['episode_id']} seed {seed} seat {seat} online {online:+,.0f} | local 1.32.6 {row['local_1.32.6']:+,.0f} | 1.32.7 {row['local_1.32.7']:+,.0f} | "
                   f"shops {'same' if row['local_shops'] == row['shops'] else 'DIFF'} | opp diverges at {row['opp_first_divergence']} | we diverge at {row['our_first_divergence']}", flush=True)
-    (ROOT / "experiments" / f"online_{args.submission}_resimulation.rows.json").write_text(json.dumps(rows, indent=0) + "\n")
-    lines = [f"# Re-simulation of online games: submission {args.submission}", "", f"{len(rows)} games (shipped-fingerprinted, same route).", "",
+    (ROOT / "experiments" / f"online_{args.submission}_resimulation{args.tag}.rows.json").write_text(json.dumps(rows, indent=0) + "\n")
+    lines = [f"# Re-simulation of online games: submission {args.submission} (local opponent {args.opponent.name})", "", f"{len(rows)} games (same route as the base).", "",
              "| result online | n | online margin | local 1.32.6 | local 1.32.7 | local W (1.32.7) | shops match | opp median first divergence | ours |", "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for res in ("W", "L"):
         sub = [r for r in rows if r["result"] == res]
@@ -122,7 +125,7 @@ def main() -> None:
                          f"{statistics.mean(r['local_1.32.7'] for r in sub):+,.0f} | {sum(r['local_1.32.7'] > 0 for r in sub)}/{len(sub)} | {sum(r['local_shops'] == r['shops'] for r in sub)}/{len(sub)} | "
                          f"{statistics.median(r['opp_first_divergence'] if r['opp_first_divergence'] is not None else 719 for r in sub):.0f} | {statistics.median(r['our_first_divergence'] if r['our_first_divergence'] is not None else 719 for r in sub):.0f} |")
     text = "\n".join(lines) + "\n"
-    (ROOT / "experiments" / f"online_{args.submission}_resimulation.md").write_text(text)
+    (ROOT / "experiments" / f"online_{args.submission}_resimulation{args.tag}.md").write_text(text)
     print(text)
 
 

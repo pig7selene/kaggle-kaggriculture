@@ -421,3 +421,26 @@ plays V43's farm with an earlier premium schedule -- a "timing" fork family --
 so room_clamp's one-step sell_lead loses the race to them, and adapt5's lead
 fires only when its classifier recognises them. Hypothesis under test: shipped
 + premium lead 4 reproduces them (fingerprint against shipped_lead2..5, LynnV44).
+
+## Who beats us online (late 49 lineage games of 56274059; counterfactual on the opponent's own observations)
+
+| | games we won (10) | games we lost (10) |
+|---|---|---|
+| opponent's premium units vs shipped's timing | 94% identical | 57% sold >32 steps earlier, 14% 17-32 earlier, 25% identical |
+| premium price index, opponent / ours | 0.80 / 0.82 | 0.56 / 0.54 |
+| opponent's premium order sizes per game | 1-9: 157, 10-999: 26, 1000+: 25 | 1-9: 146, 10-999: 28, 1000+: 25 |
+| premium units sold, opponent / ours | 330 / 329 | 340 / 351 |
+
+The opponents we beat are shipped V43 to the step. The opponents that beat us
+are shipped V43 with the premium lots pulled far forward (tens of steps, close
+to selling on arrival) at unchanged lot sizes. Their early supply crashes the
+premium market for both sides (0.56 instead of 0.80), but they sell first and
+take the high prices; we sell into the crash. In the late pool roughly 60% of
+lineage opponents are of this kind. It is a prisoner's dilemma the pool has
+already resolved towards "sell earliest"; a five-step lead is a late entrant.
+
+LynnV44 does not reproduce them (market 0.76 vs shipped 0.91 on the late games).
+Reconstructions under test: shipped with sell_lead lookahead 2/4/6, with a
+premium lead of 8/12/20, and with premium sell-on-arrival (shipped_soa). Local
+candidates under test against shipped and against shipped_soa: room_clamp,
+lead5, and rc_soa (room_plus_clamp + premium sell-on-arrival).

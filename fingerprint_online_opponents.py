@@ -71,6 +71,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=400)
     parser.add_argument("--variants", default=",".join(VARIANTS), help="comma-separated variant file stems in the variants dir")
     parser.add_argument("--tag", default="", help="suffix for the output files")
+    parser.add_argument("--skip", type=int, default=0, help="skip the first N listed episodes (chronological)")
     args = parser.parse_args()
     ensure_layers_off()
     variants = [v for v in args.variants.split(",") if v]
@@ -78,7 +79,7 @@ def main() -> None:
     ns = runpy.run_path(str(VDIR / "room_plus_clamp.py"), run_name="v43base")
     routes, route0 = ns["_ROUTES"], ns["_ROUTES"][0]
     rows = []
-    for i, e in enumerate(manifest["episodes"][: args.limit]):
+    for i, e in enumerate(manifest["episodes"][args.skip: args.skip + args.limit]):
         if e.get("opp_team_name") == "pig7selene":
             continue
         rep = json.loads(Path(e["file"]).read_text())
