@@ -353,3 +353,19 @@ Next submission: **adapt5 + r124**. Against adapt5 it is +265 / +248 on the 21
 remapped pairs (about +87 a game over the pair space) and byte-identical
 behaviour elsewhere. Read against 56274059 (adapt5) in the same window; the
 gap is the remap's online value.
+
+## Online reality check (2026-09-17, submission 56274059 adapt5, 144 episodes)
+
+adapt5 settled at ~2515 against a pool that is 83% V43-lineage (120/144
+opponents share the opening tape). Record 72/48 against lineage, mean margin
++807, premium price index equal to theirs (0.65 vs 0.64); 20/4 against the
+rest. The same-pool control (56293133 = room_clamp bytes) decides whether the
+-120 against 56258686's 2637 is the lead's cost or pool drift.
+
+Counterfactual against the base (recorded observations replayed through
+room_plus_clamp; seat-1 observations need `step` copied from seat 0): our lead
+fired on 64-74 premium units over 15-17 steps a game (150 against the pure
+clone locally). Lineage opponents change the farm almost not at all (38 field
+steps of 575 after 144) and the market a lot (138 steps): about 86 extra
+1000-unit SELL orders a game, ~27 on premium and ~59 on other goods -- close to
+9 products x 9 days. None of the 120 is an unmodified V43.
