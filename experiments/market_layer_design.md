@@ -444,3 +444,17 @@ Reconstructions under test: shipped with sell_lead lookahead 2/4/6, with a
 premium lead of 8/12/20, and with premium sell-on-arrival (shipped_soa). Local
 candidates under test against shipped and against shipped_soa: room_clamp,
 lead5, and rc_soa (room_plus_clamp + premium sell-on-arrival).
+
+### Correction: the fork's shift is a few lots, not the whole schedule
+
+The unit-level histogram (57% ">32 steps early") was an artefact of matching
+the k-th unit online with the k-th unit of the counterfactual: one lot moved
+early misaligns every later pair. Step-by-step inspection of losing opponents
+(e.g. 109750884, 109751678) shows premium sells identical to shipped's in
+quantity and step except for individual lots pulled forward by 4-8 steps
+(MILK 6 at 298 instead of 305; MILK 3 at 314 instead of 318). So the winning
+fork is shipped V43 with a modest premium lead on some lots -- which is
+exactly what adapt5's classifier fails to recognise (its reference is our
+clamped parent's orders), so against those opponents the lead stayed off and
+their 4-8 steps won the race. The response is an unconditional lead longer
+than theirs; lead5/lead8 against shipped_sl4 and shipped_lead8 are under test.

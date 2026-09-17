@@ -1,0 +1,79 @@
+
+
+# ---------------------------------------------------------------- early lots
+# Pull the tape's premium lots forward: at each step sell, from the stock in the
+# shed, as many units as the route's lots within the next `horizon` steps add
+# up to (net of what was already pulled), so each lot is sold as soon as its
+# stock exists instead of at its recorded step. Lot volume is the tape's; only
+# the timing moves. Parent orders keep their slots.
+_EA_CFG = @@CFG@@
+_EA_PARENT = agent
+_EA_STATE = {}
+_EA_TELEMETRY = {"steps": 0, "pulled_units": 0, "pulled_steps": 0, "errors": 0}
+
+
+def _ea_get(o, k, d=None):
+    return o.get(k, d) if isinstance(o, dict) else getattr(o, k, d)
+
+
+def _ea_tape_qty(tape, t, item):
+    if not (0 <= t < len(tape)) or not isinstance(tape[t], dict):
+        return 0
+    return sum(max(0, int(o[2])) for o in tape[t].get("market") or []
+               if o and o[0] == "SELL" and len(o) >= 3 and o[1] == item)
+
+
+def agent(observation, configuration=None):
+    action = _EA_PARENT(observation, configuration)
+    try:
+        _EA_TELEMETRY["steps"] += 1
+        step = int(_ea_get(observation, "step", -1))
+        seat = int(_ea_get(observation, "player", 0) or 0)
+        if step == 0:
+            _EA_STATE.pop(seat, None)
+        st = _EA_STATE.setdefault(seat, {"presold": {}})
+        chassis = _IMPL.chassis
+        tape = chassis.routes.get((chassis.players.get(seat) or {}).get("route"))
+        if not tape or step < 0 or step > 717:
+            return action
+        shed = dict(_ea_get(_ea_get(observation, "private", {}) or {}, "shed", {}) or {})
+        prices = dict(_ea_get(_ea_get(observation, "market", {}) or {}, "prices", {}) or {})
+        market = [list(o) for o in (action.get("market") or []) if o][:10]
+        planned_now = {}
+        for o in market:
+            if o[0] == "SELL" and len(o) >= 3:
+                planned_now[o[1]] = planned_now.get(o[1], 0) + max(0, int(o[2]))
+        pulled = False
+        for item in _EA_CFG["items"]:
+            # the lot at this step is being handled by the parent: it leaves the window
+            st["presold"][item] = max(0, st["presold"].get(item, 0) - _ea_tape_qty(tape, step, item))
+            future = sum(_ea_tape_qty(tape, t, item) for t in range(step + 1, min(step + _EA_CFG["horizon"], 718) + 1))
+            want = future - st["presold"].get(item, 0)
+            have = int(shed.get(item, 0) or 0) - planned_now.get(item, 0)
+            qty = min(want, have)
+            if qty <= 0 or int(prices.get(item, 0) or 0) < _EA_CFG["min_price"]:
+                continue
+            merged = False
+            for o in market:
+                if o[0] == "SELL" and len(o) >= 3 and o[1] == item:
+                    o[2] = max(0, int(o[2])) + qty
+                    merged = True
+                    break
+            if not merged:
+                if len(market) >= 10:
+                    continue
+                market.append(["SELL", item, qty])
+            st["presold"][item] = st["presold"].get(item, 0) + qty
+            _EA_TELEMETRY["pulled_units"] += qty
+            pulled = True
+        if pulled:
+            _EA_TELEMETRY["pulled_steps"] += 1
+        action["market"] = market
+        return action
+    except Exception:
+        _EA_TELEMETRY["errors"] += 1
+        return action
+
+
+agent.telemetry = {**(getattr(_EA_PARENT, "telemetry", {}) or {}), "early_lots": _EA_TELEMETRY}
+kaggle_agent = agent
