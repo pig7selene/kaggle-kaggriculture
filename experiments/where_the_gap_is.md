@@ -297,3 +297,38 @@ unseen ones. So the switches are being swept again with shipped V43 as the
 opponent: dead_stock, terminal_liquidation, budget_guard, both endgame layers
 together, all of them, and the two ablations that remove sell_lead and
 weed_repair, each with and without lead8.
+
+## The five-step lead is close to the best response (2026-09-17, late)
+
+Since three quarters of the pool is shipped V43, whose tape, router and layers
+we hold and whose fills we can infer from the market to 24 units in 654, the
+quantity to sell each step can be computed rather than guessed:
+`build_v43_best_response.py` projects, per product, the inventory over a
+horizon from the opponent's scheduled lots, the town's consumption and our own
+plan, and picks the quantity maximising our revenue minus theirs.
+
+Two modelling mistakes had to go first. Without conservation -- a unit sold now
+is not there for the tape's later lot -- every extra unit looks like pure gain
+and the optimum collapses to emptying the shed, the sell-on-arrival layer.
+And the opponent's own sell_lead moves a lot from t+1 to t *and suppresses it
+at t+1*; counting it twice doubles their supply in the model.
+
+With both fixed, on three seeds against shipped:
+
+| | mean margin |
+|---|---:|
+| lead5 | **+2,087** |
+| best response, horizon 48, no opponent term | +2,050 |
+| best response, horizon 48, with opponent term | +1,832 |
+| best response, horizon 24 | +919 |
+
+The computed response matches the flat five-step lead and does not beat it, and
+adding the opponent term makes it worse -- the model of what the opponent will
+sell is not accurate enough to steer on. The residual term is inert by
+construction: moving a lot conserves the total, so unsold stock at the horizon
+is the same for every candidate.
+
+That is itself worth knowing. lead5 is not a lucky heuristic; against an
+opponent running the same tape in the same town it is close to the optimal
+response, which is why every richer scheme tried today -- planners, gates, slot
+order, early liquidation, crop swaps, tail grafts -- lands below it.
