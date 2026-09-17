@@ -387,3 +387,19 @@ wrong opponent, and adapt5's classifier compares the opponent's fills with our
 clamped parent's orders, which shipped's schedule does not reproduce (room_guard
 sells at hour 71, clamp zeroes orders shipped still posts), so clone mode fired
 late and half as often. The local benchmark opponent is shipped V43 from here on.
+
+## Two corrections (2026-09-17)
+
+1. **A day is 24 steps, not 72.** turnsPerDay = 24 in both the local defaults
+   and the online configuration (720 steps = 30 days; shops unlock every 3 days
+   = 72 steps, which is where the 72 came from). Every "hour of day" bucket in
+   frontier_tail_*.md, the dump-timing report and the gate/planner horizons
+   used %72 and is mis-bucketed; the planner's "release at hour 66" spanned
+   three real days, which is part of why it held stock. Outcome-based A/B
+   results are unaffected.
+2. **Engine 1.32.6 (local) vs 1.32.7 (online)** differ only in the below-I0
+   price curves of CARROT (log 0.20 -> hinge 1.00), TOMATO and EGG (linear ->
+   hinge 0.40): calm until the shortage passes T, then a quadratic spike.
+   Premium curves are identical. resimulate_online_games.py replays online
+   seeds locally under both engines to test whether local games reproduce
+   online outcomes at all.
