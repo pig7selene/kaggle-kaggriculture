@@ -32,18 +32,35 @@ def _fl_get(o, k, d=None):
     return o.get(k, d) if isinstance(o, dict) else getattr(o, k, d)
 
 
+_FL_HIST = {}
+
+
 def agent(observation, configuration=None):
     action = _FL_PARENT(observation, configuration)
     try:
         _FL_TELEMETRY["steps"] += 1
         step = int(_fl_get(observation, "step", -1))
-        if step < _FL_CFG["from_step"]:
-            return action
         seat = int(_fl_get(observation, "player", 0) or 0)
+        day, hour = step // 24, step % 24
+        h = _FL_HIST.get(seat)
+        if h is None or step < h["last_step"]:
+            h = _FL_HIST[seat] = {"last_step": step, "fed": {}, "skipped": {}, "seen_day": -1}
+        h["last_step"] = step
         farm = _fl_get(observation, "farms", [])[seat]
         tiles = _fl_get(farm, "tiles")
+        # at the day's last hour record which animal tiles the tape fed today
+        if hour == 23 and h["seen_day"] != day:
+            h["seen_day"] = day
+            for y, row in enumerate(tiles):
+                for x, t in enumerate(row):
+                    if isinstance(t, dict) and t.get("animal"):
+                        h["fed"].setdefault((x, y), {})[day] = bool(t.get("fed_today"))
+        if step < _FL_CFG["from_step"]:
+            return action
+        prices = dict(_fl_get(_fl_get(observation, "market", {}) or {}, "prices", {}) or {})
         positions = [_fl_get(farm, "farmer")] + [list(p) for p in (_fl_get(farm, "hands", []) or [])]
         units = [action.get("farmer") or ["PASS"]] + list(action.get("hands") or [])
+        final_day = day >= _FL_CFG["final_day"]
         for i in range(min(len(units), len(positions))):
             u = units[i]
             if not u or u[0] not in ("FEED", "CARE"):
@@ -51,16 +68,31 @@ def agent(observation, configuration=None):
             pos = positions[i]
             if not isinstance(pos, (list, tuple)):
                 continue
-            tile = tiles[int(pos[1])][int(pos[0])]
-            if not isinstance(tile, dict) or tile.get("animal") not in _FL_CFG["animals"]:
+            xy = (int(pos[0]), int(pos[1]))
+            tile = tiles[xy[1]][xy[0]]
+            if not isinstance(tile, dict) or not tile.get("animal"):
                 continue
-            # skip only when yesterday was fed: one unfed day is safe, two lose the animal
-            if int(tile.get("consecutive_unfed", 0) or 0) != 0:
+            if final_day and _FL_CFG["final_day_cleanup"]:
+                units[i] = ["PASS"]
+                _FL_TELEMETRY["feeds_skipped" if u[0] == "FEED" else "cares_skipped"] += 1
                 continue
-            if tile.get("fed_today"):
+            if tile.get("animal") not in _FL_CFG["animals"] or not _FL_CFG["alternate"]:
+                continue
+            product = {"COW": "MILK", "GOOSE": "EGG", "SHEEP": "WOOL"}[tile["animal"]]
+            if int(prices.get(product, 0) or 0) > _FL_CFG["max_product_price"]:
+                continue
+            # safe to skip only if the tape fed this tile on each of the last two days
+            # (a daily calendar) and we did not skip it yesterday
+            hist = h["fed"].get(xy, {})
+            if not (hist.get(day - 1) and hist.get(day - 2)):
+                continue
+            if h["skipped"].get(xy) == day - 1:
+                continue
+            if int(tile.get("consecutive_unfed", 0) or 0) != 0 or tile.get("fed_today"):
                 continue
             if u[0] == "FEED":
                 units[i] = ["PASS"]
+                h["skipped"][xy] = day
                 _FL_TELEMETRY["feeds_skipped"] += 1
             elif _FL_CFG["skip_care"]:
                 units[i] = ["PASS"]
@@ -77,13 +109,15 @@ agent.telemetry = {**(getattr(_FL_PARENT, "telemetry", {}) or {}), "feed_less": 
 kaggle_agent = agent
 '''
 
+BASE = {"animals": ("COW", "GOOSE"), "skip_care": True, "from_step": 144, "alternate": True,
+        "max_product_price": 9999, "final_day": 29, "final_day_cleanup": False}
 VARIANTS = {
-    "fl_cowgoose": {"animals": ("COW", "GOOSE"), "skip_care": True, "from_step": 144},
-    "fl_cowgoose_feedonly": {"animals": ("COW", "GOOSE"), "skip_care": False, "from_step": 144},
-    "fl_cow": {"animals": ("COW",), "skip_care": True, "from_step": 144},
-    "fl_all": {"animals": ("COW", "GOOSE", "SHEEP"), "skip_care": True, "from_step": 144},
+    "fl2_cowgoose": dict(BASE),
+    "fl2_cowgoose_cheap": {**BASE, "max_product_price": 60},
+    "fl2_all_cheap": {**BASE, "animals": ("COW", "GOOSE", "SHEEP"), "max_product_price": 60},
+    "fl2_day29": {**BASE, "alternate": False, "final_day_cleanup": True},
+    "fl2_cowgoose_cheap_day29": {**BASE, "max_product_price": 60, "final_day_cleanup": True},
 }
-
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)

@@ -426,3 +426,27 @@ every animal every day, so our skipped day plus the tape's own gap makes two
 and the animal escapes. Including sheep: -29k. The forks' fewer feeds must be
 scheduled against their own feeding calendar; the wheat saved is worth ~1k, so
 this is not worth the machinery. Closed.
+
+**Extra fertilizer hand: negative in every form (2026-09-18 early).** The
+mechanism works -- 85 fertilizations a game, six-yield wheat harvests rise from
+24 to 51 -- but the money does not follow: fertilizer bought +$5,151 (it is
+$91 at step 144 and only falls under $30 after step 480), wheat revenue +$2,220,
+the twelfth hire of the day costs fib(11) = $144, so -3,741 against lead5.
+Gated to cheap fertilizer: -1,425 (7 hire-days for 26 fertilizations). Adding
+late watering of unwatered window wheat: -2,842 (only 16 found a game; 47
+exist but the hand is not near them). Fertilizing strawberries before first
+yield: -2,785. The forks do not hire an extra hand; they re-route the hands
+they have, which is the day-plan replanner again.
+
+**Feed-less with a calendar guard: still loses animals.** Skipping FEED only
+when the tape fed the tile on both previous days and we did not skip it
+yesterday still leaves 10-15 of 17 animals by step 700 (-13k): the wheat a
+skipped feed leaves in a unit's inventory changes the shed balance, and the
+tape's own later PICKUP/FEED chain -- clamped to what the shed holds -- breaks.
+Restricted to products under $60: -1,872. The tape does not feed on day 29, so
+a final-day cleanup changes nothing.
+
+Every farm-side edit tried tonight fails the same way: the tape is one coupled
+schedule (wheat balance, shed, hire indices, weed RNG), and a local change
+moves something else. The forks' edits only work as part of their own replanned
+day.
