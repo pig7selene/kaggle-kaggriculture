@@ -274,3 +274,26 @@ our own measurement against shipped, per pair, with a holdout on unseen seeds --
 the same discipline that just killed route 103. The bank is rebuilt from the
 2026-09-15 and 2026-09-16 daily sets (45 of 64 pairs; Catalyst 18, Driz Lo 14,
 Thomas Tschinkel 11, mikelou1 2) and every pair is being measured.
+
+### Fork tails, measured honestly: about +300 a game
+
+Keyed by the town each game actually drew (the seed manifest's pair labels are
+wrong once the opponent is shipped rather than our own chassis), the first bank
+is positive on 20 of 50 exercised pairs and the second-candidate bank on 23 of
+45 -- so a fork's tail is not intrinsically better than V43's, it is better in
+its author's own game. Selecting the 18 best and averaging gives +1,860 on
+those pairs, or +523 per game over all 64. The holdout of eight of them on
+unseen seeds keeps six positive but regresses hard: +365 against a pilot of
++1,360 for the same pairs, which puts the honest estimate near +300 a game.
+
+Real, and additive, but not the 3,000 the rating needs.
+
+### The untested dimension: V43's own layer switches against the pool
+
+The layer ablation that chose room_guard + clamp_sells played our variants
+against *each other*. The route experiment showed how badly that can mislead --
+route 103 measured +1,639 against shipped on four pairs and -6,140 on eight
+unseen ones. So the switches are being swept again with shipped V43 as the
+opponent: dead_stock, terminal_liquidation, budget_guard, both endgame layers
+together, all of them, and the two ablations that remove sell_lead and
+weed_repair, each with and without lead8.

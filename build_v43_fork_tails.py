@@ -76,11 +76,21 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=Path("/private/tmp/kaggriculture_v43_variants/fork_tails.py"))
     parser.add_argument("--receipt", type=Path, default=ROOT / "experiments" / "v43_fork_tails_build.json")
     parser.add_argument("--min-opening-agreement", type=float, default=0.98)
+    parser.add_argument("--keep-pairs", type=Path,
+                        help="JSON {pair: delta}; keep only pairs whose measured delta is positive")
+    parser.add_argument("--exclude-episodes", default="",
+                        help="comma-separated episode ids to skip (tails already measured and rejected)")
+    parser.add_argument("--rank", type=int, default=0,
+                        help="take the n-th best candidate per pair instead of the best")
     args = parser.parse_args()
+    keep = None
+    if args.keep_pairs:
+        keep = {tuple(k.split(" + ")) for k, v in json.loads(args.keep_pairs.read_text()).items() if v > 0}
+    skip = {int(x) for x in args.exclude_episodes.split(",") if x.strip()}
     teams = [t for t in args.teams.split(",") if t]
     route0 = runpy.run_path(str(args.base), run_name="v43base")["_ROUTES"][0]
 
-    best: dict[tuple, dict] = {}
+    cands: dict[tuple, list] = defaultdict(list)
     rejected = defaultdict(int)
     for d in args.dirs.split(","):
         d = Path(d)
@@ -100,14 +110,18 @@ def main() -> None:
                     rejected[team] += 1
                     continue
                 shops = tuple(rep["steps"][-1][seat]["observation"]["town"]["unlocked_shops"][:2])
-                margin = rep["rewards"][seat] - rep["rewards"][1 - seat]
-                if shops in best and best[shops]["margin"] >= margin:
+                if int(m.episode_id) in skip or (keep is not None and shops not in keep):
                     continue
-                best[shops] = {"shops": list(shops), "team": team, "margin": margin,
-                               "money": rep["rewards"][seat], "episode_id": int(m.episode_id),
-                               "opening_agreement": round(agree, 3),
-                               "tail": acts[144:719]}
-    entries = [best[k] for k in sorted(best)]
+                margin = rep["rewards"][seat] - rep["rewards"][1 - seat]
+                cands[shops].append({"shops": list(shops), "team": team, "margin": margin,
+                                     "money": rep["rewards"][seat], "episode_id": int(m.episode_id),
+                                     "opening_agreement": round(agree, 3),
+                                     "tail": acts[144:719]})
+    entries = []
+    for shops in sorted(cands):
+        ranked = sorted(cands[shops], key=lambda e: -e["margin"])
+        if args.rank < len(ranked):
+            entries.append(ranked[args.rank])
     print(f"{len(entries)} pairs covered; rejected for a different opening: {dict(rejected)}")
     for e in entries:
         print(f"  {'+'.join(e['shops']):34s} {e['team'][:18]:18s} ep {e['episode_id']} margin {e['margin']:+9,.0f} money {e['money']:9,.0f}")
