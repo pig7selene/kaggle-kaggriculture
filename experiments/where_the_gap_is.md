@@ -332,3 +332,52 @@ That is itself worth knowing. lead5 is not a lucky heuristic; against an
 opponent running the same tape in the same town it is close to the optimal
 response, which is why every richer scheme tried today -- planners, gates, slot
 order, early liquidation, crop swaps, tail grafts -- lands below it.
+
+## The farm, not the market, is where the top teams' +8k lives -- and the tape cannot reach it (2026-09-17, night)
+
+**The V43 farm is deterministic.** Across six seeds the tape digs the same 37
+weeds, loses the same 14 plants and keeps the same 19/53/58/55/21 planted tiles
+by day; weeds barely appear because every tile is occupied. Money still swings
+from 63,762 to 106,837 on the same farm: the town decides it. Shipped's money by
+first-two-shop town runs 49k-177k (between-town sd 25.5k, within-town 12k);
+PET_CAFE/BAKERY towns are the floor, SMOOTHIE/ICE_CREAM/YARN the ceiling.
+
+**Top teams adapt the farm to the town; V43 and every strong V43 fork do not.**
+All 640 replays of 9/16: where a V43-farm agent met a non-V43 agent the
+non-V43 side won by +7.7k mean (+8.0k median) in every town class (91-100%
+wins). Their animals and quadrants match V43's (COW 9.4 vs 8.5, quadrants 3.1
+vs 3.3); their crops do not: WHEAT 12-17 vs 24, STRAWBERRY 23-27 vs 33,
+TOMATO 9-12 and CARROT 3-11 vs 0. Driz Lo, Catalyst, Thomas Tschinkel and
+mikelou1 all run V43's exact farm and lose to them by 1-25k.
+
+**Why the crop mix matters: every V43 product is pushed past its price cliff.**
+In V43 self-play the tape's own 12 opening melon tiles crash MELON from 270 to
+76 by day 12; STRAWBERRY hits $1 by step 504 (33 tiles a side into a cliff at
++62 units); MILK $26-40; FERTILIZER $1 (+493). The only scarce products are
+WOOL (-112 unmet, pinned at its $241 ceiling when a yarn store exists), TOMATO
+(-228, $87, nobody grows it) and CARROT (-351, but capped at $42).
+
+**shipped.py already invests in the fourth quadrant, conditionally.** Beyond
+the chassis it carries `_v233` (day 12: >=2 YARN_STOREs and WOOL >= 220 -> buy
+SE, six sheep, two hands) and `_v219` (day 18: >=3 PIZZA/FARMERS and money >=
+12000 -> tomatoes on SE), each requiring the quadrant set to be exactly
+{NW,NE,SW}. Fourth-quadrant ideas of our own therefore collide with them, and
+buying SE early disables both.
+
+**Three farm-side experiments, all negative, with the mechanism found each time:**
+
+| idea | result vs shipped | why |
+|---|---:|---|
+| town-conditioned animal swap (sheep<->cow after 144) | -8,140 mean | both animal markets are already past the cliff; the marginal unit of either is worth $1, and the early wool it gives up was worth $150+ |
+| melon sandbox on SE with our own hands (7-14 tiles) | -6.6k to -23k | melons are not an empty market (the tape's opening crashes them by day 12); land 4,000 + hands ~2-5k; and buying SE at 266 disables `_v233`, which on a two-yarn town is worth ~12k to whichever side keeps it |
+| loosen `_v233` to one yarn store / `_v219` to two shops | -725 / -1,381 | one yarn store cannot absorb six more sheep: wool falls from $240 to $154 and the base wool revenue goes with it; the author's gates are right |
+
+A subtlety that cost hours: any change to a farm's empty-tile count shifts the
+shared weed RNG and with it the later shop draws, so paired-seed comparisons
+see different towns. On seed 7 the land-only variant met a two-yarn town where
+the *opponent's* sheep layer fired and ours could not -- the whole -20k.
+
+**Conclusion.** The +8k lives in the main quadrants' crop mix and in reacting
+to the town, which needs a farm program, not tape edits (crop swaps break the
+tape's harvest timing) and not the fourth quadrant (V43 already takes the one
+profitable case). The market side is at its ceiling (lead5 ~ best response).
