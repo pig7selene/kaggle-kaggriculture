@@ -1,0 +1,59 @@
+
+
+# ---------------------------------------------------------------- no-demand goods
+# FERTILIZER and MELON are the two products no shop consumes: the town centre
+# takes one melon every 24 steps and no fertilizer at all. Both players dump
+# them all game, so their price falls monotonically -- fertilizer 100 -> 92 ->
+# 74 -> 45 -> 25 -> 7, melon 250 -> 267 -> 123 -> 97 -> 60. We realize 0.44 of
+# base on 285 fertilizer units and 0.64 on 12 melons; the top teams realize
+# 0.61 and 0.92. For a good with no demand the only thing that matters is
+# selling before the other player does, so post the whole shed stock as soon as
+# it exists, keeping a reserve of fertilizer for the tape's own FERTILIZE work.
+_ND_CFG = @@CFG@@
+_ND_PARENT = agent
+_ND_TELEMETRY = {"steps": 0, "extra_units": 0, "orders_added": 0, "errors": 0}
+
+
+def _nd_get(o, k, d=None):
+    return o.get(k, d) if isinstance(o, dict) else getattr(o, k, d)
+
+
+def agent(observation, configuration=None):
+    action = _ND_PARENT(observation, configuration)
+    try:
+        _ND_TELEMETRY["steps"] += 1
+        step = int(_nd_get(observation, "step", -1))
+        if step < 0 or step > 718:
+            return action
+        shed = dict(_nd_get(_nd_get(observation, "private", {}) or {}, "shed", {}) or {})
+        prices = dict(_nd_get(_nd_get(observation, "market", {}) or {}, "prices", {}) or {})
+        market = [list(o) for o in (action.get("market") or []) if o][:10]
+        planned = {}
+        for o in market:
+            if o[0] == "SELL" and len(o) >= 3:
+                planned[o[1]] = planned.get(o[1], 0) + max(0, int(o[2]))
+        for item, reserve in _ND_CFG["items"].items():
+            have = int(shed.get(item, 0) or 0) - planned.get(item, 0) - reserve
+            if have <= 0 or int(prices.get(item, 0) or 0) < _ND_CFG["min_price"]:
+                continue
+            merged = False
+            for o in market:
+                if o[0] == "SELL" and len(o) >= 3 and o[1] == item:
+                    o[2] = max(0, int(o[2])) + have
+                    merged = True
+                    break
+            if not merged:
+                if len(market) >= 10:
+                    continue
+                market.append(["SELL", item, have])
+                _ND_TELEMETRY["orders_added"] += 1
+            _ND_TELEMETRY["extra_units"] += have
+        action["market"] = market
+        return action
+    except Exception:
+        _ND_TELEMETRY["errors"] += 1
+        return action
+
+
+agent.telemetry = {**(getattr(_ND_PARENT, "telemetry", {}) or {}), "no_demand": _ND_TELEMETRY}
+kaggle_agent = agent

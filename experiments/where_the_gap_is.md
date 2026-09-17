@@ -72,3 +72,63 @@ below I0, so their price spikes once the market is genuinely short of them.
    route with a different mix sells into a market the opponent is not flooding.
    run_route_vs_shipped.py measures exactly that, per route, with the realized
    premium index alongside the margin.
+
+## The production line is closed (2026-09-17, evening)
+
+### What the top agent actually does
+
+Town demand is the same in both sets of games (strawberry 3.85 units per 4
+steps in ours, 4.17 in theirs). The difference is the strawberry programme:
+
+| 3-day block | our units @ price | Majkel's units @ price |
+|---|---|---|
+| days 12-14 | — | 1 @ 204 |
+| days 15-17 | 1 @ 201 | 48 @ 217 |
+| days 18-20 | 17 @ 171 | 64 @ 198 |
+| days 21-23 | 38 @ 101 | 47 @ 177 |
+| days 24-26 | 50 @ 91 | 33 @ 173 |
+| days 27-29 | 23 @ 100 | 44 @ 181 |
+
+He starts three days earlier, sustains twice the flow, and never drops below
+1.4 of base. We arrive late and sell the bulk after the price has fallen. Over
+the whole game his sell revenue is 139k against our 87k on the same number of
+units (1,475 vs 1,434) -- entirely a mix-and-timing difference, not scale.
+
+### Why we cannot retrofit it
+
+`build_v43_crop_swap.py` sows a different crop where the tape sows wheat,
+buying the seeds a few steps ahead out of cash above a floor. Against shipped
+V43, all four configurations lose badly:
+
+| variant | margin (2 seeds) | what happened |
+|---|---|---|
+| 40 tiles -> strawberry, days 10-15 | -21,293 / -21,497 | strawberry 129 -> 217 units but index 0.95 -> **0.26**; wheat 672 -> 91 |
+| 15 tiles -> strawberry | -13,309 / -12,777 | same shape, smaller |
+| 40 tiles -> tomato | -13,012 / -13,739 | tomato index 2.98 -> 1.28, wheat -> 134 |
+| 40 tiles -> carrot | -4,242 / -11,343 | carrot index 1.78 -> 1.18, wheat -> 266 |
+
+Two mechanisms kill it. An ongoing crop never clears its tile, so each swapped
+tile stops cycling and the tape's five or six later wheat plantings there do
+nothing -- wheat collapses from 672 units to 91-266, and wheat is also the feed
+for fourteen animals. And the swapped tiles all yield within the same three
+days, so the extra supply arrives as a burst the market cannot absorb: adding
+90 strawberries at once takes the price from 114 to 31, because strawberry's
+above-equilibrium curve is linear at 1.92 per unit.
+
+Matching Majkel means re-planning which tile is sown with what on which day,
+i.e. rebuilding the trajectory. That is the agent, not a layer.
+
+### The no-demand goods are already handled
+
+Fertilizer (no shop consumes it) and melon (only the town centre, one per 24
+steps) realize 0.40 and 0.52 of base for us. Selling the whole shed stock of
+them on arrival, with a reserve, changes nothing: the chassis already empties
+them as they arrive (`nd_fert20` and `nd_melon` are margin-identical to the
+base on three seeds; a smaller reserve is worse). Their price is structurally
+low because both players dump into a market with no demand.
+
+### What is left
+
+lead8 (submitted as 56296489) against the room_clamp control (56293133) is the
+live question, and route differentiation against shipped is still running.
+Everything else is closed.
