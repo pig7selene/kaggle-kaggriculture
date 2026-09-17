@@ -89,8 +89,14 @@ def agent(observation, configuration=None):
                     _CS_TELEMETRY["seed_orders"] += 1
 
         # swap this step's plantings, never more than the seeds in hand: the
-        # engine drops *every* PLANT of a crop whose requests exceed its seeds
-        if _CS_CFG["day_from"] <= day <= _CS_CFG["day_to"] and budget > 0:
+        # engine drops *every* PLANT of a crop whose requests exceed its seeds.
+        # `per_day` staggers the programme: the first failure was 40 tiles sown
+        # inside five days, so every one of them yielded in the same three and
+        # the burst took strawberry from 0.95 of base to 0.26. Spreading the
+        # same count over the window keeps the flow under what the town absorbs.
+        day_used = st.setdefault("per_day", {}).get(day, 0)
+        if (_CS_CFG["day_from"] <= day <= _CS_CFG["day_to"] and budget > 0
+                and day_used < _CS_CFG["per_day"]):
             have = int(seeds.get(to_crop, 0))
             if have > 0:
                 units = [action.get("farmer")] + list(action.get("hands") or [])
@@ -106,8 +112,12 @@ def agent(observation, configuration=None):
                             action["hands"][i - 1] = new
                         have -= 1
                         budget -= 1
+                        day_used += 1
+                        st["per_day"][day] = day_used
                         st["swapped"] += 1
                         _CS_TELEMETRY["swapped"] += 1
+                        if day_used >= _CS_CFG["per_day"]:
+                            break
             else:
                 _CS_TELEMETRY["blocked_no_seed"] += _cs_planned(
                     [action], 0, from_crop) if isinstance(action, dict) else 0
@@ -122,13 +132,19 @@ kaggle_agent = agent
 '''
 
 VARIANTS = {
-    "swap_straw_10_15": {"to_crop": "STRAWBERRY", "day_from": 10, "day_to": 15, "max_subs": 40},
-    "swap_straw_12_18": {"to_crop": "STRAWBERRY", "day_from": 12, "day_to": 18, "max_subs": 40},
-    "swap_straw_small": {"to_crop": "STRAWBERRY", "day_from": 10, "day_to": 15, "max_subs": 15},
-    "swap_tomato_10_18": {"to_crop": "TOMATO", "day_from": 10, "day_to": 18, "max_subs": 40},
-    "swap_carrot_10_18": {"to_crop": "CARROT", "day_from": 10, "day_to": 18, "max_subs": 40},
+    # non-ongoing crops only: HARVEST clears the tile, so the tape's later
+    # plantings there still land and the wheat cycle is not broken
+    "stag_carrot_3": {"to_crop": "CARROT", "day_from": 8, "day_to": 20, "per_day": 3, "max_subs": 39},
+    "stag_carrot_2": {"to_crop": "CARROT", "day_from": 8, "day_to": 22, "per_day": 2, "max_subs": 30},
+    "stag_carrot_5": {"to_crop": "CARROT", "day_from": 8, "day_to": 20, "per_day": 5, "max_subs": 60},
+    "stag_melon_2": {"to_crop": "MELON", "day_from": 8, "day_to": 16, "per_day": 2, "max_subs": 18},
+    "stag_melon_1": {"to_crop": "MELON", "day_from": 6, "day_to": 16, "per_day": 1, "max_subs": 11},
+    # the ongoing crops again, but staggered, to separate the two failure modes
+    "stag_straw_2": {"to_crop": "STRAWBERRY", "day_from": 8, "day_to": 20, "per_day": 2, "max_subs": 26},
+    "stag_tomato_2": {"to_crop": "TOMATO", "day_from": 8, "day_to": 20, "per_day": 2, "max_subs": 26},
 }
-DEFAULTS = {"from_crop": "WHEAT", "lookahead": 6, "cash_floor": 3000, "max_seeds_per_step": 6}
+DEFAULTS = {"from_crop": "WHEAT", "lookahead": 6, "cash_floor": 3000, "max_seeds_per_step": 6,
+            "per_day": 99}
 
 
 def main() -> None:
