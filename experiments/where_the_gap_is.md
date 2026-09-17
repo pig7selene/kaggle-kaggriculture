@@ -191,3 +191,56 @@ market, producing less premium is worth more than producing more -- the effect
 the crop swap could not reach by editing the tape is already present in the
 route bank. Best-of-41 on eight games is a selection risk, so a holdout on
 eight unseen pairs and two unseen seeds is running.
+
+## The ceiling is not 2700: three V43 forks sit in the top 34 (2026-09-17)
+
+Fresh leaderboard, 9,301 teams:
+
+| team | rank | score | opening agreement with V43 route 0 | field agreement with shipped after 144 |
+|---|---:|---:|---:|---:|
+| Driz Lo | **15** | 2976.9 | 0.99 (2 steps differ) | 0.35 |
+| Thomas Tschinkel | **23** | 2940.8 | **1.00 (0 steps differ)** | 0.72 |
+| Catalyst | **34** | 2918.6 | 1.00 | 0.79 |
+| mikelou1 | 56 | 2891.1 | 1.00 | 0.98 |
+
+They all keep V43's opening tape byte for byte and replace the play after step
+144, and the less of shipped's tail they keep the higher they rank. Their money
+is not remarkable (80-104k against our 103k); they win games, which is what the
+rating counts.
+
+Two of their episodes on the same first-two-shop pair agree on 0.57-0.93 of
+tail field actions -- the signature of a tape under reactive repair layers,
+which is what V43 is too.
+
+### Replaying their trajectory directly does not work
+
+The corrective replayer on Driz Lo's trajectories loses 28k-42k to shipped on
+fresh seeds and never once reproduces the recorded shop pair in 14 tries: weed
+spawning and shop unlocking share a per-day RNG, so the town differs, and the
+standalone replayer executes the opening worse than the chassis does (49-95k
+where V43 makes 88-116k).
+
+### Grafting their tail into V43's route bank does
+
+V43's router returns route 0 until step 144 and only then picks by the first
+two shops, so an injected route's own steps 0-143 are never read. Splicing
+route 0's opening onto a fork's steps 144-718 therefore gives a route the
+chassis replays with all its reactive layers, and the state at 144 matches by
+construction because their opening *is* route 0. This is exactly what the
+Majkel graft could not have.
+
+`build_v43_fork_tails.py` collects the best-margin tail per pair from the
+2026-09-16 daily set: 33 of 64 pairs, mostly Driz Lo and Thomas Tschinkel.
+Against shipped V43, paired game by game with room_plus_clamp on the same
+seeds:
+
+| pair | tail? | fork_tails | room_clamp | delta |
+|---|---|---:|---:|---:|
+| BAKERY + PET_CAFE | yes | +5,030 | +223 | **+4,807** |
+| FARMERS_MARKET + BAKERY | yes | +2,208 | -113 | **+2,321** |
+| BAKERY + BAKERY | yes | +2,491 | +595 | **+1,896** |
+| BRUNCH_SPOT + BAKERY | no | +578 | +578 | 0 |
+| BRUNCH_SPOT + PET_CAFE | no | +362 | +362 | 0 |
+
+Uncovered pairs are identical to the base to the dollar, so the wiring is
+clean; covered pairs gain 1,900-4,800. That is the magnitude the rating needs.
