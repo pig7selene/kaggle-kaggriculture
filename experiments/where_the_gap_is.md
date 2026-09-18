@@ -480,3 +480,49 @@ forks that have damaged themselves.
 That is consistent with every attempt to replicate its edits failing. Its farm
 is the tape's; its extra fertilizing, when reproduced with a value gate, is
 worth +107 a game, not +1,400.
+
+## The public lineage had moved five generations ahead of us (2026-09-18)
+
+We had been tuning a V43 notebook while the public line reached V48. Pulling
+the current notebooks and extracting each one's agent (`extract_public_agents.py`,
+digests matching the authors' published SHA-256) settles where the strength is:
+
+| chassis, against ours | result |
+|---|---|
+| V48 (ahmedberatozer) vs our V43 | 31/1, +1,575 |
+| V48 vs our best V43-based agent | 20/12 for V48, +543 |
+| alperen5252525 "Ready Stock" vs V48 | 26/6, +362 |
+| tetsutani market-smart vs V48 | 29/3, +34 |
+| prvsiyan frontier vs V43 | -5,114 |
+
+**None of the public generations touches the farm.** V43, V47, V48, both
+tetsutani builds and alperen all play the identical unit actions -- FERTILIZE
+112, FEED 308, CARE 374, WATER 995, PASS 284 a game, equal to one decimal
+across three seeds. Five generations of public progress are entirely in how
+market orders are chosen and ordered, which is why they stack cleanly with our
+own market layers.
+
+**Our two layers keep working on every chassis and add up.** On V48: dynamic
+lead +266, value-gated fertilizer +209, both +478, and with the lead taking a
+four-to-six step window +690 (holdout +729). On alperen: +795 against V48 and
++246 against the same layers on V48 (holdout +831 and +246). So each chassis
+upgrade carries our layers forward intact.
+
+**Driz Lo is not a public notebook.** Its signature -- FERTILIZE 151, PASS 389,
+WATER 952, CARE 346, and roughly half the fertilizer and wheat sell orders --
+matches none of them, so the rank-15 fork runs a private farm programme. Its
+market layer reallocates order slots from wheat and fertilizer to wool and egg,
+which is the same idea as our dynamic lead. Slot pressure is not our problem:
+we hit the ten-order cap on 5% of steps.
+
+### The packaging bug that cost two submissions
+
+Kaggle loads an agent with `[v for v in env.values() if callable(v)][-1]`: the
+last callable by insertion order. Re-assigning a name that already exists does
+not move it, so a file ending in `kaggle_agent = agent` is only safe while
+`kaggle_agent` is new. Stacking a second wrapper leaves its last helper --
+`_fp_wants_fertilizer` -- as the last new callable, and the platform calls that
+instead of the agent. Both submissions on 2026-09-18 errored this way while
+running perfectly under our own loader, which takes `mod.agent` explicitly.
+`package_v43_variant.py` now appends a uniquely named entry point and refuses
+to build unless `get_last_callable` returns it.

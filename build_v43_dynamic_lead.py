@@ -47,14 +47,14 @@ def main() -> None:
     ap.add_argument("--only", help="comma-separated variant names")
     a = ap.parse_args()
     src = (VD / f"{a.base}.py").read_text().rstrip()
-    if "_PL_PARENT" in src or "_DL_PARENT" in src:
-        raise SystemExit(f"{a.base} already carries a lead layer; use room_plus_clamp")
+    if "_DL_PARENT" in src:
+        raise SystemExit(f"{a.base} already carries this lead layer")
     want = set(a.only.split(",")) if a.only else set(VARIANTS)
     receipt = {}
     for name, cfg in VARIANTS.items():
         if name not in want:
             continue
-        out = VD / f"{name}.py"
+        out = VD / (f"{name}.py" if a.base == "room_plus_clamp" else f"{a.base}_{name}.py")
         out.write_text(src + "\n" + WRAPPER.replace("@@CFG@@", repr(cfg)))
         receipt[name] = {"base": a.base, "cfg": cfg, "sha256": hashlib.sha256(out.read_bytes()).hexdigest()}
         print("built", out.name)

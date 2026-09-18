@@ -66,6 +66,8 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=60)
     parser.add_argument("--early-threshold", type=int, default=2,
                         help="a lot counts as led if it is sold this many steps or more before shipped's")
+    parser.add_argument("--min-score", type=float, default=0.0,
+                        help="only opponents rated at least this much: the band that stops us is 2,600+")
     parser.add_argument("--lead-share", type=float, default=0.25,
                         help="fraction of an opponent's matched lots that must be early to call it a leader")
     args = parser.parse_args()
@@ -77,6 +79,8 @@ def main() -> None:
             if len(rows) >= args.limit:
                 break
             if e.get("opp_team_name") == "pig7selene":
+                continue
+            if (e.get("opp_score") or 0) < args.min_score:
                 continue
             rep = json.loads(Path(e["file"]).read_text())
             seat, opp = e["seat"], 1 - e["seat"]

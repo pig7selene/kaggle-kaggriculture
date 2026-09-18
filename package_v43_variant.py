@@ -33,7 +33,25 @@ def main() -> None:
     agent_dir = ROOT / "agents" / args.name
     agent_dir.mkdir(parents=True, exist_ok=True)
     data = args.source.read_bytes()
+    # Kaggle loads the agent with `[v for v in env.values() if callable(v)][-1]`:
+    # the last callable by insertion order. Re-assigning a name that already
+    # exists does not move it, so stacking two wrappers that both end with
+    # `kaggle_agent = agent` leaves some helper as the last new callable and the
+    # platform calls that instead -- which is how two submissions errored on
+    # 2026-09-18. Append a uniquely named entry point so the tail is ours.
+    tail = (
+        "\n\n"
+        "def kaggriculture_submission_entry(observation, configuration=None):\n"
+        "    \"\"\"Last callable in the module: what Kaggle's loader picks.\"\"\"\n"
+        "    return agent(observation, configuration)\n"
+    )
+    if b"def kaggriculture_submission_entry" not in data:
+        data = data.rstrip() + tail.encode()
     compile(data, "main.py", "exec")
+    from kaggle_environments.agent import get_last_callable
+    picked = get_last_callable(data.decode())
+    if getattr(picked, "__name__", "") != "kaggriculture_submission_entry":
+        raise SystemExit(f"Kaggle would call {getattr(picked, '__name__', picked)!r}, not the agent")
     (agent_dir / "main.py").write_bytes(data)
 
     buf = io.BytesIO()
