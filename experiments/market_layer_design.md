@@ -458,3 +458,48 @@ exactly what adapt5's classifier fails to recognise (its reference is our
 clamped parent's orders), so against those opponents the lead stayed off and
 their 4-8 steps won the race. The response is an unconditional lead longer
 than theirs; lead5/lead8 against shipped_sl4 and shipped_lead8 are under test.
+
+## Dynamic lead: choose the items to race by what the town pays (2026-09-18)
+
+The five-step lead's item list was frozen at wool, milk, strawberry and melon.
+A town's scarce good varies -- shipped's money by first two shops runs 49k to
+177k -- so racing a clone for a $1 item wins nothing while conceding a scarce
+one costs money. `build_v43_dynamic_lead.py` picks the item set from the live
+price board each step; the mechanism is unchanged, only lots the tape is about
+to sell are moved, so no extra supply reaches the market.
+
+Threshold sweep against shipped, 64 paired games each (local 1.32.6 curves):
+
+| rule | mean | W/L | worst |
+|---|---:|---|---:|
+| premium only (lead5) | +1,946 | 64/0 | +255 |
+| premium + price >= $40 | +2,082 | 62/2 | -97 |
+| **premium + price >= $50** | **+2,143** | **64/0** | **+243** |
+| premium + price >= $60 | +2,104 | 64/0 | +234 |
+| premium + price >= $80 | +2,098 | 64/0 | +234 |
+| premium + price >= $100 | +1,941 | 64/0 | +234 |
+| top four by price (no premium floor) | +1,978 | 64/0 | +257 |
+| price >= 80% of base (includes wheat) | -609 vs lead5 | | |
+
+Adding items helps, swapping them out hurts: dropping the premium four for the
+four highest-priced loses 257, and leading wheat loses 609 because we are
+already flooding it. Lookahead stays at five (four: +1,040, six: +1,860).
+
+Paired game by game, the $60 rule beats lead5 in only 20 of 64 and its median
+delta is -3, but its mean is +158: the gain is concentrated, +3,325 and +1,654
+in YARN_STORE+PET_CAFE towns, +1,277 mean where a yarn store is in the first
+two shops, +270 where a pet cafe is, and within +/-40 everywhere else. The
+mechanism is leading carrot in pet-cafe towns.
+
+### The local engine prices carrot and tomato wrongly
+
+1.32.6 (local) and 1.32.7 (online) differ only in the below-I0 curves for
+CARROT, TOMATO and EGG, which online are a quadratic hinge. At 500 carrots
+short: $42 local, $77 online. At 300 tomatoes short: $96 local, $144 online.
+`run_market_layer_ab.py --engine 1.32.7` now patches the online curves in.
+Re-measured there, the ranking is unchanged -- base +488 (53/11), lead5 +1,899
+(64/0), premium+$60 +2,114 (64/0, worst +190) -- so earlier A/Bs were not
+systematically misled, and the lead layer supplies almost all of the base's
+edge. Carrot's hinge needs more than 450 units of shortfall, which a
+V43-vs-V43 game never reaches, which is why its gains appear only in pet-cafe
+towns where town demand is far higher.

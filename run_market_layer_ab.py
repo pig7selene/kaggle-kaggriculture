@@ -58,9 +58,22 @@ def main() -> None:
     parser.add_argument("--seed-slice", default="0:2")
     parser.add_argument("--opponent", type=Path, default=BASE,
                         help="opponent agent main.py (default: room_plus_clamp base)")
+    parser.add_argument("--engine", default="1.32.6", choices=("1.32.6", "1.32.7"),
+                        help="market curves to play under; online runs 1.32.7, whose CARROT, "
+                             "TOMATO and EGG spike quadratically when the town is short")
     parser.add_argument("--pairs-file", type=Path,
                         help='JSON with {"pairs": [[shopA, shopB], ...]}; overrides --pair-every')
     args = parser.parse_args()
+    if args.engine == "1.32.7":
+        import kaggle_environments.envs.kaggriculture.kaggriculture as _K
+        _src = Path("/private/tmp/claude-501/-Users-infiniteejl-Projects-kaggriculture/f8b95bd4-a052-4177-b544-60e3c44ceeac/scratchpad/ke1327/kaggle_environments/envs/kaggriculture/kaggriculture.py").read_text()
+        _seg = _src[_src.index("MARKET_I0 = "):_src.index("def _refresh_prices")]
+        _ns = dict(vars(_K))
+        exec(compile(_seg, "engine_1327_market", "exec"), _ns)
+        for _k in ("MARKET_PARAMS", "_shape", "market_price", "HINGE_GAIN"):
+            if _k in _ns:
+                setattr(_K, _k, _ns[_k])
+        print("engine: 1.32.7 market curves patched in", flush=True)
     lo, hi = (int(x) for x in args.seed_slice.split(":"))
     by_pair = json.loads(SEEDS.read_text())["by_pair"]
     if args.pairs_file:
