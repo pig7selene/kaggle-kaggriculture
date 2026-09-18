@@ -450,3 +450,33 @@ Every farm-side edit tried tonight fails the same way: the tape is one coupled
 schedule (wheat balance, shed, hire indices, weed RNG), and a local change
 moves something else. The forks' edits only work as part of their own replanned
 day.
+
+## The rank-15 fork's edge is mostly its opponents' self-harm (2026-09-18)
+
+Pulling all 99 episodes of Driz Lo's live submission settles the question its
+9/16 sample could not. Against V43-lineage opponents it goes 52-6 with a mean
+margin of +3,828 (median +3,690) where our lead manages +2,440 at 75%, and its
+last thirty games are against opponents averaging 2,935 for an Elo-implied
+performance of 3,030 against our 2,224.
+
+Accounting for the money exactly -- final money equals start plus sales minus
+spending, and every cost is known -- the margin is not earned in the market:
+
+| per game, 29 games vs lineage | fork | opponent |
+|---|---:|---:|
+| final money | 105,032 | 100,292 |
+| sales revenue | 132,696 | 136,737 |
+| total spending | 30,665 | 39,444 |
+| of which wheat purchases, mean | 4,537 | 12,855 |
+| of which wheat purchases, median | 4,091 | 5,183 |
+
+It sells less and earns less, and wins by spending less -- almost entirely on
+wheat. But the mean is carried by four games where an opponent spent over
+20,000 on wheat (one spent 92,181); the median gap is about 1,100, and our own
+agent buys 4,389 worth, the same as the fork. There is nothing to copy: the
+fork spends like a clean tape, and its opponents at the 2,900 mark are V43
+forks that have damaged themselves.
+
+That is consistent with every attempt to replicate its edits failing. Its farm
+is the tape's; its extra fertilizing, when reproduced with a value gate, is
+worth +107 a game, not +1,400.
