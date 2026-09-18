@@ -566,3 +566,19 @@ Against the public builds themselves our submitted agent is unbeaten --
 and alperen, pooled mean +500, worst opponent plain alperen at +404 -- so the
 losses above 2,000 online are to other people's modifications, not to any
 published strategy.
+
+**Three ways of grafting the herd finding onto the tape, all negative.** Swapping
+the early sheep purchase for cows: +401 and +2,616 where the guess held, -6,890
+where it did not, and the town distribution online (35% with two or more yarn
+stores) makes the expectation -1,762. Declining the fourth quadrant when the
+rival is already building sheep: -8,204 in the one game it fired, because more
+sheep wins even at $77 wool. Abandoning sheep late, once the revealed town has
+no wool buyer and wool sits at $5: -167, because an animal escapes after two dry
+days, so only six feeds are ever saved -- about $200 -- against its remaining
+yield and liquidation value.
+
+The pattern is the same each time: the top teams' advantage is *when* they
+decide, and a tape cannot be given that by wrapping it. The herd is committed at
+steps 196-226 on three of eight shops; they commit after day 12. Closing this
+needs the purchase and planting schedules moved from fixed steps to conditions,
+which is a change to the programme rather than another layer.
