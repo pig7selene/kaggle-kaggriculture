@@ -160,11 +160,11 @@ kaggle_agent = agent
 
 DEFAULTS = {"from_step": 144, "max_price": 40, "reserve": 0, "carry": 3, "top_up": False, "value_ratio": 2.0}
 VARIANTS = {
-    "fv_r15": {**DEFAULTS, "value_ratio": 1.5},
-    "fv_r20": dict(DEFAULTS),
     "fv_r30": {**DEFAULTS, "value_ratio": 3.0},
-    "fv_r20_topup": {**DEFAULTS, "top_up": True},
-    "fv_r30_topup": {**DEFAULTS, "value_ratio": 3.0, "top_up": True},
+    "fv_r20": {**DEFAULTS, "value_ratio": 2.0},
+    "fv_r40": {**DEFAULTS, "value_ratio": 4.0},
+    "fv_r60": {**DEFAULTS, "value_ratio": 6.0},
+    "fv_off": {**DEFAULTS, "value_ratio": 9999.0},
 }
 
 

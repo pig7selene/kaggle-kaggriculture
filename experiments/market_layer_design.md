@@ -548,3 +548,23 @@ above 3,000 plant 13-16 carrot and almost no strawberry. The two public agents
 with a different mix are far weaker (-30,492 and -29,484 against V43), and none
 of the top twenty teams has published a notebook. Their farm programme is not
 available to fork.
+
+### The retune converged (2026-09-18)
+
+Every axis, 32 paired games against the submitted build (window 4-16, threshold
+$50, fertilizer ratio 3.0, compaction over all items):
+
+| change | mean | note |
+|---|---:|---|
+| window lower bound 2 / 3 / 5 / 6 | -2 / -2 / +1 / -16 | 12 to 22 of 32 games identical |
+| threshold $40 | -3,825 | admits wheat, which we flood |
+| threshold $60 | -74 | |
+| fertilizer ratio 2.0 / 4.0 / 6.0 | -0 / -23 / -105 | flat between 2 and 3 |
+| fertilizer layer off | **-200** | still earning its place on this chassis |
+| compaction over cash goods only | **-648** | including wheat and fertilizer is what pays |
+
+Two things worth keeping. The window's lower bound does not matter once the
+upper bound is 16 -- the binding constraint is what the shed holds, not where
+the window starts. And V48 deliberately leaves wheat and fertilizer sell slots
+alone; compacting them too is worth +648 here, far more than the +146 the first
+four-seed probe suggested.
