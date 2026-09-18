@@ -19,6 +19,7 @@ from run_route_remap_pilot import load_agent
 ROOT = Path(__file__).resolve().parent
 SHIPPED = Path("/private/tmp/kaggriculture_v43_variants/shipped.py")
 MOVES = {"NORTH", "SOUTH", "EAST", "WEST"}
+route0_opening = runpy.run_path(str(SHIPPED), run_name="v43ship_open")["_ROUTES"][0]
 
 
 def full_obs(rep, s, seat):
@@ -128,6 +129,9 @@ def analyze(rep, seat, tag):
             elif o[0] == "SELL" and len(o) > 2 and int(o[2]) > 0:
                 sells_tape[o[1]] += 1
                 sell_hours_tape[(o[1], s % 24)] += 1
+    opp_agree = sum(field(normalized_action(rep, 1 - seat, s)) == field(route0_opening[s]) for s in range(144)) / 144
+    out["opp_agree"] = round(opp_agree, 3)
+    out["opp_lineage"] = opp_agree >= 0.9
     farms500 = rep["steps"][500][0]["observation"]["farms"]
     farms700 = rep["steps"][700][0]["observation"]["farms"]
     out.update({
@@ -154,6 +158,7 @@ def main() -> None:
     ap.add_argument("--team", help="team name to analyze within --dir")
     ap.add_argument("--limit", type=int, default=30)
     ap.add_argument("--out", type=Path)
+    ap.add_argument("--after", help="daily-dataset mode: only episodes created at or after this ISO time (UTC)")
     a = ap.parse_args()
     jobs = []
     if a.submission:
@@ -162,9 +167,17 @@ def main() -> None:
             jobs.append((Path(e["file"]), e["seat"]))
         label = str(a.submission)
     else:
+        created = {}
+        man = a.dir / "manifest.csv"
+        if man.is_file():
+            import csv
+            for row in csv.DictReader(man.open()):
+                created[row["episode_id"]] = row.get("create_time", "")
         for p in sorted(a.dir.glob("*.json")):
             if len(jobs) >= a.limit:
                 break
+            if a.after and created.get(p.stem, "") < a.after:
+                continue
             try:
                 names = json.loads(p.read_text())["info"]["TeamNames"]
             except Exception:
