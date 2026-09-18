@@ -503,3 +503,48 @@ systematically misled, and the lead layer supplies almost all of the base's
 edge. Carrot's hinge needs more than 450 units of shortfall, which a
 V43-vs-V43 game never reaches, which is why its gains appear only in pet-cafe
 towns where town demand is far higher.
+
+## Retuning on the new chassis: the lead window wants to be wide (2026-09-18)
+
+Every parameter we carried over had been tuned on the V43 chassis against a
+plain opponent. On the alperen chassis, with the sell-queue compaction in place
+and the public agents as opponents, one of them is badly wrong. Paired games
+against the same agent with a four-to-six window:
+
+| window | mean | W/L |
+|---|---:|---|
+| 4-6 (carried over) | baseline | |
+| 3-9 | +418 | 30/2 |
+| 4-7 | +250 | 30/2 |
+| 4-9 | +414 | 30/2 |
+| 4-12 | +538 | 30/2 |
+| **4-16** | **+793** | **31/1** |
+| 4-20 | +643 | 30/2 |
+| 4-24 | +484 | 28/4 |
+| 5-9 | +409 | 30/2 |
+
+On V43 the opposite held -- wider was worse, because pulling several lots into
+one step walked the price down against ourselves. The compaction removes that:
+the pulled lots merge into a single order in an early slot instead of competing
+with each other across later ones. The two layers are complements, which is why
+the window had to be retuned after the compaction went in.
+
+The price threshold is unchanged at $50: $30 scores -5,753 because it admits
+wheat, which we already flood, and $70 loses 53.
+
+Holdouts agree with the training pairs throughout (4-9: +414 training, +453 on
+108 unseen; 4-16: +793 and +811), and against the public pool the 4-16 build
+takes 96 of 96 at a pooled mean of +1,217, against +760 for the submitted
+four-to-six version, with its worst single game at +613.
+
+**Margins against a third party do not order candidates.** flexonafft's
+"Multi-Route Farming Agent" beats the V43 chassis by +2,500 where alperen
+manages +1,936, but head to head alperen wins 32 of 32 at +1,407. Candidates
+have to be played against each other.
+
+**No public notebook farms the way the top of the board farms.** Fourteen
+extracted agents all plant 24 wheat, 33 strawberry and no carrot; the teams
+above 3,000 plant 13-16 carrot and almost no strawberry. The two public agents
+with a different mix are far weaker (-30,492 and -29,484 against V43), and none
+of the top twenty teams has published a notebook. Their farm programme is not
+available to fork.
