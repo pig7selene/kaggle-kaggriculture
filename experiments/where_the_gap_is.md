@@ -526,3 +526,43 @@ instead of the agent. Both submissions on 2026-09-18 errored this way while
 running perfectly under our own loader, which takes `mod.agent` explicitly.
 `package_v43_variant.py` now appends a uniquely named entry point and refuses
 to build unless `get_last_callable` returns it.
+
+## What the top of the board decides differently (2026-09-18, 650 replays, 22 teams)
+
+`extract_top_structures.py` records each team-game's herd, crops, land, hires
+and sell mix against the town it was dealt, so a rule shows up as a decision
+that moves with the town. Ten teams averaging 92k-116k, by yarn stores in the
+final town:
+
+| | sheep, no yarn | sheep, 2+ yarn | strawberry tiles | carrot tiles |
+|---|---:|---:|---:|---:|
+| Unknown Mother-Goose | 0.0 | 7.2 | 0.7-2.0 | 15.2-15.8 |
+| DSM | 0.0 | 5.6 | 0.6-1.3 | 2.2-2.3 |
+| Majkel1337 | 0.0 | 5.5 | 1.2-1.9 | 5.7-8.6 |
+| SpaTaro | 1.9 | 11.6 | 4.2-5.8 | 1.4-9.4 |
+| Excluding | 0.0 | 5.8 | 1.1-1.5 | 12.9-18.5 |
+| **our chassis** | **5.6** | **9.1** | **33** | **0** |
+
+Two differences, both in the farm programme rather than the market.
+
+**They keep no sheep where no yarn store buys wool.** Wool ends at $1-5 in those
+towns. Our chassis buys six sheep regardless, and it buys them at steps 196-226
+-- when only three of the eight shops have opened. The yarn store typically
+appears at step 288 and a second at 504, so the decision is taken on 37% of the
+information. Gating a sheep-to-cow swap on "no yarn among the shops revealed"
+wins +401 and +2,616 when the guess is right and loses 6,890 when it is not,
+which is a losing trade at that predictor strength; requiring four shops makes
+it never fire. The top teams must be buying sheep later, which is a change to
+the programme's timing, not a rule we can graft on.
+
+**They grow carrot, not strawberry.** A carrot tile clears in three days and can
+be replanted about six times for roughly 24 units a game; a strawberry tile is
+ongoing and yields four in total. We run 33 strawberry tiles and no carrot.
+
+Everything else matches: three quadrants, 276-297 hires.
+
+Against the public builds themselves our submitted agent is unbeaten --
+`alp_dw_46_fv_r30` takes 96 of 96 games against V47, V48, both tetsutani builds
+and alperen, pooled mean +500, worst opponent plain alperen at +404 -- so the
+losses above 2,000 online are to other people's modifications, not to any
+published strategy.
