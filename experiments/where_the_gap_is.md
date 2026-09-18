@@ -582,3 +582,25 @@ decide, and a tape cannot be given that by wrapping it. The herd is committed at
 steps 196-226 on three of eight shops; they commit after day 12. Closing this
 needs the purchase and planting schedules moved from fixed steps to conditions,
 which is a change to the programme rather than another layer.
+
+**Moving the herd decision late fails because the premise was backwards.** The
+plan was to take the broad bet early -- a cow costs 400 against a sheep's 500
+and three shop types buy milk where one buys wool -- and let the chassis's own
+day-12 expansion add sheep back once the town showed itself. Measured on ten
+seeds against the same agent without it:
+
+| | mean |
+|---|---:|
+| early cows, chassis gate (two yarn stores, wool 220) | -17,708 |
+| early cows, gate loosened to one yarn store | -11,019 |
+| gate loosened alone | -2,360 |
+
+Milk is the flooded good, not the safe one: both sides already run six to eight
+cows, so four more end the game at $1-34, while wool sits at $217-245 wherever
+two yarn stores exist. Four sheep traded for four cows is about $9,360 of wool
+for $500 of milk. And wool in a one-yarn town ends at $24-55, so adding sheep
+there floods it too -- which is why loosening the gate also loses.
+
+The author's gate is calibrated. The top teams' zero sheep in yarn-free towns is
+real but those towns are 8 of our 26 online games, and every way of buying it
+costs more than it returns.
