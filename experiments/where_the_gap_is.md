@@ -624,3 +624,47 @@ So both structural differences from the top teams are closed for the same
 reason. The tape's step budget is calibrated to its own crops and herd; their
 mix needs a different allocation, and the allocation is what the tape fixes.
 Copying them means not using a tape.
+
+## What four forks of our own lineage agree on, and why we still cannot use it (2026-09-19)
+
+Pulling the live submissions of the four V43-lineage forks above us -- Driz Lo
+(rank 16, 2,979), mikelou1 (22, 2,948), Kaggriculture Agent (26, 2,942) and
+Catalyst (47, 2,893) -- and diffing each against the tape it would otherwise
+replay gives the first clean consensus we have seen. Three edits appear in all
+four, with the same sign:
+
+| per game, against their own tape | Driz Lo | mikelou1 | KaggAgent | Catalyst |
+|---|---:|---:|---:|---:|
+| FERTILIZE | +62.5 | +28.3 | +31.4 | +31.1 |
+| FEED | -30.3 | -28.8 | -32.0 | -21.7 |
+| plant CARROT | +4.4 | +13.8 | +8.6 | -0.3 |
+| plant TOMATO | +2.0 | +2.1 | +2.6 | +1.2 |
+| margin | +8,403 | +11,363 | +12,746 | +13,755 |
+
+CARE, WATER and PASS disagree in sign across the four, so those are each
+implementation's own business. Thomas Tschinkel, who was rank 23 yesterday, has
+fallen to 2,369 on a submission made this morning, which is its own evidence
+that these edits are delicate.
+
+**Wheat to carrot is mechanically sound and statistically empty.** Swapping
+*strawberry* tiles failed on the visit budget -- they get 0.99 actions a day and
+a carrot cycle needs 1.25 -- but wheat already costs 1.2 (plant, four waterings,
+harvest over five days) against carrot's 1.25 over four, so the budget is
+unchanged. The 9/17 swap also died because carrot clears a day earlier than
+wheat and the tape's harvest found a weed; harvesting the swapped tiles
+ourselves fixes that, and waiting for the day's watering before harvesting
+raises the yield from 2.0 to 3.0 a tile. With that, 14 tiles scores +218 over 64
+paired games -- but 10 scores -691, 12 -852, 16 -49, 18 -236, and on 108 holdout
+games 14 tiles scores **-67 at 45/63**. A peak that narrow between two troughs
+is the shape of noise, and the holdout says so.
+
+**Tomato cannot go on a wheat tile at all.** It first yields eight days after
+planting and the tape replants its wheat every four or five, so two to five
+tomatoes produced one or two harvests and lost 512 to 1,832. The forks must be
+planting them where the tape will not come back, which needs a way to identify
+those tiles rather than a substitution.
+
+Six farm-side changes tried across two days -- herd timing, a rival-aware
+expansion guard, culling worthless animals, strawberry to carrot, wheat to
+carrot, tomato -- and none survives a holdout. The consensus tells us what the
+forks do; it does not carry the schedule that makes it pay.
