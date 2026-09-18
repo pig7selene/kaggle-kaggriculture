@@ -604,3 +604,23 @@ there floods it too -- which is why loosening the gate also loses.
 The author's gate is calibrated. The top teams' zero sheep in yarn-free towns is
 real but those towns are 8 of our 26 online games, and every way of buying it
 costs more than it returns.
+
+**Carrot on the tape's strawberry tiles fails on the visit budget.** The idea
+needed no extra steps: the tape already visits each strawberry tile 52 times a
+game and stays put for two consecutive steps 847 times, so plant, water, harvest
+and replant should fit inside visits that already happen. Measured over days
+7-28 it does not. The tape supplies **0.99 stay-actions per tile per day** -- a
+watering and nothing more -- and 28% of tile-days get no stay-action at all,
+scheduled so that no tile is ever missed twice running. Strawberry survives on
+exactly that; a carrot cycle needs five actions in four days, or 1.25 a day, and
+dies after two dry days. In six-tile runs, 35 plantings produced 13 harvests and
+15 weeds, and the layer lost 5,537 a game; at ten tiles, 9,368.
+
+An earlier version also replaced the tape's *moves* across those tiles, stranding
+units mid-route, which cost 29,569 a game -- of the 1,744 visits only 776 are
+actions, the rest are passing through.
+
+So both structural differences from the top teams are closed for the same
+reason. The tape's step budget is calibrated to its own crops and herd; their
+mix needs a different allocation, and the allocation is what the tape fixes.
+Copying them means not using a tape.
