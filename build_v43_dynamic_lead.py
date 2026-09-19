@@ -28,10 +28,10 @@ ALL = ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL"
 DEFAULTS = {"lookahead": 5, "min_price": 2, "min_ratio": 0.0, "top_k": 0, "always": (), "min_impact": 0.0,
             "window_lo": 0, "window_hi": 0}
 VARIANTS = {
-    "dw_216": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 2, "window_hi": 16},
-    "dw_316": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 3, "window_hi": 16},
-    "dw_516": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 5, "window_hi": 16},
-    "dw_616": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 6, "window_hi": 16},
+    "dw_416": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 4, "window_hi": 16},
+    "dw_412": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 4, "window_hi": 12},
+    "dw_420": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 4, "window_hi": 20},
+    "dw_424": {**DEFAULTS, "min_price": 50, "always": PREM, "window_lo": 4, "window_hi": 24},
     "dw_416g40": {**DEFAULTS, "min_price": 40, "always": PREM, "window_lo": 4, "window_hi": 16},
     "dw_416g60": {**DEFAULTS, "min_price": 60, "always": PREM, "window_lo": 4, "window_hi": 16},
 }

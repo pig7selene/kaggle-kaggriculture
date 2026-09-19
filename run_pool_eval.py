@@ -18,8 +18,13 @@ VD = Path("/private/tmp/kaggriculture_v43_variants")
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--variants", required=True, help="comma-separated candidate stems")
-    ap.add_argument("--opponents", default="v48,v47,alp,pub_tetsutani_market-smart-farming-kag,pub_tetsutani_shop-aware-farming-kaggr,pub_alperen5252525_kaggriculture-ready")
+    # the agents people are actually running, refreshed 2026-09-19. Judging a
+    # candidate only against our own best biases towards whatever our layers
+    # already do, so this pool is the gate.
+    ap.add_argument("--opponents", default="v49,alp2,tet2,v48,alp,pub_tetsutani_market-smart-farming-kag")
     ap.add_argument("--pair-every", type=int, default=16)
+    ap.add_argument("--pair-offset", type=int, default=0,
+                    help="shift the pair sampling so a cross-check draws different towns")
     ap.add_argument("--seed-slice", default="0:2")
     ap.add_argument("--engine", default="1.32.7")
     ap.add_argument("--tag", default="pool")
@@ -31,7 +36,8 @@ def main() -> None:
                 continue
             name = f"{a.tag}_{v[:18]}_vs_{o[:18]}"
             cmd = [sys.executable, "run_market_layer_ab.py", "--variant", str(VD / f"{v}.py"),
-                   "--name", name, "--pair-every", str(a.pair_every), "--seed-slice", a.seed_slice,
+                   "--name", name, "--pair-every", str(a.pair_every),
+                   "--pair-offset", str(a.pair_offset), "--seed-slice", a.seed_slice,
                    "--engine", a.engine, "--opponent", str(VD / f"{o}.py")]
             r = subprocess.run(cmd, capture_output=True, text=True)
             line = [l for l in r.stdout.splitlines() if "W/L/T" in l]

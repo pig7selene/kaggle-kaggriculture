@@ -568,3 +568,36 @@ upper bound is 16 -- the binding constraint is what the shed holds, not where
 the window starts. And V48 deliberately leaves wheat and fertilizer sell slots
 alone; compacting them too is worth +648 here, far more than the +146 the first
 four-seed probe suggested.
+
+## Judge candidates against the agents people run, not against ourselves (2026-09-19)
+
+Three of the public builds were refreshed overnight -- ahmedberatozer's V49,
+alperen's "First in Line" and tetsutani's "Demand-Preserving Turn Sale Timing"
+-- and all three lose to our submitted build head to head (-199, -1,178, -268).
+Judged that way V49 looks like a step backwards. It is not: with our three
+layers on it, the V49 chassis takes 96 of 96 against the six public agents at a
+pooled +1,410, where the same layers on alperen take 86 of 96 at +864. A
+chassis has to be judged carrying our layers, not bare.
+
+That build is now submitted: 62/2 at +1,118 against the previous one and 105/3
+at +919 on 108 holdout games.
+
+**Retuning on V49 then produced a clean warning.** Widening the lead window from
+16 to 20 wins against our own agent -- +546 over 32 paired games, +535 over 108
+holdout games -- and loses against the pool:
+
+| | our own agent | public pool, 96 games | public pool, 168 unseen |
+|---|---:|---:|---:|
+| window 16 | baseline | +1,410 | +1,180 |
+| window 20 | +546 | +1,226 | +1,110 |
+
+Two independent pool samples agree, and the breakdown shows why: window 20 is
+better against V49 and tet2, the two hardest opponents, and worse against the
+other four. It is a targeted gain that costs more than it earns.
+
+So the gate is the pool. Beating our own agent, on training pairs or on a
+holdout, does not qualify -- both are the same opponent, and a change can learn
+that opponent's weaknesses. Everything else on V49 held: the $50 threshold is
+still a sharp peak ($40 loses 4,316), the fertilizer layer still earns +195 and
+the compaction's extension to wheat and fertilizer still earns +40, so V49's own
+"funded sale timing" has not absorbed either of them.

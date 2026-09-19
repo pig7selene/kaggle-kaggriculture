@@ -162,8 +162,6 @@ DEFAULTS = {"from_step": 144, "max_price": 40, "reserve": 0, "carry": 3, "top_up
 VARIANTS = {
     "fv_r30": {**DEFAULTS, "value_ratio": 3.0},
     "fv_r20": {**DEFAULTS, "value_ratio": 2.0},
-    "fv_r40": {**DEFAULTS, "value_ratio": 4.0},
-    "fv_r60": {**DEFAULTS, "value_ratio": 6.0},
     "fv_off": {**DEFAULTS, "value_ratio": 9999.0},
 }
 
